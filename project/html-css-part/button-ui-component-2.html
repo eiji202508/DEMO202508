@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTMLCSSJavaScriptテンプレ/WEB制作ネタ帳</title>
+<link rel="icon" href="../../tiger-favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../css/style-set.css">
+<link rel="stylesheet" href="../../css/style-width-height.css">
+<link rel="stylesheet" href="../../css/style-margin.css">
+<link rel="stylesheet" href="../../css/style-padding.css">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body class="html-css-part ">
+
+<header class="header">
+  <div class="header-container w-container">
+    <div class="h1-today-container">
+      <h1>
+        <a href="">
+          <span class="ja">WEB制作ノート</span>
+          <span class="en">Web Production Notebook</span>
+        </a>
+      </h1>
+      
+      <div id="header-today"></div>
+    </div><!-- /h1-today-container -->
+
+    <nav class="nav nav-container">
+      <ul id="menu1" class="disc"><a>動く UI レシピ</a>
+        <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+      </ul>
+      <ul id="menu2" class="hyphen"><a>HTML/CSS/JavaScript</a>
+        <li><a href="project/html-css-part/clamp-function.html" target="_blank" rel="noopener noreferrer">clump 関数 - レスポンシブフォントサイズジェネ</a></li>
+        <li><a href="project/html-css-part/filter-generator.html" target="_blank" rel="noopener noreferrer">filter ジェーネレーター</a></li>
+        <li><a href="project/html-css-part/filter-generator-source.html" target="_blank" rel="noopener noreferrer">filter ジェーネレーター ソース</a></li>
+        <li><a href="project/html-css-part/button-ui-component-1.html" target="_blank" rel="noopener noreferrer">UI ボタンコンポ１ - 各種トグル 選択ボタン</a></li>
+        <li><a target="_blank" rel="noopener noreferrer">UI ボタンコンポ２ - 各種イベントボタン</a></li>
+        <li><a href="project/html-css-part/button-ui-component-3.html" target="_blank" rel="noopener noreferrer">UI ボタンコンポ３ – ファイル読込ボタン</a></li>
+        <!--
+        <li><a href="project/html-css-part/" target="_blank" rel="noopener noreferrer"></a></li>
+        -->
+      </ul>
+      <ul id="menu3" class="hyphen"><a>WordPress/PHP</a>
+        <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+      </ul>
+    </nav>
+  </div><!-- /header-container -->
+</header>
+
+<main class="w-container">
+  <section class="content">
+
+<h1 class="h1">UI ボタンコンポーネント２ – 各種イベントボタン</h1>
+
+<div class="flex-wrap gap-0_3 mb-1_5">
+
+<div class="mint-container mint-container1">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>リセットボタン</div>
+<div class="mint-box">
+<div class="btns-container">
+  <button id="resetButton">Reset</button>
+</div>
+</div><!-- /mint-box -->
+
+<script>
+let timerId = null; // タイマーIDを保持する変数を初期化
+
+document.getElementById('resetButton').addEventListener('click', function() {
+  const resetButton = this;
+  const originalText = 'Reset';
+
+  // 既存のタイマーをクリア
+  if (timerId !== null) {
+    clearTimeout(timerId);
+    timerId = null;
+  }
+
+  resetButton.textContent = 'Done!';
+  console.log('コンテンツをリセットしました');
+
+  // 新しいタイマーを設定し、そのIDを保存
+  timerId = setTimeout(() => {
+    resetButton.textContent = originalText;
+    timerId = null;
+  }, 1500);
+});
+</script>
+</div><!-- /mint-container1 -->
+
+<div class="mint-container mint-container2">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>リロードボタン</div>
+<div class="mint-box">
+<div class="btns-container">
+  <button id="reloadButton">Reload</button>
+</div>
+</div><!-- /mint-box -->
+
+<script>
+document.getElementById('reloadButton').addEventListener('click', function() {
+  location.reload();
+});
+</script>
+</div><!-- /mint-container2 -->
+
+<div class="mint-container mint-container3">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>開閉ボタン縦</div>
+<div class="mint-box">
+<div class="btns-container">
+  <button id="openButton" class="open-button">open</button>
+  <div id="gridArea">
+    <p id="openArea" class="fs-ss lh-1_55">...<br>
+    ...<br>
+    ...</p>
+  </div>
+</div>
+</div><!-- /mint-box -->
+
+<style>
+.open-button {
+  width: 3.5em;
+}
+#gridArea {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 1s;
+}
+#gridArea.open {
+  grid-template-rows: 1fr;
+}
+#openArea {
+  overflow: hidden;
+  background: greenyellow;
+}
+.open #openArea {
+  height: auto;
+}
+</style>
+
+<script>
+document.getElementById('openButton').addEventListener('click', function() {
+  const gridArea = document.getElementById('gridArea');
+  const button = this;
+
+  if (gridArea.classList.contains('open')) {
+    gridArea.classList.remove('open');
+    button.textContent = 'open';
+  } else {
+    gridArea.classList.add('open');
+    button.textContent = 'close';
+  }
+});
+</script>
+</div><!-- /mint-container3 -->
+
+<div class="mint-container mint-container4">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>開閉ボタン横</div>
+<div class="mint-box">
+  <div class="btns-container">
+    <div id="gridAreaSide">
+      <nav id="openAreaSide">
+        <ol class="num fs-ss lh-1_55">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </nav>
+    </div>
+    <button id="openButtonSide" class="open-button">open</button>
+  </div>
+</div><!-- /mint-box -->
+
+<style>
+#gridAreaSide {
+  display: grid;
+  grid-template-columns: 0fr;
+  transition: 1s;
+}
+#gridAreaSide.open {
+  grid-template-columns: 1fr;
+}
+#openAreaSide {
+  overflow: hidden;
+  background: greenyellow;
+}
+.open #openAreaSide {
+  width: auto;
+}
+</style>
+
+<script>
+document.getElementById('openButtonSide').addEventListener('click', function() {
+  const gridAreaSide = document.getElementById('gridAreaSide');
+  const button = this;
+
+  if (gridAreaSide.classList.contains('open')) {
+    gridAreaSide.classList.remove('open');
+    button.textContent = 'open';
+  } else {
+    gridAreaSide.classList.add('open');
+    button.textContent = 'close';
+  }
+});
+</script>
+</div><!-- /mint-container4 -->
+</div><!-- / flex-wrap -->
+
+<!--
+<div class="flex-wrap flex-direction-column align-items-flex-start gap-0_5 mb-1_2">
+<div class="ybox ybox-en border bg-eee">
+<span class="fw-700"></span>;<br>
+<span class="fs-ss"></span>　<span class="fs-3s">※ </span>
+</div>
+
+<div class="ybox ybox-en border bg-eee">
+<span class="fs-s lh-2"><i class="fa fa-bolt"></i></span><br>
+<span class="fw-700"></span>;<br>
+<span class="fs-sss">※ </span>
+</div>
+</div><!-- /flex -->
+
+<section class="mb-1_5">
+<h3 class="h3">location オブジェクト</h3>
+<p class="fs-s ctr-ll mb-2">locationは、window.locatio の省略形、ブラウザの現在の URL に関する情報を提供する Location オブジェクト。このオブジェクトには、URL の各部分（プロトコル、ホスト名、パス、クエリパラメータ、ハッシュなど）にアクセスするためのプロパティや、URL を操作するためのメソッドが含まれている。</p>
+
+<section class="mb-2">
+<h4 class="h4 mb-0_2">location オブジェクトのメソッド</h4>
+<ul class="disc ml-1 fs-s">
+  <li class="">location<span class="red-500">.href</span>：<span class="fs-s">現在のページの完全なURL（https://example.com/page.html?id=1#section）</span></li>
+  <li class="">location<span class="red-500">.protocol</span>：<span class="fs-s">使用されているプロトコル（https:）</span></li>
+  <li class="">location<span class="red-600">.hostname</span>：<span class="fs-s">ホスト名（example.com）</span></li>
+  <li class="">location<span class="red-500">.pathname</span>：<span class="fs-s">パス名（/page.html）</span></li>
+  <li class="">location<span class="red-500">.search</span>：<span class="fs-s">クエリ文字列（?id=1）</span></li>
+  <li class="">location<span class="red-500">.hash</span>：<span class="fs-s">ハッシュ部分（#section）</span></li>
+</ul>
+</section><!-- ＝＝＝ /h4 location オブジェクトのメソッド -->
+</section><!-- ＝＝＝＝＝ /h3 location オブジェクト -->
+
+<style>
+/* 構造部 */
+.mint-container {
+
+.title {
+  min-width: 10em;
+  line-height: 2.7;
+  font-size: var(--fs-ss);
+  text-align: center;
+  border: solid 0.9px #ddd;
+  border-top-width: 1px;
+  background: snow;
+}
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+&.mint-container3 .btns-container,
+&.mint-container4 .btns-container {
+  justify-content: space-between;
+}
+
+/* ボタン共用 */
+button {
+  padding: 0 0.3em;
+  color: #666;
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  font-size: var(--fs-sss);
+  height: 1.85em;
+  white-space: nowrap;
+  padding: 0 0.3em;
+}
+button:hover,
+input[type="file"]::-webkit-file-upload-button:hover {
+  color: #fff;
+  background-color: #aaa;
+}
+
+} /* /mint-container */
+</style>
+
+<!-- コードボックス -->
+<div class="code-box-wrap">
+<div class="code-box btn-code-box top-narrow matrix">
+<button type="button" class="darkBtn">dark</button>
+<!-- HTML 始め -->
+<div class="tag tag-top html"></div>
+<pre class=""><code class="language-html"><!-- 入力始め -->&lt;div class="mint-container mint-container1">
+  &lt;div class="title">&lt;i class="fas fa-seedling seedling-s">&lt;/i>リセットボタン&lt;/div>
+  &lt;div class="mint-box">
+    &lt;div class="btns-container">
+      &lt;button id="<span class="sb-600">resetButton</span>">Reset&lt;/button>
+    &lt;/div>
+  &lt;/div>container&lt;!-- /mint-box -->
+&lt;/div>container&lt;!-- /mint-container -->
+<!-- 入力終わり --></code></pre>
+<!-- /HTML 終り -->
+
+<!-- JavaScript 始め -->
+<div class="tag js js-alt tag-top-others mt-0_3"></div>
+<pre><code class="language-javascript"><!-- 入力始め -->let timerId = null; // タイマーIDを保持する変数を初期化
+
+document.getElementById('resetButton').addEventListener('click', <span class="red-600">function()</span> {
+  <span class="red-600">const resetButton = this;</span>
+  const originalText = 'Reset';
+
+  // 既存のタイマーをクリア
+  <span class="green-600">if (timerId !== null) {
+    clearTimeout(timerId);
+    timerId = null;
+  }</span>
+
+  resetButton.textContent = 'Done!';
+  console.log('コンテンツをリセットしました');
+
+  // 新しいタイマーを設定し、そのIDを保存
+  <span class="green-600">timerId = setTimeout(() => {
+    resetButton.textContent = originalText;
+    timerId = null;
+  }, 1500);</span>
+});<!-- 入力終わり --></code></pre>
+<!-- /JavaScript 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- HTML 始め -->
+<div class="tag html tag-top-others"></div>
+<pre class=""><code class="language-html"><!-- 入力始め -->&lt;!-- リロードボタン -->
+&lt;div class="btns-container">
+  &lt;button id="<span class="sb-600">reloadButton</span>">Reload&lt;/button>
+&lt;/div>
+<!-- 入力終わり --></code></pre>
+<!-- /HTML 終り -->
+
+<!-- JavaScript 始め -->
+<div class="tag js js-alt tag-top-others mt-0_3"></div>
+<pre><code class="language-javascript"><!-- 入力始め -->document.getElementById('reloadButton').addEventListener('click', function() {
+  <span class="red-600">location.reload()</span>;
+});<!-- 入力終わり --></code></pre>
+<!-- /JavaScript 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- HTML 始め -->
+<div class="tag html tag-top-others"></div>
+<pre class=""><code class="language-html"><!-- 入力始め -->&lt;!-- 開閉ボタン縦 -->
+&lt;div class="btns-container">
+  &lt;button id="<span class="sb-600">openButton</span>" class="open-button">open&lt;/button>
+  &lt;div id="<span class="sb-600">gridArea</span>">
+    &lt;p id="<span class="sb-600">openArea</span>" class="fs-ss lh-1_55">...&lt;br>
+    ...&lt;br>
+    ...&lt;/p>
+  &lt;/div>
+&lt;/div>
+<!-- 入力終わり --></code></pre>
+<!-- /HTML 終り -->
+
+<!-- JavaScript 始め -->
+<div class="tag js js-alt tag-top-others mt-0_3"></div>
+<pre><code class="language-javascript"><!-- 入力始め -->document.getElementById('openButton').addEventListener('click', function() {
+  const gridArea = document.getElementById('gridArea');
+  const button = this;
+
+  if (gridArea.classList<span class="red-600">.contains</span>('open')) {
+    gridArea.classList.remove('open');
+    button.textContent = 'open';
+  } else {
+    gridArea.classList.add('open');
+    button.textContent = 'close';
+  }
+});<!-- 入力終わり --></code></pre>
+<!-- /JavaScript 終り -->
+
+<!-- CSS 始め -->
+<div class="tag css tag-top-others mt-0_3"></div>
+<pre class="columns-2 gap-2"><code class="language-css"><!-- 入力始め -->#gridArea {
+  <span class="red-600">display: grid;
+  grid-template-rows: 0fr;</span>
+  <span class="or-600">transition: 1s;</span>
+}
+#gridArea.open {
+  <span class="red-600">grid-template-rows: 1fr;</span>
+}
+#openArea {
+  <span class="or-600">overflow: hidden;</span>
+  background: greenyellow;
+}
+.open #openArea {
+  <span class="or-600">height: auto;</span>
+}<!-- 入力終わり --></code></pre>
+<!-- /CSS 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- HTML 始め -->
+<div class="tag html tag-top-others"></div>
+<pre class=""><code class="language-html"><!-- 入力始め -->&lt;!-- 開閉ボタン横 -->
+&lt;div class="btns-container">
+  &lt;div id="<span class="sb-600">gridAreaSide</span>">
+    &lt;nav id="<span class="sb-600">openAreaSide</span>">
+      &lt;ol class="num fs-ss lh-1_55">
+        &lt;li>&lt;/li>
+        &lt;li>&lt;/li>
+        &lt;li>&lt;/li>
+      &lt;/ol>
+    &lt;/nav>
+  &lt;/div>
+  &lt;button id="<span class="sb-600">openButtonSide</span>" class="open-button">open&lt;/button>
+&lt;/div>
+<!-- 入力終わり --></code></pre>
+<!-- /HTML 終り -->
+
+<!-- CSS 始め -->
+<div class="tag css tag-top-others mt-0_3"></div>
+<pre class="columns-2 gap-2"><code class="language-css"><!-- 入力始め -->#gridAreaSide {
+  <span class="red-600">display: grid;
+  grid-template-columns: 0fr;</span>
+  <span class="or-600">transition: 1s;</span>
+}
+#gridAreaSide.open {
+  <span class="red-600">grid-template-columns: 1fr;</span>
+}
+#openAreaSide {
+  <span class="or-600">overflow: hidden;</span>
+  background: greenyellow;
+}
+.open #openAreaSide {
+ <span class="or-600"> width: auto;</span>
+}<!-- 入力終わり --></code></pre>
+<!-- /CSS 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- CSS 始め -->
+<div class="tag css tag-top-others"></div>
+<pre class="columns-2 gap-2"><code class="language-css"><!-- 入力始め -->/* 構造部 */
+.mint-container {
+
+.title {
+  min-width: 10em;
+  line-height: 2.7;
+  font-size: var(--fs-ss);
+  text-align: center;
+  border: solid 0.9px #ddd;
+  border-top-width: 1px;
+  background: snow;
+}
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ボタン共用 */
+button {
+  padding: 0 0.3em;
+  color: #666;
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  font-size: var(--fs-sss);
+  height: 1.85em;
+  white-space: nowrap;
+}
+button:hover,
+input:hover {
+  color: #fff;
+  background-color: #aaa;
+}
+
+} /* /mint-container */<!-- 入力終わり --></code></pre>
+<!-- /CSS 終り -->
+</div><!-- /code-box -->
+</div><!-- /code-box-wrap -->
+<!-- /コードボックス -->
+
+  </section>
+</main>
+
+<div class="pager w-container">
+  <div class="left">
+    <a href=".html"><i class="fa fa-chevron-circle-left"></i> 前のページ</a>
+  </div>
+  <div class="right">
+    <a href=".html">次のページ <i class="fa fa-chevron-circle-right"></i></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container w-container">
+    <span class="year">
+      <span class="corp">&copy;</span> 2020 - <span id="thisyear"></span>
+    </span>
+    <a href="">
+      <span class="en">Big Cat Studio</span>
+      <span class="ja">おおねこ工房</span>
+    </a>
+  </div><!-- /footer-container -->
+</footer>
+
+<script src="../../js/gettoday.js"></script>
+<script src="../../js/getyear.js"></script>
+<script src="../../js/season.js"></script>
+<script src="../../js/slide-toggle.js"></script>
+<script src="../../js/btn-code.js"></script>
+</body>
+</html>

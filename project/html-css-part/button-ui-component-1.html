@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTMLCSSJavaScriptテンプレ/WEB制作ネタ帳</title>
+<link rel="icon" href="../../tiger-favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../css/style-set.css">
+<link rel="stylesheet" href="../../css/style-width-height.css">
+<link rel="stylesheet" href="../../css/style-margin.css">
+<link rel="stylesheet" href="../../css/style-padding.css">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body class="html-css-part ">
+
+<header class="header">
+  <div class="header-container w-container">
+    <div class="h1-today-container">
+      <h1>
+        <a href="">
+          <span class="ja">WEB制作ノート</span>
+          <span class="en">Web Production Notebook</span>
+        </a>
+      </h1>
+      
+      <div id="header-today"></div>
+    </div><!-- /h1-today-container -->
+
+    <nav class="nav nav-container">
+      <ul id="menu1" class="disc"><a>動く UI レシピ</a>
+        <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+      </ul>
+      <ul id="menu2" class="hyphen"><a>HTML/CSS/JavaScript</a>
+        <li><a href="project/html-css-part/clamp-function.html" target="_blank" rel="noopener noreferrer">clump 関数 - レスポンシブフォントサイズジェネ</a></li>
+        <li><a href="project/html-css-part/filter-generator.html" target="_blank" rel="noopener noreferrer">filter ジェーネレーター</a></li>
+        <li><a href="project/html-css-part/filter-generator-source.html" target="_blank" rel="noopener noreferrer">filter ジェーネレーター ソース</a></li>
+        <li><a target="_blank" rel="noopener noreferrer">UI ボタンコンポ１ - 各種トグル 選択ボタン</a></li>
+        <li><a href="project/html-css-part/button-ui-component-2.html" target="_blank" rel="noopener noreferrer">UI ボタンコンポ２ - 各種イベントボタン</a></li>
+        <li><a href="project/html-css-part/button-ui-component-3.html" target="_blank" rel="noopener noreferrer">UI ボタンコンポ３ – ファイル読込ボタン</a></li>
+        <!--
+        <li><a href="project/html-css-part/" target="_blank" rel="noopener noreferrer"></a></li>
+        -->
+      </ul>
+      <ul id="menu3" class="hyphen"><a>WordPress/PHP</a>
+        <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+      </ul>
+    </nav>
+  </div><!-- /header-container -->
+</header>
+
+<main class="w-container">
+  <section class="content">
+
+<h1 class="h1">UI ボタンコンポーネント１ - 各種トグル 選択ボタン</h1>
+
+<div class="flex-wrap gap-0_3 mb-1_5">
+
+<div class="mint-container mint-container1">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>トグルボタン</div>
+<div class="mint-box">
+<div class="btns-container btn-toggle-container">
+  <button class="btn-ja btn-toggle">トグルボタン</button>
+</div>
+</div><!-- /mint-box -->
+</div><!-- /mint-container1 -->
+
+<div class="mint-container mint-container2">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>セレクトボタン<span class="fs-sss">(複数選択型)</span></div>
+<div class="mint-box">
+<div class="btns-container btn-select-toggles">
+  <button class="btn-ja btn-toggle">トグル</button>
+  <button class="btn-ja btn-toggle">トグル</button>
+  <button class="btn-ja btn-toggle">トグル</button>
+</div>
+</div><!-- /mint-box -->
+</div><!-- /mint-container2 -->
+
+<div class="mint-container mint-container3">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>セレクトボタン<span class="fs-sss">(排他的選択型)</span></div>
+<div class="mint-box">
+<div class="btns-container btn-select-radiobox">
+  <button class="btn-ja btn1">ボタン1</button>
+  <button class="btn-ja btn2">ボタン2</button>
+  <button class="btn-ja btn3">ボタン3</button>
+</div>
+</div><!-- /mint-box -->
+</div><!-- /mint-container3 -->
+
+<!--
+<div class="mint-container mint-container4">
+<div class="title"><i class="fas fa-seedling seedling-s"></i>＊ボタン</div>
+<div class="mint-box">
+<div class="btns-container">
+  <button class="btn-ja btn1">ボタン1</button>
+  <button class="btn-ja btn2">ボタン2</button>
+  <button class="btn-ja btn3">ボタン3</button>
+</div>
+</div><!-- /mint-box -->
+<!--
+</div><!-- /mint-container4 -->
+</div><!-- /flex-wrap -->
+
+<style>
+/* 構造部 */
+.mint-container {
+
+.title {
+  min-width: 15em;
+  line-height: 2.7;
+  font-size: var(--fs-ss);
+  text-align: center;
+  border: solid 0.9px #ddd;
+  border-top-width: 1px;
+  background: snow;
+}
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ボタン共用 -ja 日本語 */
+button.btn-ja {
+  padding: 0.1em 0.3em 0; /* -ja top補正 */
+  color: #666;
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  font-size: var(--fs-sss);
+  height: 1.85em;
+  white-space: nowrap;
+}
+button:hover {
+  color: #fff;
+  background-color: #aaa;
+}
+
+/* ----- 1~3 トグル、セレクトボタンラジオ ----- */
+.btn-toggle-container,
+.btn-select-toggles,
+.btn-select-radiobox {
+  .btn-toggle:hover,
+  button:hover {
+    color: yellow;
+    background-color: #aaa;
+  }
+  .btn-toggle.btn-selected,
+  .btn-toggle.btn-selected:hover,
+  button.btn-ja.btn-selected,
+  button.btn-ja.btn-selected:hover {
+    color: yellow;
+    background-color: #888;
+    font-weight: 600;
+  }
+}
+
+} /* /mint-container */
+</style>
+
+<script>
+const init = () => {
+
+// ----- トグルボタン
+const btnToggles = document.querySelectorAll('.btn-toggle');
+
+btnToggles.forEach(btnToggle => {
+  btnToggle.addEventListener('click', () => {
+    if (btnToggle) {
+      btnToggle.classList.toggle('btn-selected');
+    }
+  });
+})
+
+// ----- セレクトボタン/ラジオ
+// ボタン要素を取得
+const btn1 = document.querySelector('.btn-select-radiobox .btn1');
+const btn2 = document.querySelector('.btn-select-radiobox .btn2');
+const btn3 = document.querySelector('.btn-select-radiobox .btn3');
+
+// 全ての対象ボタンを配列にまとめる
+const allBtns = [btn1, btn2, btn3];
+
+/**
+ * クリックされたボタンに指定されたクラスを付与し、
+ * 同じグループの他のボタンからはそのクラスを削除する汎用関数。
+ * @param {HTMLElement} selectedBtn - クリックされたボタン要素。
+ * @param {string} classNameToApply - 付与するクラス名。
+ */
+function updateBtnSelection(selectedBtn, classNameToApply) {
+  allBtns.forEach(btn => {
+    if (btn) { // ボタンが存在することを確認
+      btn.classList.remove(classNameToApply); // 引数で渡されたクラス名を削除
+    }
+  });
+  if (selectedBtn) {
+    selectedBtn.classList.add(classNameToApply); // 引数で渡されたクラス名を付与
+  }
+  console.log(`✅「${selectedBtn ? selectedBtn.textContent : 'なし'}」に「${classNameToApply}」クラスで選択状態を設定`);
+}
+
+// 各ボタンにクリックイベントリスナーを設定
+allBtns.forEach(btn => {
+  if (btn) {
+    btn.addEventListener('click', () => {
+      updateBtnSelection(btn, 'btn-selected');
+      // その他の処理
+    });
+  }
+});
+
+// 初回ロード時に最初のボタンをアクティブ(１つ選択)にする（オプション）
+/*
+if (btn1) {
+  updateBtnSelection(btn1);
+}
+*/
+
+}
+document.addEventListener('DOMContentLoaded', init);
+</script>
+
+
+<!-- コードボックス -->
+<div class="code-box-wrap">
+<div class="code-box btn-code-box top-narrow matrix">
+<button type="button" class="darkBtn">dark</button>
+<!-- HTML 始め -->
+<div class="tag tag-top html"></div>
+<pre class=""><code class="language-html"><!-- 入力始め -->&lt;div class="mint-container mint-container1">
+&lt;div class="title">&lt;i class="fas fa-seedling seedling-s">&lt;/i>トグルボタン&lt;/div>
+&lt;div class="mint-box">
+&lt;div class="btns-container btn-toggle-container">
+  &lt;button class="btn-ja <span class="sb-600">btn-toggle</span>">トグルボタン&lt;/button>
+&lt;/div>
+&lt;/div>&lt;!-- /mint-box -->
+&lt;/div>&lt;!-- /mint-container1 -->
+
+&lt;div class="mint-container mint-container2">
+&lt;div class="title">&lt;i class="fas fa-seedling seedling-s">&lt;/i>セレクトボタン&lt;span class="fs-sss">(複数選択型)&lt;/span>&lt;/div>
+&lt;div class="mint-box">
+&lt;div class="btns-container <span class="sb-600">btn-select-toggles</span>">
+  &lt;button class="btn-ja btn-toggle">トグル&lt;/button>
+  &lt;button class="btn-ja btn-toggle">トグル&lt;/button>
+  &lt;button class="btn-ja btn-toggle">トグル&lt;/button>
+&lt;/div>
+&lt;/div>&lt;!-- /mint-box -->
+&lt;/div>&lt;!-- /mint-container2 -->
+
+&lt;div class="mint-container mint-container3">
+&lt;div class="title">&lt;i class="fas fa-seedling seedling-s">&lt;/i>セレクトボタン&lt;span class="fs-sss">(排他的選択型)&lt;/span>&lt;/div>
+&lt;div class="mint-box">
+&lt;div class="btns-container <span class="sb-600">btn-select-radiobox</span>">
+  &lt;button class="btn-ja btn1">ボタン1&lt;/button>
+  &lt;button class="btn-ja btn2">ボタン2&lt;/button>
+  &lt;button class="btn-ja btn3">ボタン3&lt;/button>
+&lt;/div>
+&lt;/div>&lt;!-- /mint-box -->
+&lt;/div>&lt;!-- /mint-container3 --><!-- 入力終わり --></code></pre>
+<!-- /HTML 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- CSS 始め -->
+<div class="tag css tag-top-others"></div>
+<pre class="columns-2 gap-2"><code class="language-css"><!-- 入力始め -->/* 構造部 */
+.mint-container {
+
+.title {
+  min-width: 15em;
+  line-height: 2.7;
+  font-size: var(--fs-ss);
+  text-align: center;
+  border: solid 0.9px #ddd;
+  border-top-width: 1px;
+  background: snow;
+}
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ボタン共用 -ja 日本語 */
+button.btn-ja {
+  padding: 0.1em 0.3em 0; /* -ja top補正 */
+  color: #666;
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  font-size: var(--fs-sss);
+  height: 1.85em;
+  white-space: nowrap;
+}
+button:hover {
+  color: #fff;
+  background-color: #aaa;
+}
+
+/* ----- 1~3 トグル、セレクトボタンラジオ ----- */
+<span class="sb-600">.btn-toggle-container,
+.btn-select-toggles,
+.btn-select-radiobox</span> {
+  .btn-toggle:hover,
+  button:hover {
+    color: yellow;
+    background-color: #aaa;
+  }
+  <span class="sb-600">.btn-toggle.btn-selected,
+  .btn-toggle.btn-selected:hover,
+  button.btn-ja.btn-selected,
+  button.btn-ja.btn-selected:hover</span> {
+    color: yellow;
+    background-color: #888;
+    font-weight: 600;
+  }
+}
+
+} /* /mint-container */<!-- 入力終わり --></code></pre>
+<!-- /CSS 終り -->
+
+<hr class="hr-0_5 m-1 mt-0_7 mb-0_5">
+
+<!-- JavaScript 始め -->
+<div class="tag js js-alt tag-top-others"></div>
+<pre><code class="language-javascript"><!-- 入力始め --><span class="fw-900">const init = () => {</span>
+
+// ----- トグルボタン
+const btnToggles = document.querySelectorAll('.btn-toggle');
+
+btnToggles.forEach(btnToggle => {
+  btnToggle.addEventListener('click', () => {
+    if (btnToggle) {
+      btnToggle.classList.toggle('btn-selected');
+    }
+  });
+})
+
+// ----- セレクトボタン/ラジオ
+// ボタン要素を取得
+const btn1 = document.querySelector('.btn-select-radiobox .btn1');
+const btn2 = document.querySelector('.btn-select-radiobox .btn2');
+const btn3 = document.querySelector('.btn-select-radiobox .btn3');
+
+// 全ての対象ボタンを配列にまとめる
+<span class="sb-600">const allBtns = &lbrack;btn1, btn2, btn3];</span>
+
+/**
+ * クリックされたボタンに指定されたクラスを付与し、他のボタンからはそのクラスを削除する汎用関数
+ * @param {HTMLElement} selectedBtn - クリックされたボタン要素
+ * @param {string} <span class="hl-or">classNameToApply</span> - 付与するクラス名
+ */
+function <span class="red-500">updateBtnSelection(selectedBtn, classNameToApply)</span> {
+  allBtns.forEach(btn => {
+    if (btn) {
+      btn.classList.remove(<span class="hl-or">classNameToApply</span>); // 引数で渡されたクラス名を削除
+    }
+  });
+  if (selectedBtn) {
+    selectedBtn.classList.add(<span class="hl-or">classNameToApply</span>); // 引数で渡されたクラス名を付与
+  }
+  console.log(`✅「${selectedBtn ? selectedBtn.textContent : 'なし'}」に「${classNameToApply}」クラスで選択状態を設定`);
+}
+
+// 各ボタンにクリックイベントリスナーを設定
+allBtns.forEach(btn => {
+  if (btn) {
+    btn.addEventListener('click', () => {
+      <span class="red-600">updateBtnSelection(btn, '<span class="hl-or">btn-selected</span>')</span>;
+      // その他の処理
+    });
+  }
+});
+
+// 初回ロード時に最初のボタンをアクティブ(１つ選択)にする（オプション）
+/*
+if (btn1) {
+  updateBtnSelection(btn1);
+}
+*/
+
+<span class="fw-900">}
+document.addEventListener('DOMContentLoaded', init);</span><!-- 入力終わり --></code></pre>
+<!-- /JavaScript 終り -->
+</div><!-- /code-box -->
+</div><!-- /code-box-wrap -->
+<!-- /コードボックス -->
+
+  </section>
+</main>
+
+<div class="pager w-container">
+  <div class="left">
+    <a href=".html"><i class="fa fa-chevron-circle-left"></i> 前のページ</a>
+  </div>
+  <div class="right">
+    <a href=".html">次のページ <i class="fa fa-chevron-circle-right"></i></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container w-container">
+    <span class="year">
+      <span class="corp">&copy;</span> 2020 - <span id="thisyear"></span>
+    </span>
+    <a href="">
+      <span class="en">Big Cat Studio</span>
+      <span class="ja">おおねこ工房</span>
+    </a>
+  </div><!-- /footer-container -->
+</footer>
+
+<script src="../../js/gettoday.js"></script>
+<script src="../../js/getyear.js"></script>
+<script src="../../js/season.js"></script>
+<script src="../../js/slide-toggle.js"></script>
+<script src="../../js/btn-code.js"></script>
+</body>
+</html>

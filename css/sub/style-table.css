@@ -1,0 +1,2100 @@
+@charset "UTF-8";
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ ｼﾝテーブル */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 基本設定 */
+/* 色 */
+table {background-color: #fff;} /* 最下層色 table,th,td デフォ透明 */
+/* 文字揃え */
+table tbody th {text-align: left;}
+/* セル余白 */
+table thead th,
+table tbody th,
+table tbody td {
+	padding: .25em .6em .2em;
+	line-height: 1.7;
+}
+/* 文字サイズ */
+table thead th {font-size: var(--fs-ss);}
+table tbody th,
+table tbody td {
+	font-size: var(--fs-s);
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ バリエーション */
+table.table-wide thead th,
+table.table-wide tbody th,
+table.table-wide tbody td {
+	line-height: 1.8;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ テーブルスタイルセット */
+/* テンプレートタグ */
+table.table-temptag thead th {
+	font-size: var(--fs-4s);
+}
+table.table-temptag tbody th {
+	font-size: var(--fs-ss);
+}
+table.table-temptag tbody td {
+	font-size: var(--fs-3s);
+}
+
+/* ボックスの種類とボックス内のレイアウト */
+table.table-rl-02, table.table-rl-02 th {
+	-top: solid 2px darkseagreen;
+	border-bottom: solid 2px darkseagreen;
+}
+table.table-rl-02 td {
+	border-top: solid 1px darkseagreen;
+	border-bottom: solid 1px darkseagreen;
+}
+table.table-rl-02 th:nth-child(2), table.table-rl-02 td:nth-child(2) {
+	border-right: dashed 1px darkseagreen;
+	border-left: dashed 1px darkseagreen;
+}
+table.table-rl-02 th {line-height: 2.2;}
+table.table-rl-02 td:first-child {font-size: var(--fs-m);}
+table.table-rl-02 td:first-child ~ td {font-size: var(--fs-ss);}
+/* = ex-table td:not(first-child) */
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ テーブルフォントサイズ */
+/* ＝＝＝＝＝＝＝ セット */
+/* table-s */
+table.table-s thead th {font-size: var(--fs-sss);}
+table.table-s tbody th, table.table-s tbody td {
+	font-size: var(--fs-ss);
+}
+/* table-ss */
+table.table-ss thead th {font-size: var(--fs-4s);}
+table.table-ss tbody th, table.table-ss tbody td {
+	font-size: var(--fs-sss);
+}
+/* table-ms 初期設定 */
+table.table-ms thead th {font-size: var(--fs-ss);}
+table.table-ms tbody th, table.table-ms tbody td {
+	font-size: var(--fs-ms);
+}
+/* table-m */
+table.table-m thead th {font-size: var(--fs-ms);}
+table.table-m tbody th, table.table-m tbody td {
+	font-size: var(--fs-m);
+}
+/* table-ml */
+table.table-ml thead th {font-size: var(--fs-m);}
+table.table-ml tbody th, table.table-ml tbody td {
+	font-size: var(--fs-ml);
+}
+/* 個別 フォントサイズ */
+/* thead th */
+table.th-th-fs-3l thead th,
+table.th-th-fs-lll thead th {font-size: var(--fs-3l);}
+table.th-th-fs-2l thead th,
+table.th-th-fs-ll thead th {font-size: var(--fs-2l);}
+table.th-th-fs-l thead th {font-size: var(--fs-l);}
+table.th-th-fs-ml thead th {font-size: var(--fs-ml);}
+table.th-th-fs-m thead th {font-size: var(--fs-m);}
+table.th-th-fs-ms thead th {font-size: var(--fs-ms);}
+table.th-th-fs-s thead th {font-size: var(--fs-s);}
+table.th-th-fs-2s thead th,
+table.th-th-fs-ss thead th {font-size: var(--fs-ss);}
+table.th-th-fs-3s thead th,
+table.th-th-fs-sss thead th {font-size: var(--fs-sss);}
+table.th-th-fs-4s thead th {font-size: var(--fs-4s);}
+/* tbody th */
+table.tb-th-fs-3l tbody th,
+table.tb-th-fs-lll tbody th {font-size: var(--fs-3l);}
+table.tb-th-fs-2l tbody th,
+table.tb-th-fs-ll tbody th {font-size: var(--fs-2l);}
+table.tb-th-fs-l tbody th {font-size: var(--fs-l);}
+table.tb-th-fs-ml tbody th {font-size: var(--fs-ml);}
+table.tb-th-fs-m tbody th {font-size: var(--fs-m);}
+table.tb-th-fs-ms tbody th {font-size: var(--fs-ms);}
+table.tb-th-fs-s tbody th {font-size: var(--fs-s);}
+table.tb-th-fs-2s tbody th,
+table.tb-th-fs-ss tbody th {font-size: var(--fs-ss);}
+table.tb-th-fs-3s tbody th,
+table.tb-th-fs-sss tbody th {font-size: var(--fs-sss);}
+table.tb-th-fs-4s tbody th {font-size: var(--fs-4s);}
+/* tb */
+table.td-fs-3l tbody td,
+table.td-fs-lll tbody td {font-size: var(--fs-3l);}
+table.td-fs-2l tbody td,
+table.td-fs-ll tbody td {font-size: var(--fs-2l);}
+table.td-fs-l tbody td {font-size: var(--fs-l);}
+table.td-fs-ml tbody td {font-size: var(--fs-ml);}
+table.td-fs-m tbody td {font-size: var(--fs-m);}
+table.td-fs-ms tbody td {font-size: var(--fs-ms);}
+table.td-fs-s tbody td {font-size: var(--fs-s);}
+table.td-fs-2s tbody td,
+table.td-fs-ss tbody td {font-size: var(--fs-ss);}
+table.td-fs-3s tbody td,
+table.td-fs-sss tbody td {font-size: var(--fs-sss);}
+table.td-fs-4s tbody th {font-size: var(--fs-4s);}
+
+/* ＝＝＝＝＝＝＝ 隔セル */
+table.td-4n4-fs-sss td:nth-child(4n+4) {
+	font-size: var(--fs-3s);
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 線 */
+/* 実線 */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ セット */
+/* th-td-border */
+table.th-td-border thead th,
+table.th-td-border tbody th,
+table.th-td-border tbody td {
+	border: solid 1px #ddd;
+}
+/* ＝＝＝＝＝＝＝ 個別 */
+table.table-border,
+table.th-border thead th,
+table.tb-th-border tbody th,
+table.td-border tbody td {
+	border: solid 1px #ddd;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝ パターン */
+/* 罫線 ruled, ruled line */
+table.ruled-line thead th,
+table.ruled-line tbody th,
+table.ruled-line tbody td,
+table.ruled thead th,
+table.ruled tbody th,
+table.ruled tbody td {
+	border-top: solid 1px #bbb;
+	border-bottom: solid 1px #bbb;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 配色 */
+/* ＝＝＝＝＝＝＝ セット */
+
+/* 配色作成テンプレ - セットと個別 ab２色
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ th-a色-td-b色 */
+/*
+table.th-a色-td-b色 thead th,
+/* a色 個別 */
+/*
+table.th-a色 thead th,
+table.tb-th-a色 tbody th,
+table.td-a色 tbody td,
+table.td-1st-a色 tbody td:first-child,
+table.td-2nd-a色 tbody td:nth-child(2),
+table.td-3rd-a色 tbody td:nth-child(3),
+table.td-last-a色 tbody td:last-child {
+	background-color: a色;
+}
+/* セットtd先頭末尾隔色 */
+/*
+table.th-a色-td-b色 tbody th,
+table.th-a色-td-b色 tbody td:first-child,
+table.th-a色-td-b色.td-2n td:nth-child(2n),
+table.th-a色-td-b色.td-2n1 td:nth-child(2n+1),
+table.th-a色-td-b色.td-3n td:nth-child(3n),
+table.th-a色-td-b色.td-3n1 td:nth-child(3n+1),
+/* b色 個別 */
+/*
+table.th-b色 thead th,
+table.tb-th-b色 tbody th,
+table.td-b色 tbody td,
+table.td-1st-b色 tbody td:first-child,
+table.td-2nd-b色 tbody td:nth-child(2),
+table.td-3rd-b色 tbody td:nth-child(3),
+table.td-last-b色 tbody td:last-child {
+	background-color: b色;
+}
+配色作成テンプレ終わり */
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ eee */
+table.th-th-eee thead th {
+	background-color: #eee;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ ivory */
+table.th-ivory thead th,
+table.tb-th-ivory tbody th,
+table.td-ivory tbody td,
+table.td-1st-ivory tbody td:first-child,
+table.td-2nd-ivory tbody td:nth-child(2),
+table.td-3rd-ivory tbody td:nth-child(3),
+table.td-last-ivory tbody td:last-child {
+	background-color: ivory;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ th-lav-td-gw */
+table.th-lav-td-gw thead th,
+/* lavender 個別 */
+table.th-lav thead th,
+table.tb-th-lav tbody th,
+table.td-lav tbody td,
+table.td-1st-lav tbody td:first-child,
+table.td-2nd-lav tbody td:nth-child(2),
+table.td-3rd-lav tbody td:nth-child(3),
+table.td-last-lav tbody td:last-child {
+	background-color: lavender;
+}
+/* セット先頭末尾隔色 */
+table.th-lav-td-gw tbody th,
+table.th-lav-td-gw tbody td:first-child,
+table.th-lav-td-gw.td-2n td:nth-child(2n),
+table.th-lav-td-gw.td-2n1 td:nth-child(2n+1),
+table.th-lav-td-gw.td-3n td:nth-child(3n),
+table.th-lav-td-gw.td-3n1 td:nth-child(3n+1),
+/* ghostwhite 個別 */
+table.th-gw thead th,
+table.tb-th-gw tbody th,
+table.td-gw tbody td,
+table.td-1st-lav tbody td:first-child,
+table.td-2nd-lav tbody td:nth-child(2),
+table.td-3rd-lav tbody td:nth-child(3),
+table.td-last-lav tbody td:last-child {
+	background-color: ghostwhite;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ オレンジ th-or-td-ol */
+table.th-or-td-ol thead th,
+/* orange 個別 */
+table.th-or thead th,
+table.tb-th-or tbody th,
+table.td-or tbody td,
+table.td-1st-or tbody td:first-child,
+table.td-2nd-or tbody td:nth-child(2) ,
+table.td-3rd-or tbody td:nth-child(3) ,
+table.td-last-or tbody td:last-child {
+	background-color: #ffdb99; /* エクセルカラー */
+}
+/* セット先頭末尾隔色 */
+table.th-or-td-ol tbody th,
+table.th-or-td-ol tbody td:first-child,
+table.th-or-td-ol.td-2n td:nth-child(2n),
+table.th-or-td-ol.td-2n1 td:nth-child(2n+1),
+table.th-or-td-ol.td-3n td:nth-child(3n),
+table.th-or-td-ol.td-3n1 td:nth-child(3n+1),
+/* oldlace 個別 */
+table.th-ol thead th,
+table.tb-th-ol tbody th,
+table.td-ol tbody td,
+table.td-1st-ol tbody td:first-child,
+table.td-2nd-ol tbody td:nth-child(2) ,
+table.td-3rd-ol tbody td:nth-child(3) ,
+table.td-last-ol tbody td:last-child {
+	background-color: oldlace;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ th-lavenderblush-td-ivory */
+table.th-lavenderblush-td-ivory thead th,
+/* lavenderblush 個別 */
+table.th-lavenderblush thead th,
+table.tb-th-lavenderblush tbody th,
+table.td-lavenderblush tbody td,
+table.td-1st-lavenderblush tbody td:first-child,
+table.td-2nd-lavenderblush tbody td:nth-child(2),
+table.td-3rd-lavenderblush tbody td:nth-child(3),
+table.td-last-lavenderblush tbody td:last-child {
+	background-color: lavenderblush;
+}
+/* セット先頭末尾隔色 */
+table.th-lavenderblush-td-ivory tbody th,
+table.th-lavenderblush-td-ivory tbody td:first-child,
+table.th-lavenderblush-td-ivory.td-2n td:nth-child(2n),
+table.th-lavenderblush-td-ivory.td-2n1 td:nth-child(2n+1),
+table.th-lavenderblush-td-ivory.td-3n td:nth-child(3n),
+table.th-lavenderblush-td-ivory.td-3n1 td:nth-child(3n+1) {
+	background-color: ivory;
+}
+/* 特色 個別 */
+table.th-ex_blue thead th,
+table.tb-th-ex_blue tbody th,
+table.td-ex_blue tbody td,
+table.td-1st-ex_blue tbody td:first-child,
+table.td-2nd-ex_blue tbody td:nth-child(2),
+table.td-3rd-ex_blue tbody td:nth-child(3),
+table.td-last-ex_blue tbody td:last-child {
+	background-color: #D8E0F0;
+}
+table.th-ex_blue thead th,
+table.tb-th-ex_blue tbody th {
+	color: #435566;
+}
+/* green 個別 */
+table.th-green thead th,
+table.tb-th-green tbody th,
+table.td-green tbody td,
+table.td-1st-green tbody td:first-child,
+table.td-2nd-green tbody td:nth-child(2),
+table.td-3rd-green tbody td:nth-child(3),
+table.td-last-green tbody td:last-child {
+	background-color: green;
+}
+table.th-green thead th,
+table.tb-th-green tbody th {
+	color: white;
+}
+/* lavender 個別 */
+table.th-lavender thead th,
+table.tb-th-lavender tbody th,
+table.td-lavender tbody td,
+table.td-1st-lavender tbody td:first-child,
+table.td-2nd-lavender tbody td:nth-child(2),
+table.td-3rd-lavender tbody td:nth-child(3),
+table.td-last-lavender tbody td:last-child {
+	background-color: lavender;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 黒~白 */
+table.th-000 thead th,
+table.tb-th-000 tbody th,
+table.td-000 tbody td,
+table.td-1st-000 tbody td:first-child,
+table.td-2nd-000 tbody td:nth-child(2) ,
+table.td-3rd-000 tbody td:nth-child(3) ,
+table.td-last-000 tbody td:last-child {
+	background-color: #000;
+}
+table.th-111 thead th,
+table.tb-th-111 tbody th,
+table.td-111 tbody td,
+table.td-1st-111 tbody td:first-child,
+table.td-2nd-111 tbody td:nth-child(2),
+table.td-3rd-111 tbody td:nth-child(3),
+table.td-last-111 tbody td:last-child {
+	background-color: #111;
+}
+table.th-222 thead th,
+table.tb-th-222 tbody th,
+table.td-222 tbody td,
+table.td-1st-222 tbody td:first-child,
+table.td-2nd-222 tbody td:nth-child(2),
+table.td-3rd-222 tbody td:nth-child(3),
+table.td-last-222 tbody td:last-child {
+	background-color: #222;
+}
+table.th-333 thead th,
+table.tb-th-333 tbody th,
+table.td-333 tbody td,
+table.td-1st-333 tbody td:first-child,
+table.td-2nd-333 tbody td:nth-child(2),
+table.td-3rd-333 tbody td:nth-child(3),
+table.td-last-333 tbody td:last-child {
+	background-color: #333;
+}
+table.th-444 thead th,
+table.tb-th-444 tbody th,
+table.td-444 tbody td,
+table.td-1st-444 tbody td:first-child,
+table.td-2nd-444 tbody td:nth-child(2),
+table.td-3rd-444 tbody td:nth-child(3),
+table.td-last-444 tbody td:last-child {
+	background-color: #444;
+}
+table.th-555 thead th,
+table.tb-th-555 tbody th,
+table.td-555 tbody td,
+table.td-1st-555 tbody td:first-child,
+table.td-2nd-555 tbody td:nth-child(2),
+table.td-3rd-555 tbody td:nth-child(3),
+table.td-last-555 tbody td:last-child {
+	background-color: #555;
+}
+table.th-666 thead th,
+table.tb-th-666 tbody th,
+table.td-666 tbody td,
+table.td-1st-666 tbody td:first-child,
+table.td-2nd-666 tbody td:nth-child(2),
+table.td-3rd-666 tbody td:nth-child(3),
+table.td-last-666 tbody td:last-child {
+	background-color: #666;
+}
+table.th-777 thead th,
+table.tb-th-777 tbody th,
+table.td-777 tbody td,
+table.td-1st-777 tbody td:first-child,
+table.td-2nd-777 tbody td:nth-child(2),
+table.td-3rd-777 tbody td:nth-child(3),
+table.td-last-777 tbody td:last-child {
+	background-color: #777;
+}
+table.th-888 thead th,
+table.tb-th-888 tbody th,
+table.td-888 tbody td,
+table.td-1st-888 tbody td:first-child,
+table.td-2nd-888 tbody td:nth-child(2),
+table.td-3rd-888 tbody td:nth-child(3),
+table.td-last-888 tbody td:last-child {
+	background-color: #888;
+}
+table.th-999 thead th,
+table.tb-th-999 tbody th,
+table.td-999 tbody td,
+table.td-1st-999 tbody td:first-child,
+table.td-2nd-999 tbody td:nth-child(2),
+table.td-3rd-999 tbody td:nth-child(3),
+table.td-last-999 tbody td:last-child {
+	background-color: #999;
+}
+table.th-aaa thead th,
+table.tb-th-aaa tbody th,
+table.td-aaa tbody td,
+table.td-1st-aaa tbody td:first-child,
+table.td-2nd-aaa tbody td:nth-child(2),
+table.td-3rd-aaa tbody td:nth-child(3),
+table.td-last-aaa tbody td:last-child {
+	background-color: #aaa;
+}
+table.th-bbb thead th,
+table.tb-th-bbb tbody th,
+table.td-bbb tbody td,
+table.td-1st-bbb tbody td:first-child,
+table.td-2nd-bbb tbody td:nth-child(2),
+table.td-3rd-bbb tbody td:nth-child(3),
+table.td-last-bbb tbody td:last-child {
+	background-color: #bbb;
+}
+table.th-ccc thead th,
+table.tb-th-ccc tbody th,
+table.td-ccc tbody td,
+table.td-1st-ccc tbody td:first-child,
+table.td-2nd-ccc tbody td:nth-child(2),
+table.td-3rd-ccc tbody td:nth-child(3),
+table.td-last-ccc tbody td:last-child {
+	background-color: #ccc;
+}
+table.th-ddd thead th,
+table.tb-th-ddd tbody th,
+table.td-ddd tbody td,
+table.td-1st-ddd tbody td:first-child,
+table.td-2nd-ddd tbody td:nth-child(2),
+table.td-3rd-ddd tbody td:nth-child(3),
+table.td-last-ddd tbody td:last-child {
+	background-color: #ddd;
+}
+table.th-th-eee thead th,
+table.tb-th-eee tbody th,
+table.td-eee tbody td,
+table.td-1st-eee tbody td:first-child,
+table.td-2nd-eee tbody td:nth-child(2),
+table.td-3rd-eee tbody td:nth-child(3),
+table.td-last-eee tbody td:last-child {
+	background-color: #eee;
+}
+table.th-fff thead th,
+table.tb-th-fff tbody th,
+table.td-fff tbody td,
+table.td-1st-fff tbody td:first-child,
+table.td-2nd-fff tbody td:nth-child(2),
+table.td-3rd-fff tbody td:nth-child(3),
+table.td-last-fff tbody td:last-child {
+	background-color: #fff;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 揃え位置 */
+table.td-center-last-4th td:nth-last-child(4) {text-align: center;}
+
+/* ーーーーーーーーーーーーーー Chrome 初期設定復旧  */
+table.initial {
+	border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+	display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    border-color: grey;
+	margin: initial;
+	text-align: initial;
+	background-color: initial;
+}
+table.initial th,
+table.initial td {
+	padding: initial;
+	border: initial;
+}
+table.initial th {font-weight: bold}
+
+/* ーーーーーーーーーーーーーー テーブルセル高さ */
+table.thead-h-2_5em thead th {height: 2.5em!important;}
+table.thead-h-2_4em thead th {height: 2.4em!important;}
+table.thead-h-2_3em thead th {height: 2.3em!important;}
+table.thead-h-2_2em thead th {height: 2.2em!important;}
+table.thead-h-2_1em thead th {height: 2.1em!important;}
+table.thead-h-2em thead th {height: 2em!important;}
+table.thead-h-1_9em thead th {height: 1.9em!important;}
+table.thead-h-1_8em thead th {height: 1.8em!important;}
+
+/* ーーーーーーーーーーーーーー テーブルセルパディング */
+/* ーーーーー thead th */
+/* plr */
+table.thead-th-plr-0 thead th {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-plr-01em thead th {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-plr-02em thead th {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-plr-03em thead th {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-plr-04em thead th {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-plr-05em thead th {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-plr-06em thead th {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-plr-07em thead th {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-plr-08em thead th {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-plr-09em thead th {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-plr-1em thead th {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.thead-th-prl-0 thead th {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-prl-01em thead th {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-prl-02em thead th {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-prl-03em thead th {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-prl-04em thead th {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-prl-05em thead th {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-prl-06em thead th {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-prl-07em thead th {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-prl-08em thead th {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-prl-09em thead th {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-prl-1em thead th {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー tbody th */
+/* plr */
+table.tb-th-plr-0 tbody th {padding-right: 0!important; padding-left: 0!important;}
+table.tb-th-plr-01em tbody th {padding-right: .1em!important; padding-left: .1em!important;}
+table.tb-th-plr-02em tbody th {padding-right: .2em!important; padding-left: .2em!important;}
+table.tb-th-plr-03em tbody th {padding-right: .3em!important; padding-left: .3em!important;}
+table.tb-th-plr-04em tbody th {padding-right: .4em!important; padding-left: .4em!important;}
+table.tb-th-plr-05em tbody th {padding-right: .5em!important; padding-left: .5em!important;}
+table.tb-th-plr-06em tbody th {padding-right: .6em!important; padding-left: .6em!important;}
+table.tb-th-plr-07em tbody th {padding-right: .7em!important; padding-left: .7em!important;}
+table.tb-th-plr-08em tbody th {padding-right: .8em!important; padding-left: .8em!important;}
+table.tb-th-plr-09em tbody th {padding-right: .9em!important; padding-left: .9em!important;}
+table.tb-th-plr-1em tbody th {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.tb-th-prl-0 tbody th {padding-right: 0!important; padding-left: 0!important;}
+table.tb-th-prl-01em tbody th {padding-right: .1em!important; padding-left: .1em!important;}
+table.tb-th-prl-02em tbody th {padding-right: .2em!important; padding-left: .2em!important;}
+table.tb-th-prl-03em tbody th {padding-right: .3em!important; padding-left: .3em!important;}
+table.tb-th-prl-04em tbody th {padding-right: .4em!important; padding-left: .4em!important;}
+table.tb-th-prl-05em tbody th {padding-right: .5em!important; padding-left: .5em!important;}
+table.tb-th-prl-06em tbody th {padding-right: .6em!important; padding-left: .6em!important;}
+table.tb-th-prl-07em tbody th {padding-right: .7em!important; padding-left: .7em!important;}
+table.tb-th-prl-08em tbody th {padding-right: .8em!important; padding-left: .8em!important;}
+table.tb-th-prl-09em tbody th {padding-right: .9em!important; padding-left: .9em!important;}
+table.tb-th-prl-1em tbody th {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー th */
+/* plr */
+table.th-plr-0 th  {padding-right: 0!important; padding-left: 0!important;}
+table.th-plr-01em th  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-plr-02em th  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-plr-03em th  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-plr-04em th  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-plr-05em th  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-plr-06em th  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-plr-07em th  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-plr-08em th  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-plr-09em th  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-plr-1em th  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.th-prl-0 th  {padding-right: 0!important; padding-left: 0!important;}
+table.th-prl-01em th  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-prl-02em th  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-prl-03em th  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-prl-04em th  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-prl-05em th  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-prl-06em th  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-prl-07em th  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-prl-08em th  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-prl-09em th  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-prl-1em th  {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー td */
+/* plr */
+table.td-plr-0 td  {padding-right: 0!important; padding-left: 0!important;}
+table.td-plr-01em td  {padding-right: .1em!important; padding-left: .1em!important;}
+table.td-plr-02em td  {padding-right: .2em!important; padding-left: .2em!important;}
+table.td-plr-03em td  {padding-right: .3em!important; padding-left: .3em!important;}
+table.td-plr-04em td  {padding-right: .4em!important; padding-left: .4em!important;}
+table.td-plr-05em td  {padding-right: .5em!important; padding-left: .5em!important;}
+table.td-plr-06em td  {padding-right: .6em!important; padding-left: .6em!important;}
+table.td-plr-07em td  {padding-right: .7em!important; padding-left: .7em!important;}
+table.td-plr-08em td  {padding-right: .8em!important; padding-left: .8em!important;}
+table.td-plr-09em td  {padding-right: .9em!important; padding-left: .9em!important;}
+table.td-plr-1em td  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.td-prl-0 td  {padding-right: 0!important; padding-left: 0!important;}
+table.td-prl-01em td  {padding-right: .1em!important; padding-left: .1em!important;}
+table.td-prl-02em td  {padding-right: .2em!important; padding-left: .2em!important;}
+table.td-prl-03em td  {padding-right: .3em!important; padding-left: .3em!important;}
+table.td-prl-04em td  {padding-right: .4em!important; padding-left: .4em!important;}
+table.td-prl-05em td  {padding-right: .5em!important; padding-left: .5em!important;}
+table.td-prl-06em td  {padding-right: .6em!important; padding-left: .6em!important;}
+table.td-prl-07em td  {padding-right: .7em!important; padding-left: .7em!important;}
+table.td-prl-08em td  {padding-right: .8em!important; padding-left: .8em!important;}
+table.td-prl-09em td  {padding-right: .9em!important; padding-left: .9em!important;}
+table.td-prl-1em td  {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー th td */
+/* plr */
+table.th-td-plr-0 th  {padding-right: 0!important; padding-left: 0!important;}
+table.th-td-plr-01em th  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-td-plr-02em th  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-td-plr-03em th  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-td-plr-04em th  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-td-plr-05em th  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-td-plr-06em th  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-td-plr-07em th  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-td-plr-08em th  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-td-plr-09em th  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-td-plr-1em th  {padding-right: 1em!important; padding-left: 1em!important;}
+table.th-td-plr-01em td  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-td-plr-02em td  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-td-plr-03em td  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-td-plr-04em td  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-td-plr-05em td  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-td-plr-06em td  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-td-plr-07em td  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-td-plr-08em td  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-td-plr-09em td  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-td-plr-1em td  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.th-td-prl-0 th  {padding-right: 0!important; padding-left: 0!important;}
+table.th-td-prl-01em th  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-td-prl-02em th  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-td-prl-03em th  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-td-prl-04em th  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-td-prl-05em th  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-td-prl-06em th  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-td-prl-07em th  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-td-prl-08em th  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-td-prl-09em th  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-td-prl-1em th  {padding-right: 1em!important; padding-left: 1em!important;}
+table.th-td-prl-01em td  {padding-right: .1em!important; padding-left: .1em!important;}
+table.th-td-prl-02em td  {padding-right: .2em!important; padding-left: .2em!important;}
+table.th-td-prl-03em td  {padding-right: .3em!important; padding-left: .3em!important;}
+table.th-td-prl-04em td  {padding-right: .4em!important; padding-left: .4em!important;}
+table.th-td-prl-05em td  {padding-right: .5em!important; padding-left: .5em!important;}
+table.th-td-prl-06em td  {padding-right: .6em!important; padding-left: .6em!important;}
+table.th-td-prl-07em td  {padding-right: .7em!important; padding-left: .7em!important;}
+table.th-td-prl-08em td  {padding-right: .8em!important; padding-left: .8em!important;}
+table.th-td-prl-09em td  {padding-right: .9em!important; padding-left: .9em!important;}
+table.th-td-prl-1em td  {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー thead-th-last */
+/* plr */
+table.thead-th-last-plr-0 thead th:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-last-plr-01em thead th:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-last-plr-02em thead th:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-last-plr-03em thead th:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-last-plr-04em thead th:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-last-plr-05em thead th:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-last-plr-06em thead th:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-last-plr-07em thead th:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-last-plr-08em thead th:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-last-plr-09em thead th:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-last-plr-1em thead th:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.thead-th-last-prl-0 thead th:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-last-prl-01em thead th:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-last-prl-02em thead th:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-last-prl-03em thead th:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-last-prl-04em thead th:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-last-prl-05em thead th:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-last-prl-06em thead th:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-last-prl-07em thead th:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-last-prl-08em thead th:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-last-prl-09em thead th:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-last-prl-1em thead th:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー td-last */
+/* plr */
+table.td-last-plr-0 td:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.td-last-plr-01em td:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.td-last-plr-02em td:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.td-last-plr-03em td:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.td-last-plr-04em td:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.td-last-plr-05em td:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.td-last-plr-06em td:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.td-last-plr-07em td:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.td-last-plr-08em td:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.td-last-plr-09em td:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.td-last-plr-1em td:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.td-last-prl-0 td:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.td-last-prl-01em td:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.td-last-prl-02em td:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.td-last-prl-03em td:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.td-last-prl-04em td:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.td-last-prl-05em td:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.td-last-prl-06em td:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.td-last-prl-07em td:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.td-last-prl-08em td:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.td-last-prl-09em td:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.td-last-prl-1em td:last-child  {padding-right: 1em!important; padding-left: 1em!important;}/* ーーーーー thead-th-td-last thead th */
+/* plr */
+table.thead-th-td-last-plr-0 thead th:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-td-last-plr-01em thead th:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-td-last-plr-02em thead th:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-td-last-plr-03em thead th:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-td-last-plr-04em thead th:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-td-last-plr-05em thead th:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-td-last-plr-06em thead th:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-td-last-plr-07em thead th:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-td-last-plr-08em thead th:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-td-last-plr-09em thead th:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-td-last-plr-1em thead th:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.thead-th-td-last-prl-0 thead th:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-td-last-prl-01em thead th:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-td-last-prl-02em thead th:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-td-last-prl-03em thead th:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-td-last-prl-04em thead th:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-td-last-prl-05em thead th:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-td-last-prl-06em thead th:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-td-last-prl-07em thead th:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-td-last-prl-08em thead th:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-td-last-prl-09em thead th:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-td-last-prl-1em thead th:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* ーーーーー thead-th-td-last td */
+/* plr */
+table.thead-th-td-last-plr-0 td:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-td-last-plr-01em td:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-td-last-plr-02em td:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-td-last-plr-03em td:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-td-last-plr-04em td:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-td-last-plr-05em td:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-td-last-plr-06em td:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-td-last-plr-07em td:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-td-last-plr-08em td:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-td-last-plr-09em td:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-td-last-plr-1em td:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+/* prl */
+table.thead-th-td-last-prl-0 td:last-child  {padding-right: 0!important; padding-left: 0!important;}
+table.thead-th-td-last-prl-01em td:last-child  {padding-right: .1em!important; padding-left: .1em!important;}
+table.thead-th-td-last-prl-02em td:last-child  {padding-right: .2em!important; padding-left: .2em!important;}
+table.thead-th-td-last-prl-03em td:last-child  {padding-right: .3em!important; padding-left: .3em!important;}
+table.thead-th-td-last-prl-04em td:last-child  {padding-right: .4em!important; padding-left: .4em!important;}
+table.thead-th-td-last-prl-05em td:last-child  {padding-right: .5em!important; padding-left: .5em!important;}
+table.thead-th-td-last-prl-06em td:last-child  {padding-right: .6em!important; padding-left: .6em!important;}
+table.thead-th-td-last-prl-07em td:last-child  {padding-right: .7em!important; padding-left: .7em!important;}
+table.thead-th-td-last-prl-08em td:last-child  {padding-right: .8em!important; padding-left: .8em!important;}
+table.thead-th-td-last-prl-09em td:last-child  {padding-right: .9em!important; padding-left: .9em!important;}
+table.thead-th-td-last-prl-1em td:last-child  {padding-right: 1em!important; padding-left: 1em!important;}
+
+/* ーーーーーーーーーーーーーー テーブル線 */
+/*
+table,
+table thead, table tbody,
+table th, table td,
+table colgroup {
+	border: solid 1.3px #ddd;
+} */
+/* 線あり個別指定 */
+table.border-table,
+table.table-border {
+	border: solid 1px #ddd;
+}
+table.border-thead thead {
+	border: solid 1.3px #ddd;
+}
+table.border-tbody tbody {
+	border: solid 1.3px #ddd;
+}
+table.border-colgroup colgroup {
+	border: solid 1.3px #ddd;
+}
+table.border-th th {
+	border: solid 1.3px #ddd;
+}
+table.border-td td {
+	border: solid 1.3px #ddd;
+}
+/* 線あり複数指定 */
+table.border-thead-tbody thead, table.border-thead-tbody tbody,
+table.border-tt thead, table.border-tt tbody {
+	border: solid 1.3px #ddd;
+}
+table.border-thead-tbody-col thead, table.border-thead-tbody-col tbody, table.border-thead-tbody-colgroup colgroup,
+table.border-ttc thead, table.border-ttc tbody, table.border-ttc colgroup {
+	border: solid 1.3px #ddd;
+}
+table.border-th-td th, table.border-th-td td {
+	border: solid 1.3px #ddd;
+}
+/* 線あり全指定 */
+table.border th, table.border td {
+	border: solid 1.3px #ddd;
+}
+/* 全線なし
+table.noborder,
+table.noborder thead, table.noborder tbody,
+table.noborder th, table.noborder td,
+table.noborder colgroup {
+	border: none;
+} */
+/* thead tbody th td th-td colgroup 線なし個別指定
+table.noborder-thead thead, table.noborder-tbody tbody,
+table.noborder-th th, table.noborder-td td,
+table.noborder-th-td th, table.noborder-th-td td,
+table.noborder-colgroup colgroup {
+	border: none;
+} */
+/* テーブル線色 */
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーー テーブル文字色 */
+/* thead */
+table.thead-c-ddd thead {color: #ddd;}
+table.thead-c-eee thead {color: #eee;}
+table.thead-c-fff thead,
+table.thead-c-white thead {color: #fff;}
+table.thead-c-snow thead {color: snow;}
+table.thead-c-lavenderblush thead {color: lavenderblush;}
+table.thead-c-lavender thead {color: lavender;}
+/* th */
+table.th-c-ddd th {color: #ddd;}
+table.th-c-eee th {color: #eee;}
+table.th-c-fff th,
+table.th-c-white th {color: #fff;}
+table.th-c-lavenderblush th {color: lavenderblush;}
+table.th-c-lavender th {color: lavender;}
+/* td */
+table.td-c-777 td {color: #777;}
+table.td-c-888 td {color: #888;}
+table.td-c-999 td {color: #999;}
+table.td-c-ddd td {color: #ddd;}
+table.td-c-eee td {color: #eee;}
+table.td-c-fff td,
+table.td-c-white td {color: #fff;}
+table.td-c-ly td {color: lightyellow;}
+table.td-c-ivory td {color: ivory;}
+/* 最終 td */
+table.td-last-c-fff td:last-child,
+table.td-last-c-white td:last-child {color: #fff;}
+/* tbody th */
+table.tb-th-c-ddd tbody th {color: #ddd;}
+table.tb-th-c-eee tbody th {color: #eee;}
+table.tb-th-c-fff tbody th,
+table.tb-th-c-white tbody th {color: #fff;}
+table.tb-th-c-ivory tbody th {color: ivory;}
+table.tb-th-c-ly tbody th {color: lightyellow;}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーー テーブル背景色 */
+/* thead */
+table.thead-bg-ddd thead {background-color: #ddd;}
+table.thead-bg-eee thead {background-color: #eee;}
+table.thead-bg-fff thead,
+table.thead-bg-white thead {background-color: #fff;}
+table.thead-bg-snow thead {background-color: snow;}
+table.thead-bg-lavenderblush thead {background-color: lavenderblush;}
+table.thead-bg-lavender thead {background-color: lavender;}
+/* th */
+table.th-bg-ddd th {background-color: #ddd;}
+table.th-bg-eee th {background-color: #eee;}
+table.th-bg-fff th,
+table.th-bg-white th {background-color: #fff;}
+table.th-bg-lavenderblush th {background-color: lavenderblush;}
+table.th-bg-lavender th {background-color: lavender;}
+/* td */
+table.td-bg-fff td,
+table.td-bg-white td {background-color: #fff;}
+table.td-bg-ly td {background-color: lightyellow;}
+table.td-bg-ivory td {background-color: ivory;}
+
+/* 最初 td */
+table.td-1st-bg-ivory td:first-child {background-color: ivory;}
+/* 最終 td */
+table.td-last-bg-fff td:last-child,
+table.td-last-bg-white td:last-child {background-color: #fff;}
+/* tbody th */
+table.tb-th-bg-ddd tbody th {background-color: #ddd;}
+table.tb-th-bg-eee tbody th {background-color: #eee;}
+table.tb-th-bg-fff tbody th,
+table.tb-th-bg-white tbody th {background-color: #fff;}
+table.tb-th-bg-ivory tbody th {background-color: ivory;}
+table.tb-th-bg-ly tbody th {background-color: lightyellow;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 色別 */
+/* ghostwhite */
+table.thead-bg-ghostwhite thead,
+table.th-bg-ghostwhite th,
+table.td-bg-ghostwhite td,
+table.tb-th-bg-ghostwhite tbody th,
+table.td-1st-bg-ghostwhite td:first-child,
+table.td-2nd-bg-ghostwhite td:nth-child(2),
+table.td-3rd-bg-ghostwhite td:nth-child(3),
+table.td-4th-bg-ghostwhite td:nth-child(4),
+table.td-5th-bg-ghostwhite td:nth-child(5),
+table.td-6th-bg-ghostwhite td:nth-child(6),
+table.td-7th-bg-ghostwhite td:nth-child(7),
+table.td-8th-bg-ghostwhite td:nth-child(8),
+table.td-9th-bg-ghostwhite td:nth-child(9),
+table.td-10th-bg-ghostwhite td:nth-child(10),
+table.td-last-bg-ghostwhite td:last-child,
+table.td-2n-bg-ghostwhite td:nth-child(2n),
+table.td-even-bg-ghostwhite td:nth-child(2n),
+table.td-2n1-bg-ghostwhite td:nth-child(2n+1),
+table.td-odd-bg-ghostwhite td:nth-child(2n+1),
+table.td-3n-bg-ghostwhite td:nth-child(3n),
+table.td-3n1-bg-ghostwhite td:nth-child(3n+1),
+table.td-3n2-bg-ghostwhite td:nth-child(3n+2) {
+	background-color: ghostwhite;
+}
+
+/* ーーーーーーーーーーーーーーーーーーー テーブル配色 */
+/* 隔２色-peachpuff-seashell, -seashell-peachpuff */
+table.sep-col-peachpuff-seashell th,
+table.sep-row-peachpuff-seashell th,
+table.sep-col-seashell-peachpuff th,
+table.sep-row-seashell-peachpuff th,
+table-peachpuff-seashell th,
+table.row-peachpuff-seashell th,
+table-seashell-peachpuff th,
+table.row-seashell-peachpuff th {
+	background-color: #eee;
+}
+/* 隔*列２色 */
+table.sep-col-peachpuff-seashell td:nth-child(odd),
+table.sep-col-seashell-peachpuff td:nth-child(even),
+table-peachpuff-seashell td:nth-child(odd),
+table-seashell-peachpuff td:nth-child(even) {
+	background-color: peachpuff;
+}
+table.sep-col-peachpuff-seashell td:nth-child(even),
+table.sep-col-seashell-peachpuff td:nth-child(odd),
+table-peachpuff-seashell td:nth-child(even),
+table-seashell-peachpuff td:nth-child(odd) {
+	background-color: seashell;
+}
+/* 隔*行２色 */
+table.sep-row-peachpuff-seashell tbody tr:nth-child(odd),
+table.sep-row-seashell-peachpuff tbody tr:nth-child(even),
+table.row-peachpuff-seashell tbody tr:nth-child(odd),
+table.row-seashell-peachpuff tbody tr:nth-child(even) {
+	background-color: peachpuff;
+}
+table.sep-row-peachpuff-seashell tbody tr:nth-child(even),
+table.sep-row-seashell-peachpuff tbody tr:nth-child(odd),
+table.row-peachpuff-seashell tbody tr:nth-child(even),
+table.row-seashell-peachpuff tbody tr:nth-child(odd) {
+	background-color: seashell;
+}
+/* ーーーーーーーーーーーーーーーーーーーー ダークカーキセット */
+table.darkkhaki-set thead {
+	color: white;
+	background-color: darkkhaki;
+}
+table.darkkhaki-set tbody th {background-color: beige;}
+table.darkkhaki-set td {background-color: white;}
+
+table.border-s1-c-000 {border: solid 1.3px #000;}
+table.border-s1-c-111 {border: solid 1.3px #111;}
+table.border-s1-c-222 {border: solid 1.3px #222;}
+table.border-s1-c-333 {border: solid 1.3px #333;}
+table.border-s1-c-444 {border: solid 1.3px #444;}
+table.border-s1-c-555 {border: solid 1.3px #555;}
+table.border-s1-c-666 {border: solid 1.3px #666;}
+table.border-s1-c-777 {border: solid 1.3px #777;}
+table.border-s1-c-888 {border: solid 1.3px #888;}
+table.border-s1-c-999 {border: solid 1.3px #999;}
+table.border-s1-c-aaa {border: solid 1.3px #aaa;}
+table.border-s1-c-bbb {border: solid 1.3px #bbb;}
+table.border-s1-c-ccc {border: solid 1.3px #ccc;}
+table.border-s1-c-ddd {border: solid 1.3px #ddd;}
+table.border-s1-c-eee {border: solid 1.3px #eee;}
+table.border-s1-c-fff {border: solid 1.3px #fff;}
+
+/* テーブル td */
+table td.border {border: solid 1.3px #ddd;}
+table td.border-white {border: solid 1.3px white;}
+/* 線太色 */
+table.border-s1-000 {border: solid 1.3px #000;}
+table.border-s1-111 {border: solid 1.3px #111;}
+table.border-s1-222 {border: solid 1.3px #222;}
+table.border-s1-333 {border: solid 1.3px #333;}
+table.border-s1-444 {border: solid 1.3px #444;}
+table.border-s1-555 {border: solid 1.3px #555;}
+table.border-s1-666 {border: solid 1.3px #666;}
+table.border-s1-777 {border: solid 1.3px #777;}
+table.border-s1-888 {border: solid 1.3px #888;}
+table.border-s1-999 {border: solid 1.3px #999;}
+table.border-s1-aaa {border: solid 1.3px #aaa;}
+table.border-s1-bbb {border: solid 1.3px #bbb;}
+table.border-s1-ccc {border: solid 1.3px #ccc;}
+table.border-s1-ddd {border: solid 1.3px #ddd;}
+table.border-s1#ddd {border: solid 1.3px #ddd;}
+table.border-s1-eee {border: solid 1.3px #eee;}
+table.border-s1-fff {border: solid 1.3px #fff;}
+
+table.border-1e {border: solid 1.3px #eee;}
+/* テーブル線幅 */
+table.border-2px td {border-width: 2px}
+/* テーブル線色 */
+table.border-white td {border-color: white}
+
+
+/* テーブル td 幅 % */
+table.td-w-1p td {display: inline-block; width: 1%}
+table.td-w-2p td {display: inline-block; width: 2%}
+table.td-w-3p td {display: inline-block; width: 3%}
+table.td-w-4p td {display: inline-block; width: 4%}
+table.td-w-5p td {display: inline-block; width: 5%}
+table.td-w-6p td {display: inline-block; width: 6%}
+table.td-w-7p td {display: inline-block; width: 7%}
+table.td-w-8p td {display: inline-block; width: 8%}
+table.td-w-9p td {display: inline-block; width: 9%}
+table.td-w-10p td {display: inline-block; width: 10%}
+table.td-w-11p td {display: inline-block; width: 11%}
+table.td-w-1111p td {display: inline-block; width: 11.11%}/* 1/9 */
+table.td-w-12p td {display: inline-block; width: 12%}
+table.td-w-125p td {display: inline-block; width: 12.5%}/* 1/8 */
+table.td-w-13p td {display: inline-block; width: 13%}
+table.td-w-14p td {display: inline-block; width: 14%}
+table.td-w-1428p td {display: inline-block; width: 14.28%}/* 1/7 */
+table.td-w-15p td {display: inline-block; width: 15%}
+table.td-w-16p td {display: inline-block; width: 16%}
+table.td-w-1666p td {display: inline-block; width: 16.66%}/* 1/6 */
+table.td-w-17p td {display: inline-block; width: 17%}
+table.td-w-18p td {display: inline-block; width: 18%}
+table.td-w-19p td {display: inline-block; width: 19%}
+table.td-w-20p td {display: inline-block; width: 20%}
+table.td-w-21p td {display: inline-block; width: 21%}
+table.td-w-22p td {display: inline-block; width: 22%}
+table.td-w-23p td {display: inline-block; width: 23%}
+table.td-w-24p td {display: inline-block; width: 24%}
+table.td-w-25p td {display: inline-block; width: 25%}
+table.td-w-26p td {display: inline-block; width: 26%}
+table.td-w-27p td {display: inline-block; width: 27%}
+table.td-w-28p td {display: inline-block; width: 28%}
+table.td-w-29p td {display: inline-block; width: 29%}
+table.td-w-30p td {display: inline-block; width: 30%}
+table.td-w-31p td {display: inline-block; width: 31%}
+table.td-w-32p td {display: inline-block; width: 32%}
+table.td-w-33p td {display: inline-block; width: 33%}
+table.td-w-3333p td {display: inline-block; width: 33.33%}
+table.td-w-34p td {display: inline-block; width: 34%}
+table.td-w-35p td {display: inline-block; width: 35%}
+table.td-w-36p td {display: inline-block; width: 36%}
+table.td-w-37p td {display: inline-block; width: 37%}
+table.td-w-38p td {display: inline-block; width: 38%}
+table.td-w-39p td {display: inline-block; width: 39%}
+table.td-w-40p td {display: inline-block; width: 40%}
+table.td-w-41p td {display: inline-block; width: 41%}
+table.td-w-42p td {display: inline-block; width: 42%}
+table.td-w-43p td {display: inline-block; width: 43%}
+table.td-w-44p td {display: inline-block; width: 44%}
+table.td-w-45p td {display: inline-block; width: 45%}
+table.td-w-46p td {display: inline-block; width: 46%}
+table.td-w-47p td {display: inline-block; width: 47%}
+table.td-w-48p td {display: inline-block; width: 48%}
+table.td-w-49p td {display: inline-block; width: 49%}
+table.td-w-50p td {display: inline-block; width: 50%}
+
+/* テーブル td 幅 rem */
+table.td-w-1rem td {display: inline-block; width: 1rem}
+table.td-w-2rem td {display: inline-block; width: 2rem}
+table.td-w-3rem td {display: inline-block; width: 3rem}
+table.td-w-4rem td {display: inline-block; width: 4rem}
+table.td-w-5rem td {display: inline-block; width: 5rem}
+table.td-w-6rem td {display: inline-block; width: 6rem}
+table.td-w-61rem td {display: inline-block; width: 6.1rem}
+table.td-w-62rem td {display: inline-block; width: 6.2rem}
+table.td-w-7rem td {display: inline-block; width: 7rem}
+table.td-w-8rem td {display: inline-block; width: 8rem}
+table.td-w-9rem td {display: inline-block; width: 9rem}
+table.td-w-10rem td {display: inline-block; width: 10rem}
+/* テーブル個別td幅 */
+table.ftd-75px td:first-child {display: inline-block; width: 75px;}
+table.ftd-80px td:first-child {display: inline-block; width: 80px;}
+
+.td-w {
+	display: inline-block;
+	padding: 0.1rem 0.5rem 0.2rem;
+	line-height: 1.7rem;
+}
+
+
+table.narrow thead.lh-12 {line-height: 1.2rem;}
+table.narrow thead.lh-13 {line-height: 1.3rem;}
+table.narrow thead.lh-14 {line-height: 1.4rem;}
+table.narrow thead.lh-15 {line-height: 1.5rem;}
+table.narrow.td_pb-02 td {padding-bottom: 0.2rem;}
+
+/* ーーーーーーーーーーーーーー テーブル狭S */
+table.narrow.narrow-s {
+	line-height: 1.4;
+}
+table.narrow.narrow-s th,
+table.narrow.narrow-s td {
+	padding: 0.15rem 0.4rem 0.1rem;
+}
+/* テーブル3 */
+table.table-3 {margin: 0.2rem 0 0;}
+
+table.table-3 td {padding: 0.15rem 0 0;}
+ 
+table.table-3  td:last-child {white-space: nowrap}
+
+/* テーブル4 */
+table.table-4 th {
+	text-align: left;
+	background-color: brown;
+}
+table.table-4 td:first-child {
+	background: peachpuff;
+	white-space: nowrap;
+}
+
+/* テーブルボーダー幅色 */
+table.b-white-2 td {border: solid 2px white;}
+
+/* ーーーーーーーーーーーーーー ２カラムテーブル */
+.table-2c {
+	display: flex;
+}
+
+/* テーブルth,tdテキスト位置 */
+/*順*/
+table.th-1st-center th:first-child {text-align: center}
+table.th-2nd-center th:nth-child(2) {text-align: center}
+table.th-3rd-center th:nth-child(3) {text-align: center}
+table.th-4th-center th:nth-child(4) {text-align: center}
+table.th-5th-center th:nth-child(5) {text-align: center}
+table.th-1st-right th:first-child {text-align: right}
+table.th-2nd-right th:nth-child(2) {text-align: right}
+table.th-3rd-right th:nth-child(3) {text-align: right}
+table.th-4th-right th:nth-child(4) {text-align: right}
+table.th-5th-right th:nth-child(5) {text-align: right}
+table.th-1st-left th:first-child {text-align: left}
+table.th-2nd-left th:nth-child(2) {text-align: left}
+table.th-3rd-left th:nth-child(3) {text-align: left}
+table.th-4th-left th:nth-child(4) {text-align: left}
+table.th-5th-left th:nth-child(5) {text-align: left}
+
+table.td-1st-center td:first-child {text-align: center}
+table.td-2nd-center td:nth-child(2) {text-align: center}
+table.td-3rd-center td:nth-child(3) {text-align: center}
+table.td-4th-center td:nth-child(4) {text-align: center}
+table.td-5th-center td:nth-child(5) {text-align: center}
+table.td-1st-right td:first-child {text-align: right}
+table.td-2nd-right td:nth-child(2) {text-align: right}
+table.td-3rd-right td:nth-child(3) {text-align: right}
+table.td-4th-right td:nth-child(4) {text-align: right}
+table.td-5th-right td:nth-child(5) {text-align: right}
+table.td-1st-left td:first-child {text-align: left}
+table.td-2nd-left td:nth-child(2) {text-align: left}
+table.td-3rd-left td:nth-child(3) {text-align: left}
+table.td-4th-left td:nth-child(4) {text-align: left}
+table.td-5th-left td:nth-child(5) {text-align: left}
+
+/* 文字揃え 隔セル th td */
+table.th-even-center th:nth-child(2n),
+table.th-odd-center th:nth-child(2n+1),
+table.th-2n-center th:nth-child(2n),
+table.th-2n1-center th:nth-child(2n+1),
+table.th-3n-center th:nth-child(3n),
+table.th-3n1-center th:nth-child(3n+1),
+table.th-4n-center th:nth-child(4n),
+table.th-4n1-center th:nth-child(4n+1),
+table.th-5n-center th:nth-child(5n),
+table.th-5n1-center th:nth-child(5n+1),
+table.td-even-center td:nth-child(2n),
+table.td-odd-center td:nth-child(2n+1),
+table.td-2n-center td:nth-child(2n),
+table.td-2n1-center td:nth-child(2n+1),
+table.td-3n-center td:nth-child(3n),
+table.td-3n1-center td:nth-child(3n+1)
+table.td-4n-center td:nth-child(4n),
+table.td-4n1-center td:nth-child(4n+1),
+table.td-5n-center td:nth-child(5n),
+table.td-5n1-center td:nth-child(5n+1) {
+	text-align: center;
+}
+table.th-even-right th:nth-child(2n),
+table.th-odd-right th:nth-child(2n+1),
+table.th-2n-right th:nth-child(2n),
+table.th-2n1-right th:nth-child(2n+1),
+table.th-3n-right th:nth-child(3n),
+table.th-3n1-right th:nth-child(3n+1),
+table.th-4n-right th:nth-child(4n),
+table.th-4n1-right th:nth-child(4n+1),
+table.th-5n-right th:nth-child(5n),
+table.th-5n1-right th:nth-child(5n+1),
+table.td-even-right td:nth-child(2n),
+table.td-odd-right td:nth-child(2n+1),
+table.td-2n-right td:nth-child(2n),
+table.td-2n1-right td:nth-child(2n+1),
+table.td-3n-right td:nth-child(3n),
+table.td-3n1-right td:nth-child(3n+1)
+table.td-4n-right td:nth-child(4n),
+table.td-4n1-right td:nth-child(4n+1)
+table.td-5n-right td:nth-child(5n),
+table.td-5n1-right td:nth-child(5n+1) {
+	text-align: right;
+}
+table.th-even-left th:nth-child(2n),
+table.th-odd-left th:nth-child(2n+1),
+table.th-2n-left th:nth-child(2n),
+table.th-2n1-left th:nth-child(2n+1),
+table.th-3n-left th:nth-child(3n),
+table.th-3n1-left th:nth-child(3n+1),
+table.th-4n-left th:nth-child(4n),
+table.th-4n1-left th:nth-child(4n+1),
+table.th-5n-left th:nth-child(5n),
+table.th-5n1-left th:nth-child(5n+1),
+table.td-even-left td:nth-child(2n),
+table.td-odd-left td:nth-child(2n+1),
+table.td-2n-left td:nth-child(2n),
+table.td-2n1-left td:nth-child(2n+1),
+table.td-3n-left td:nth-child(3n),
+table.td-3n1-left td:nth-child(3n+1) 
+table.td-4n-left td:nth-child(4n),
+table.td-4n1-left td:nth-child(4n+1) 
+table.td-5n-left td:nth-child(5n),
+table.td-5n1-left td:nth-child(5n+1) {
+	text-align: left;
+}
+/* ーーーーーーーーーーーーーー th td 行揃え個別 */
+table.th-th-t-right thead th,
+table.td-th-t-right td,
+table.theth-ad-t-right thead,
+table.tb-th-th-t-right tbody th {
+	text-alth-ign: right;
+}
+table.th-th-t-center thead th,
+table.td-th-t-center td,
+table.theth-ad-t-center thead,
+table.tb-th-th-t-center tbody th {
+	text-alth-ign: center;
+}
+table.th-th-t-left thead th,
+table.td-th-t-left td,
+table.thead-t-left thead,
+table.tb-th-t-center tbody th {
+	text-align: left;
+}
+/* テーブル後中、td-last-center ーーーーーーーーーーーーーーーーーーーー */
+table.td-last-t-center td:last-child {
+	text-align: center;
+}
+/* ーーーーーーーーーーーーーー td n 番目行揃え */
+/* right */
+table.td-1st-t-right td:first-child {text-align: right!important;}
+table.td-2nd-t-right td:nth-child(2) {text-align: right!important;}
+table.td-3rd-t-right td:nth-child(3) {text-align: right!important;}
+table.td-4th-t-right td:nth-child(4) {text-align: right!important;}
+table.td-5th-t-right td:nth-child(5) {text-align: right!important;}
+table.td-last-t-right td:last-child {text-align: right!important;}
+/* center */
+table.td-1st-t-center td:first-child,
+table.td-2nd-t-center td:nth-child(2),
+table.td-3rd-t-center td:nth-child(3),
+table.td-4th-t-center td:nth-child(4),
+table.td-5th-t-center td:nth-child(5),
+table.td-last-t-center td:last-child {
+	text-align: center!important;
+}
+/* left */
+table.td-1st-t-left td:first-child {text-align: left!important;}
+table.td-2nd-t-left td:nth-child(2) {text-align: left!important;}
+table.td-3rd-t-left td:nth-child(3) {text-align: left!important;}
+table.td-4th-t-left td:nth-child(4) {text-align: left!important;}
+table.td-5th-t-left td:nth-child(5) {text-align: left!important;}
+table.td-last-t-left td:last-child {text-align: left!important;}
+
+/* ーーーーーーーーーーーーーー tbody th 行揃え一括指定 */
+table.tb-th-t-left tbody th {text-align: left;}
+table.tb-th-t-center tbody th {text-align: center;}
+table.tb-th-t-right tbody th {text-align: right;}
+/* ーーーーーーーーーーーーーーーーー tdf ーーーーーーーーーーーーーーーーー */
+/*　垂直位置上 ーーーーーーーーーーーーー */
+table.tdf-va-top td:first-child {vertical-align: top;}
+
+/* テーブルtd頭背景色、td-first-bgcolor-色名ーーーーーーー */
+table.td-first-bgcolor-white td:first-child {
+	background-color: white;
+}
+table.td-first-bgcolor-ivory td:first-child {
+	background-color: ivory;
+}
+table.td-first-bgcolor-lightcyan td:first-child {
+	background-color: lightcyan;
+}
+table.td-first-bgcolor-peachpuff td:first-child {
+	background-color: linen;
+}
+table.td-f-bg-lavender td:first-child {
+	background-color: lavender;
+}
+/* テーブル頭太600、500 td-first-600, td-first-500 ーーーーーーーーーーー */
+table.td-first-500 td:first-child {
+	font-weight: 500;
+}
+table.td-first-600 td:first-child {
+	font-weight: 600;
+}
+/* テーブル頭前、中 td-first-left, center ーーーーーーーーーーーーーーーーー */
+table.td-first-left td:first-child {
+	text-align: left;
+}
+table.td-first-center td:first-child {
+	text-align: center;
+}
+/* テーブル頭線c、e td-first-border-c ーーーーーーーーーーーーーーーーーー */
+table.td-first-border-c td:first-child {
+	border: solid 1.3px #ccc;
+}
+table.td-first-border-d td:first-child {
+	border: solid 1.3px #ddd;
+}
+table.td-first-border-e td:first-child {
+	border: solid 1.3px #eee;
+}
+/* テーブル3n、td-3n-brown  ーーーーーーーーーーーーーーーーーーーーー */
+.td-3n-brown td:nth-child(3n) {
+	color: brown;
+}
+/* テーブル1st-td  ーーーーーーーーーーーーーーーーーーーーー */
+table.ftd-w-30 td:first-child {display: inline-block; width: 30%}
+table.ftd-fw-600 td:first-child {font-weight: 600;}
+/* テーブル2nd-td  ーーーーーーーーーーーーーーーーーーーーー */
+table.std-w-8 td:nth-child(2) {display: inline-block; width: 8%}
+table.std-border td:nth-child(2) {border: solid 1.3px #ddd;}
+/* テーブル3rd-td  ーーーーーーーーーーーーーーーーーーーーー */
+table.ttd-pl-15 td:nth-child(3) {padding-left: 1.5rem;}
+
+/* ーーーーーーーー テーブルスタイルセット  ーーーーーーーー */
+/* テーブル td 文字太さ */
+table.td-f-fw-500 td:nth-child(1) {font-weight: 500}
+table.td-s-fw-500 td:nth-child(2) {font-weight: 500}
+table.td-t-fw-500 td:nth-child(3) {font-weight: 500}
+table.td-four-fw-500 td:nth-child(4) {font-weight: 500}
+table.td-fif-fw-500 td:nth-child(5) {font-weight: 500}
+table.td-2n-fw-500 td:nth-child(2n) {font-weight: 500}
+table.td-3n-fw-500 td:nth-child(3n) {font-weight: 500}
+table.td-2n1-fw-500 td:nth-child(2n+1) {font-weight: 500}
+table.td-3n1-fw-500 td:nth-child(3n+1) {font-weight: 500}
+
+table.td-f-fw-600 td:nth-child(1) {font-weight: 600}
+table.td-s-fw-600 td:nth-child(2) {font-weight: 600}
+table.td-t-fw-600 td:nth-child(3) {font-weight: 600}
+table.td-four-fw-600 td:nth-child(4) {font-weight: 600}
+table.td-fif-fw-600 td:nth-child(5) {font-weight: 600}
+table.td-2n-fw-600 td:nth-child(2n) {font-weight: 600}
+table.td-3n-fw-600 td:nth-child(3n) {font-weight: 600}
+table.td-2n1-fw-600 td:nth-child(2n+1) {font-weight: 600}
+table.td-3n1-fw-600 td:nth-child(3n+1) {font-weight: 600}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーー テーブルフォントサイズ */
+/* td */
+table.td-f-fs-06 td:nth-child(1) {font-size: .6rem;}
+table.td-s-fs-06 td:nth-child(2) {font-size: .6rem;}
+table.td-t-fs-06 td:nth-child(3) {font-size: .6rem;}
+table.td-four-fs-06 td:nth-child(4) {font-size: .6rem;}
+table.td-fif-fs-06 td:nth-child(5) {font-size: .6rem;}
+table.td-2n-fs-06 td:nth-child(2n) {font-size: .6rem;}
+table.td-3n-fs-06 td:nth-child(3n) {font-size: .6rem;}
+table.td-2n1-fs-06 td:nth-child(2n+1) {font-size: .6rem;}
+table.td-3n1-fs-06 td:nth-child(3n+1) {font-size: .6rem;}
+
+table.td-f-fs-07 td:nth-child(1) {font-size: .7rem;}
+table.td-s-fs-07 td:nth-child(2) {font-size: .7rem;}
+table.td-t-fs-07 td:nth-child(3) {font-size: .7rem;}
+table.td-four-fs-07 td:nth-child(4) {font-size: .7rem;}
+table.td-fif-fs-07 td:nth-child(5) {font-size: .7rem;}
+table.td-2n-fs-07 td:nth-child(2n) {font-size: .7rem;}
+table.td-3n-fs-07 td:nth-child(3n) {font-size: .7rem;}
+table.td-2n1-fs-07 td:nth-child(2n+1) {font-size: .7rem;}
+table.td-3n1-fs-07 td:nth-child(3n+1) {font-size: .7rem;}
+
+table.td-f-fs-08 td:nth-child(1) {font-size: .8rem;}
+table.td-s-fs-08 td:nth-child(2) {font-size: .8rem;}
+table.td-t-fs-08 td:nth-child(3) {font-size: .8rem;}
+table.td-four-fs-08 td:nth-child(4) {font-size: .8rem;}
+table.td-fif-fs-08 td:nth-child(5) {font-size: .8rem;}
+table.td-2n-fs-08 td:nth-child(2n) {font-size: .8rem;}
+table.td-3n-fs-08 td:nth-child(3n) {font-size: .8rem;}
+table.td-2n1-fs-08 td:nth-child(2n+1) {font-size: .8rem;}
+table.td-3n1-fs-08 td:nth-child(3n+1) {font-size: .8rem;}
+
+table.td-f-fs-09 td:nth-child(1) {font-size: var(--fs-ml);}
+table.td-s-fs-09 td:nth-child(2) {font-size: var(--fs-ml);}
+table.td-t-fs-09 td:nth-child(3) {font-size: var(--fs-ml);}
+table.td-four-fs-09 td:nth-child(4) {font-size: var(--fs-ml);}
+table.td-fif-fs-09 td:nth-child(5) {font-size: var(--fs-ml);}
+table.td-2n-fs-09 td:nth-child(2n) {font-size: var(--fs-ml);}
+table.td-3n-fs-09 td:nth-child(3n) {font-size: var(--fs-ml);}
+table.td-2n1-fs-09 td:nth-child(2n+1) {font-size: var(--fs-ml);}
+table.td-3n1-fs-09 td:nth-child(3n+1) {font-size: var(--fs-ml);}
+
+table.td-f-fs-1 td:nth-child(1) {font-size: 1rem;}
+table.td-s-fs-1 td:nth-child(2) {font-size: 1rem;}
+table.td-t-fs-1 td:nth-child(3) {font-size: 1rem;}
+table.td-four-fs-1 td:nth-child(4) {font-size: 1rem;}
+table.td-fif-fs-1 td:nth-child(5) {font-size: 1rem;}
+table.td-six-fs-1 td:nth-child(6) {font-size: 1rem;}
+table.td-seven-fs-1 td:nth-child(7) {font-size: 1rem;}
+table.td-2n-fs-1 td:nth-child(2n) {font-size: 1rem;}
+table.td-3n-fs-1 td:nth-child(3n) {font-size: 1rem;}
+table.td-2n1-fs-1 td:nth-child(2n+1) {font-size: 1rem;}
+table.td-3n1-fs-1 td:nth-child(3n+1) {font-size: 1rem;}
+
+table.td-f-fs-11 td:nth-child(1) {font-size: var(--fs-ll);}
+table.td-s-fs-11 td:nth-child(2) {font-size: var(--fs-ll);}
+table.td-t-fs-11 td:nth-child(3) {font-size: var(--fs-ll);}
+table.td-four-fs-11 td:nth-child(4) {font-size: var(--fs-ll);}
+table.td-fif-fs-11 td:nth-child(5) {font-size: var(--fs-ll);}
+table.td-six-fs-11 td:nth-child(6) {font-size: var(--fs-ll);}
+table.td-seven-fs-11 td:nth-child(7) {font-size: var(--fs-ll);}
+table.td-2n-fs-11 td:nth-child(2n) {font-size: var(--fs-ll);}
+table.td-3n-fs-11 td:nth-child(3n) {font-size: var(--fs-ll);}
+table.td-2n1-fs-11 td:nth-child(2n+1) {font-size: var(--fs-ll);}
+table.td-3n1-fs-11 td:nth-child(3n+1) {font-size: var(--fs-ll);}
+
+table.td-f-fs-12 td:nth-child(1) {font-size: 1.2rem;}
+table.td-s-fs-12 td:nth-child(2) {font-size: 1.2rem;}
+table.td-t-fs-12 td:nth-child(3) {font-size: 1.2rem;}
+table.td-four-fs-12 td:nth-child(4) {font-size: 1.2rem;}
+table.td-fif-fs-12 td:nth-child(5) {font-size: 1.2rem;}
+table.td-six-fs-12 td:nth-child(6) {font-size: 1.2rem;}
+table.td-seven-fs-12 td:nth-child(7) {font-size: 1.2rem;}
+table.td-2n-fs-12 td:nth-child(2n) {font-size: 1.2rem;}
+table.td-3n-fs-12 td:nth-child(3n) {font-size: 1.2rem;}
+table.td-2n1-fs-12 td:nth-child(2n+1) {font-size: 1.2rem;}
+table.td-3n1-fs-12 td:nth-child(3n+1) {font-size: 1.2rem;}
+
+/* tb-td-fs- */
+table.tb-td-fs-s tbody td {font-size: var(--fs-s);}
+table.tb-td-fs-ss tbody td {font-size: var(--fs-ss);}
+table.tb-td-fs-sss tbody td,
+table.tb-td-fs-3s tbody td {font-size: var(--fs-3s);}
+table.tb-td-fs-4s tbody td {font-size: var(--fs-4s);}
+
+/* テーブルtd幅 */
+table.td-1-w-1rem td:nth-child(1) {display: inline-block; width: 1rem;}
+table.td-2-w-1rem td:nth-child(2) {display: inline-block; width: 1rem;}
+table.td-3-w-1rem td:nth-child(3) {display: inline-block; width: 1rem;}
+table.td-4-w-1rem td:nth-child(4) {display: inline-block; width: 1rem;}
+table.td-5-w-1rem td:nth-child(5) {display: inline-block; width: 1rem;}
+
+table.td-1-w-2rem td:nth-child(1) {display: inline-block; width: 2rem;}
+table.td-2-w-2rem td:nth-child(2) {display: inline-block; width: 2rem;}
+table.td-3-w-2rem td:nth-child(3) {display: inline-block; width: 2rem;}
+table.td-4-w-2rem td:nth-child(4) {display: inline-block; width: 2rem;}
+table.td-5-w-2rem td:nth-child(5) {display: inline-block; width: 2rem;}
+
+table.td-1-w-3rem td:nth-child(1) {display: inline-block; width: 3rem;}
+table.td-2-w-3rem td:nth-child(2) {display: inline-block; width: 3rem;}
+table.td-3-w-3rem td:nth-child(3) {display: inline-block; width: 3rem;}
+table.td-4-w-3rem td:nth-child(4) {display: inline-block; width: 3rem;}
+table.td-5-w-3rem td:nth-child(5) {display: inline-block; width: 3rem;}
+
+table.td-1-w-4rem td:nth-child(1) {display: inline-block; width: 4rem;}
+table.td-2-w-4rem td:nth-child(2) {display: inline-block; width: 4rem;}
+table.td-3-w-4rem td:nth-child(3) {display: inline-block; width: 4rem;}
+table.td-4-w-4rem td:nth-child(4) {display: inline-block; width: 4rem;}
+table.td-5-w-4rem td:nth-child(5) {display: inline-block; width: 4rem;}
+
+table.td-1-w-5rem td:nth-child(1) {display: inline-block; width: 5rem;}
+table.td-2-w-5rem td:nth-child(2) {display: inline-block; width: 5rem;}
+table.td-3-w-5rem td:nth-child(3) {display: inline-block; width: 5rem;}
+table.td-4-w-5rem td:nth-child(4) {display: inline-block; width: 5rem;}
+table.td-5-w-5rem td:nth-child(5) {display: inline-block; width: 5rem;}
+
+table.td-1-w-6rem td:nth-child(1) {display: inline-block; width: 6rem;}
+table.td-2-w-6rem td:nth-child(2) {display: inline-block; width: 6rem;}
+table.td-3-w-6rem td:nth-child(3) {display: inline-block; width: 6rem;}
+table.td-4-w-6rem td:nth-child(4) {display: inline-block; width: 6rem;}
+table.td-5-w-6rem td:nth-child(5) {display: inline-block; width: 6rem;}
+
+table.td-1-w-11-5rem td:nth-child(1) {display: inline-block; width: 11.5rem;}
+table.td-2-w-11-5rem td:nth-child(2) {display: inline-block; width: 11.5rem;}
+table.td-3-w-11-5rem td:nth-child(3) {display: inline-block; width: 11.5rem;}
+table.td-4-w-11-5rem td:nth-child(4) {display: inline-block; width: 11.5rem;}
+table.td-5-w-11-5rem td:nth-child(5) {display: inline-block; width: 11.5rem;}
+/* テーブルtd色 */
+table.td-f-green td:nth-child(1) {color: green}
+table.td-s-green td:nth-child(2) {color: green}
+table.td-t-green td:nth-child(3) {color: green}
+table.td-four-green td:nth-child(4) {color: green}
+table.td-fif-green td:nth-child(5) {color: green}
+/* テーブルtd背景色 */
+table.td-f-bg-honeydew td:nth-child(1) {background-color: honeydew}
+table.td-s-bg-honeydew td:nth-child(2) {background-color: honeydew}
+table.td-t-bg-honeydew td:nth-child(3) {background-color: honeydew}
+table.td-four-bg-honeydew td:nth-child(4) {background-color: honeydew}
+table.td-fif-bg-honeydew td:nth-child(5) {background-color: honeydew}
+table.td-six-bg-honeydew td:nth-child(6) {background-color: honeydew}
+table.td-seven-bg-honeydew td:nth-child(7) {background-color: honeydew}
+
+table.td-f-bg-beige td:nth-child(1) {background-color: beige}
+table.td-s-bg-beige td:nth-child(2) {background-color: beige}
+table.td-t-bg-beige td:nth-child(3) {background-color: beige}
+table.td-four-bg-beige td:nth-child(4) {background-color: beige}
+table.td-fif-bg-beige td:nth-child(5) {background-color: beige}
+table.td-six-bg-beige td:nth-child(6) {background-color: beige}
+table.td-seven-bg-beige td:nth-child(7) {background-color: beige}
+table.td-2n-bg-beige td:nth-child(2n) {background-color: beige;}
+table.td-3n-bg-beige td:nth-child(3n) {background-color: beige;}
+table.td-4n-bg-beige td:nth-child(4n) {background-color: beige;}
+table.td-5n-bg-beige td:nth-child(5n) {background-color: beige;}
+table.td-2n1-bg-beige td:nth-child(2n+1) {background-color: beige;}
+table.td-3n1-bg-beige td:nth-child(3n+1) {background-color: beige;}
+table.td-4n1-bg-beige td:nth-child(4n+1) {background-color: beige;}
+table.td-5n1-bg-beige td:nth-child(5n+1) {background-color: beige;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ テーブルフォント */
+/* thead th */
+table.thead-fs-3l thead th,
+table.thead-fs-lll thead th {font-size: var(--fs-3l)!important;}
+table.thead-fs-ll thead th {font-size: var(--fs-ll)!important;} /* h1 */
+table.thead-fs-l thead th {font-size: var(--fs-l)} /* h2 */
+table.thead-fs-ml thead th {font-size: var(--fs-ml)!important;} /* h3 */
+table.thead-fs-m thead th {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.thead-fs-ms thead th {font-size: var(--fs-ms)!important;}
+table.thead-fs-s thead th {font-size: var(--fs-s)!important;}
+table.thead-fs-ss thead th {font-size: var(--fs-ss)!important;}
+table.thead-fs-3s thead th,
+table.thead-fs-sss thead th {font-size: var(--fs-3s)!important;}
+/* tbody th */
+table.tb-th-fs-3l tbody th,
+table.tb-th-fs-lll tbody th {font-size: var(--fs-3l)!important;}
+table.tb-th-fs-ll tbody th {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-fs-l tbody th {font-size: var(--fs-l)} /* h2 */
+table.tb-th-fs-ml tbody th {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-fs-m tbody th {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-fs-ms tbody th {font-size: var(--fs-ms)!important;}
+table.tb-th-fs-s tbody th {font-size: var(--fs-s)!important;}
+table.tb-th-fs-ss tbody th {font-size: var(--fs-ss)!important;}
+table.tb-th-fs-3s tbody th,
+table.tb-th-fs-sss tbody th {font-size: var(--fs-3s)!important;}
+/* td */
+table.td-fs-3l td,
+table.td-fs-lll td {font-size: var(--fs-3l)!important;}
+table.td-fs-ll td {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-fs-l td {font-size: var(--fs-l)} /* h2 */
+table.td-fs-ml td {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-fs-m td {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-fs-ms td {font-size: var(--fs-ms)!important;}
+table.td-fs-s td {font-size: var(--fs-s)!important;}
+table.td-fs-ss td {font-size: var(--fs-ss)!important;}
+table.td-fs-3s td,
+table.td-fs-sss td {font-size: var(--fs-3s)!important;}
+/* tbody th td */
+/* th */
+table.tb-th-td-fs-3l tbody th,
+table.tb-th-td-fs-lll tbody th {font-size: var(--fs-3l)!important;}
+table.tb-th-td-fs-ll tbody th {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-td-fs-l tbody th {font-size: var(--fs-l)} /* h2 */
+table.tb-th-td-fs-ml tbody th {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-td-fs-m tbody th {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-td-fs-ms tbody th {font-size: var(--fs-ms)!important;}
+table.tb-th-td-fs-s tbody th {font-size: var(--fs-s)!important;}
+table.tb-th-td-fs-ss tbody th {font-size: var(--fs-ss)!important;}
+table.tb-th-td-fs-3s tbody th,
+table.tb-th-td-fs-sss tbody th {font-size: var(--fs-3s)!important;}
+/* td */
+table.tb-th-td-fs-3l tbody td,
+table.tb-th-td-fs-lll tbody td {font-size: var(--fs-3l)!important;}
+table.tb-th-td-fs-ll tbody td {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-td-fs-l tbody td {font-size: var(--fs-l)} /* h2 */
+table.tb-th-td-fs-ml tbody td {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-td-fs-m tbody td {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-td-fs-ms tbody td {font-size: var(--fs-ms)!important;}
+table.tb-th-td-fs-s tbody td {
+	font-size: var(--fs-s)!important;
+	line-height: 1.5;
+}
+table.tb-th-td-fs-ss tbody td {font-size: var(--fs-ss)!important;}
+table.tb-th-td-fs-3s tbody td,
+table.tb-th-td-fs-sss tbody th {font-size: var(--fs-3s)!important;}
+
+/* th １番目文字サイズ */
+table.th-1st-fs-3l th:first-child,
+table.th-1st-fs-lll th:first-child {font-size: var(--fs-3l)!important;}
+table.th-1st-fs-ll th:first-child {font-size: var(--fs-ll)!important;} /* h1 */
+table.th-1st-fs-l th:first-child {font-size: var(--fs-l)} /* h2 */
+table.th-1st-fs-ml th:first-child {font-size: var(--fs-ml)!important;} /* h3 */
+table.th-1st-fs-m th:first-child {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.th-1st-fs-ms th:first-child {font-size: var(--fs-ms)!important;}
+table.th-1st-fs-s th:first-child {font-size: var(--fs-s)!important;}
+table.th-1st-fs-ss th:first-child {font-size: var(--fs-ss)!important;}
+table.th-1st-fs-3s th:first-child,
+table.th-1st-fs-sss th:first-child {font-size: var(--fs-3s)!important;}
+/* th ２番目文字サイズ */
+table.th-2nd-fs-3l th:nth-child(2),
+table.th-2nd-fs-lll th:nth-child(2) {font-size: var(--fs-3l)!important;}
+table.th-2nd-fs-ll th:nth-child(2) {font-size: var(--fs-ll)!important;} /* h1 */
+table.th-2nd-fs-l th:nth-child(2) {font-size: var(--fs-l)} /* h2 */
+table.th-2nd-fs-ml th:nth-child(2) {font-size: var(--fs-ml)!important;} /* h3 */
+table.th-2nd-fs-m th:nth-child(2) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.th-2nd-fs-ms th:nth-child(2) {font-size: var(--fs-ms)!important;}
+table.th-2nd-fs-s th:nth-child(2) {font-size: var(--fs-s)!important;}
+table.th-2nd-fs-ss th:nth-child(2) {font-size: var(--fs-ss)!important;}
+table.th-2nd-fs-3s th:nth-child(2),
+table.th-2nd-fs-sss th:nth-child(2) {font-size: var(--fs-3s)!important;}
+/* th ３番目文字サイズ */
+table.th-3rd-fs-3l th:nth-child(3),
+table.th-3rd-fs-lll th:nth-child(3) {font-size: var(--fs-3l)!important;}
+table.th-3rd-fs-ll th:nth-child(3) {font-size: var(--fs-ll)!important;} /* h1 */
+table.th-3rd-fs-l th:nth-child(3) {font-size: var(--fs-l)} /* h2 */
+table.th-3rd-fs-ml th:nth-child(3) {font-size: var(--fs-ml)!important;} /* h3 */
+table.th-3rd-fs-m th:nth-child(3) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.th-3rd-fs-ms th:nth-child(3) {font-size: var(--fs-ms)!important;}
+table.th-3rd-fs-s th:nth-child(3) {font-size: var(--fs-s)!important;}
+table.th-3rd-fs-ss th:nth-child(3) {font-size: var(--fs-ss)!important;}
+table.th-3rd-fs-3s th:nth-child(3),
+table.th-3rd-fs-sss th:nth-child(3) {font-size: var(--fs-3s)!important;}
+/* th ４番目文字サイズ */
+table.th-4th-fs-3l th:nth-child(4),
+table.th-4th-fs-lll th:nth-child(4) {font-size: var(--fs-3l)!important;}
+table.th-4th-fs-ll th:nth-child(4) {font-size: var(--fs-ll)!important;} /* h1 */
+table.th-4th-fs-l th:nth-child(4) {font-size: var(--fs-l)} /* h2 */
+table.th-4th-fs-ml th:nth-child(4) {font-size: var(--fs-ml)!important;} /* h3 */
+table.th-4th-fs-m th:nth-child(4) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.th-4th-fs-ms th:nth-child(4) {font-size: var(--fs-ms)!important;}
+table.th-4th-fs-s th:nth-child(4) {font-size: var(--fs-s)!important;}
+table.th-4th-fs-ss th:nth-child(4) {font-size: var(--fs-ss)!important;}
+table.th-4th-fs-3s th:nth-child(4),
+table.th-4th-fs-sss th:nth-child(4) {font-size: var(--fs-3s)!important;}
+/* th ５番目文字サイズ */
+table.th-5th-fs-3l th:nth-child(5),
+table.th-5th-fs-lll th:nth-child(5) {font-size: var(--fs-3l)!important;}
+table.th-5th-fs-ll th:nth-child(5) {font-size: var(--fs-ll)!important;} /* h1 */
+table.th-5th-fs-l th:nth-child(5) {font-size: var(--fs-l)} /* h2 */
+table.th-5th-fs-ml th:nth-child(5) {font-size: var(--fs-ml)!important;} /* h3 */
+table.th-5th-fs-m th:nth-child(5) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.th-5th-fs-ms th:nth-child(5) {font-size: var(--fs-ms)!important;}
+table.th-5th-fs-s th:nth-child(5) {font-size: var(--fs-s)!important;}
+table.th-5th-fs-ss th:nth-child(5) {font-size: var(--fs-ss)!important;}
+table.th-5th-fs-3s th:nth-child(5),
+table.th-5th-fs-sss th:nth-child(5) {font-size: var(--fs-3s)!important;}
+/* td */
+table.td-fs-3l td, table.td-fs-lll td {font-size: var(--fs-3l)!important;}
+table.td-fs-ll td {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-fs-l td {font-size: var(--fs-l)} /* h2 */
+table.td-fs-ml td {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-fs-m td {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-fs-ms td {font-size: var(--fs-ms)!important;}
+table.td-fs-s td {font-size: var(--fs-s)!important;}
+table.td-fs-ss td {font-size: var(--fs-ss)!important;}
+table.td-fs-3s td, table.td-fs-sss td {font-size: var(--fs-3s)!important;}
+/* td １番目文字サイズ */
+table.td-1st-fs-3l td:first-child,
+table.td-1st-fs-lll td:first-child {font-size: var(--fs-3l)!important;}
+table.td-1st-fs-ll td:first-child {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-1st-fs-l td:first-child {font-size: var(--fs-l)} /* h2 */
+table.td-1st-fs-ml td:first-child {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-1st-fs-m td:first-child {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-1st-fs-ms td:first-child {font-size: var(--fs-ms)!important;}
+table.td-1st-fs-s td:first-child {font-size: var(--fs-s)!important;}
+table.td-1st-fs-ss td:first-child {font-size: var(--fs-ss)!important;}
+table.td-1st-fs-3s td:first-child,
+table.td-1st-fs-sss td:first-child {font-size: var(--fs-3s)!important;}
+/* td ２番目文字サイズ */
+table.td-2nd-fs-3l td:nth-child(2),
+table.td-2nd-fs-lll td:nth-child(2) {font-size: var(--fs-3l)!important;}
+table.td-2nd-fs-ll td:nth-child(2) {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-2nd-fs-l td:nth-child(2) {font-size: var(--fs-l)} /* h2 */
+table.td-2nd-fs-ml td:nth-child(2) {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-2nd-fs-m td:nth-child(2) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-2nd-fs-ms td:nth-child(2) {font-size: var(--fs-ms)!important;}
+table.td-2nd-fs-s td:nth-child(2) {font-size: var(--fs-s)!important;}
+table.td-2nd-fs-ss td:nth-child(2) {font-size: var(--fs-ss)!important;}
+table.td-2nd-fs-3s td:nth-child(2),
+table.td-2nd-fs-sss td:nth-child(2) {font-size: var(--fs-3s)!important;}
+/* td ３番目文字サイズ */
+table.td-3rd-fs-3l td:nth-child(3),
+table.td-3rd-fs-lll td:nth-child(3) {font-size: var(--fs-3l)!important;}
+table.td-3rd-fs-ll td:nth-child(3) {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-3rd-fs-l td:nth-child(3) {font-size: var(--fs-l)} /* h2 */
+table.td-3rd-fs-ml td:nth-child(3) {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-3rd-fs-m td:nth-child(3) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-3rd-fs-ms td:nth-child(3) {font-size: var(--fs-ms)!important;}
+table.td-3rd-fs-s td:nth-child(3) {font-size: var(--fs-s)!important;}
+table.td-3rd-fs-ss td:nth-child(3) {font-size: var(--fs-ss)!important;}
+table.td-3rd-fs-3s td:nth-child(3),
+table.td-3rd-fs-sss td:nth-child(3) {font-size: var(--fs-3s)!important;}
+/* td ４番目文字サイズ */
+table.td-4th-fs-3l td:nth-child(4),
+table.td-4th-fs-lll td:nth-child(4) {font-size: var(--fs-3l)!important;}
+table.td-4th-fs-ll td:nth-child(4) {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-4th-fs-l td:nth-child(4) {font-size: var(--fs-l)} /* h2 */
+table.td-4th-fs-ml td:nth-child(4) {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-4th-fs-m td:nth-child(4) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-4th-fs-ms td:nth-child(4) {font-size: var(--fs-ms)!important;}
+table.td-4th-fs-s td:nth-child(4) {font-size: var(--fs-s)!important;}
+table.td-4th-fs-ss td:nth-child(4) {font-size: var(--fs-ss)!important;}
+table.td-4th-fs-3s td:nth-child(4),
+table.td-4th-fs-sss td:nth-child(4) {font-size: var(--fs-3s)!important;}
+/* td ５番目文字サイズ */
+table.td-5th-fs-3l td:nth-child(5),
+table.td-5th-fs-lll td:nth-child(5) {font-size: var(--fs-3l)!important;}
+table.td-5th-fs-ll td:nth-child(5) {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-5th-fs-l td:nth-child(5) {font-size: var(--fs-l)} /* h2 */
+table.td-5th-fs-ml td:nth-child(5) {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-5th-fs-m td:nth-child(5) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-5th-fs-ms td:nth-child(5) {font-size: var(--fs-ms)!important;}
+table.td-5th-fs-s td:nth-child(5) {font-size: var(--fs-s)!important;}
+table.td-5th-fs-ss td:nth-child(5) {font-size: var(--fs-ss)!important;}
+table.td-5th-fs-3s td:nth-child(5),
+table.td-5th-fs-sss td:nth-child(5) {font-size: var(--fs-3s)!important;}
+/* 最終 td */
+table.td-last-fs-3l td:last-child,
+table.td-last-fs-lll td:last-child {font-size: var(--fs-3l)!important;}
+table.td-last-fs-ll td:last-child {font-size: var(--fs-ll)!important;} /* h1 */
+table.td-last-fs-l td:last-child {font-size: var(--fs-l)} /* h2 */
+table.td-last-fs-ml td:last-child {font-size: var(--fs-ml)!important;} /* h3 */
+table.td-last-fs-m td:last-child {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.td-last-fs-ms td:last-child {font-size: var(--fs-ms)!important;}
+table.td-last-fs-s td:last-child {font-size: var(--fs-s)!important;}
+table.td-last-fs-ss td:last-child {font-size: var(--fs-ss)!important;}
+table.td-last-fs-3s td:last-child,
+table.td-last-fs-sss td:last-child {font-size: var(--fs-3s)!important;}
+
+
+/* tbody th １番目文字サイズ */
+table.tb-th-1st-fs-3l tbody th:first-child,
+table.tb-th-1st-fs-lll tbody th:first-child {font-size: var(--fs-3l)!important;}
+table.tb-th-1st-fs-ll tbody th:first-child {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-1st-fs-l tbody th:first-child {font-size: var(--fs-l)} /* h2 */
+table.tb-th-1st-fs-ml tbody th:first-child {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-1st-fs-m tbody th:first-child {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-1st-fs-ms tbody th:first-child {font-size: var(--fs-ms)!important;}
+table.tb-th-1st-fs-s tbody th:first-child {font-size: var(--fs-s)!important;}
+table.tb-th-1st-fs-ss tbody th:first-child {font-size: var(--fs-ss)!important;}
+table.tb-th-1st-fs-3s tbody th:first-child,
+table.tb-th-1st-fs-sss tbody th:first-child {font-size: var(--fs-3s)!important;}
+/* tbody th ２番目文字サイズ */
+table.tb-th-2nd-fs-3l tbody th:nth-child(2),
+table.tb-th-2nd-fs-lll tbody th:nth-child(2) {font-size: var(--fs-3l)!important;}
+table.tb-th-2nd-fs-ll tbody th:nth-child(2) {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-2nd-fs-l tbody th:nth-child(2) {font-size: var(--fs-l)} /* h2 */
+table.tb-th-2nd-fs-ml tbody th:nth-child(2) {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-2nd-fs-m tbody th:nth-child(2) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-2nd-fs-ms tbody th:nth-child(2) {font-size: var(--fs-ms)!important;}
+table.tb-th-2nd-fs-s tbody th:nth-child(2) {font-size: var(--fs-s)!important;}
+table.tb-th-2nd-fs-ss tbody th:nth-child(2) {font-size: var(--fs-ss)!important;}
+table.tb-th-2nd-fs-3s tbody th:nth-child(2),
+table.tb-th-2nd-fs-sss tbody th:nth-child(2) {font-size: var(--fs-3s)!important;}
+/* tbody th ３番目文字サイズ */
+table.tb-th-3rd-fs-3l tbody th:nth-child(3),
+table.tb-th-3rd-fs-lll tbody th:nth-child(3) {font-size: var(--fs-3l)!important;}
+table.tb-th-3rd-fs-ll tbody th:nth-child(3) {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-3rd-fs-l tbody th:nth-child(3) {font-size: var(--fs-l)} /* h2 */
+table.tb-th-3rd-fs-ml tbody th:nth-child(3) {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-3rd-fs-m tbody th:nth-child(3) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-3rd-fs-ms tbody th:nth-child(3) {font-size: var(--fs-ms)!important;}
+table.tb-th-3rd-fs-s tbody th:nth-child(3) {font-size: var(--fs-s)!important;}
+table.tb-th-3rd-fs-ss tbody th:nth-child(3) {font-size: var(--fs-ss)!important;}
+table.tb-th-3rd-fs-3s tbody th:nth-child(3),
+table.tb-th-3rd-fs-sss tbody th:nth-child(3) {font-size: var(--fs-3s)!important;}
+/* tbody th ４番目文字サイズ */
+table.tb-th-4th-fs-3l tbody th:nth-child(4),
+table.tb-th-4th-fs-lll tbody th:nth-child(4) {font-size: var(--fs-3l)!important;}
+table.tb-th-4th-fs-ll tbody th:nth-child(4) {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-4th-fs-l tbody th:nth-child(4) {font-size: var(--fs-l)} /* h2 */
+table.tb-th-4th-fs-ml tbody th:nth-child(4) {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-4th-fs-m tbody th:nth-child(4) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-4th-fs-ms tbody th:nth-child(4) {font-size: var(--fs-ms)!important;}
+table.tb-th-4th-fs-s tbody th:nth-child(4) {font-size: var(--fs-s)!important;}
+table.tb-th-4th-fs-ss tbody th:nth-child(4) {font-size: var(--fs-ss)!important;}
+table.tb-th-4th-fs-3s tbody th:nth-child(4),
+table.tb-th-4th-fs-sss tbody th:nth-child(4) {font-size: var(--fs-3s)!important;}
+/* tbody th ５番目文字サイズ */
+table.tb-th-5th-fs-3l tbody th:nth-child(5),
+table.tb-th-5th-fs-lll tbody th:nth-child(5) {font-size: var(--fs-3l)!important;}
+table.tb-th-5th-fs-ll tbody th:nth-child(5) {font-size: var(--fs-ll)!important;} /* h1 */
+table.tb-th-5th-fs-l tbody th:nth-child(5) {font-size: var(--fs-l)} /* h2 */
+table.tb-th-5th-fs-ml tbody th:nth-child(5) {font-size: var(--fs-ml)!important;} /* h3 */
+table.tb-th-5th-fs-m tbody th:nth-child(5) {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p */
+table.tb-th-5th-fs-ms tbody th:nth-child(5) {font-size: var(--fs-ms)!important;}
+table.tb-th-5th-fs-s tbody th:nth-child(5) {font-size: var(--fs-s)!important;}
+table.tb-th-5th-fs-ss tbody th:nth-child(5) {font-size: var(--fs-ss)!important;}
+table.tb-th-5th-fs-3s tbody th:nth-child(5),
+table.tb-th-5th-fs-sss tbody th:nth-child(5) {font-size: var(--fs-3s)!important;}
+
+/* テーブル thead th 文字サイズ rem */
+table.thead-th-fs-06 thead th {font-size: .6rem;}
+table.thead-th-fs-07 thead th {font-size: .7rem;}
+table.thead-th-fs-08 thead th {font-size: .8rem;}
+table.thead-th-fs-09 thead th {font-size: var(--fs-ml);}
+table.thead-th-fs-1 thead th {font-size: 1rem;}
+table.thead-th-fs-11 thead th {font-size: var(--fs-ll);}
+table.thead-th-fs-12 thead th {font-size: 1.2rem;}
+/* テーブル th 文字サイズ rem */
+table.th-fs-06 th {font-size: .6rem;}
+table.th-fs-07 th {font-size: .7rem;}
+table.th-fs-08 th {font-size: .8rem;}
+table.th-fs-09 th {font-size: var(--fs-ml);}
+table.th-fs-1 th {font-size: 1rem;}
+table.th-fs-11 th {font-size: var(--fs-ll);}
+table.th-fs-12 th {font-size: 1.2rem;}
+/* テーブル tbody th 文字サイズ rem */
+table.tb-th-fs-06 tbody th {font-size: .6rem;}
+table.tb-th-fs-07 tbody th {font-size: .7rem;}
+table.tb-th-fs-08 tbody th {font-size: .8rem;}
+table.tb-th-fs-09 tbody th {font-size: var(--fs-ml);}
+table.tb-th-fs-1 tbody th {font-size: 1rem;}
+table.tb-th-fs-11 tbody th {font-size: var(--fs-ll);}
+table.tb-th-fs-12 tbody th {font-size: 1.2rem;}
+/* テーブル td 文字サイズ rem */
+table.td-fs-06 td {font-size: .6rem;}
+table.td-fs-07 td {font-size: .7rem;}
+table.td-fs-08 td {font-size: .8rem;}
+table.td-fs-09 td {font-size: var(--fs-ml);}
+table.td-fs-1 td {font-size: 1rem;}
+table.td-fs-11 td {font-size: var(--fs-ll);}
+table.td-fs-12 td {font-size: 1.2rem;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ テーブル th n 番目 文字サイズ rem */
+table.th-1st-fs-06 th:nth-child(1) {font-size: .6rem;}
+table.th-2nd-fs-06 th:nth-child(2) {font-size: .6rem;}
+table.th-3rd-fs-06 th:nth-child(3) {font-size: .6rem;}
+table.th-4th-fs-06 th:nth-child(4) {font-size: .6rem;}
+table.th-5th-fs-06 th:nth-child(5) {font-size: .6rem;}
+table.th-2n-fs-06 th:nth-child(2n) {font-size: .6rem;}
+table.th-3n-fs-06 th:nth-child(3n) {font-size: .6rem;}
+table.th-2n1-fs-06 th:nth-child(2n+1) {font-size: .6rem;}
+table.th-3n1-fs-06 th:nth-child(3n+1) {font-size: .6rem;}
+
+table.th-1st-fs-07 th:nth-child(1) {font-size: .7rem;}
+table.th-2nd-fs-07 th:nth-child(2) {font-size: .7rem;}
+table.th-3rd-fs-07 th:nth-child(3) {font-size: .7rem;}
+table.th-4th-fs-07 th:nth-child(4) {font-size: .7rem;}
+table.th-5th-fs-07 th:nth-child(5) {font-size: .7rem;}
+table.th-2n-fs-07 th:nth-child(2n) {font-size: .7rem;}
+table.th-3n-fs-07 th:nth-child(3n) {font-size: .7rem;}
+table.th-2n1-fs-07 th:nth-child(2n+1) {font-size: .7rem;}
+table.th-3n1-fs-07 th:nth-child(3n+1) {font-size: .7rem;}
+
+table.th-1st-fs-08 th:nth-child(1) {font-size: .8rem;}
+table.th-2nd-fs-08 th:nth-child(2) {font-size: .8rem;}
+table.th-3rd-fs-08 th:nth-child(3) {font-size: .8rem;}
+table.th-4th-fs-08 th:nth-child(4) {font-size: .8rem;}
+table.th-5th-fs-08 th:nth-child(5) {font-size: .8rem;}
+table.th-2n-fs-08 th:nth-child(2n) {font-size: .8rem;}
+table.th-3n-fs-08 th:nth-child(3n) {font-size: .8rem;}
+table.th-2n1-fs-08 th:nth-child(2n+1) {font-size: .8rem;}
+table.th-3n1-fs-08 th:nth-child(3n+1) {font-size: .8rem;}
+
+table.th-1st-fs-09 th:nth-child(1) {font-size: var(--fs-ml);}
+table.th-2nd-fs-09 th:nth-child(2) {font-size: var(--fs-ml);}
+table.th-3rd-fs-09 th:nth-child(3) {font-size: var(--fs-ml);}
+table.th-4th-fs-09 th:nth-child(4) {font-size: var(--fs-ml);}
+table.th-5th-fs-09 th:nth-child(5) {font-size: var(--fs-ml);}
+table.th-2n-fs-09 th:nth-child(2n) {font-size: var(--fs-ml);}
+table.th-3n-fs-09 th:nth-child(3n) {font-size: var(--fs-ml);}
+table.th-2n1-fs-09 th:nth-child(2n+1) {font-size: var(--fs-ml);}
+table.th-3n1-fs-09 th:nth-child(3n+1) {font-size: var(--fs-ml);}
+
+table.th-1st-fs-1 th:nth-child(1) {font-size: 1rem;}
+table.th-2nd-fs-1 th:nth-child(2) {font-size: 1rem;}
+table.th-3rd-fs-1 th:nth-child(3) {font-size: 1rem;}
+table.th-4th-fs-1 th:nth-child(4) {font-size: 1rem;}
+table.th-5th-fs-1 th:nth-child(5) {font-size: 1rem;}
+table.th-six-fs-1 th:nth-child(6) {font-size: 1rem;}
+table.th-seven-fs-1 th:nth-child(7) {font-size: 1rem;}
+table.th-2n-fs-1 th:nth-child(2n) {font-size: 1rem;}
+table.th-3n-fs-1 th:nth-child(3n) {font-size: 1rem;}
+table.th-2n1-fs-1 th:nth-child(2n+1) {font-size: 1rem;}
+table.th-3n1-fs-1 th:nth-child(3n+1) {font-size: 1rem;}
+
+table.th-1st-fs-11 th:nth-child(1) {font-size: var(--fs-ll);}
+table.th-2nd-fs-11 th:nth-child(2) {font-size: var(--fs-ll);}
+table.th-3rd-fs-11 th:nth-child(3) {font-size: var(--fs-ll);}
+table.th-4th-fs-11 th:nth-child(4) {font-size: var(--fs-ll);}
+table.th-5th-fs-11 th:nth-child(5) {font-size: var(--fs-ll);}
+table.th-six-fs-11 th:nth-child(6) {font-size: var(--fs-ll);}
+table.th-seven-fs-11 th:nth-child(7) {font-size: var(--fs-ll);}
+table.th-2n-fs-11 th:nth-child(2n) {font-size: var(--fs-ll);}
+table.th-3n-fs-11 th:nth-child(3n) {font-size: var(--fs-ll);}
+table.th-2n1-fs-11 th:nth-child(2n+1) {font-size: var(--fs-ll);}
+table.th-3n1-fs-11 th:nth-child(3n+1) {font-size: var(--fs-ll);}
+
+table.th-1st-fs-12 th:nth-child(1) {font-size: 1.2rem;}
+table.th-2nd-fs-12 th:nth-child(2) {font-size: 1.2rem;}
+table.th-3rd-fs-12 th:nth-child(3) {font-size: 1.2rem;}
+table.th-4th-fs-12 th:nth-child(4) {font-size: 1.2rem;}
+table.th-5th-fs-12 th:nth-child(5) {font-size: 1.2rem;}
+table.th-six-fs-12 th:nth-child(6) {font-size: 1.2rem;}
+table.th-seven-fs-12 th:nth-child(7) {font-size: 1.2rem;}
+table.th-2n-fs-12 th:nth-child(2n) {font-size: 1.2rem;}
+table.th-3n-fs-12 th:nth-child(3n) {font-size: 1.2rem;}
+table.th-2n1-fs-12 th:nth-child(2n+1) {font-size: 1.2rem;}
+table.th-3n1-fs-12 th:nth-child(3n+1) {font-size: 1.2rem;}
+
+/* テーブル td 文字サイズ rem */
+table.td-1st-fs-06 td:nth-child(1) {font-size: .6rem;}
+table.td-2nd-fs-06 td:nth-child(2) {font-size: .6rem;}
+table.td-3rd-fs-06 td:nth-child(3) {font-size: .6rem;}
+table.td-4th-fs-06 td:nth-child(4) {font-size: .6rem;}
+table.td-5th-fs-06 td:nth-child(5) {font-size: .6rem;}
+table.td-2n-fs-06 td:nth-child(2n) {font-size: .6rem;}
+table.td-3n-fs-06 td:nth-child(3n) {font-size: .6rem;}
+table.td-2n1-fs-06 td:nth-child(2n+1) {font-size: .6rem;}
+table.td-3n1-fs-06 td:nth-child(3n+1) {font-size: .6rem;}
+
+table.td-1st-fs-07 td:nth-child(1) {font-size: .7rem;}
+table.td-2nd-fs-07 td:nth-child(2) {font-size: .7rem;}
+table.td-3rd-fs-07 td:nth-child(3) {font-size: .7rem;}
+table.td-4th-fs-07 td:nth-child(4) {font-size: .7rem;}
+table.td-5th-fs-07 td:nth-child(5) {font-size: .7rem;}
+table.td-2n-fs-07 td:nth-child(2n) {font-size: .7rem;}
+table.td-3n-fs-07 td:nth-child(3n) {font-size: .7rem;}
+table.td-2n1-fs-07 td:nth-child(2n+1) {font-size: .7rem;}
+table.td-3n1-fs-07 td:nth-child(3n+1) {font-size: .7rem;}
+
+table.td-1st-fs-08 td:nth-child(1) {font-size: .8rem;}
+table.td-2nd-fs-08 td:nth-child(2) {font-size: .8rem;}
+table.td-3rd-fs-08 td:nth-child(3) {font-size: .8rem;}
+table.td-4th-fs-08 td:nth-child(4) {font-size: .8rem;}
+table.td-5th-fs-08 td:nth-child(5) {font-size: .8rem;}
+table.td-2n-fs-08 td:nth-child(2n) {font-size: .8rem;}
+table.td-3n-fs-08 td:nth-child(3n) {font-size: .8rem;}
+table.td-2n1-fs-08 td:nth-child(2n+1) {font-size: .8rem;}
+table.td-3n1-fs-08 td:nth-child(3n+1) {font-size: .8rem;}
+
+table.td-1st-fs-09 td:nth-child(1) {font-size: var(--fs-ml);}
+table.td-2nd-fs-09 td:nth-child(2) {font-size: var(--fs-ml);}
+table.td-3rd-fs-09 td:nth-child(3) {font-size: var(--fs-ml);}
+table.td-4th-fs-09 td:nth-child(4) {font-size: var(--fs-ml);}
+table.td-5th-fs-09 td:nth-child(5) {font-size: var(--fs-ml);}
+table.td-2n-fs-09 td:nth-child(2n) {font-size: var(--fs-ml);}
+table.td-3n-fs-09 td:nth-child(3n) {font-size: var(--fs-ml);}
+table.td-2n1-fs-09 td:nth-child(2n+1) {font-size: var(--fs-ml);}
+table.td-3n1-fs-09 td:nth-child(3n+1) {font-size: var(--fs-ml);}
+
+table.td-1st-fs-1 td:nth-child(1) {font-size: 1rem;}
+table.td-2nd-fs-1 td:nth-child(2) {font-size: 1rem;}
+table.td-3rd-fs-1 td:nth-child(3) {font-size: 1rem;}
+table.td-4th-fs-1 td:nth-child(4) {font-size: 1rem;}
+table.td-5th-fs-1 td:nth-child(5) {font-size: 1rem;}
+table.td-six-fs-1 td:nth-child(6) {font-size: 1rem;}
+table.td-seven-fs-1 td:nth-child(7) {font-size: 1rem;}
+table.td-2n-fs-1 td:nth-child(2n) {font-size: 1rem;}
+table.td-3n-fs-1 td:nth-child(3n) {font-size: 1rem;}
+table.td-2n1-fs-1 td:nth-child(2n+1) {font-size: 1rem;}
+table.td-3n1-fs-1 td:nth-child(3n+1) {font-size: 1rem;}
+
+table.td-1st-fs-11 td:nth-child(1) {font-size: var(--fs-ll);}
+table.td-2nd-fs-11 td:nth-child(2) {font-size: var(--fs-ll);}
+table.td-3rd-fs-11 td:nth-child(3) {font-size: var(--fs-ll);}
+table.td-4th-fs-11 td:nth-child(4) {font-size: var(--fs-ll);}
+table.td-5th-fs-11 td:nth-child(5) {font-size: var(--fs-ll);}
+table.td-six-fs-11 td:nth-child(6) {font-size: var(--fs-ll);}
+table.td-seven-fs-11 td:nth-child(7) {font-size: var(--fs-ll);}
+table.td-2n-fs-11 td:nth-child(2n) {font-size: var(--fs-ll);}
+table.td-3n-fs-11 td:nth-child(3n) {font-size: var(--fs-ll);}
+table.td-2n1-fs-11 td:nth-child(2n+1) {font-size: var(--fs-ll);}
+table.td-3n1-fs-11 td:nth-child(3n+1) {font-size: var(--fs-ll);}
+
+table.td-1st-fs-12 td:nth-child(1) {font-size: 1.2rem;}
+table.td-2nd-fs-12 td:nth-child(2) {font-size: 1.2rem;}
+table.td-3rd-fs-12 td:nth-child(3) {font-size: 1.2rem;}
+table.td-4th-fs-12 td:nth-child(4) {font-size: 1.2rem;}
+table.td-5th-fs-12 td:nth-child(5) {font-size: 1.2rem;}
+table.td-six-fs-12 td:nth-child(6) {font-size: 1.2rem;}
+table.td-seven-fs-12 td:nth-child(7) {font-size: 1.2rem;}
+table.td-2n-fs-12 td:nth-child(2n) {font-size: 1.2rem;}
+table.td-3n-fs-12 td:nth-child(3n) {font-size: 1.2rem;}
+table.td-2n1-fs-12 td:nth-child(2n+1) {font-size: 1.2rem;}
+table.td-3n1-fs-12 td:nth-child(3n+1) {font-size: 1.2rem;}
+
+/* テーブル thead th 文字サイズ rem */
+table.tb-th-1st-fs-06 tbody-th:nth-child(1) {font-size: .6rem;}
+table.tb-th-2nd-fs-06 tbody-th:nth-child(2) {font-size: .6rem;}
+table.tb-th-3rd-fs-06 tbody-th:nth-child(3) {font-size: .6rem;}
+table.tb-th-4th-fs-06 tbody-th:nth-child(4) {font-size: .6rem;}
+table.tb-th-5th-fs-06 tbody-th:nth-child(5) {font-size: .6rem;}
+table.tb-th-2n-fs-06 tbody-th:nth-child(2n) {font-size: .6rem;}
+table.tb-th-3n-fs-06 tbody-th:nth-child(3n) {font-size: .6rem;}
+table.tb-th-2n1-fs-06 tbody-th:nth-child(2n+1) {font-size: .6rem;}
+table.tb-th-3n1-fs-06 tbody-th:nth-child(3n+1) {font-size: .6rem;}
+
+table.tb-th-1st-fs-07 tbody-th:nth-child(1) {font-size: .7rem;}
+table.tb-th-2nd-fs-07 tbody-th:nth-child(2) {font-size: .7rem;}
+table.tb-th-3rd-fs-07 tbody-th:nth-child(3) {font-size: .7rem;}
+table.tb-th-4th-fs-07 tbody-th:nth-child(4) {font-size: .7rem;}
+table.tb-th-5th-fs-07 tbody-th:nth-child(5) {font-size: .7rem;}
+table.tb-th-2n-fs-07 tbody-th:nth-child(2n) {font-size: .7rem;}
+table.tb-th-3n-fs-07 tbody-th:nth-child(3n) {font-size: .7rem;}
+table.tb-th-2n1-fs-07 tbody-th:nth-child(2n+1) {font-size: .7rem;}
+table.tb-th-3n1-fs-07 tbody-th:nth-child(3n+1) {font-size: .7rem;}
+
+table.tb-th-1st-fs-08 tbody-th:nth-child(1) {font-size: .8rem;}
+table.tb-th-2nd-fs-08 tbody-th:nth-child(2) {font-size: .8rem;}
+table.tb-th-3rd-fs-08 tbody-th:nth-child(3) {font-size: .8rem;}
+table.tb-th-4th-fs-08 tbody-th:nth-child(4) {font-size: .8rem;}
+table.tb-th-5th-fs-08 tbody-th:nth-child(5) {font-size: .8rem;}
+table.tb-th-2n-fs-08 tbody-th:nth-child(2n) {font-size: .8rem;}
+table.tb-th-3n-fs-08 tbody-th:nth-child(3n) {font-size: .8rem;}
+table.tb-th-2n1-fs-08 tbody-th:nth-child(2n+1) {font-size: .8rem;}
+table.tb-th-3n1-fs-08 tbody-th:nth-child(3n+1) {font-size: .8rem;}
+
+table.tb-th-1st-fs-09 tbody-th:nth-child(1) {font-size: var(--fs-ml);}
+table.tb-th-2nd-fs-09 tbody-th:nth-child(2) {font-size: var(--fs-ml);}
+table.tb-th-3rd-fs-09 tbody-th:nth-child(3) {font-size: var(--fs-ml);}
+table.tb-th-4th-fs-09 tbody-th:nth-child(4) {font-size: var(--fs-ml);}
+table.tb-th-5th-fs-09 tbody-th:nth-child(5) {font-size: var(--fs-ml);}
+table.tb-th-2n-fs-09 tbody-th:nth-child(2n) {font-size: var(--fs-ml);}
+table.tb-th-3n-fs-09 tbody-th:nth-child(3n) {font-size: var(--fs-ml);}
+table.tb-th-2n1-fs-09 tbody-th:nth-child(2n+1) {font-size: var(--fs-ml);}
+table.tb-th-3n1-fs-09 tbody-th:nth-child(3n+1) {font-size: var(--fs-ml);}
+
+table.tb-th-1st-fs-1 tbody-th:nth-child(1) {font-size: 1rem;}
+table.tb-th-2nd-fs-1 tbody-th:nth-child(2) {font-size: 1rem;}
+table.tb-th-3rd-fs-1 tbody-th:nth-child(3) {font-size: 1rem;}
+table.tb-th-4th-fs-1 tbody-th:nth-child(4) {font-size: 1rem;}
+table.tb-th-5th-fs-1 tbody-th:nth-child(5) {font-size: 1rem;}
+table.tb-th-six-fs-1 tbody-th:nth-child(6) {font-size: 1rem;}
+table.tb-th-seven-fs-1 tbody-th:nth-child(7) {font-size: 1rem;}
+table.tb-th-2n-fs-1 tbody-th:nth-child(2n) {font-size: 1rem;}
+table.tb-th-3n-fs-1 tbody-th:nth-child(3n) {font-size: 1rem;}
+table.tb-th-2n1-fs-1 tbody-th:nth-child(2n+1) {font-size: 1rem;}
+table.tb-th-3n1-fs-1 tbody-th:nth-child(3n+1) {font-size: 1rem;}
+
+table.tb-th-1st-fs-11 tbody-th:nth-child(1) {font-size: var(--fs-ll);}
+table.tb-th-2nd-fs-11 tbody-th:nth-child(2) {font-size: var(--fs-ll);}
+table.tb-th-3rd-fs-11 tbody-th:nth-child(3) {font-size: var(--fs-ll);}
+table.tb-th-4th-fs-11 tbody-th:nth-child(4) {font-size: var(--fs-ll);}
+table.tb-th-5th-fs-11 tbody-th:nth-child(5) {font-size: var(--fs-ll);}
+table.tb-th-six-fs-11 tbody-th:nth-child(6) {font-size: var(--fs-ll);}
+table.tb-th-seven-fs-11 tbody-th:nth-child(7) {font-size: var(--fs-ll);}
+table.tb-th-2n-fs-11 tbody-th:nth-child(2n) {font-size: var(--fs-ll);}
+table.tb-th-3n-fs-11 tbody-th:nth-child(3n) {font-size: var(--fs-ll);}
+table.tb-th-2n1-fs-11 tbody-th:nth-child(2n+1) {font-size: var(--fs-ll);}
+table.tb-th-3n1-fs-11 tbody-th:nth-child(3n+1) {font-size: var(--fs-ll);}
+
+table.tb-th-1st-fs-12 tbody-th:nth-child(1) {font-size: 1.2rem;}
+table.tb-th-2nd-fs-12 tbody-th:nth-child(2) {font-size: 1.2rem;}
+table.tb-th-3rd-fs-12 tbody-th:nth-child(3) {font-size: 1.2rem;}
+table.tb-th-4th-fs-12 tbody-th:nth-child(4) {font-size: 1.2rem;}
+table.tb-th-5th-fs-12 tbody-th:nth-child(5) {font-size: 1.2rem;}
+table.tb-th-six-fs-12 tbody-th:nth-child(6) {font-size: 1.2rem;}
+table.tb-th-seven-fs-12 tbody-th:nth-child(7) {font-size: 1.2rem;}
+table.tb-th-2n-fs-12 tbody-th:nth-child(2n) {font-size: 1.2rem;}
+table.tb-th-3n-fs-12 tbody-th:nth-child(3n) {font-size: 1.2rem;}
+table.tb-th-2n1-fs-12 tbody-th:nth-child(2n+1) {font-size: 1.2rem;}
+table.tb-th-3n1-fs-12 tbody-th:nth-child(3n+1) {font-size: 1.2rem;}
+
+/* テーブルtd文字太さ */
+/* td */
+table.td-1st-fw-500 td:nth-child(1) {font-weight: 500}
+table.td-2nd-fw-500 td:nth-child(2) {font-weight: 500}
+table.td-3rd-fw-500 td:nth-child(3) {font-weight: 500}
+table.td-4th-fw-500 td:nth-child(4) {font-weight: 500}
+table.td-5th-fw-500 td:nth-child(5) {font-weight: 500}
+table.td-1st-fw-600 td:nth-child(1) {font-weight: 600}
+table.td-2nd-fw-600 td:nth-child(2) {font-weight: 600}
+table.td-3rd-fw-600 td:nth-child(3) {font-weight: 600}
+table.td-4th-fw-600 td:nth-child(4) {font-weight: 600}
+table.td-5th-fw-600 td:nth-child(5) {font-weight: 600}
+table.td-1st-fw-700 td:nth-child(1) {font-weight: 700}
+table.td-2nd-fw-700 td:nth-child(2) {font-weight: 700}
+table.td-3rd-fw-700 td:nth-child(3) {font-weight: 700}
+table.td-4th-fw-700 td:nth-child(4) {font-weight: 700}
+table.td-5th-fw-700 td:nth-child(5) {font-weight: 700}
+table.td-1st-fw-900 td:nth-child(1) {font-weight: 900}
+table.td-2nd-fw-900 td:nth-child(2) {font-weight: 900}
+table.td-3rd-fw-900 td:nth-child(3) {font-weight: 900}
+table.td-4th-fw-900 td:nth-child(4) {font-weight: 900}
+table.td-5th-fw-900 td:nth-child(5) {font-weight: 900}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 文字間隔 letter-spacing */
+table.ls-01 {letter-spacing: .1em!important;}
+
+table.thead-th-ls-01 thead th {letter-spacing: .1em!important;}
+table.thead-th-1st-ls-01 thead th:first-child {letter-spacing: .1em!important;}
+table.thead-th-last-ls-01 thead th:last-child {letter-spacing: .1em!important;}
+
+table.th-ls-01 th {letter-spacing: .1em!important;}
+
+table.tb-th-ls-01 tbody th {letter-spacing: .1em!important;}
+table.tb-th-1st-ls-01 tbody th:first-child {letter-spacing: .1em!important;}
+table.tb-th-last-ls-01 tbody th:last-child {letter-spacing: .1em!important;}
+
+table.td-ls-01 td {letter-spacing: .1em!important;}
+table.td-1st-ls-01 td:first-child {letter-spacing: .1em!important;}
+table.td-2nd-ls-01 td:nth-child(2) {letter-spacing: .1em!important;}
+table.td-3rd-ls-01 td:nth-child(3) {letter-spacing: .1em!important;}
+table.td-4th-ls-01 td:nth-child(4) {letter-spacing: .1em!important;}
+table.td-5th-ls-01 td:nth-child(5) {letter-spacing: .1em!important;}
+table.td-last-ls-01 td:last-child {letter-spacing: .1em!important;}

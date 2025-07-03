@@ -1,0 +1,4365 @@
+@charset "UTF-8";
+
+/* ＝＝＝＝＝＝＝＝＝＝　CSS 基本セット */
+
+/* ========== 非表示 */
+/* 非表示存在あり */
+.hidden, .v-hidden {visibility: hidden;}
+/* 非表示存在なし */
+.none, .display-none, .display_none {display: none;}
+/* content なし */
+.content-none:before {content: none!important;}
+
+/* ========== ブロックの表示形式 */
+.inline {display: inline;}
+.block {display: block;}
+.inline-b, .inline-block {
+	display: inline-block;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーー フォント */
+/* ＝＝＝＝＝＝＝＝＝＝＝ 総称ファミリー */
+.serif {font-family: serif;}
+.sans-serif {font-family: sans-serif;}
+.cursive {font-family: cursive;}
+.fantasy {font-family: fantasy;}
+.monospace {font-family: monospace;}
+.system-ui {font-family: system-ui;}
+.courier-new {font-family: Courier New, Courier Prime, monospace;}
+.courier-prime {font-family: Courier Prime, Courier New, monospace;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝ フォントファミリー */
+.noto-sans-jp,
+.NotoSansJP {
+	font-family: Noto Sans JP;
+}
+/* ゴシック */
+.YuGothic {
+	font-family: "游ゴシック体", "YuGothic";
+	font-size: 0.97rem;
+}
+.meiryo, .Meiryo {font-family: "Meiryo";}
+.osaka, .Osaka {font-family: "Osaka";}
+.hkgp {font-family: "Hiragino Kaku Gothic Pro";}
+
+/* 明朝 */
+.YuMincho {font-family: "Yu Mincho", "YuMincho";}
+/* セリフ */
+.times-newroman,
+.TimeNewRoman {
+	font-family: "Times New Roman"!important;
+}
+/* サンセリフ */
+.arial, .Arial {font-family: "Arial";}
+.impact, .Impact {font-family: "Impact";}
+/* マトリックス */
+.matrix {font-family: "MATRIX";}
+/* ポケットカリキュレーター */
+.pocket-calculator {font-family: "pocket calculator";}
+
+/* 総称ファミリ	 */
+.serif {font-family: serif;}
+.sans-serif {font-family: sans-serif;}
+.cursive {font-family: cursive;}
+.fantasy {font-family: fantasy;}
+.monospace {font-family: monospace;}
+.system-ui {font-family: system-ui;}
+
+/* フォントスタイル */
+.italic {font-style: italic}
+
+/* 改行しない */
+.nowrap {white-space: nowrap;}
+
+/* 間隔、配置 ------------------------------ */
+/* コンテナ */
+.container-ll, .ctr-ll, .c-ml-05 {
+	margin-left: .5rem!important;
+	margin-right: .4rem!important;
+}
+.container-l, .ctr-l, .c-ml-07 {
+	margin-left: .7rem!important;
+	margin-right: .4rem!important;
+}
+.container-m, .ctr-m, .c-ml-10 {
+	margin-left: 1rem!important;
+	margin-right: .4rem!important;
+}
+.container-ms, .ctr-ms, .c-ml-12 {
+	margin-left: 1.2rem!important;
+	margin-right: .4rem!important;
+}
+.container-s, .ctr-s, .c-ml-15 {
+	margin-left: 1.5rem!important;
+	margin-right: .5rem!important;
+}
+.container-ss, .ctr-ss, .c-ml-20 {
+	margin-left: 2rem!important;
+	margin-right: 1.1rem!important;
+}
+
+/* 要素の横位置 */
+.t-right, .right {text-align: right;}
+.t-center {text-align: center;}
+.t-left {text-align: left;}
+
+/* 配置 podition */
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+
+/* カラム 段組　*/
+.columns-2 {column-count: 2;}
+.columns-3 {column-count: 3;}
+.columns-4 {column-count: 4;}
+.columns-5 {column-count: 5;}
+
+/* rem*/
+.gap-0 {gap: 0!important;}
+.gap-0_05 {gap: 0.05rem!important;}
+.gap-0_1 {gap: 0.1rem!important;}
+.gap-0_2 {gap: 0.2rem!important;}
+.gap-0_3 {gap: 0.3rem!important;}
+.gap-0_4 {gap: 0.4rem!important;}
+.gap-0_5 {gap: 0.5rem!important;}
+.gap-0_55 {gap: 0.55rem!important;}
+.gap-0_6 {gap: 0.6rem!important;}
+.gap-0_7 {gap: 0.7rem!important;}
+.gap-0_8 {gap: 0.8rem!important;}
+.gap-0_9 {gap: 0.9rem!important;}
+.gap-0_95 {gap: 0.95rem!important;}
+.gap-1 {gap: 1rem!important;}
+.gap-1_1 {gap: 1.1rem!important;}
+.gap-1_2 {gap: 1.2rem!important;}
+.gap-1_25 {gap: 1.25rem!important;}
+.gap-1_3 {gap: 1.3rem!important;}
+.gap-1_4 {gap: 1.4rem!important;}
+.gap-1_5 {gap: 1.5rem!important;}
+.gap-1_6 {gap: 1.6rem!important;}
+.gap-1_7 {gap: 1.7rem!important;}
+.gap-1_8 {gap: 1.8rem!important;}
+.gap-1_9 {gap: 1.9rem!important;}
+.gap-1_95 {gap: 1.95rem!important;}
+.gap-2 {gap: 2rem!important;}
+.gap-2_05 {gap: 2.05rem!important;}
+.gap-2_1 {gap: 2.1rem!important;}
+.gap-2_2 {gap: 2.2rem!important;}
+.gap-2_3 {gap: 2.3rem!important;}
+.gap-2_4 {gap: 2.4rem!important;}
+.gap-2_5 {gap: 2.5rem!important;}
+.gap-2_6 {gap: 2.6rem!important;}
+.gap-2_7 {gap: 2.7rem!important;}
+.gap-2_8 {gap: 2.8rem!important;}
+.gap-2_9 {gap: 2.9rem!important;}
+.gap-3 {gap: 3rem!important;}
+.gap-3_1 {gap: 3.1rem!important;}
+.gap-3_2 {gap: 3.2rem!important;}
+.gap-3_3 {gap: 3.3rem!important;}
+.gap-3_4 {gap: 3.4rem!important;}
+.gap-3_5 {gap: 3.5rem!important;}
+.gap-3_6 {gap: 3.6rem!important;}
+.gap-3_7 {gap: 3.7rem!important;}
+.gap-3_8 {gap: 3.8rem!important;}
+.gap-3_9 {gap: 3.9rem!important;}
+.gap-4 {gap: 4rem!important;}
+.gap-4_1 {gap: 4.1rem!important;}
+.gap-4_2 {gap: 4.2rem!important;}
+.gap-4_3 {gap: 4.3rem!important;}
+.gap-4_4 {gap: 4.4rem!important;}
+.gap-4_5 {gap: 4.5rem!important;}
+.gap-4_6 {gap: 4.6rem!important;}
+.gap-4_7 {gap: 4.7rem!important;}
+.gap-4_8 {gap: 4.8rem!important;}
+.gap-4_9 {gap: 4.9rem!important;}
+.gap-5 {gap: 5rem!important;}
+/* em */
+.gap-0 {gap: 0!important;}
+.gap-0_05em {gap: 0.05em!important;}
+.gap-0_1em {gap: 0.1em!important;}
+.gap-0_2em {gap: 0.2em!important;}
+.gap-0_3em {gap: 0.3em!important;}
+.gap-0_4em {gap: 0.4em!important;}
+.gap-0_5em {gap: 0.5em!important;}
+.gap-0_55em {gap: 0.55em!important;}
+.gap-0_6em {gap: 0.6em!important;}
+.gap-0_7em {gap: 0.7em!important;}
+.gap-0_8em {gap: 0.8em!important;}
+.gap-0_9em {gap: 0.9em!important;}
+.gap-0_95em {gap: 0.95em!important;}
+.gap-1em {gap: 1em!important;}
+.gap-1_1em {gap: 1.1em!important;}
+.gap-1_2em {gap: 1.2em!important;}
+.gap-1_25em {gap: 1.25em!important;}
+.gap-1_3em {gap: 1.3em!important;}
+.gap-1_4em {gap: 1.4em!important;}
+.gap-1_5em {gap: 1.5em!important;}
+.gap-1_6em {gap: 1.6em!important;}
+.gap-1_7em {gap: 1.7em!important;}
+.gap-1_8em {gap: 1.8em!important;}
+.gap-1_9em {gap: 1.9em!important;}
+.gap-1_95em {gap: 1.95em!important;}
+.gap-2em {gap: 2em!important;}
+.gap-2_05em {gap: 2.05em!important;}
+.gap-2_1em {gap: 2.1em!important;}
+.gap-2_2em {gap: 2.2em!important;}
+.gap-2_3em {gap: 2.3em!important;}
+.gap-2_4em {gap: 2.4em!important;}
+.gap-2_5em {gap: 2.5em!important;}
+.gap-2_6em {gap: 2.6em!important;}
+.gap-2_7em {gap: 2.7em!important;}
+.gap-2_8em {gap: 2.8em!important;}
+.gap-2_9em {gap: 2.9em!important;}
+.gap-3em {gap: 3em!important;}
+.gap-3_1em {gap: 3.1em!important;}
+.gap-3_2em {gap: 3.2em!important;}
+.gap-3_3em {gap: 3.3em!important;}
+.gap-3_4em {gap: 3.4em!important;}
+.gap-3_5em {gap: 3.5em!important;}
+.gap-3_6em {gap: 3.6em!important;}
+.gap-3_7em {gap: 3.7em!important;}
+.gap-3_8em {gap: 3.8em!important;}
+.gap-3_9em {gap: 3.9em!important;}
+.gap-4em {gap: 4em!important;}
+.gap-4_1em {gap: 4.1em!important;}
+.gap-4_2em {gap: 4.2em!important;}
+.gap-4_3em {gap: 4.3em!important;}
+.gap-4_4em {gap: 4.4em!important;}
+.gap-4_5em {gap: 4.5em!important;}
+.gap-4_6em {gap: 4.6em!important;}
+.gap-4_7em {gap: 4.7em!important;}
+.gap-4_8em {gap: 4.8em!important;}
+.gap-4_9em {gap: 4.9em!important;}
+.gap-5em {gap: 5em!important;}
+.gap-5_1em {gap: 5.1em!important;}
+.gap-5_2em {gap: 5.2em!important;}
+.gap-5_3em {gap: 5.3em!important;}
+.gap-5_4em {gap: 5.4em!important;}
+.gap-5_5em {gap: 5.5em!important;}
+.gap-5_6em {gap: 5.6em!important;}
+.gap-5_7em {gap: 5.7em!important;}
+.gap-5_8em {gap: 5.8em!important;}
+.gap-5_9em {gap: 5.9em!important;}
+.gap-6em {gap: 6em!important;}
+.gap-6_1em {gap: 6.1em!important;}
+.gap-6_2em {gap: 6.2em!important;}
+.gap-6_3em {gap: 6.3em!important;}
+.gap-6_4em {gap: 6.4em!important;}
+.gap-6_5em {gap: 6.5em!important;}
+.gap-6_6em {gap: 6.6em!important;}
+.gap-6_7em {gap: 6.7em!important;}
+.gap-6_8em {gap: 6.8em!important;}
+.gap-6_9em {gap: 6.9em!important;}
+.gap-7em {gap: 7em!important;}
+.gap-7_1em {gap: 7.1em!important;}
+.gap-7_2em {gap: 7.2em!important;}
+.gap-7_3em {gap: 7.3em!important;}
+.gap-7_4em {gap: 7.4em!important;}
+.gap-7_5em {gap: 7.5em!important;}
+.gap-7_6em {gap: 7.6em!important;}
+.gap-7_7em {gap: 7.7em!important;}
+.gap-7_8em {gap: 7.8em!important;}
+.gap-7_9em {gap: 7.9em!important;}
+.gap-8em {gap: 8em!important;}
+.gap-8_1em {gap: 8.1em!important;}
+.gap-8_2em {gap: 8.2em!important;}
+.gap-8_3em {gap: 8.3em!important;}
+.gap-8_4em {gap: 8.4em!important;}
+.gap-8_5em {gap: 8.5em!important;}
+.gap-8_6em {gap: 8.6em!important;}
+.gap-8_7em {gap: 8.7em!important;}
+.gap-8_8em {gap: 8.8em!important;}
+.gap-8_9em {gap: 8.9em!important;}
+.gap-9em {gap: 9em!important;}
+.gap-9_1em {gap: 9.1em!important;}
+.gap-9_2em {gap: 9.2em!important;}
+.gap-9_3em {gap: 9.3em!important;}
+.gap-9_4em {gap: 9.4em!important;}
+.gap-9_5em {gap: 9.5em!important;}
+.gap-9_6em {gap: 9.6em!important;}
+.gap-9_7em {gap: 9.7em!important;}
+.gap-9_8em {gap: 9.8em!important;}
+.gap-9_9em {gap: 9.9em!important;}
+.gap-10em {gap: 10em!important;}
+.gap-11em {gap: 11em!important;}
+.gap-12em {gap: 12em!important;}
+.gap-13em {gap: 13em!important;}
+.gap-14em {gap: 14em!important;}
+.gap-15em {gap: 15em!important;}
+.gap-16em {gap: 16em!important;}
+.gap-17em {gap: 17em!important;}
+.gap-18em {gap: 18em!important;}
+.gap-19em {gap: 19em!important;}
+.gap-20em {gap: 20em!important;}
+
+/* gap vw ------------------------------ */
+.gap-1vw {gap: 1vw!important;}
+.gap-2vw {gap: 2vw!important;}
+.gap-3vw {gap: 3vw!important;}
+.gap-4vw {gap: 4vw!important;}
+.gap-5vw {gap: 5vw!important;}
+.gap-6vw {gap: 6vw!important;}
+.gap-7vw {gap: 7vw!important;}
+.gap-8vw {gap: 8vw!important;}
+.gap-9vw {gap: 9vw!important;}
+.gap-10vw {gap: 10vw!important;}
+.gap-11vw {gap: 11vw!important;}
+.gap-12vw {gap: 12vw!important;}
+.gap-13vw {gap: 13vw!important;}
+.gap-14vw {gap: 14vw!important;}
+.gap-15vw {gap: 15vw!important;}
+.gap-16vw {gap: 16vw!important;}
+.gap-17vw {gap: 17vw!important;}
+.gap-18vw {gap: 18vw!important;}
+.gap-19vw {gap: 19vw!important;}
+.gap-20vw {gap: 20vw!important;}
+.gap-21vw {gap: 21vw!important;}
+.gap-22vw {gap: 22vw!important;}
+.gap-23vw {gap: 23vw!important;}
+.gap-24vw {gap: 24vw!important;}
+.gap-25vw {gap: 25vw!important;}
+.gap-26vw {gap: 26vw!important;}
+.gap-27vw {gap: 27vw!important;}
+.gap-28vw {gap: 28vw!important;}
+.gap-29vw {gap: 29vw!important;}
+.gap-30vw {gap: 30vw!important;}
+.gap-31vw {gap: 31vw!important;}
+.gap-32vw {gap: 32vw!important;}
+.gap-33vw {gap: 33vw!important;}
+.gap-34vw {gap: 34vw!important;}
+.gap-35vw {gap: 35vw!important;}
+.gap-36vw {gap: 36vw!important;}
+.gap-37vw {gap: 37vw!important;}
+.gap-38vw {gap: 38vw!important;}
+.gap-39vw {gap: 39vw!important;}
+.gap-40vw {gap: 40vw!important;}
+.gap-41vw {gap: 41vw!important;}
+.gap-42vw {gap: 42vw!important;}
+.gap-43vw {gap: 43vw!important;}
+.gap-44vw {gap: 44vw!important;}
+.gap-45vw {gap: 45vw!important;}
+.gap-46vw {gap: 46vw!important;}
+.gap-47vw {gap: 47vw!important;}
+.gap-48vw {gap: 48vw!important;}
+.gap-49vw {gap: 49vw!important;}
+.gap-50vw {gap: 50vw!important;}
+.gap-51vw {gap: 51vw!important;}
+.gap-52vw {gap: 52vw!important;}
+.gap-53vw {gap: 53vw!important;}
+.gap-54vw {gap: 54vw!important;}
+.gap-55vw {gap: 55vw!important;}
+.gap-56vw {gap: 56vw!important;}
+.gap-57vw {gap: 57vw!important;}
+.gap-58vw {gap: 58vw!important;}
+.gap-59vw {gap: 59vw!important;}
+.gap-60vw {gap: 60vw!important;}
+.gap-61vw {gap: 61vw!important;}
+.gap-62vw {gap: 62vw!important;}
+.gap-63vw {gap: 63vw!important;}
+.gap-64vw {gap: 64vw!important;}
+.gap-65vw {gap: 65vw!important;}
+.gap-66vw {gap: 66vw!important;}
+.gap-67vw {gap: 67vw!important;}
+.gap-68vw {gap: 68vw!important;}
+.gap-69vw {gap: 69vw!important;}
+.gap-70vw {gap: 70vw!important;}
+.gap-71vw {gap: 71vw!important;}
+.gap-72vw {gap: 72vw!important;}
+.gap-73vw {gap: 73vw!important;}
+.gap-74vw {gap: 74vw!important;}
+.gap-75vw {gap: 75vw!important;}
+.gap-76vw {gap: 76vw!important;}
+.gap-77vw {gap: 77vw!important;}
+.gap-78vw {gap: 78vw!important;}
+.gap-79vw {gap: 79vw!important;}
+.gap-80vw {gap: 80vw!important;}
+.gap-81vw {gap: 81vw!important;}
+.gap-82vw {gap: 82vw!important;}
+.gap-83vw {gap: 83vw!important;}
+.gap-84vw {gap: 84vw!important;}
+.gap-85vw {gap: 85vw!important;}
+.gap-86vw {gap: 86vw!important;}
+.gap-87vw {gap: 87vw!important;}
+.gap-88vw {gap: 88vw!important;}
+.gap-89vw {gap: 89vw!important;}
+.gap-90vw {gap: 90vw!important;}
+.gap-91vw {gap: 91vw!important;}
+.gap-92vw {gap: 92vw!important;}
+.gap-93vw {gap: 93vw!important;}
+.gap-94vw {gap: 94vw!important;}
+.gap-95vw {gap: 95vw!important;}
+.gap-96vw {gap: 96vw!important;}
+.gap-97vw {gap: 97vw!important;}
+.gap-98vw {gap: 98vw!important;}
+.gap-99vw {gap: 99vw!important;}
+.gap-100vw {gap: 100vw!important;}
+
+/* マージン ------------------------------ */
+.m-auto {margin: auto!important;}
+.mt--20 {margin-top: -20rem!important;}
+.mt--19 {margin-top: -19rem!important;}
+.mt--18 {margin-top: -18rem!important;}
+.mt--17 {margin-top: -17rem!important;}
+.mt--16 {margin-top: -16rem!important;}
+.mt--15 {margin-top: -15rem!important;}
+.mt--14 {margin-top: -14rem!important;}
+.mt--13 {margin-top: -13rem!important;}
+.mt--12 {margin-top: -12rem!important;}
+.mt--11 {margin-top: -11rem!important;}
+.mt--10 {margin-top: -10rem!important;}
+.mt--9 {margin-top: -9rem!important;}
+.mt--8 {margin-top: -8rem!important;}
+.mt--7 {margin-top: -7rem!important;}
+.mt--6 {margin-top: -6rem!important;}
+.mt--5 {margin-top: -5rem!important;}
+.mt--4 {margin-top: -4rem!important;}
+.mt--3_5 {margin-top: -3.5rem!important;}
+.mt--3 {margin-top: -3rem!important;}
+.mt--2_9 {margin-top: -2.9rem!important;}
+.mt--2_8 {margin-top: -2.8rem!important;}
+.mt--2_7 {margin-top: -2.7rem!important;}
+.mt--2_6 {margin-top: -2.6rem!important;}
+.mt--2_5 {margin-top: -2.5rem!important;}
+.mt--2_4 {margin-top: -2.4rem!important;}
+.mt--2_3 {margin-top: -2.3rem!important;}
+.mt--2_2 {margin-top: -2.2rem!important;}
+.mt--2_1 {margin-top: -2.1rem!important;}
+.mt--2 {margin-top: -2rem!important;}
+.mt--1_9 {margin-top: -1.9rem!important;}
+.mt--1_8 {margin-top: -1.8rem!important;}
+.mt--1_7 {margin-top: -1.7rem!important;}
+.mt--1_6 {margin-top: -1.6rem!important;}
+.mt--1_5 {margin-top: -1.5rem!important;}
+.mt--1_4 {margin-top: -1.4rem!important;}
+.mt--1_3 {margin-top: -1.3rem!important;}
+.mt--1_2 {margin-top: -1.2rem!important;}
+.mt--1_1 {margin-top: -1.1rem!important;}
+.mt--1 {margin-top: -1rem!important;}
+.mt--0_9 {margin-top: -0.9rem!important;}
+.mt--0_8 {margin-top: -0.8rem!important;}
+.mt--0_7 {margin-top: -0.7rem!important;}
+.mt--0_6 {margin-top: -0.6rem!important;}
+.mt--0_5 {margin-top: -0.5rem!important;}
+.mt--0_4 {margin-top: -0.4rem!important;}
+.mt--0_3 {margin-top: -0.3rem!important;}
+.mt--0_2 {margin-top: -0.2rem!important;}
+.mt--0_1 {margin-top: -0.1rem!important;}
+.mt-0 {margin-top: 0!important;}
+.mt-0_1 {margin-top: 0.1rem!important;}
+.mt-0_2 {margin-top: 0.2rem!important;}
+.mt-0_3 {margin-top: 0.3rem!important;}
+.mt-0_4 {margin-top: 0.4rem!important;}
+.mt-0_5 {margin-top: 0.5rem!important;}
+.mt-0_6 {margin-top: 0.6rem!important;}
+.mt-0_7 {margin-top: 0.7rem!important;}
+.mt-0_8 {margin-top: 0.8rem!important;}
+.mt-0_9 {margin-top: 0.9rem!important;}
+.mt-1 {margin-top: 1rem!important;}
+.mt-1_1 {margin-top: 1.1rem!important;}
+.mt-1_2 {margin-top: 1.2rem!important;}
+.mt-1_3 {margin-top: 1.3rem!important;}
+.mt-1_4 {margin-top: 1.4rem!important;}
+.mt-1_5 {margin-top: 1.5rem!important;}
+.mt-1_6 {margin-top: 1.6rem!important;}
+.mt-1_7 {margin-top: 1.7rem!important;}
+.mt-1_8 {margin-top: 1.8rem!important;}
+.mt-1_9 {margin-top: 1.9rem!important;}
+.mt-2 {margin-top: 2rem!important;}
+.mt-3 {margin-top: 3rem!important;}
+.mt-4 {margin-top: 4rem!important;}
+.mt-5 {margin-top: 5rem!important;}
+.mt-6 {margin-top: 6rem!important;}
+.mt-7 {margin-top: 7rem!important;}
+.mt-8 {margin-top: 8rem!important;}
+.mt-9 {margin-top: 9rem!important;}
+.mt-10 {margin-top: 10rem!important;}
+.mt-11 {margin-top: 11rem!important;}
+.mt-12 {margin-top: 12rem!important;}
+.mt-13 {margin-top: 13rem!important;}
+.mt-14 {margin-top: 14rem!important;}
+.mt-15 {margin-top: 15rem!important;}
+
+.mb--15 {margin-bottom: -15rem!important;}
+.mb--14 {margin-bottom: -14rem!important;}
+.mb--15 {margin-bottom: -13rem!important;}
+.mb--12 {margin-bottom: -12rem!important;}
+.mb--11 {margin-bottom: -11rem!important;}
+.mb--10 {margin-bottom: -10rem!important;}
+.mb--9 {margin-bottom: -9rem!important;}
+.mb--8 {margin-bottom: -8rem!important;}
+.mb--7 {margin-bottom: -7rem!important;}
+.mb--6 {margin-bottom: -6rem!important;}
+.mb--5 {margin-bottom: -5rem!important;}
+.mb--4 {margin-bottom: -4rem!important;}
+.mb--3 {margin-bottom: -3rem!important;}
+.mb--2 {margin-bottom: -2rem!important;}
+.mb--1_9 {margin-bottom: -0.9rem!important;}
+.mb--1_8 {margin-bottom: -0.8rem!important;}
+.mb--1_7 {margin-bottom: -0.7rem!important;}
+.mb--1_6 {margin-bottom: -0.6rem!important;}
+.mb--1_5 {margin-bottom: -0.5rem!important;}
+.mb--1_4 {margin-bottom: -0.4rem!important;}
+.mb--1_3 {margin-bottom: -0.3rem!important;}
+.mb--1_2 {margin-bottom: -0.2rem!important;}
+.mb--1_1 {margin-bottom: -0.1rem!important;}
+.mb--1 {margin-bottom: -1rem!important;}
+.mb--0_9 {margin-bottom: -0.9rem!important;}
+.mb--0_8 {margin-bottom: -0.8rem!important;}
+.mb--0_7 {margin-bottom: -0.7rem!important;}
+.mb--0_6 {margin-bottom: -0.6rem!important;}
+.mb--0_5 {margin-bottom: -0.5rem!important;}
+.mb--0_4 {margin-bottom: -0.4rem!important;}
+.mb--0_3 {margin-bottom: -0.3rem!important;}
+.mb--0_2 {margin-bottom: -0.2rem!important;}
+.mb--0_1 {margin-bottom: -0.1rem!important;}
+.mb-0 {margin-bottom: 0!important;}
+.mb-0_1 {margin-bottom: 0.1rem!important;}
+.mb-0_2 {margin-bottom: 0.2rem!important;}
+.mb-0_3 {margin-bottom: 0.3rem!important;}
+.mb-0_4 {margin-bottom: 0.4rem!important;}
+.mb-0_5 {margin-bottom: 0.5rem!important;}
+.mb-0_6 {margin-bottom: 0.6rem!important;}
+.mb-0_7 {margin-bottom: 0.7rem!important;}
+.mb-0_8 {margin-bottom: 0.8rem!important;}
+.mb-0_9 {margin-bottom: 0.9rem!important;}
+.mb-1 {margin-bottom: 1rem!important;}
+.mb-1_1 {margin-bottom: 1.1rem!important;}
+.mb-1_2 {margin-bottom: 1.2rem!important;}
+.mb-1_3 {margin-bottom: 1.3rem!important;}
+.mb-1_4 {margin-bottom: 1.4rem!important;}
+.mb-1_5 {margin-bottom: 1.5rem!important;}
+.mb-1_6 {margin-bottom: 1.6rem!important;}
+.mb-1_7 {margin-bottom: 1.7rem!important;}
+.mb-1_8 {margin-bottom: 1.8rem!important;}
+.mb-1_9 {margin-bottom: 1.9rem!important;}
+.mb-2 {margin-bottom: 2rem!important;}
+.mb-2_1 {margin-bottom: 2.1rem!important;}
+.mb-2_2 {margin-bottom: 2.2rem!important;}
+.mb-2_3 {margin-bottom: 2.3rem!important;}
+.mb-2_4 {margin-bottom: 2.4rem!important;}
+.mb-2_5 {margin-bottom: 2.5rem!important;}
+.mb-2_6 {margin-bottom: 2.6rem!important;}
+.mb-2_7 {margin-bottom: 2.7rem!important;}
+.mb-2_8 {margin-bottom: 2.8rem!important;}
+.mb-2_9 {margin-bottom: 2.9rem!important;}
+.mb-3 {margin-bottom: 3rem!important;}
+
+.mr--1 {margin-right: -1rem!important;}
+.mr--0_9 {margin-right: -0.9rem!important;}
+.mr--0_8 {margin-right: -0.8rem!important;}
+.mr--0_7 {margin-right: -0.7rem!important;}
+.mr--0_6 {margin-right: -0.6rem!important;}
+.mr--0_5 {margin-right: -0.5rem!important;}
+.mr--0_4 {margin-right: -0.4rem!important;}
+.mr--0_3 {margin-right: -0.3rem!important;}
+.mr--0_2 {margin-right: -0.2rem!important;}
+.mr--0_1 {margin-right: -0.1rem!important;}
+.mr-0 {margin-right: 0!important;}
+.mr-0_1 {margin-right: 0.1rem!important;}
+.mr-0_2 {margin-right: 0.2rem!important;}
+.mr-0_3 {margin-right: 0.3rem!important;}
+.mr-0_4 {margin-right: 0.4rem!important;}
+.mr-0_5 {margin-right: 0.5rem!important;}
+.mr-0_6 {margin-right: 0.6rem!important;}
+.mr-0_7 {margin-right: 0.7rem!important;}
+.mr-0_8 {margin-right: 0.8rem!important;}
+.mr-0_9 {margin-right: 0.9rem!important;}
+.mr-1 {margin-right: 1rem!important;}
+.mr-1_1 {margin-right: 1.1rem!important;}
+.mr-1_2 {margin-right: 1.2rem!important;}
+.mr-1_3 {margin-right: 1.3rem!important;}
+.mr-1_4 {margin-right: 1.4rem!important;}
+.mr-1_5 {margin-right: 1.5rem!important;}
+.mr-1_6 {margin-right: 1.6rem!important;}
+.mr-1_7 {margin-right: 1.7rem!important;}
+.mr-1_8 {margin-right: 1.8rem!important;}
+.mr-1_9 {margin-right: 1.9rem!important;}
+.mr-2 {margin-right: 2rem!important;}
+
+.ml--2 {margin-left: -2rem!important;}
+.ml--1_9 {margin-left: -1.9rem!important;}
+.ml--1_8 {margin-left: -1.8rem!important;}
+.ml--1_7 {margin-left: -1.7rem!important;}
+.ml--1_6 {margin-left: -1.6rem!important;}
+.ml--1_5 {margin-left: -1.5rem!important;}
+.ml--1_4 {margin-left: -1.4rem!important;}
+.ml--1_3 {margin-left: -1.3rem!important;}
+.ml--1_2 {margin-left: -1.2rem!important;}
+.ml--1_1 {margin-left: -1.1rem!important;}
+.ml--1 {margin-left: -1rem!important;}
+.ml--0_9 {margin-left: -0.9rem!important;}
+.ml--0_8 {margin-left: -0.8rem!important;}
+.ml--0_7 {margin-left: -0.7rem!important;}
+.ml--0_6 {margin-left: -0.6rem!important;}
+.ml--0_5 {margin-left: -0.5rem!important;}
+.ml--0_4 {margin-left: -0.4rem!important;}
+.ml--0_3 {margin-left: -0.3rem!important;}
+.ml--0_2 {margin-left: -0.2rem!important;}
+.ml--0_1 {margin-left: -0.1rem!important;}
+.ml-0 {margin-left: 0!important;}
+.ml-0_1 {margin-left: 0.1rem!important;}
+.ml-0_2 {margin-left: 0.2rem!important;}
+.ml-0_3 {margin-left: 0.3rem!important;}
+.ml-0_4 {margin-left: 0.4rem!important;}
+.ml-0_5 {margin-left: 0.5rem!important;}
+.ml-0_6 {margin-left: 0.6rem!important;}
+.ml-0_7 {margin-left: 0.7rem!important;}
+.ml-0_8 {margin-left: 0.8rem!important;}
+.ml-0_9 {margin-left: 0.9rem!important;}
+.ml-1 {margin-left: 1rem!important;}
+.ml-1_1 {margin-left: 1.1rem!important;}
+.ml-1_2 {margin-left: 1.2rem!important;}
+.ml-1_3 {margin-left: 1.3rem!important;}
+.ml-1_4 {margin-left: 1.4rem!important;}
+.ml-1_5 {margin-left: 1.5rem!important;}
+.ml-1_6 {margin-left: 1.6rem!important;}
+.ml-1_7 {margin-left: 1.7rem!important;}
+.ml-1_8 {margin-left: 1.8rem!important;}
+.ml-1_9 {margin-left: 1.9rem!important;}
+.ml-2 {margin-left: 2rem!important;}
+
+/* パディング ------------------------------ */
+.p-0 {padding: 0!important;}
+.p-0_1 {padding: 0.1rem!important;}
+.p-0_2 {padding: 0.2rem!important;}
+.p-0_3 {padding: 0.3rem!important;}
+.p-0_4 {padding: 0.4rem!important;}
+.p-0_5 {padding: 0.5rem!important;}
+.p-0_6 {padding: 0.6rem!important;}
+.p-0_7 {padding: 0.7rem!important;}
+.p-0_8 {padding: 0.8rem!important;}
+.p-0_9 {padding: 0.9rem!important;}
+.p-1 {padding: 1rem!important;}
+.p-1_1 {padding: 1.1rem!important;}
+.p-1_2 {padding: 1.2rem!important;}
+.p-1_3 {padding: 1.3rem!important;}
+.p-1_4 {padding: 1.4rem!important;}
+.p-1_5 {padding: 1.5rem!important;}
+.p-1_6 {padding: 1.6rem!important;}
+.p-1_7 {padding: 1.7rem!important;}
+.p-1_8 {padding: 1.8rem!important;}
+.p-1_9 {padding: 1.9rem!important;}
+.p-2 {padding: 2rem!important;}
+
+.pt-0 {padding-top: 0!important;}
+.pt-0_1 {padding-top: 0.1rem!important;}
+.pt-0_2 {padding-top: 0.2rem!important;}
+.pt-0_3 {padding-top: 0.3rem!important;}
+.pt-0_4 {padding-top: 0.4rem!important;}
+.pt-0_5 {padding-top: 0.5rem!important;}
+.pt-0_6 {padding-top: 0.6rem!important;}
+.pt-0_7 {padding-top: 0.7rem!important;}
+.pt-0_8 {padding-top: 0.8rem!important;}
+.pt-0_9 {padding-top: 0.9rem!important;}
+.pt-1 {padding-top: 1rem!important;}
+.pt-1_1 {padding-top: 1.1rem!important;}
+.pt-1_2 {padding-top: 1.2rem!important;}
+.pt-1_3 {padding-top: 1.3rem!important;}
+.pt-1_4 {padding-top: 1.4rem!important;}
+.pt-1_5 {padding-top: 1.5rem!important;}
+.pt-1_6 {padding-top: 1.6rem!important;}
+.pt-1_7 {padding-top: 1.7rem!important;}
+.pt-1_8 {padding-top: 1.8rem!important;}
+.pt-1_9 {padding-top: 1.9rem!important;}
+.pt-2 {padding-top: 2rem!important;}
+
+.pr-0 {padding-right: 0!important;}
+.pr-0_1 {padding-right: 0.1rem!important;}
+.pr-0_2 {padding-right: 0.2rem!important;}
+.pr-0_3 {padding-right: 0.3rem!important;}
+.pr-0_4 {padding-right: 0.4rem!important;}
+.pr-0_5 {padding-right: 0.5rem!important;}
+.pr-0_6 {padding-right: 0.6rem!important;}
+.pr-0_7 {padding-right: 0.7rem!important;}
+.pr-0_8 {padding-right: 0.8rem!important;}
+.pr-0_9 {padding-right: 0.9rem!important;}
+.pr-1 {padding-right: 1rem!important;}
+.pr-1_1 {padding-right: 1.1rem!important;}
+.pr-1_2 {padding-right: 1.2rem!important;}
+.pr-1_3 {padding-right: 1.3rem!important;}
+.pr-1_4 {padding-right: 1.4rem!important;}
+.pr-1_5 {padding-right: 1.5rem!important;}
+.pr-1_6 {padding-right: 1.6rem!important;}
+.pr-1_7 {padding-right: 1.7rem!important;}
+.pr-1_8 {padding-right: 1.8rem!important;}
+.pr-1_9 {padding-right: 1.9rem!important;}
+.pr-2 {padding-right: 2rem!important;}
+
+.pb-0 {padding-bottom: 0!important;}
+.pb-0_1 {padding-bottom: 0.1rem!important;}
+.pb-0_2 {padding-bottom: 0.2rem!important;}
+.pb-0_3 {padding-bottom: 0.3rem!important;}
+.pb-0_4 {padding-bottom: 0.4rem!important;}
+.pb-0_5 {padding-bottom: 0.5rem!important;}
+.pb-0_6 {padding-bottom: 0.6rem!important;}
+.pb-0_7 {padding-bottom: 0.7rem!important;}
+.pb-0_8 {padding-bottom: 0.8rem!important;}
+.pb-0_9 {padding-bottom: 0.9rem!important;}
+.pb-1 {padding-bottom: 1rem!important;}
+.pb-1_1 {padding-bottom: 1.1rem!important;}
+.pb-1_2 {padding-bottom: 1.2rem!important;}
+.pb-1_3 {padding-bottom: 1.3rem!important;}
+.pb-1_4 {padding-bottom: 1.4rem!important;}
+.pb-1_5 {padding-bottom: 1.5rem!important;}
+.pb-1_6 {padding-bottom: 1.6rem!important;}
+.pb-1_7 {padding-bottom: 1.7rem!important;}
+.pb-1_8 {padding-bottom: 1.8rem!important;}
+.pb-1_9 {padding-bottom: 1.9rem!important;}
+.pb-2 {padding-bottom: 2rem!important;}
+
+.pl-0 {padding-left: 0!important;}
+.pl-0_1 {padding-left: 0.1rem!important;}
+.pl-0_2 {padding-left: 0.2rem!important;}
+.pl-0_3 {padding-left: 0.3rem!important;}
+.pl-0_4 {padding-left: 0.4rem!important;}
+.pl-0_5 {padding-left: 0.5rem!important;}
+.pl-0_6 {padding-left: 0.6rem!important;}
+.pl-0_7 {padding-left: 0.7rem!important;}
+.pl-0_8 {padding-left: 0.8rem!important;}
+.pl-0_9 {padding-left: 0.9rem!important;}
+.pl-1 {padding-left: 1rem!important;}
+.pl-1_1 {padding-left: 1.1rem!important;}
+.pl-1_2 {padding-left: 1.2rem!important;}
+.pl-1_3 {padding-left: 1.3rem!important;}
+.pl-1_4 {padding-left: 1.4rem!important;}
+.pl-1_5 {padding-left: 1.5rem!important;}
+.pl-1_6 {padding-left: 1.6rem!important;}
+.pl-1_7 {padding-left: 1.7rem!important;}
+.pl-1_8 {padding-left: 1.8rem!important;}
+.pl-1_9 {padding-left: 1.9rem!important;}
+.pl-2 {padding-left: 2rem!important;}
+
+/* em */
+/* マージン ------------------------------ */
+.m-auto {margin: auto!important;}
+.mt--20em {margin-top: -20em!important;}
+.mt--19em {margin-top: -19em!important;}
+.mt--18em {margin-top: -18em!important;}
+.mt--17em {margin-top: -17em!important;}
+.mt--16em {margin-top: -16em!important;}
+.mt--15em {margin-top: -15em!important;}
+.mt--14em {margin-top: -14em!important;}
+.mt--13em {margin-top: -13em!important;}
+.mt--12em {margin-top: -12em!important;}
+.mt--11em {margin-top: -11em!important;}
+.mt--10em {margin-top: -10em!important;}
+.mt--9em {margin-top: -9em!important;}
+.mt--8em {margin-top: -8em!important;}
+.mt--7em {margin-top: -7em!important;}
+.mt--6em {margin-top: -6em!important;}
+.mt--5em {margin-top: -5em!important;}
+.mt--4em {margin-top: -4em!important;}
+.mt--3em {margin-top: -3em!important;}
+.mt--2_9em {margin-top: -2.9em!important;}
+.mt--2_8em {margin-top: -2.8em!important;}
+.mt--2_7em {margin-top: -2.7em!important;}
+.mt--2_6em {margin-top: -2.6em!important;}
+.mt--2_5em {margin-top: -2.5em!important;}
+.mt--2_4em {margin-top: -2.4em!important;}
+.mt--2_3em {margin-top: -2.3em!important;}
+.mt--2_2em {margin-top: -2.2em!important;}
+.mt--2_1em {margin-top: -2.1em!important;}
+.mt--2em {margin-top: -2em!important;}
+.mt--1_9em {margin-top: -1.9em!important;}
+.mt--1_8em {margin-top: -1.8em!important;}
+.mt--1_7em {margin-top: -1.7em!important;}
+.mt--1_6em {margin-top: -1.6em!important;}
+.mt--1_5em {margin-top: -1.5em!important;}
+.mt--1_4em {margin-top: -1.4em!important;}
+.mt--1_3em {margin-top: -1.3em!important;}
+.mt--1_2em {margin-top: -1.2em!important;}
+.mt--1_1em {margin-top: -1.1em!important;}
+.mt--1em {margin-top: -1em!important;}
+.mt--0_9em {margin-top: -0.9em!important;}
+.mt--0_8em {margin-top: -0.8em!important;}
+.mt--0_7em {margin-top: -0.7em!important;}
+.mt--0_6em {margin-top: -0.6em!important;}
+.mt--0_5em {margin-top: -0.5em!important;}
+.mt--0_4em {margin-top: -0.4em!important;}
+.mt--0_3em {margin-top: -0.3em!important;}
+.mt--0_2em {margin-top: -0.2em!important;}
+.mt--0_1em {margin-top: -0.1em!important;}
+.mt-0_1em {margin-top: 0.1em!important;}
+.mt-0_2em {margin-top: 0.2em!important;}
+.mt-0_3em {margin-top: 0.3em!important;}
+.mt-0_4em {margin-top: 0.4em!important;}
+.mt-0_5em {margin-top: 0.5em!important;}
+.mt-0_6em {margin-top: 0.6em!important;}
+.mt-0_7em {margin-top: 0.7em!important;}
+.mt-0_8em {margin-top: 0.8em!important;}
+.mt-0_9em {margin-top: 0.9em!important;}
+.mt-1em {margin-top: 1em!important;}
+.mt-1_1em {margin-top: 1.1em!important;}
+.mt-1_2em {margin-top: 1.2em!important;}
+.mt-1_3em {margin-top: 1.3em!important;}
+.mt-1_4em {margin-top: 1.4em!important;}
+.mt-1_5em {margin-top: 1.5em!important;}
+.mt-1_6em {margin-top: 1.6em!important;}
+.mt-1_7em {margin-top: 1.7em!important;}
+.mt-1_8em {margin-top: 1.8em!important;}
+.mt-1_9em {margin-top: 1.9em!important;}
+.mt-2em {margin-top: 2em!important;}
+
+.mb--1em {margin-bottom: -1em!important;}
+.mb--0_9em {margin-bottom: -0.9em!important;}
+.mb--0_8em {margin-bottom: -0.8em!important;}
+.mb--0_7em {margin-bottom: -0.7em!important;}
+.mb--0_6em {margin-bottom: -0.6em!important;}
+.mb--0_5em {margin-bottom: -0.5em!important;}
+.mb--0_4em {margin-bottom: -0.4em!important;}
+.mb--0_3em {margin-bottom: -0.3em!important;}
+.mb--0_2em {margin-bottom: -0.2em!important;}
+.mb--0_1em {margin-bottom: -0.1em!important;}
+.mb-0_1em {margin-bottom: 0.1em!important;}
+.mb-0_2em {margin-bottom: 0.2em!important;}
+.mb-0_3em {margin-bottom: 0.3em!important;}
+.mb-0_4em {margin-bottom: 0.4em!important;}
+.mb-0_5em {margin-bottom: 0.5em!important;}
+.mb-0_6em {margin-bottom: 0.6em!important;}
+.mb-0_7em {margin-bottom: 0.7em!important;}
+.mb-0_8em {margin-bottom: 0.8em!important;}
+.mb-0_9em {margin-bottom: 0.9em!important;}
+.mb-1em {margin-bottom: 1em!important;}
+.mb-1_1em {margin-bottom: 1.1em!important;}
+.mb-1_2em {margin-bottom: 1.2em!important;}
+.mb-1_3em {margin-bottom: 1.3em!important;}
+.mb-1_4em {margin-bottom: 1.4em!important;}
+.mb-1_5em {margin-bottom: 1.5em!important;}
+.mb-1_6em {margin-bottom: 1.6em!important;}
+.mb-1_7em {margin-bottom: 1.7em!important;}
+.mb-1_8em {margin-bottom: 1.8em!important;}
+.mb-1_9em {margin-bottom: 1.9em!important;}
+.mb-2em {margin-bottom: 2em!important;}
+.mb-2_1em {margin-bottom: 2.1em!important;}
+.mb-2_2em {margin-bottom: 2.2em!important;}
+.mb-2_3em {margin-bottom: 2.3em!important;}
+.mb-2_4em {margin-bottom: 2.4em!important;}
+.mb-2_5em {margin-bottom: 2.5em!important;}
+.mb-2_6em {margin-bottom: 2.6em!important;}
+.mb-2_7em {margin-bottom: 2.7em!important;}
+.mb-2_8em {margin-bottom: 2.8em!important;}
+.mb-2_9em {margin-bottom: 2.9em!important;}
+.mb-3em {margin-bottom: 3em!important;}
+
+.mr--1em {margin-right: -1em!important;}
+.mr--0_9em {margin-right: -0.9em!important;}
+.mr--0_8em {margin-right: -0.8em!important;}
+.mr--0_7em {margin-right: -0.7em!important;}
+.mr--0_6em {margin-right: -0.6em!important;}
+.mr--0_5em {margin-right: -0.5em!important;}
+.mr--0_4em {margin-right: -0.4em!important;}
+.mr--0_3em {margin-right: -0.3em!important;}
+.mr--0_2em {margin-right: -0.2em!important;}
+.mr--0_1em {margin-right: -0.1em!important;}
+.mr-0_1em {margin-right: 0.1em!important;}
+.mr-0_2em {margin-right: 0.2em!important;}
+.mr-0_3em {margin-right: 0.3em!important;}
+.mr-0_4em {margin-right: 0.4em!important;}
+.mr-0_5em {margin-right: 0.5em!important;}
+.mr-0_6em {margin-right: 0.6em!important;}
+.mr-0_7em {margin-right: 0.7em!important;}
+.mr-0_8em {margin-right: 0.8em!important;}
+.mr-0_9em {margin-right: 0.9em!important;}
+.mr-1em {margin-right: 1em!important;}
+.mr-1_1em {margin-right: 1.1em!important;}
+.mr-1_2em {margin-right: 1.2em!important;}
+.mr-1_3em {margin-right: 1.3em!important;}
+.mr-1_4em {margin-right: 1.4em!important;}
+.mr-1_5em {margin-right: 1.5em!important;}
+.mr-1_6em {margin-right: 1.6em!important;}
+.mr-1_7em {margin-right: 1.7em!important;}
+.mr-1_8em {margin-right: 1.8em!important;}
+.mr-1_9em {margin-right: 1.9em!important;}
+.mr-2em {margin-right: 2em!important;}
+
+.ml--2em {margin-left: -2em!important;}
+.ml--1_9em {margin-left: -1.9em!important;}
+.ml--1_8em {margin-left: -1.8em!important;}
+.ml--1_7em {margin-left: -1.7em!important;}
+.ml--1_6em {margin-left: -1.6em!important;}
+.ml--1_5em {margin-left: -1.5em!important;}
+.ml--1_4em {margin-left: -1.4em!important;}
+.ml--1_3em {margin-left: -1.3em!important;}
+.ml--1_2em {margin-left: -1.2em!important;}
+.ml--1_1em {margin-left: -1.1em!important;}
+.ml--1em {margin-left: -1em!important;}
+.ml--0_9em {margin-left: -0.9em!important;}
+.ml--0_8em {margin-left: -0.8em!important;}
+.ml--0_7em {margin-left: -0.7em!important;}
+.ml--0_6em {margin-left: -0.6em!important;}
+.ml--0_5em {margin-left: -0.5em!important;}
+.ml--0_4em {margin-left: -0.4em!important;}
+.ml--0_3em {margin-left: -0.3em!important;}
+.ml--0_2em {margin-left: -0.2em!important;}
+.ml--0_1em {margin-left: -0.1em!important;}
+.ml-0_1em {margin-left: 0.1em!important;}
+.ml-0_2em {margin-left: 0.2em!important;}
+.ml-0_3em {margin-left: 0.3em!important;}
+.ml-0_4em {margin-left: 0.4em!important;}
+.ml-0_5em {margin-left: 0.5em!important;}
+.ml-0_6em {margin-left: 0.6em!important;}
+.ml-0_7em {margin-left: 0.7em!important;}
+.ml-0_8em {margin-left: 0.8em!important;}
+.ml-0_9em {margin-left: 0.9em!important;}
+.ml-1em {margin-left: 1em!important;}
+.ml-1_1em {margin-left: 1.1em!important;}
+.ml-1_2em {margin-left: 1.2em!important;}
+.ml-1_3em {margin-left: 1.3em!important;}
+.ml-1_4em {margin-left: 1.4em!important;}
+.ml-1_5em {margin-left: 1.5em!important;}
+.ml-1_6em {margin-left: 1.6em!important;}
+.ml-1_7em {margin-left: 1.7em!important;}
+.ml-1_8em {margin-left: 1.8em!important;}
+.ml-1_9em {margin-left: 1.9em!important;}
+.ml-2em {margin-left: 2em!important;}
+
+/* パディング ------------------------------ */
+.p-0_1em {padding: 0.1em!important;}
+.p-0_2em {padding: 0.2em!important;}
+.p-0_3em {padding: 0.3em!important;}
+.p-0_4em {padding: 0.4em!important;}
+.p-0_5em {padding: 0.5em!important;}
+.p-0_6em {padding: 0.6em!important;}
+.p-0_7em {padding: 0.7em!important;}
+.p-0_8em {padding: 0.8em!important;}
+.p-0_9em {padding: 0.9em!important;}
+.p-1em {padding: 1em!important;}
+.p-1_1em {padding: 1.1em!important;}
+.p-1_2em {padding: 1.2em!important;}
+.p-1_3em {padding: 1.3em!important;}
+.p-1_4em {padding: 1.4em!important;}
+.p-1_5em {padding: 1.5em!important;}
+.p-1_6em {padding: 1.6em!important;}
+.p-1_7em {padding: 1.7em!important;}
+.p-1_8em {padding: 1.8em!important;}
+.p-1_9em {padding: 1.9em!important;}
+.p-2em {padding: 2em!important;}
+
+.pt-0_1em {padding-top: 0.1em!important;}
+.pt-0_2em {padding-top: 0.2em!important;}
+.pt-0_3em {padding-top: 0.3em!important;}
+.pt-0_4em {padding-top: 0.4em!important;}
+.pt-0_5em {padding-top: 0.5em!important;}
+.pt-0_6em {padding-top: 0.6em!important;}
+.pt-0_7em {padding-top: 0.7em!important;}
+.pt-0_8em {padding-top: 0.8em!important;}
+.pt-0_9em {padding-top: 0.9em!important;}
+.pt-1em {padding-top: 1em!important;}
+.pt-1_1em {padding-top: 1.1em!important;}
+.pt-1_2em {padding-top: 1.2em!important;}
+.pt-1_3em {padding-top: 1.3em!important;}
+.pt-1_4em {padding-top: 1.4em!important;}
+.pt-1_5em {padding-top: 1.5em!important;}
+.pt-1_6em {padding-top: 1.6em!important;}
+.pt-1_7em {padding-top: 1.7em!important;}
+.pt-1_8em {padding-top: 1.8em!important;}
+.pt-1_9em {padding-top: 1.9em!important;}
+.pt-2em {padding-top: 2em!important;}
+
+.pr-0_1em {padding-right: 0.1em!important;}
+.pr-0_2em {padding-right: 0.2em!important;}
+.pr-0_3em {padding-right: 0.3em!important;}
+.pr-0_4em {padding-right: 0.4em!important;}
+.pr-0_5em {padding-right: 0.5em!important;}
+.pr-0_6em {padding-right: 0.6em!important;}
+.pr-0_7em {padding-right: 0.7em!important;}
+.pr-0_8em {padding-right: 0.8em!important;}
+.pr-0_9em {padding-right: 0.9em!important;}
+.pr-1em {padding-right: 1em!important;}
+.pr-1_1em {padding-right: 1.1em!important;}
+.pr-1_2em {padding-right: 1.2em!important;}
+.pr-1_3em {padding-right: 1.3em!important;}
+.pr-1_4em {padding-right: 1.4em!important;}
+.pr-1_5em {padding-right: 1.5em!important;}
+.pr-1_6em {padding-right: 1.6em!important;}
+.pr-1_7em {padding-right: 1.7em!important;}
+.pr-1_8em {padding-right: 1.8em!important;}
+.pr-1_9em {padding-right: 1.9em!important;}
+.pr-2em {padding-right: 2em!important;}
+.pr-3em {padding-right: 3em!important;}
+.pr-4em {padding-right: 4em!important;}
+.pr-5em {padding-right: 5em!important;}
+.pr-6em {padding-right: 6em!important;}
+.pr-7em {padding-right: 7em!important;}
+.pr-8em {padding-right: 8em!important;}
+.pr-9em {padding-right: 9em!important;}
+.pr-10em {padding-right: 10em!important;}
+
+.pb-0_1em {padding-bottom: 0.1em!important;}
+.pb-0_2em {padding-bottom: 0.2em!important;}
+.pb-0_3em {padding-bottom: 0.3em!important;}
+.pb-0_4em {padding-bottom: 0.4em!important;}
+.pb-0_5em {padding-bottom: 0.5em!important;}
+.pb-0_6em {padding-bottom: 0.6em!important;}
+.pb-0_7em {padding-bottom: 0.7em!important;}
+.pb-0_8em {padding-bottom: 0.8em!important;}
+.pb-0_9em {padding-bottom: 0.9em!important;}
+.pb-1em {padding-bottom: 1em!important;}
+.pb-1_1em {padding-bottom: 1.1em!important;}
+.pb-1_2em {padding-bottom: 1.2em!important;}
+.pb-1_3em {padding-bottom: 1.3em!important;}
+.pb-1_4em {padding-bottom: 1.4em!important;}
+.pb-1_5em {padding-bottom: 1.5em!important;}
+.pb-1_6em {padding-bottom: 1.6em!important;}
+.pb-1_7em {padding-bottom: 1.7em!important;}
+.pb-1_8em {padding-bottom: 1.8em!important;}
+.pb-1_9em {padding-bottom: 1.9em!important;}
+.pb-2em {padding-bottom: 2em!important;}
+
+.pl-0_1em {padding-left: 0.1em!important;}
+.pl-0_2em {padding-left: 0.2em!important;}
+.pl-0_3em {padding-left: 0.3em!important;}
+.pl-0_4em {padding-left: 0.4em!important;}
+.pl-0_5em {padding-left: 0.5em!important;}
+.pl-0_6em {padding-left: 0.6em!important;}
+.pl-0_7em {padding-left: 0.7em!important;}
+.pl-0_8em {padding-left: 0.8em!important;}
+.pl-0_9em {padding-left: 0.9em!important;}
+.pl-1em {padding-left: 1em!important;}
+.pl-1_1em {padding-left: 1.1em!important;}
+.pl-1_2em {padding-left: 1.2em!important;}
+.pl-1_3em {padding-left: 1.3em!important;}
+.pl-1_4em {padding-left: 1.4em!important;}
+.pl-1_5em {padding-left: 1.5em!important;}
+.pl-1_6em {padding-left: 1.6em!important;}
+.pl-1_7em {padding-left: 1.7em!important;}
+.pl-1_8em {padding-left: 1.8em!important;}
+.pl-1_9em {padding-left: 1.9em!important;}
+.pl-2em {padding-left: 2em!important;}
+
+/* --------------- margin px --------------- */
+
+/* --------------- margin 1~10px --------------- */
+.m-1px {margin: 1px!important;}
+.m-2px {margin: 2px!important;}
+.m-3px {margin: 3px!important;}
+.m-4px {margin: 4px!important;}
+.m-5px {margin: 5px!important;}
+.m-6px {margin: 6px!important;}
+.m-7px {margin: 7px!important;}
+.m-8px {margin: 8px!important;}
+.m-9px {margin: 9px!important;}
+.m-10px {margin: 10px!important;}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 幅 */
+
+/* 幅 auto */
+.w-auto {width: auto!important;}
+
+/* 幅 fit-content */
+.w-fit-content, .fit-content {width: fit-content!important;}
+
+/* 幅 min-content */
+.w-min-content, .min-content {width: min-content!important;}
+
+/* 幅 max-content */
+.w-max-content, .max-content {width: max-content!important;}
+
+
+/* 幅 % -------------------- */
+
+/* 分数 */
+.w-1-3th, w-33, .w-3333 {width: calc(100% / 3)!important;}
+.w-1-4th {width: calc(100% / 4)!important;}
+.w-1-5th {width: calc(100% / 5)!important;}
+.w-1-6th {width: calc(100% / 6)!important;}
+.w-1-7th {width: calc(100% / 7)!important;}
+.w-1-8th {width: calc(100% / 8)!important;}
+.w-1-9th {width: calc(100% / 9)!important;}
+.w-1-11th {width: calc(100% / 11)!important;}
+.w-1-12th {width: calc(100% / 12)!important;}
+.w-1-13th {width: calc(100% / 13)!important;}
+.w-1-14th {width: calc(100% / 14)!important;}
+.w-1-15th {width: calc(100% / 15)!important;}
+.w-1-16th {width: calc(100% / 16)!important;}
+.w-1-17th {width: calc(100% / 17)!important;}
+.w-1-18th {width: calc(100% / 18)!important;}
+.w-1-19th {width: calc(100% / 19)!important;}
+.w-1-20th {width: calc(100% / 20)!important;}
+
+.w-0 {width: 0!important;}
+.w-0_5 {width: .5%!important;}
+.w-1 {width: 1%!important;}
+.w-1_5 {width: 1.5%!important;}
+.w-2 {width: 2%!important;}
+.w-2_5 {width: 2.5%!important;}
+.w-3 {width: 3%!important;}
+.w-3_5 {width: 3.5%!important;}
+.w-4 {width: 4%!important;}
+.w-4_5 {width: 4.5%!important;}
+.w-5 {width: 5%!important;}
+.w-5_5 {width: 5.5%!important;}
+.w-6 {width: 6%!important;}
+.w-6_5 {width: 6.5%!important;}
+.w-7 {width: 7%!important;}
+.w-7_5 {width: 7.5%!important;}
+.w-8 {width: 8%!important;}
+.w-8_5 {width: 8.5%!important;}
+.w-9 {width: 9%!important;}
+.w-9_5 {width: 9.5%!important;}
+.w-10 {width: 10%!important;}
+.w-10_5 {width: 10.5%!important;}
+.w-11 {width: 11%!important;}
+.w-11_5 {width: 11.5%!important;}
+.w-12 {width: 12%!important;}
+.w-12_5 {width: 12.5%!important;}
+.w-13 {width: 13%!important;}
+.w-13_5 {width: 13.5%!important;}
+.w-14 {width: 14%!important;}
+.w-14_5 {width: 14.5%!important;}
+.w-15 {width: 15%!important;}
+.w-15_5 {width: 15.5%!important;}
+.w-16 {width: 16%!important;}
+.w-16_5 {width: 16.5%!important;}
+.w-17 {width: 17%!important;}
+.w-17_5 {width: 17.5%!important;}
+.w-18 {width: 18%!important;}
+.w-18_5 {width: 18.5%!important;}
+.w-19 {width: 19%!important;}
+.w-19_5 {width: 19.5%!important;}
+.w-20 {width: 20%!important;}
+.w-20_5 {width: 20.5%!important;}
+.w-21 {width: 21%!important;}
+.w-21_5 {width: 21.5%!important;}
+.w-22 {width: 22%!important;}
+.w-22_5 {width: 22.5%!important;}
+.w-23 {width: 23%!important;}
+.w-23_5 {width: 23.5%!important;}
+.w-24 {width: 24%!important;}
+.w-24_5 {width: 24.5%!important;}
+.w-25 {width: 25%!important;}
+.w-25_5 {width: 25.5%!important;}
+.w-26 {width: 26%!important;}
+.w-26_5 {width: 26.5%!important;}
+.w-27 {width: 27%!important;}
+.w-27_5 {width: 27.5%!important;}
+.w-28 {width: 28%!important;}
+.w-28_5 {width: 28.5%!important;}
+.w-29 {width: 29%!important;}
+.w-29_5 {width: 29.5%!important;}
+.w-30 {width: 30%!important;}
+.w-30_5 {width: 30.5%!important;}
+.w-31 {width: 31%!important;}
+.w-31_5 {width: 31.5%!important;}
+.w-32 {width: 32%!important;}
+.w-32_5 {width: 32.5%!important;}
+.w-33 {width: 33%!important;}
+.w-33_5 {width: 33.5%!important;}
+.w-34 {width: 34%!important;}
+.w-34_5 {width: 34.5%!important;}
+.w-35 {width: 35%!important;}
+.w-35_5 {width: 35.5%!important;}
+.w-36 {width: 36%!important;}
+.w-36_5 {width: 36.5%!important;}
+.w-37 {width: 37%!important;}
+.w-37_5 {width: 37.5%!important;}
+.w-38 {width: 38%!important;}
+.w-38_5 {width: 38.5%!important;}
+.w-39 {width: 39%!important;}
+.w-39_5 {width: 39.5%!important;}
+.w-40 {width: 40%!important;}
+.w-40_5 {width: 40.5%!important;}
+.w-41 {width: 41%!important;}
+.w-41_5 {width: 41.5%!important;}
+.w-42 {width: 42%!important;}
+.w-42_5 {width: 42.5%!important;}
+.w-43 {width: 43%!important;}
+.w-43_5 {width: 43.5%!important;}
+.w-44 {width: 44%!important;}
+.w-44_5 {width: 44.5%!important;}
+.w-45 {width: 45%!important;}
+.w-45_5 {width: 45.5%!important;}
+.w-46 {width: 46%!important;}
+.w-46_5 {width: 46.5%!important;}
+.w-47 {width: 47%!important;}
+.w-47_5 {width: 47.5%!important;}
+.w-48 {width: 48%!important;}
+.w-48_5 {width: 48.5%!important;}
+.w-49 {width: 49%!important;}
+.w-49_5 {width: 49.5%!important;}
+.w-50 {width: 50%!important;}
+.w-506 {width: 50.6%!important;}
+.w-51 {width: 51%!important;}
+.w-52 {width: 52%!important;}
+.w-53 {width: 53%!important;}
+.w-54 {width: 54%!important;}
+.w-55 {width: 55%!important;}
+.w-56 {width: 56%!important;}
+.w-57 {width: 57%!important;}
+.w-58 {width: 58%!important;}
+.w-59 {width: 59%!important;}
+.w-59-25 {width: 59.25%!important;}
+.w-60 {width: 60%!important;}
+.w-61 {width: 61%!important;}
+.w-62 {width: 62%!important;}
+.w-63 {width: 63%!important;}
+.w-64 {width: 64%!important;}
+.w-65 {width: 65%!important;}
+.w-66 {width: 66%!important;}
+.w-67 {width: 67%!important;}
+.w-68 {width: 68%!important;}
+.w-69 {width: 69%!important;}
+.w-70 {width: 70%!important;}
+.w-71 {width: 71%!important;}
+.w-72 {width: 72%!important;}
+.w-73 {width: 73%!important;}
+.w-74 {width: 74%!important;}
+.w-75 {width: 75%!important;}
+.w-76 {width: 76%!important;}
+.w-77 {width: 77%!important;}
+.w-78 {width: 78%!important;}
+.w-79 {width: 79%!important;}
+.w-80 {width: 80%!important;}
+.w-81 {width: 81%!important;}
+.w-82 {width: 82%!important;}
+.w-83 {width: 83%!important;}
+.w-84 {width: 84%!important;}
+.w-85 {width: 85%!important;}
+.w-86 {width: 86%!important;}
+.w-87 {width: 87%!important;}
+.w-88 {width: 88%!important;}
+.w-89 {width: 89%!important;}
+.w-90 {width: 90%!important;}
+.w-91 {width: 91%!important;}
+.w-92 {width: 92%!important;}
+.w-93 {width: 93%!important;}
+.w-93-5 {width: 93.5%!important;}
+.w-94 {width: 94%!important;}
+.w-95 {width: 95%!important;}
+.w-96 {width: 96%!important;}
+.w-97 {width: 97%!important;}
+.w-98 {width: 98%!important;}
+.w-99 {width: 99%!important;}
+.w-100 {width: 100%!important;}
+.w-101 {width: 101%!important;}
+.w-101_5 {width: 101.5%!important;}
+.w-102 {width: 102%!important;}
+.w-103 {width: 103%!important;}
+.w-104 {width: 104%!important;}
+.w-105 {width: 105%!important;}
+.w-106 {width: 106%!important;}
+.w-107 {width: 107%!important;}
+.w-108 {width: 108%!important;}
+.w-109 {width: 109%!important;}
+.w-110 {width: 110%!important;}
+.w-111 {width: 111%!important;}
+.w-112 {width: 112%!important;}
+.w-113 {width: 113%!important;}
+.w-114 {width: 114%!important;}
+.w-115 {width: 115%!important;}
+.w-116 {width: 116%!important;}
+.w-117 {width: 117%!important;}
+.w-118 {width: 118%!important;}
+.w-119 {width: 119%!important;}
+.w-120 {width: 120%!important;}
+.w-121 {width: 121%!important;}
+.w-122 {width: 122%!important;}
+.w-123 {width: 123%!important;}
+.w-124 {width: 124%!important;}
+.w-125 {width: 125%!important;}
+.w-126 {width: 126%!important;}
+.w-127 {width: 127%!important;}
+.w-128 {width: 128%!important;}
+.w-129 {width: 129%!important;}
+.w-130 {width: 130%!important;}
+.w-131 {width: 131%!important;}
+.w-132 {width: 132%!important;}
+.w-133 {width: 133%!important;}
+.w-134 {width: 134%!important;}
+.w-135 {width: 135%!important;}
+.w-136 {width: 136%!important;}
+.w-137 {width: 137%!important;}
+.w-138 {width: 138%!important;}
+.w-139 {width: 139%!important;}
+.w-140 {width: 140%!important;}
+.w-150 {width: 150%!important;}
+.w-160 {width: 160%!important;}
+.w-170 {width: 170%!important;}
+.w-180 {width: 180%!important;}
+.w-190 {width: 190%!important;}
+.w-200 {width: 200%!important;}
+
+.w-0_5p {width: .5%!important;}
+.w-1p {width: 1%!important;}
+.w-1_5p {width: 1.5%!important;}
+.w-2p {width: 2%!important;}
+.w-2_5p {width: 2.5%!important;}
+.w-3p {width: 3%!important;}
+.w-3_5p {width: 3.5%!important;}
+.w-4p {width: 4%!important;}
+.w-4_5p {width: 4.5%!important;}
+.w-5p {width: 5%!important;}
+.w-5_5p {width: 5.5%!important;}
+.w-6p {width: 6%!important;}
+.w-6_5p {width: 6.5%!important;}
+.w-7p {width: 7%!important;}
+.w-7_5p {width: 7.5%!important;}
+.w-8p {width: 8%!important;}
+.w-8_5p {width: 8.5%!important;}
+.w-9p {width: 9%!important;}
+.w-9_5p {width: 9.5%!important;}
+.w-10p {width: 10%!important;}
+.w-10_5p {width: 10.5%!important;}
+.w-11p {width: 11%!important;}
+.w-11_5p {width: 11.5%!important;}
+.w-12p {width: 12%!important;}
+.w-12_5p {width: 12.5%!important;}
+.w-13p {width: 13%!important;}
+.w-13_5p {width: 13.5%!important;}
+.w-14p {width: 14%!important;}
+.w-14_5p {width: 14.5%!important;}
+.w-15p {width: 15%!important;}
+.w-15_5p {width: 15.5%!important;}
+.w-16p {width: 16%!important;}
+.w-16_5p {width: 16.5%!important;}
+.w-17p {width: 17%!important;}
+.w-17_5p {width: 17.5%!important;}
+.w-18p {width: 18%!important;}
+.w-18_5p {width: 18.5%!important;}
+.w-19p {width: 19%!important;}
+.w-19_5p {width: 19.5%!important;}
+.w-20p {width: 20%!important;}
+.w-20_5p {width: 20.5%!important;}
+.w-21p {width: 21%!important;}
+.w-21_5p {width: 21.5%!important;}
+.w-22p {width: 22%!important;}
+.w-22_5p {width: 22.5%!important;}
+.w-23p {width: 23%!important;}
+.w-23_5p {width: 23.5%!important;}
+.w-24p {width: 24%!important;}
+.w-24_5p {width: 24.5%!important;}
+.w-25p {width: 25%!important;}
+.w-25_5p {width: 25.5%!important;}
+.w-26p {width: 26%!important;}
+.w-26_5p {width: 26.5%!important;}
+.w-27p {width: 27%!important;}
+.w-27_5p {width: 27.5%!important;}
+.w-28p {width: 28%!important;}
+.w-28_5p {width: 28.5%!important;}
+.w-29p {width: 29%!important;}
+.w-29_5p {width: 29.5%!important;}
+.w-30p {width: 30%!important;}
+.w-30_5p {width: 30.5%!important;}
+.w-31p {width: 31%!important;}
+.w-31_5p {width: 31.5%!important;}
+.w-32p {width: 32%!important;}
+.w-32_5p {width: 32.5%!important;}
+.w-33p {width: 33%!important;}
+.w-33_5p {width: 33.5%!important;}
+.w-34p {width: 34%!important;}
+.w-34_5p {width: 34.5%!important;}
+.w-35p {width: 35%!important;}
+.w-35_5p {width: 35.5%!important;}
+.w-36p {width: 36%!important;}
+.w-36_5p {width: 36.5%!important;}
+.w-37p {width: 37%!important;}
+.w-37_5p {width: 37.5%!important;}
+.w-38p {width: 38%!important;}
+.w-38_5p {width: 38.5%!important;}
+.w-39p {width: 39%!important;}
+.w-39_5p {width: 39.5%!important;}
+.w-40p {width: 40%!important;}
+.w-40_5p {width: 40.5%!important;}
+.w-41p {width: 41%!important;}
+.w-41_5p {width: 41.5%!important;}
+.w-42p {width: 42%!important;}
+.w-42_5p {width: 42.5%!important;}
+.w-43p {width: 43%!important;}
+.w-43_5p {width: 43.5%!important;}
+.w-44p {width: 44%!important;}
+.w-44_5p {width: 44.5%!important;}
+.w-45p {width: 45%!important;}
+.w-45_5p {width: 45.5%!important;}
+.w-46p {width: 46%!important;}
+.w-46_5p {width: 46.5%!important;}
+.w-47p {width: 47%!important;}
+.w-47_5p {width: 47.5%!important;}
+.w-48p {width: 48%!important;}
+.w-48_5p {width: 48.5%!important;}
+.w-49p {width: 49%!important;}
+.w-49_5p {width: 49.5%!important;}
+.w-50p {width: 50%!important;}
+.w-506p {width: 50.6%!important;}
+.w-51p {width: 51%!important;}
+.w-52p {width: 52%!important;}
+.w-53p {width: 53%!important;}
+.w-54p {width: 54%!important;}
+.w-55p {width: 55%!important;}
+.w-56p {width: 56%!important;}
+.w-57p {width: 57%!important;}
+.w-58p {width: 58%!important;}
+.w-59p {width: 59%!important;}
+.w-59-25p {width: 59.25%!important;}
+.w-60p {width: 60%!important;}
+.w-61p {width: 61%!important;}
+.w-62p {width: 62%!important;}
+.w-63p {width: 63%!important;}
+.w-64p {width: 64%!important;}
+.w-65p {width: 65%!important;}
+.w-66p {width: 66%!important;}
+.w-67p {width: 67%!important;}
+.w-68p {width: 68%!important;}
+.w-69p {width: 69%!important;}
+.w-70p {width: 70%!important;}
+.w-71p {width: 71%!important;}
+.w-72p {width: 72%!important;}
+.w-73p {width: 73%!important;}
+.w-74p {width: 74%!important;}
+.w-75p {width: 75%!important;}
+.w-76p {width: 76%!important;}
+.w-77p {width: 77%!important;}
+.w-78p {width: 78%!important;}
+.w-79p {width: 79%!important;}
+.w-80p {width: 80%!important;}
+.w-81p {width: 81%!important;}
+.w-82p {width: 82%!important;}
+.w-83p {width: 83%!important;}
+.w-84p {width: 84%!important;}
+.w-85p {width: 85%!important;}
+.w-86p {width: 86%!important;}
+.w-87p {width: 87%!important;}
+.w-88p {width: 88%!important;}
+.w-89p {width: 89%!important;}
+.w-90p {width: 90%!important;}
+.w-91p {width: 91%!important;}
+.w-92p {width: 92%!important;}
+.w-93p {width: 93%!important;}
+.w-93-5p {width: 93.5%!important;}
+.w-94p {width: 94%!important;}
+.w-95p {width: 95%!important;}
+.w-96p {width: 96%!important;}
+.w-97p {width: 97%!important;}
+.w-98p {width: 98%!important;}
+.w-99p {width: 99%!important;}
+.w-100p {width: 100%!important;}
+.w-101p {width: 101%!important;}
+.w-102p {width: 102%!important;}
+.w-103p {width: 103%!important;}
+.w-104p {width: 104%!important;}
+.w-105p {width: 105%!important;}
+.w-106p {width: 106%!important;}
+.w-107p {width: 107%!important;}
+.w-108p {width: 108%!important;}
+.w-109p {width: 109%!important;}
+.w-110p {width: 110%!important;}
+.w-120p {width: 120%!important;}
+.w-130p {width: 130%!important;}
+.w-140p {width: 140%!important;}
+.w-150p {width: 150%!important;}
+.w-160p {width: 160%!important;}
+.w-170p {width: 170%!important;}
+.w-180p {width: 180%!important;}
+.w-190p {width: 190%!important;}
+.w-200p {width: 200%!important;}
+
+/* 幅 rem */
+.w-0_1rem {width: .1rem!important;}
+.w-0_2rem {width: .2rem!important;}
+.w-0_3rem {width: .3rem!important;}
+.w-0_4rem {width: .4rem!important;}
+.w-0_5rem {width: .5rem!important;}
+.w-0_6rem {width: .6rem!important;}
+.w-0_7rem {width: .7rem!important;}
+.w-0_8rem {width: .8rem!important;}
+.w-0_9rem {width: .9rem!important;}
+.w-10rem {width: 1rem!important;}
+.w-1_1rem {width: 1.1rem!important;}
+.w-1_2rem {width: 1.2rem!important;}
+.w-1_3rem {width: 1.3rem!important;}
+.w-1_4rem {width: 1.4rem!important;}
+.w-1_5rem {width: 1.5rem!important;}
+.w-1_6rem {width: 1.6rem!important;}
+.w-1_7rem {width: 1.7rem!important;}
+.w-1_8rem {width: 1.8rem!important;}
+.w-1_9rem {width: 1.9rem!important;}
+.w-2rem {width: 2rem!important;}
+.w-2_1rem {width: 2.1rem!important;}
+.w-2_2rem {width: 2.2rem!important;}
+.w-2_3rem {width: 2.3rem!important;}
+.w-2_4rem {width: 2.4rem!important;}
+.w-2_5rem {width: 2.5rem!important;}
+.w-2_6rem {width: 2.6rem!important;}
+.w-2_7rem {width: 2.7rem!important;}
+.w-2_8rem {width: 2.8rem!important;}
+.w-2_9rem {width: 2.9rem!important;}
+.w-3rem {width: 3rem!important;}
+.w-3_1rem {width: 3.1rem!important;}
+.w-3_2rem {width: 3.2rem!important;}
+.w-3_3rem {width: 3.3rem!important;}
+.w-3_4rem {width: 3.4rem!important;}
+.w-3_5rem {width: 3.5rem!important;}
+.w-3_6rem {width: 3.6rem!important;}
+.w-3_7rem {width: 3.7rem!important;}
+.w-3_8rem {width: 3.8rem!important;}
+.w-3_9rem {width: 3.9rem!important;}
+.w-4rem {width: 4rem!important;}
+.w-4_1rem {width: 4.1rem!important;}
+.w-4_2rem {width: 4.2rem!important;}
+.w-4_3rem {width: 4.3rem!important;}
+.w-4_4rem {width: 4.4rem!important;}
+.w-4_5rem {width: 4.5rem!important;}
+.w-4_6rem {width: 4.6rem!important;}
+.w-4_7rem {width: 4.7rem!important;}
+.w-4_8rem {width: 4.8rem!important;}
+.w-4_9rem {width: 4.9rem!important;}
+.w-5rem {width: 5rem!important;}
+.w-5_1rem {width: 5.1rem!important;}
+.w-5_2rem {width: 5.2rem!important;}
+.w-5_3rem {width: 5.3rem!important;}
+.w-5_4rem {width: 5.4rem!important;}
+.w-5_5rem {width: 5.5rem!important;}
+.w-5_6rem {width: 5.6rem!important;}
+.w-5_7rem {width: 5.7rem!important;}
+.w-5_8rem {width: 5.8rem!important;}
+.w-5_9rem {width: 5.9rem!important;}
+.w-6rem {width: 6rem!important;}
+.w-6_1rem {width: 6.1rem!important;}
+.w-6_2rem {width: 6.2rem!important;}
+.w-6_3rem {width: 6.3rem!important;}
+.w-6_4rem {width: 6.4rem!important;}
+.w-6_5rem {width: 6.5rem!important;}
+.w-6_6rem {width: 6.6rem!important;}
+.w-6_7rem {width: 6.7rem!important;}
+.w-6_8rem {width: 6.8rem!important;}
+.w-6_9rem {width: 6.9rem!important;}
+.w-7rem {width: 7rem!important;}
+.w-7_1rem {width: 7.1rem!important;}
+.w-7_2rem {width: 7.2rem!important;}
+.w-7_3rem {width: 7.3rem!important;}
+.w-7_4rem {width: 7.4rem!important;}
+.w-7_5rem {width: 7.5rem!important;}
+.w-7_6rem {width: 7.6rem!important;}
+.w-7_7rem {width: 7.7rem!important;}
+.w-7_8rem {width: 7.8rem!important;}
+.w-7_9rem {width: 7.9rem!important;}
+.w-8rem {width: 8rem!important;}
+.w-8_1rem {width: 8.1rem!important;}
+.w-8_2rem {width: 8.2rem!important;}
+.w-8_3rem {width: 8.3rem!important;}
+.w-8_4rem {width: 8.4rem!important;}
+.w-8_5rem {width: 8.5rem!important;}
+.w-8_6rem {width: 8.6rem!important;}
+.w-8_7rem {width: 8.7rem!important;}
+.w-8_8rem {width: 8.8rem!important;}
+.w-8_9rem {width: 8.9rem!important;}
+.w-9rem {width: 9rem!important;}
+.w-9_1rem {width: 9.1rem!important;}
+.w-9_2rem {width: 9.2rem!important;}
+.w-9_3rem {width: 9.3rem!important;}
+.w-9_4rem {width: 9.4rem!important;}
+.w-9_5rem {width: 9.5rem!important;}
+.w-9_6rem {width: 9.6rem!important;}
+.w-9_7rem {width: 9.7rem!important;}
+.w-9_8rem {width: 9.8rem!important;}
+.w-9_9rem {width: 9.9rem!important;}
+.w-10rem {width: 10rem!important;}
+.w-10_1rem {width: 10.1rem!important;}
+.w-10_2rem {width: 10.2rem!important;}
+.w-10_3rem {width: 10.3rem!important;}
+.w-10_4rem {width: 10.4rem!important;}
+.w-10_5rem {width: 10.5rem!important;}
+.w-10_6rem {width: 10.6rem!important;}
+.w-10_7rem {width: 10.7rem!important;}
+.w-10_8rem {width: 10.8rem!important;}
+.w-10_9rem {width: 10.9rem!important;}
+.w-11rem {width: 11rem!important;}
+.w-11_1rem {width: 11.1rem!important;}
+.w-11_2rem {width: 11.2rem!important;}
+.w-11_3rem {width: 11.3rem!important;}
+.w-11_4rem {width: 11.4rem!important;}
+.w-11_5rem {width: 11.5rem!important;}
+.w-11_6rem {width: 11.6rem!important;}
+.w-11_7rem {width: 11.7rem!important;}
+.w-11_8rem {width: 11.8rem!important;}
+.w-11_9rem {width: 11.9rem!important;}
+.w-12rem {width: 12rem!important;}
+.w-12_1rem {width: 12.1rem!important;}
+.w-12_2rem {width: 12.2rem!important;}
+.w-12_3rem {width: 12.3rem!important;}
+.w-12_4rem {width: 12.4rem!important;}
+.w-12_5rem {width: 12.5rem!important;}
+.w-12_6rem {width: 12.6rem!important;}
+.w-12_7rem {width: 12.7rem!important;}
+.w-12_8rem {width: 12.8rem!important;}
+.w-12_9rem {width: 12.9rem!important;}
+.w-13rem {width: 13rem!important;}
+.w-13_1rem {width: 13.1rem!important;}
+.w-13_2rem {width: 13.2rem!important;}
+.w-13_3rem {width: 13.3rem!important;}
+.w-13_4rem {width: 13.4rem!important;}
+.w-13_5rem {width: 13.5rem!important;}
+.w-13_6rem {width: 13.6rem!important;}
+.w-13_7rem {width: 13.7rem!important;}
+.w-13_8rem {width: 13.8rem!important;}
+.w-13_9rem {width: 13.9rem!important;}
+.w-14rem {width: 14rem!important;}
+.w-14_1rem {width: 14.1rem!important;}
+.w-14_2rem {width: 14.2rem!important;}
+.w-14_3rem {width: 14.3rem!important;}
+.w-14_4rem {width: 14.4rem!important;}
+.w-14_5rem {width: 14.5rem!important;}
+.w-14_6rem {width: 14.6rem!important;}
+.w-14_7rem {width: 14.7rem!important;}
+.w-14_8rem {width: 14.8rem!important;}
+.w-14_9rem {width: 14.9rem!important;}
+.w-15rem {width: 15rem!important;}
+.w-15_1rem {width: 15.1rem!important;}
+.w-15_2rem {width: 15.2rem!important;}
+.w-15_3rem {width: 15.3rem!important;}
+.w-15_4rem {width: 15.4rem!important;}
+.w-15_5rem {width: 15.5rem!important;}
+.w-15_6rem {width: 15.6rem!important;}
+.w-15_7rem {width: 15.7rem!important;}
+.w-15_8rem {width: 15.8rem!important;}
+.w-15_9rem {width: 15.9rem!important;}
+.w-16rem {width: 16rem!important;}
+.w-16_1rem {width: 16.1rem!important;}
+.w-16_2rem {width: 16.2rem!important;}
+.w-16_3rem {width: 16.3rem!important;}
+.w-16_4rem {width: 16.4rem!important;}
+.w-16_5rem {width: 16.5rem!important;}
+.w-16_6rem {width: 16.6rem!important;}
+.w-16_7rem {width: 16.7rem!important;}
+.w-16_8rem {width: 16.8rem!important;}
+.w-16_9rem {width: 16.9rem!important;}
+.w-17rem {width: 17rem!important;}
+.w-17_1rem {width: 17.1rem!important;}
+.w-17_2rem {width: 17.2rem!important;}
+.w-17_3rem {width: 17.3rem!important;}
+.w-17_4rem {width: 17.4rem!important;}
+.w-17_5rem {width: 17.5rem!important;}
+.w-17_6rem {width: 17.6rem!important;}
+.w-17_7rem {width: 17.7rem!important;}
+.w-17_8rem {width: 17.8rem!important;}
+.w-17_9rem {width: 17.9rem!important;}
+.w-18rem {width: 18rem!important;}
+.w-19rem {width: 19rem!important;}
+.w-20rem {width: 20rem!important;}
+.w-21rem {width: 21rem!important;}
+.w-22rem {width: 22rem!important;}
+.w-23rem {width: 23rem!important;}
+.w-24rem {width: 24rem!important;}
+.w-25rem {width: 25rem!important;}
+.w-26rem {width: 26rem!important;}
+.w-27rem {width: 27rem!important;}
+.w-28rem {width: 28rem!important;}
+.w-29rem {width: 29rem!important;}
+.w-30rem {width: 30rem!important;}
+.w-31rem {width: 31rem!important;}
+.w-32rem {width: 32rem!important;}
+.w-33rem {width: 33rem!important;}
+.w-34rem {width: 34rem!important;}
+.w-35rem {width: 35rem!important;}
+
+/* 幅 em */
+.w-0_1em {width: .1em!important;}
+.w-0_2em {width: .2em!important;}
+.w-0_3em {width: .3em!important;}
+.w-0_4em {width: .4em!important;}
+.w-0_5em {width: .5em!important;}
+.w-0_6em {width: .6em!important;}
+.w-0_7em {width: .7em!important;}
+.w-0_8em {width: .8em!important;}
+.w-0_9em {width: .9em!important;}
+.w-1em {width: 1em!important;}
+.w-1_1em {width: 1.1em!important;}
+.w-1_2em {width: 1.2em!important;}
+.w-1_3em {width: 1.3em!important;}
+.w-1_4em {width: 1.4em!important;}
+.w-1_5em {width: 1.5em!important;}
+.w-1_6em {width: 1.6em!important;}
+.w-1_7em {width: 1.7em!important;}
+.w-1_8em {width: 1.8em!important;}
+.w-1_9em {width: 1.9em!important;}
+.w-2em {width: 2em!important;}
+.w-2_1em {width: 2.1em!important;}
+.w-2_2em {width: 2.2em!important;}
+.w-2_3em {width: 2.3em!important;}
+.w-2_4em {width: 2.4em!important;}
+.w-2_5em {width: 2.5em!important;}
+.w-2_6em {width: 2.6em!important;}
+.w-2_7em {width: 2.7em!important;}
+.w-2_8em {width: 2.8em!important;}
+.w-2_9em {width: 2.9em!important;}
+.w-3em {width: 3em!important;}
+.w-3_1em {width: 3.1em!important;}
+.w-3_2em {width: 3.2em!important;}
+.w-3_3em {width: 3.3em!important;}
+.w-3_4em {width: 3.4em!important;}
+.w-3_5em {width: 3.5em!important;}
+.w-3_6em {width: 3.6em!important;}
+.w-3_7em {width: 3.7em!important;}
+.w-3_8em {width: 3.8em!important;}
+.w-3_9em {width: 3.9em!important;}
+.w-4em {width: 4em!important;}
+.w-4_1em {width: 4.1em!important;}
+.w-4_2em {width: 4.2em!important;}
+.w-4_3em {width: 4.3em!important;}
+.w-4_4em {width: 4.4em!important;}
+.w-4_5em {width: 4.5em!important;}
+.w-4_6em {width: 4.6em!important;}
+.w-4_7em {width: 4.7em!important;}
+.w-4_8em {width: 4.8em!important;}
+.w-4_9em {width: 4.9em!important;}
+.w-5em {width: 5em!important;}
+.w-5_1em {width: 5.1em!important;}
+.w-5_2em {width: 5.2em!important;}
+.w-5_3em {width: 5.3em!important;}
+.w-5_4em {width: 5.4em!important;}
+.w-5_5em {width: 5.5em!important;}
+.w-5_6em {width: 5.6em!important;}
+.w-5_7em {width: 5.7em!important;}
+.w-5_8em {width: 5.8em!important;}
+.w-5_9em {width: 5.9em!important;}
+.w-6em {width: 6em!important;}
+.w-6_1em {width: 6.1em!important;}
+.w-6_2em {width: 6.2em!important;}
+.w-6_3em {width: 6.3em!important;}
+.w-6_4em {width: 6.4em!important;}
+.w-6_5em {width: 6.5em!important;}
+.w-6_6em {width: 6.6em!important;}
+.w-6_7em {width: 6.7em!important;}
+.w-6_8em {width: 6.8em!important;}
+.w-6_9em {width: 6.9em!important;}
+.w-7em {width: 7em!important;}
+.w-7_1em {width: 7.1em!important;}
+.w-7_2em {width: 7.2em!important;}
+.w-7_3em {width: 7.3em!important;}
+.w-7_4em {width: 7.4em!important;}
+.w-7_5em {width: 7.5em!important;}
+.w-7_6em {width: 7.6em!important;}
+.w-7_7em {width: 7.7em!important;}
+.w-7_8em {width: 7.8em!important;}
+.w-7_9em {width: 7.9em!important;}
+.w-8em {width: 8em!important;}
+.w-8_1em {width: 8.1em!important;}
+.w-8_2em {width: 8.2em!important;}
+.w-8_3em {width: 8.3em!important;}
+.w-8_4em {width: 8.4em!important;}
+.w-8_5em {width: 8.5em!important;}
+.w-8_6em {width: 8.6em!important;}
+.w-8_7em {width: 8.7em!important;}
+.w-8_8em {width: 8.8em!important;}
+.w-8_9em {width: 8.9em!important;}
+.w-9em {width: 9em!important;}
+.w-9_1em {width: 9.1em!important;}
+.w-9_2em {width: 9.2em!important;}
+.w-9_3em {width: 9.3em!important;}
+.w-9_4em {width: 9.4em!important;}
+.w-9_5em {width: 9.5em!important;}
+.w-9_6em {width: 9.6em!important;}
+.w-9_7em {width: 9.7em!important;}
+.w-9_8em {width: 9.8em!important;}
+.w-9_9em {width: 9.9em!important;}
+.w-10em {width: 10em!important;}
+.w-10_1em {width: 10.1em!important;}
+.w-10_2em {width: 10.2em!important;}
+.w-10_3em {width: 10.3em!important;}
+.w-10_4em {width: 10.4em!important;}
+.w-10_5em {width: 10.5em!important;}
+.w-10_6em {width: 10.6em!important;}
+.w-10_7em {width: 10.7em!important;}
+.w-10_8em {width: 10.8em!important;}
+.w-10_9em {width: 10.9em!important;}
+.w-11em {width: 11em!important;}
+.w-11_1em {width: 11.1em!important;}
+.w-11_2em {width: 11.2em!important;}
+.w-11_3em {width: 11.3em!important;}
+.w-11_4em {width: 11.4em!important;}
+.w-11_5em {width: 11.5em!important;}
+.w-11_6em {width: 11.6em!important;}
+.w-11_7em {width: 11.7em!important;}
+.w-11_8em {width: 11.8em!important;}
+.w-11_9em {width: 11.9em!important;}
+.w-12em {width: 12em!important;}
+.w-12_1em {width: 12.1em!important;}
+.w-12_2em {width: 12.2em!important;}
+.w-12_3em {width: 12.3em!important;}
+.w-12_4em {width: 12.4em!important;}
+.w-12_5em {width: 12.5em!important;}
+.w-12_6em {width: 12.6em!important;}
+.w-12_7em {width: 12.7em!important;}
+.w-12_8em {width: 12.8em!important;}
+.w-12_9em {width: 12.9em!important;}
+.w-13em {width: 13em!important;}
+.w-13_1em {width: 13.1em!important;}
+.w-13_2em {width: 13.2em!important;}
+.w-13_3em {width: 13.3em!important;}
+.w-13_4em {width: 13.4em!important;}
+.w-13_5em {width: 13.5em!important;}
+.w-13_6em {width: 13.6em!important;}
+.w-13_7em {width: 13.7em!important;}
+.w-13_8em {width: 13.8em!important;}
+.w-13_9em {width: 13.9em!important;}
+.w-14em {width: 14em!important;}
+.w-14_1em {width: 14.1em!important;}
+.w-14_2em {width: 14.2em!important;}
+.w-14_3em {width: 14.3em!important;}
+.w-14_4em {width: 14.4em!important;}
+.w-14_5em {width: 14.5em!important;}
+.w-14_6em {width: 14.6em!important;}
+.w-14_7em {width: 14.7em!important;}
+.w-14_8em {width: 14.8em!important;}
+.w-14_9em {width: 14.9em!important;}
+.w-15em {width: 15em!important;}
+.w-15_1em {width: 15.1em!important;}
+.w-15_2em {width: 15.2em!important;}
+.w-15_3em {width: 15.3em!important;}
+.w-15_4em {width: 15.4em!important;}
+.w-15_5em {width: 15.5em!important;}
+.w-15_6em {width: 15.6em!important;}
+.w-15_7em {width: 15.7em!important;}
+.w-15_8em {width: 15.8em!important;}
+.w-15_9em {width: 15.9em!important;}
+.w-16em {width: 16em!important;}
+.w-16_1em {width: 16.1em!important;}
+.w-16_2em {width: 16.2em!important;}
+.w-16_3em {width: 16.3em!important;}
+.w-16_4em {width: 16.4em!important;}
+.w-16_5em {width: 16.5em!important;}
+.w-16_6em {width: 16.6em!important;}
+.w-16_7em {width: 16.7em!important;}
+.w-16_8em {width: 16.8em!important;}
+.w-16_9em {width: 16.9em!important;}
+.w-17em {width: 17em!important;}
+.w-17_1em {width: 17.1em!important;}
+.w-17_2em {width: 17.2em!important;}
+.w-17_3em {width: 17.3em!important;}
+.w-17_4em {width: 17.4em!important;}
+.w-17_5em {width: 17.5em!important;}
+.w-17_6em {width: 17.6em!important;}
+.w-17_7em {width: 17.7em!important;}
+.w-17_8em {width: 17.8em!important;}
+.w-17_9em {width: 17.9em!important;}
+.w-18em {width: 18em!important;}
+.w-19em {width: 19em!important;}
+.w-20em {width: 20em!important;}
+.w-21em {width: 21em!important;}
+.w-22em {width: 22em!important;}
+.w-23em {width: 23em!important;}
+.w-24em {width: 24em!important;}
+.w-25em {width: 25em!important;}
+.w-26em {width: 26em!important;}
+.w-27em {width: 27em!important;}
+.w-28em {width: 28em!important;}
+.w-29em {width: 29em!important;}
+.w-30em {width: 30em!important;}
+.w-34em {width: 34em!important;}
+
+/* 高さ -------------------------------------------------- */
+
+/* 高さ auto */
+.h-auto {height: auto!important;}
+
+/* 高さ fit-content */
+.h-fit-content {height: fit-content!important;}
+
+/* 高さ 0 */
+.h-0 {height: 0!important;}
+
+/* 高さ px */
+.h-1px {height: 1px!important;}
+.h-2px {height: 2px!important;}
+.h-3px {height: 3px!important;}
+.h-4px {height: 4px!important;}
+.h-5px {height: 5px!important;}
+.h-6px {height: 6px!important;}
+.h-7px {height: 7px!important;}
+.h-8px {height: 8px!important;}
+.h-9px {height: 9px!important;}
+.h-10px {height: 10px!important;}
+.h-11px {height: 11px!important;}
+.h-12px {height: 12px!important;}
+.h-13px {height: 13px!important;}
+.h-14px {height: 14px!important;}
+.h-15px {height: 15px!important;}
+.h-16px {height: 16px!important;}
+.h-17px {height: 17px!important;}
+.h-18px {height: 18px!important;}
+.h-19px {height: 19px!important;}
+.h-20px {height: 20px!important;}
+.h-21px {height: 21px!important;}
+.h-22px {height: 22px!important;}
+.h-23px {height: 23px!important;}
+.h-24px {height: 24px!important;}
+.h-25px {height: 25px!important;}
+.h-26px {height: 26px!important;}
+.h-27px {height: 27px!important;}
+.h-28px {height: 28px!important;}
+.h-29px {height: 29px!important;}
+.h-30px {height: 30px!important;}
+.h-31px {height: 31px!important;}
+.h-32px {height: 32px!important;}
+.h-33px {height: 33px!important;}
+.h-34px {height: 34px!important;}
+.h-35px {height: 35px!important;}
+.h-36px {height: 36px!important;}
+.h-37px {height: 37px!important;}
+.h-38px {height: 38px!important;}
+.h-39px {height: 39px!important;}
+.h-40px {height: 40px!important;}
+.h-41px {height: 41px!important;}
+.h-42px {height: 42px!important;}
+.h-43px {height: 43px!important;}
+.h-44px {height: 44px!important;}
+.h-45px {height: 45px!important;}
+.h-46px {height: 46px!important;}
+.h-47px {height: 47px!important;}
+.h-48px {height: 48px!important;}
+.h-49px {height: 49px!important;}
+.h-50px {height: 50px!important;}
+.h-51px {height: 51px!important;}
+.h-52px {height: 52px!important;}
+.h-53px {height: 53px!important;}
+.h-54px {height: 54px!important;}
+.h-55px {height: 55px!important;}
+.h-56px {height: 56px!important;}
+.h-57px {height: 57px!important;}
+.h-58px {height: 58px!important;}
+.h-59px {height: 59px!important;}
+.h-60px {height: 60px!important;}
+.h-61px {height: 61px!important;}
+.h-62px {height: 62px!important;}
+.h-63px {height: 63px!important;}
+.h-64px {height: 64px!important;}
+.h-65px {height: 65px!important;}
+.h-66px {height: 66px!important;}
+.h-67px {height: 67px!important;}
+.h-68px {height: 68px!important;}
+.h-69px {height: 69px!important;}
+.h-70px {height: 70px!important;}
+.h-71px {height: 71px!important;}
+.h-72px {height: 72px!important;}
+.h-73px {height: 73px!important;}
+.h-74px {height: 74px!important;}
+.h-75px {height: 75px!important;}
+.h-76px {height: 76px!important;}
+.h-77px {height: 77px!important;}
+.h-78px {height: 78px!important;}
+.h-79px {height: 79px!important;}
+.h-80px {height: 80px!important;}
+.h-81px {height: 81px!important;}
+.h-82px {height: 82px!important;}
+.h-83px {height: 83px!important;}
+.h-84px {height: 84px!important;}
+.h-85px {height: 85px!important;}
+.h-86px {height: 86px!important;}
+.h-87px {height: 87px!important;}
+.h-88px {height: 88px!important;}
+.h-89px {height: 89px!important;}
+.h-90px {height: 90px!important;}
+.h-91px {height: 91px!important;}
+.h-92px {height: 92px!important;}
+.h-93px {height: 93px!important;}
+.h-94px {height: 94px!important;}
+.h-95px {height: 95px!important;}
+.h-96px {height: 96px!important;}
+.h-97px {height: 97px!important;}
+.h-98px {height: 98px!important;}
+.h-99px {height: 99px!important;}
+.h-100px {height: 100px!important;}
+.h-110px {height: 110px!important;}
+.h-120px {height: 120px!important;}
+.h-130px {height: 130px!important;}
+.h-140px {height: 140px!important;}
+.h-150px {height: 150px!important;}
+.h-160px {height: 160px!important;}
+.h-170px {height: 170px!important;}
+.h-180px {height: 180px!important;}
+.h-190px {height: 190px!important;}
+.h-200px {height: 200px!important;}
+
+/* % */
+.h-0 {height: 0!important;}
+.h-0_5 {height: .5%!important;}
+.h-1 {height: 1%!important;}
+.h-1_5 {height: 1.5%!important;}
+.h-2 {height: 2%!important;}
+.h-2_5 {height: 2.5%!important;}
+.h-3 {height: 3%!important;}
+.h-3_5 {height: 3.5%!important;}
+.h-4 {height: 4%!important;}
+.h-4_5 {height: 4.5%!important;}
+.h-5 {height: 5%!important;}
+.h-5_5 {height: 5.5%!important;}
+.h-6 {height: 6%!important;}
+.h-6_5 {height: 6.5%!important;}
+.h-7 {height: 7%!important;}
+.h-7_5 {height: 7.5%!important;}
+.h-8 {height: 8%!important;}
+.h-8_5 {height: 8.5%!important;}
+.h-9 {height: 9%!important;}
+.h-9_5 {height: 9.5%!important;}
+.h-10 {height: 10%!important;}
+.h-10_5 {height: 10.5%!important;}
+.h-11 {height: 11%!important;}
+.h-11_5 {height: 11.5%!important;}
+.h-12 {height: 12%!important;}
+.h-12_5 {height: 12.5%!important;}
+.h-13 {height: 13%!important;}
+.h-13_5 {height: 13.5%!important;}
+.h-14 {height: 14%!important;}
+.h-14_5 {height: 14.5%!important;}
+.h-15 {height: 15%!important;}
+.h-15_5 {height: 15.5%!important;}
+.h-16 {height: 16%!important;}
+.h-16_5 {height: 16.5%!important;}
+.h-17 {height: 17%!important;}
+.h-17_5 {height: 17.5%!important;}
+.h-18 {height: 18%!important;}
+.h-18_5 {height: 18.5%!important;}
+.h-19 {height: 19%!important;}
+.h-19_5 {height: 19.5%!important;}
+.h-20 {height: 20%!important;}
+.h-20_5 {height: 20.5%!important;}
+.h-21 {height: 21%!important;}
+.h-21_5 {height: 21.5%!important;}
+.h-22 {height: 22%!important;}
+.h-22_5 {height: 22.5%!important;}
+.h-23 {height: 23%!important;}
+.h-23_5 {height: 23.5%!important;}
+.h-24 {height: 24%!important;}
+.h-24_5 {height: 24.5%!important;}
+.h-25 {height: 25%!important;}
+.h-25_5 {height: 25.5%!important;}
+.h-26 {height: 26%!important;}
+.h-26_5 {height: 26.5%!important;}
+.h-27 {height: 27%!important;}
+.h-27_5 {height: 27.5%!important;}
+.h-28 {height: 28%!important;}
+.h-28_5 {height: 28.5%!important;}
+.h-29 {height: 29%!important;}
+.h-29_5 {height: 29.5%!important;}
+.h-30 {height: 30%!important;}
+.h-30_5 {height: 30.5%!important;}
+.h-31 {height: 31%!important;}
+.h-31_5 {height: 31.5%!important;}
+.h-32 {height: 32%!important;}
+.h-32_5 {height: 32.5%!important;}
+.h-33 {height: 33%!important;}
+.h-33_5 {height: 33.5%!important;}
+.h-34 {height: 34%!important;}
+.h-34_5 {height: 34.5%!important;}
+.h-35 {height: 35%!important;}
+.h-35_5 {height: 35.5%!important;}
+.h-36 {height: 36%!important;}
+.h-36_5 {height: 36.5%!important;}
+.h-37 {height: 37%!important;}
+.h-37_5 {height: 37.5%!important;}
+.h-38 {height: 38%!important;}
+.h-38_5 {height: 38.5%!important;}
+.h-39 {height: 39%!important;}
+.h-39_5 {height: 39.5%!important;}
+.h-40 {height: 40%!important;}
+.h-40_5 {height: 40.5%!important;}
+.h-41 {height: 41%!important;}
+.h-41_5 {height: 41.5%!important;}
+.h-42 {height: 42%!important;}
+.h-42_5 {height: 42.5%!important;}
+.h-43 {height: 43%!important;}
+.h-43_5 {height: 43.5%!important;}
+.h-44 {height: 44%!important;}
+.h-44_5 {height: 44.5%!important;}
+.h-45 {height: 45%!important;}
+.h-45_5 {height: 45.5%!important;}
+.h-46 {height: 46%!important;}
+.h-46_5 {height: 46.5%!important;}
+.h-47 {height: 47%!important;}
+.h-47_5 {height: 47.5%!important;}
+.h-48 {height: 48%!important;}
+.h-48_5 {height: 48.5%!important;}
+.h-49 {height: 49%!important;}
+.h-49_5 {height: 49.5%!important;}
+.h-50 {height: 50%!important;}
+.h-506 {height: 50.6%!important;}
+.h-51 {height: 51%!important;}
+.h-52 {height: 52%!important;}
+.h-53 {height: 53%!important;}
+.h-54 {height: 54%!important;}
+.h-55 {height: 55%!important;}
+.h-56 {height: 56%!important;}
+.h-57 {height: 57%!important;}
+.h-58 {height: 58%!important;}
+.h-59 {height: 59%!important;}
+.h-59-25 {height: 59.25%!important;}
+.h-60 {height: 60%!important;}
+.h-61 {height: 61%!important;}
+.h-62 {height: 62%!important;}
+.h-63 {height: 63%!important;}
+.h-64 {height: 64%!important;}
+.h-65 {height: 65%!important;}
+.h-66 {height: 66%!important;}
+.h-67 {height: 67%!important;}
+.h-68 {height: 68%!important;}
+.h-69 {height: 69%!important;}
+.h-70 {height: 70%!important;}
+.h-71 {height: 71%!important;}
+.h-72 {height: 72%!important;}
+.h-73 {height: 73%!important;}
+.h-74 {height: 74%!important;}
+.h-75 {height: 75%!important;}
+.h-76 {height: 76%!important;}
+.h-77 {height: 77%!important;}
+.h-78 {height: 78%!important;}
+.h-79 {height: 79%!important;}
+.h-80 {height: 80%!important;}
+.h-81 {height: 81%!important;}
+.h-82 {height: 82%!important;}
+.h-83 {height: 83%!important;}
+.h-84 {height: 84%!important;}
+.h-85 {height: 85%!important;}
+.h-86 {height: 86%!important;}
+.h-87 {height: 87%!important;}
+.h-88 {height: 88%!important;}
+.h-89 {height: 89%!important;}
+.h-90 {height: 90%!important;}
+.h-91 {height: 91%!important;}
+.h-92 {height: 92%!important;}
+.h-93 {height: 93%!important;}
+.h-93-5 {height: 93.5%!important;}
+.h-94 {height: 94%!important;}
+.h-95 {height: 95%!important;}
+.h-96 {height: 96%!important;}
+.h-97 {height: 97%!important;}
+.h-98 {height: 98%!important;}
+.h-99 {height: 99%!important;}
+.h-100 {height: 100%!important;}
+.h-101 {height: 101%!important;}
+.h-102 {height: 102%!important;}
+.h-103 {height: 103%!important;}
+.h-104 {height: 104%!important;}
+.h-105 {height: 105%!important;}
+.h-106 {height: 106%!important;}
+.h-107 {height: 107%!important;}
+.h-108 {height: 108%!important;}
+.h-109 {height: 109%!important;}
+.h-110 {height: 110%!important;}
+.h-120 {height: 120%!important;}
+.h-130 {height: 130%!important;}
+.h-140 {height: 140%!important;}
+.h-150 {height: 150%!important;}
+.h-160 {height: 160%!important;}
+.h-170 {height: 170%!important;}
+.h-180 {height: 180%!important;}
+.h-190 {height: 190%!important;}
+.h-200 {height: 200%!important;}
+
+.h-0p {height: 0!important;}
+.h-0_5p {height: .5%!important;}
+.h-1p {height: 1%!important;}
+.h-1_5p {height: 1.5%!important;}
+.h-2p {height: 2%!important;}
+.h-2_5p {height: 2.5%!important;}
+.h-3p {height: 3%!important;}
+.h-3_5p {height: 3.5%!important;}
+.h-4p {height: 4%!important;}
+.h-4_5p {height: 4.5%!important;}
+.h-5p {height: 5%!important;}
+.h-5_5p {height: 5.5%!important;}
+.h-6p {height: 6%!important;}
+.h-6_5p {height: 6.5%!important;}
+.h-7p {height: 7%!important;}
+.h-7_5p {height: 7.5%!important;}
+.h-8p {height: 8%!important;}
+.h-8_5p {height: 8.5%!important;}
+.h-9p {height: 9%!important;}
+.h-9_5p {height: 9.5%!important;}
+.h-10p {height: 10%!important;}
+.h-10_5p {height: 10.5%!important;}
+.h-11p {height: 11%!important;}
+.h-11_5p {height: 11.5%!important;}
+.h-12p {height: 12%!important;}
+.h-12_5p {height: 12.5%!important;}
+.h-13p {height: 13%!important;}
+.h-13_5p {height: 13.5%!important;}
+.h-14p {height: 14%!important;}
+.h-14_5p {height: 14.5%!important;}
+.h-15p {height: 15%!important;}
+.h-15_5p {height: 15.5%!important;}
+.h-16p {height: 16%!important;}
+.h-16_5p {height: 16.5%!important;}
+.h-17p {height: 17%!important;}
+.h-17_5p {height: 17.5%!important;}
+.h-18p {height: 18%!important;}
+.h-18_5p {height: 18.5%!important;}
+.h-19p {height: 19%!important;}
+.h-19_5p {height: 19.5%!important;}
+.h-20p {height: 20%!important;}
+.h-20_5p {height: 20.5%!important;}
+.h-21p {height: 21%!important;}
+.h-21_5p {height: 21.5%!important;}
+.h-22p {height: 22%!important;}
+.h-22_5p {height: 22.5%!important;}
+.h-23p {height: 23%!important;}
+.h-23_5p {height: 23.5%!important;}
+.h-24p {height: 24%!important;}
+.h-24_5p {height: 24.5%!important;}
+.h-25p {height: 25%!important;}
+.h-25_5p {height: 25.5%!important;}
+.h-26p {height: 26%!important;}
+.h-26_5p {height: 26.5%!important;}
+.h-27p {height: 27%!important;}
+.h-27_5p {height: 27.5%!important;}
+.h-28p {height: 28%!important;}
+.h-28_5p {height: 28.5%!important;}
+.h-29p {height: 29%!important;}
+.h-29_5p {height: 29.5%!important;}
+.h-30p {height: 30%!important;}
+.h-30_5p {height: 30.5%!important;}
+.h-31p {height: 31%!important;}
+.h-31_5p {height: 31.5%!important;}
+.h-32p {height: 32%!important;}
+.h-32_5p {height: 32.5%!important;}
+.h-33p {height: 33%!important;}
+.h-33_5p {height: 33.5%!important;}
+.h-34p {height: 34%!important;}
+.h-34_5p {height: 34.5%!important;}
+.h-35p {height: 35%!important;}
+.h-35_5p {height: 35.5%!important;}
+.h-36p {height: 36%!important;}
+.h-36_5p {height: 36.5%!important;}
+.h-37p {height: 37%!important;}
+.h-37_5p {height: 37.5%!important;}
+.h-38p {height: 38%!important;}
+.h-38_5p {height: 38.5%!important;}
+.h-39p {height: 39%!important;}
+.h-39_5p {height: 39.5%!important;}
+.h-40p {height: 40%!important;}
+.h-40_5p {height: 40.5%!important;}
+.h-41p {height: 41%!important;}
+.h-41_5p {height: 41.5%!important;}
+.h-42p {height: 42%!important;}
+.h-42_5p {height: 42.5%!important;}
+.h-43p {height: 43%!important;}
+.h-43_5p {height: 43.5%!important;}
+.h-44p {height: 44%!important;}
+.h-44_5p {height: 44.5%!important;}
+.h-45p {height: 45%!important;}
+.h-45_5p {height: 45.5%!important;}
+.h-46p {height: 46%!important;}
+.h-46_5p {height: 46.5%!important;}
+.h-47p {height: 47%!important;}
+.h-47_5p {height: 47.5%!important;}
+.h-48p {height: 48%!important;}
+.h-48_5p {height: 48.5%!important;}
+.h-49p {height: 49%!important;}
+.h-49_5p {height: 49.5%!important;}
+.h-50p {height: 50%!important;}
+.h-506p {height: 50.6%!important;}
+.h-51p {height: 51%!important;}
+.h-52p {height: 52%!important;}
+.h-53p {height: 53%!important;}
+.h-54p {height: 54%!important;}
+.h-55p {height: 55%!important;}
+.h-56p {height: 56%!important;}
+.h-57p {height: 57%!important;}
+.h-58p {height: 58%!important;}
+.h-59p {height: 59%!important;}
+.h-59-25p {height: 59.25%!important;}
+.h-60p {height: 60%!important;}
+.h-61p {height: 61%!important;}
+.h-62p {height: 62%!important;}
+.h-63p {height: 63%!important;}
+.h-64p {height: 64%!important;}
+.h-65p {height: 65%!important;}
+.h-66p {height: 66%!important;}
+.h-67p {height: 67%!important;}
+.h-68p {height: 68%!important;}
+.h-69p {height: 69%!important;}
+.h-70p {height: 70%!important;}
+.h-71p {height: 71%!important;}
+.h-72p {height: 72%!important;}
+.h-73p {height: 73%!important;}
+.h-74p {height: 74%!important;}
+.h-75p {height: 75%!important;}
+.h-76p {height: 76%!important;}
+.h-77p {height: 77%!important;}
+.h-78p {height: 78%!important;}
+.h-79p {height: 79%!important;}
+.h-80p {height: 80%!important;}
+.h-81p {height: 81%!important;}
+.h-82p {height: 82%!important;}
+.h-83p {height: 83%!important;}
+.h-84p {height: 84%!important;}
+.h-85p {height: 85%!important;}
+.h-86p {height: 86%!important;}
+.h-87p {height: 87%!important;}
+.h-88p {height: 88%!important;}
+.h-89p {height: 89%!important;}
+.h-90p {height: 90%!important;}
+.h-91p {height: 91%!important;}
+.h-92p {height: 92%!important;}
+.h-93p {height: 93%!important;}
+.h-93-5p {height: 93.5%!important;}
+.h-94p {height: 94%!important;}
+.h-95p {height: 95%!important;}
+.h-96p {height: 96%!important;}
+.h-97p {height: 97%!important;}
+.h-98p {height: 98%!important;}
+.h-99p {height: 99%!important;}
+.h-100p {height: 100%!important;}
+.h-101p {height: 101%!important;}
+.h-102p {height: 102%!important;}
+.h-103p {height: 103%!important;}
+.h-104p {height: 104%!important;}
+.h-105p {height: 105%!important;}
+.h-106p {height: 106%!important;}
+.h-107p {height: 107%!important;}
+.h-108p {height: 108%!important;}
+.h-109p {height: 109%!important;}
+.h-110p {height: 110%!important;}
+.h-120p {height: 120%!important;}
+.h-130p {height: 130%!important;}
+.h-140p {height: 140%!important;}
+.h-150p {height: 150%!important;}
+.h-160p {height: 160%!important;}
+.h-170p {height: 170%!important;}
+.h-180p {height: 180%!important;}
+.h-190p {height: 190%!important;}
+.h-200p {height: 200%!important;}
+
+/* ーーーーーーーーーー 高さ em ーーーーーーーーーー */
+.h-0_1em {height: 0.1em!important;}
+.h-0_2em {height: 0.2em!important;}
+.h-0_3em {height: 0.3em!important;}
+.h-0_4em {height: 0.4em!important;}
+.h-0_5em {height: 0.5em!important;}
+.h-0_6em {height: 0.6em!important;}
+.h-0_7em {height: 0.7em!important;}
+.h-0_8em {height: 0.8em!important;}
+.h-0_9em {height: 0.9em!important;}
+.h-1em {height: 1em!important;}
+.h-1_1em {height: 1.1em!important;}
+.h-1_2em {height: 1.2em!important;}
+.h-1_3em {height: 1.3em!important;}
+.h-1_4em {height: 1.4em!important;}
+.h-1_5em {height: 1.5em!important;}
+.h-1_6em {height: 1.6em!important;}
+.h-1_7em {height: 1.7em!important;}
+.h-1_8em {height: 1.8em!important;}
+.h-1_9em {height: 1.9em!important;}
+.h-2em {height: 2em!important;}
+.h-2_1em {height: 2.1em!important;}
+.h-2_2em {height: 2.2em!important;}
+.h-2_3em {height: 2.3em!important;}
+.h-2_4em {height: 2.4em!important;}
+.h-2_5em {height: 2.5em!important;}
+.h-2_6em {height: 2.6em!important;}
+.h-2_7em {height: 2.7em!important;}
+.h-2_8em {height: 2.8em!important;}
+.h-2_9em {height: 2.9em!important;}
+.h-3em {height: 3em!important;}
+.h-3_1em {height: 3.1em!important;}
+.h-3_2em {height: 3.2em!important;}
+.h-3_3em {height: 3.3em!important;}
+.h-3_4em {height: 3.4em!important;}
+.h-3_5em {height: 3.5em!important;}
+.h-3_6em {height: 3.6em!important;}
+.h-3_7em {height: 3.7em!important;}
+.h-3_8em {height: 3.8em!important;}
+.h-3_9em {height: 3.9em!important;}
+.h-4em {height: 4em!important;}
+.h-4_1em {height: 4.1em!important;}
+.h-4_2em {height: 4.2em!important;}
+.h-4_3em {height: 4.3em!important;}
+.h-4_4em {height: 4.4em!important;}
+.h-4_5em {height: 4.5em!important;}
+.h-4_6em {height: 4.6em!important;}
+.h-4_7em {height: 4.7em!important;}
+.h-4_8em {height: 4.8em!important;}
+.h-4_9em {height: 4.9em!important;}
+.h-5em {height: 5em!important;}
+.h-5_1em {height: 5.1em!important;}
+.h-5_2em {height: 5.2em!important;}
+.h-5_3em {height: 5.3em!important;}
+.h-5_4em {height: 5.4em!important;}
+.h-5_5em {height: 5.5em!important;}
+.h-5_6em {height: 5.6em!important;}
+.h-5_7em {height: 5.7em!important;}
+.h-5_8em {height: 5.8em!important;}
+.h-5_9em {height: 5.9em!important;}
+.h-6em {height: 6em!important;}
+.h-6_1em {height: 6.1em!important;}
+.h-6_2em {height: 6.2em!important;}
+.h-6_3em {height: 6.3em!important;}
+.h-6_4em {height: 6.4em!important;}
+.h-6_5em {height: 6.5em!important;}
+.h-6_6em {height: 6.6em!important;}
+.h-6_7em {height: 6.7em!important;}
+.h-6_8em {height: 6.8em!important;}
+.h-6_9em {height: 6.9em!important;}
+.h-7em {height: 7em!important;}
+.h-7_1em {height: 7.1em!important;}
+.h-7_2em {height: 7.2em!important;}
+.h-7_3em {height: 7.3em!important;}
+.h-7_4em {height: 7.4em!important;}
+.h-7_5em {height: 7.5em!important;}
+.h-7_6em {height: 7.6em!important;}
+.h-7_7em {height: 7.7em!important;}
+.h-7_8em {height: 7.8em!important;}
+.h-7_9em {height: 7.9em!important;}
+.h-8em {height: 8em!important;}
+.h-8_1em {height: 8.1em!important;}
+.h-8_2em {height: 8.2em!important;}
+.h-8_3em {height: 8.3em!important;}
+.h-8_4em {height: 8.4em!important;}
+.h-8_5em {height: 8.5em!important;}
+.h-8_6em {height: 8.6em!important;}
+.h-8_7em {height: 8.7em!important;}
+.h-8_8em {height: 8.8em!important;}
+.h-8_9em {height: 8.9em!important;}
+.h-9em {height: 9em!important;}
+.h-9_1em {height: 9.1em!important;}
+.h-9_2em {height: 9.2em!important;}
+.h-9_3em {height: 9.3em!important;}
+.h-9_4em {height: 9.4em!important;}
+.h-9_5em {height: 9.5em!important;}
+.h-9_6em {height: 9.6em!important;}
+.h-9_7em {height: 9.7em!important;}
+.h-9_8em {height: 9.8em!important;}
+.h-9_9em {height: 9.9em!important;}
+.h-10em {height: 10em!important;}
+
+/* ーーーーーーーーーー 高さ rem ーーーーーーーーーー */
+.h-0_1 {height: 0.1rem!important;}
+.h-0_2 {height: 0.2rem!important;}
+.h-0_3 {height: 0.3rem!important;}
+.h-0_4 {height: 0.4rem!important;}
+.h-0_5 {height: 0.5rem!important;}
+.h-0_6 {height: 0.6rem!important;}
+.h-0_7 {height: 0.7rem!important;}
+.h-0_8 {height: 0.8rem!important;}
+.h-0_9 {height: 0.9rem!important;}
+.h-1 {height: 1rem!important;}
+.h-1_1 {height: 1.1rem!important;}
+.h-1_2 {height: 1.2rem!important;}
+.h-1_3 {height: 1.3rem!important;}
+.h-1_4 {height: 1.4rem!important;}
+.h-1_5 {height: 1.5rem!important;}
+.h-1_6 {height: 1.6rem!important;}
+.h-1_7 {height: 1.7rem!important;}
+.h-1_8 {height: 1.8rem!important;}
+.h-1_9 {height: 1.9rem!important;}
+.h-2 {height: 2rem!important;}
+.h-2_1 {height: 2.1rem!important;}
+.h-2_2 {height: 2.2rem!important;}
+.h-2_3 {height: 2.3rem!important;}
+.h-2_4 {height: 2.4rem!important;}
+.h-2_5 {height: 2.5rem!important;}
+.h-2_6 {height: 2.6rem!important;}
+.h-2_7 {height: 2.7rem!important;}
+.h-2_8 {height: 2.8rem!important;}
+.h-2_9 {height: 2.9rem!important;}
+.h-3 {height: 3rem!important;}
+.h-3_1 {height: 3.1rem!important;}
+.h-3_2 {height: 3.2rem!important;}
+.h-3_3 {height: 3.3rem!important;}
+.h-3_4 {height: 3.4rem!important;}
+.h-3_5 {height: 3.5rem!important;}
+.h-3_6 {height: 3.6rem!important;}
+.h-3_7 {height: 3.7rem!important;}
+.h-3_8 {height: 3.8rem!important;}
+.h-3_9 {height: 3.9rem!important;}
+.h-4 {height: 4rem!important;}
+.h-4_1 {height: 4.1rem!important;}
+.h-4_2 {height: 4.2rem!important;}
+.h-4_3 {height: 4.3rem!important;}
+.h-4_4 {height: 4.4rem!important;}
+.h-4_5 {height: 4.5rem!important;}
+.h-4_6 {height: 4.6rem!important;}
+.h-4_7 {height: 4.7rem!important;}
+.h-4_8 {height: 4.8rem!important;}
+.h-4_9 {height: 4.9rem!important;}
+.h-5 {height: 5rem!important;}
+.h-5_1 {height: 5.1rem!important;}
+.h-5_2 {height: 5.2rem!important;}
+.h-5_3 {height: 5.3rem!important;}
+.h-5_4 {height: 5.4rem!important;}
+.h-5_5 {height: 5.5rem!important;}
+.h-5_6 {height: 5.6rem!important;}
+.h-5_7 {height: 5.7rem!important;}
+.h-5_8 {height: 5.8rem!important;}
+.h-5_9 {height: 5.9rem!important;}
+.h-6 {height: 6rem!important;}
+.h-6_1 {height: 6.1rem!important;}
+.h-6_2 {height: 6.2rem!important;}
+.h-6_3 {height: 6.3rem!important;}
+.h-6_4 {height: 6.4rem!important;}
+.h-6_5 {height: 6.5rem!important;}
+.h-6_6 {height: 6.6rem!important;}
+.h-6_7 {height: 6.7rem!important;}
+.h-6_8 {height: 6.8rem!important;}
+.h-6_9 {height: 6.9rem!important;}
+.h-7 {height: 7rem!important;}
+.h-7_1 {height: 7.1rem!important;}
+.h-7_2 {height: 7.2rem!important;}
+.h-7_3 {height: 7.3rem!important;}
+.h-7_4 {height: 7.4rem!important;}
+.h-7_5 {height: 7.5rem!important;}
+.h-7_6 {height: 7.6rem!important;}
+.h-7_7 {height: 7.7rem!important;}
+.h-7_8 {height: 7.8rem!important;}
+.h-7_9 {height: 7.9rem!important;}
+.h-8 {height: 8rem!important;}
+.h-8_3 {height: 8.3rem!important;}
+.h-8_5 {height: 8.5rem!important;}
+.h-9 {height: 9rem!important;}
+.h-10 {height: 10rem!important;}
+.h-10_1 {height: 10.1rem!important;}
+.h-10_2 {height: 10.2rem!important;}
+.h-10_3 {height: 10.3rem!important;}
+.h-10_4 {height: 10.4rem!important;}
+.h-10_5 {height: 10.5rem!important;}
+.h-11 {height: 11rem!important;}
+.h-11_1 {height: 11.1rem!important;}
+.h-12_ {height: 12rem!important;}
+.h-12_1 {height: 12.1rem!important;}
+.h-12_2 {height: 12.2rem!important;}
+.h-12_3 {height: 12.3rem!important;}
+.h-12_4 {height: 12.4rem!important;}
+.h-12_5 {height: 12.5rem!important;}
+.h-13 {height: 13rem!important;}
+.h-13_1 {height: 13.1rem!important;}
+.h-13_2 {height: 13.2rem!important;}
+.h-13_3 {height: 13.3rem!important;}
+.h-13_4 {height: 13.4rem!important;}
+.h-13_5 {height: 13.5rem!important;}
+.h-14 {height: 14rem!important;}
+.h-14_1 {height: 14.1rem!important;}
+.h-14_2 {height: 14.2rem!important;}
+.h-14_3 {height: 14.3rem!important;}
+.h-14_4 {height: 14.4rem!important;}
+.h-14_5 {height: 14.5rem!important;}
+.h-15 {height: 15rem!important;}
+.h-16 {height: 16rem!important;}
+.h-16_5 {height: 16.5rem!important;}
+.h-17 {height: 17rem!important;}
+.h-18 {height: 18rem!important;}
+.h-19 {height: 19rem!important;}
+.h-20 {height: 20rem!important;}
+.h-21 {height: 21rem!important;}
+.h-22 {height: 22rem!important;}
+.h-23 {height: 23rem!important;}
+.h-24 {height: 24rem!important;}
+.h-25 {height: 25rem!important;}
+.h-26 {height: 26rem!important;}
+.h-27 {height: 27rem!important;}
+.h-28 {height: 28rem!important;}
+.h-29 {height: 29rem!important;}
+.h-30 {height: 30rem!important;}
+.h-0_1rem {height: 0.1rem!important;}
+.h-0_2rem {height: 0.2rem!important;}
+.h-0_3rem {height: 0.3rem!important;}
+.h-0_4rem {height: 0.4rem!important;}
+.h-0_5rem {height: 0.5rem!important;}
+.h-0_6rem {height: 0.6rem!important;}
+.h-0_7rem {height: 0.7rem!important;}
+.h-0_8rem {height: 0.8rem!important;}
+.h-0_9rem {height: 0.9rem!important;}
+.h-1rem {height: 1rem!important;}
+.h-1_1rem {height: 1.1rem!important;}
+.h-1_2rem {height: 1.2rem!important;}
+.h-1_3rem {height: 1.3rem!important;}
+.h-1_4rem {height: 1.4rem!important;}
+.h-1_5rem {height: 1.5rem!important;}
+.h-1_6rem {height: 1.6rem!important;}
+.h-1_7rem {height: 1.7rem!important;}
+.h-1_8rem {height: 1.8rem!important;}
+.h-1_9rem {height: 1.9rem!important;}
+.h-2rem {height: 2rem!important;}
+.h-2_1rem {height: 2.1rem!important;}
+.h-2_2rem {height: 2.2rem!important;}
+.h-2_3rem {height: 2.3rem!important;}
+.h-2_4rem {height: 2.4rem!important;}
+.h-2_5rem {height: 2.5rem!important;}
+.h-2_6rem {height: 2.6rem!important;}
+.h-2_7rem {height: 2.7rem!important;}
+.h-2_8rem {height: 2.8rem!important;}
+.h-2_9rem {height: 2.9rem!important;}
+.h-3rem {height: 3rem!important;}
+.h-3_1rem {height: 3.1rem!important;}
+.h-3_2rem {height: 3.2rem!important;}
+.h-3_3rem {height: 3.3rem!important;}
+.h-3_4rem {height: 3.4rem!important;}
+.h-3_5rem {height: 3.5rem!important;}
+.h-3_6rem {height: 3.6rem!important;}
+.h-3_7rem {height: 3.7rem!important;}
+.h-3_8rem {height: 3.8rem!important;}
+.h-3_9rem {height: 3.9rem!important;}
+.h-4rem {height: 4rem!important;}
+.h-4_1rem {height: 4.1rem!important;}
+.h-4_2rem {height: 4.2rem!important;}
+.h-4_3rem {height: 4.3rem!important;}
+.h-4_4rem {height: 4.4rem!important;}
+.h-4_5rem {height: 4.5rem!important;}
+.h-4_6rem {height: 4.6rem!important;}
+.h-4_7rem {height: 4.7rem!important;}
+.h-4_8rem {height: 4.8rem!important;}
+.h-4_9rem {height: 4.9rem!important;}
+.h-5rem {height: 5rem!important;}
+.h-5_1rem {height: 5.1rem!important;}
+.h-5_2rem {height: 5.2rem!important;}
+.h-5_3rem {height: 5.3rem!important;}
+.h-5_4rem {height: 5.4rem!important;}
+.h-5_5rem {height: 5.5rem!important;}
+.h-5_6rem {height: 5.6rem!important;}
+.h-5_7rem {height: 5.7rem!important;}
+.h-5_8rem {height: 5.8rem!important;}
+.h-5_9rem {height: 5.9rem!important;}
+.h-6rem {height: 6rem!important;}
+.h-6_1rem {height: 6.1rem!important;}
+.h-6_2rem {height: 6.2rem!important;}
+.h-6_3rem {height: 6.3rem!important;}
+.h-6_4rem {height: 6.4rem!important;}
+.h-6_5rem {height: 6.5rem!important;}
+.h-6_6rem {height: 6.6rem!important;}
+.h-6_7rem {height: 6.7rem!important;}
+.h-6_8rem {height: 6.8rem!important;}
+.h-6_9rem {height: 6.9rem!important;}
+.h-7rem {height: 7rem!important;}
+.h-7_1rem {height: 7.1rem!important;}
+.h-7_2rem {height: 7.2rem!important;}
+.h-7_3rem {height: 7.3rem!important;}
+.h-7_4rem {height: 7.4rem!important;}
+.h-7_5rem {height: 7.5rem!important;}
+.h-7_6rem {height: 7.6rem!important;}
+.h-7_7rem {height: 7.7rem!important;}
+.h-7_8rem {height: 7.8rem!important;}
+.h-7_9rem {height: 7.9rem!important;}
+.h-8rem {height: 8rem!important;}
+.h-8_3rem {height: 8.3rem!important;}
+.h-8_5rem {height: 8.5rem!important;}
+.h-9rem {height: 9rem!important;}
+.h-10rem {height: 10rem!important;}
+.h-10_1rem {height: 10.1rem!important;}
+.h-10_2rem {height: 10.2rem!important;}
+.h-10_3rem {height: 10.3rem!important;}
+.h-10_4rem {height: 10.4rem!important;}
+.h-10_5rem {height: 10.5rem!important;}
+.h-11rem {height: 11rem!important;}
+.h-11_1rem {height: 11.1rem!important;}
+.h-12_rem {height: 12rem!important;}
+.h-12_1rem {height: 12.1rem!important;}
+.h-12_2rem {height: 12.2rem!important;}
+.h-12_3rem {height: 12.3rem!important;}
+.h-12_4rem {height: 12.4rem!important;}
+.h-12_5rem {height: 12.5rem!important;}
+.h-13rem {height: 13rem!important;}
+.h-13_1rem {height: 13.1rem!important;}
+.h-13_2rem {height: 13.2rem!important;}
+.h-13_3rem {height: 13.3rem!important;}
+.h-13_4rem {height: 13.4rem!important;}
+.h-13_5rem {height: 13.5rem!important;}
+.h-14rem {height: 14rem!important;}
+.h-14_1rem {height: 14.1rem!important;}
+.h-14_2rem {height: 14.2rem!important;}
+.h-14_3rem {height: 14.3rem!important;}
+.h-14_4rem {height: 14.4rem!important;}
+.h-14_5rem {height: 14.5rem!important;}
+.h-15rem {height: 15rem!important;}
+.h-16rem {height: 16rem!important;}
+.h-16_5rem {height: 16.5rem!important;}
+.h-17rem {height: 17rem!important;}
+.h-18rem {height: 18rem!important;}
+.h-19rem {height: 19rem!important;}
+.h-20rem {height: 20rem!important;}
+.h-21rem {height: 21rem!important;}
+.h-22rem {height: 22rem!important;}
+.h-23rem {height: 23rem!important;}
+.h-24rem {height: 24rem!important;}
+.h-25rem {height: 25rem!important;}
+.h-26rem {height: 26rem!important;}
+.h-27rem {height: 27rem!important;}
+.h-28rem {height: 28rem!important;}
+.h-29rem {height: 29rem!important;}
+.h-30rem {height: 30rem!important;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 配置 */
+.top--60 {top: -60px!important;}
+.top--59 {top: -59px!important;}
+.top--58 {top: -58px!important;}
+.top--57 {top: -57px!important;}
+.top--56 {top: -56px!important;}
+.top--55 {top: -55px!important;}
+.top--54 {top: -54px!important;}
+.top--53 {top: -53px!important;}
+.top--52 {top: -52px!important;}
+.top--51 {top: -51px!important;}
+.top--50 {top: -50px!important;}
+.top--49 {top: -49px!important;}
+.top--48 {top: -48px!important;}
+.top--47 {top: -47px!important;}
+.top--46 {top: -46px!important;}
+.top--45 {top: -45px!important;}
+.top--44 {top: -44px!important;}
+.top--43 {top: -43px!important;}
+.top--42 {top: -42px!important;}
+.top--41 {top: -41px!important;}
+.top--40 {top: -40px!important;}
+.top--39 {top: -39px!important;}
+.top--38 {top: -38px!important;}
+.top--37 {top: -37px!important;}
+.top--36 {top: -36px!important;}
+.top--35 {top: -35px!important;}
+.top--34 {top: -34px!important;}
+.top--33 {top: -33px!important;}
+.top--32 {top: -32px!important;}
+.top--31 {top: -31px!important;}
+.top--20 {top: -20px!important;}
+.top--19 {top: -19px!important;}
+.top--18 {top: -18px!important;}
+.top--17 {top: -17px!important;}
+.top--16 {top: -16px!important;}
+.top--15 {top: -15px!important;}
+.top--14 {top: -14px!important;}
+.top--13 {top: -13px!important;}
+.top--12 {top: -12px!important;}
+.top--11 {top: -11px!important;}
+.top--10 {top: -10px!important;}
+.top--9 {top: -9px!important;}
+.top--8 {top: -8px!important;}
+.top--7 {top: -7px!important;}
+.top--6 {top: -6px!important;}
+.top--5 {top: -5px!important;}
+.top--4 {top: -4px!important;}
+.top--3 {top: -3px!important;}
+.top--2 {top: -2px!important;}
+.top--1 {top: -1px!important;}
+
+/* 文字の垂直位置 */
+.va-baseline {vertical-align: baseline;}
+.va-top {vertical-align: top;}
+.va-middle {vertical-align: middle;}
+.va-bottom {vertical-align: bottom;}
+.va-text-top {vertical-align: text-top;}
+.va-text-bottom {vertical-align: text-bottom;}
+.va-sub {vertical-align: sub;}
+.va-super {vertical-align: super;}
+
+/* 親要素に対する横幅 */
+.w-100 {width: 100%}
+.w-95 {width: 95%}
+.w-90 {width: 90%}
+.w-85 {width: 85%}
+.w-80 {width: 80%}
+.w-75 {width: 75%}
+.w-70 {width: 70%}
+.w-65 {width: 65%}
+.w-60 {width: 60%}
+.w-55 {width: 55%}
+.w-50 {width: 50%}
+
+/* タブ幅 */
+.tab-0 {tab-size: 0!important;}
+.tab-1 {tab-size: 1!important;}
+.tab-2 {tab-size: 2!important;}
+.tab-3 {tab-size: 3!important;}
+.tab-4 {tab-size: 4!important;}
+.tab-5 {tab-size: 5!important;}
+.tab-6 {tab-size: 6!important;}
+.tab-7 {tab-size: 7!important;}
+.tab-8 {tab-size: 8!important;}
+
+/* 重なり順0 */
+.z--1 {
+	position: relative;
+	z-index: -1;
+}
+.z-0 {
+	position: relative;
+	z-index: 0;
+}
+.z-1 {
+	position: relative;
+	z-index: 1;
+}
+.z-2 {
+	position: relative;
+	z-index: 2;
+}
+.z-3 {
+	position: relative;
+	z-index: 3;
+}
+.z-4 {
+	position: relative;
+	z-index: 4;
+}
+.z-5 {
+	position: relative;
+	z-index: 5;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 文字 */
+/* フォントサイズ */
+.fs-3l, .fs-lll, .font-3l, .font-lll {
+	font-size: var(--fs-3l)!important;
+}
+.fs-2l, .fs-ll, .font-2l, .font-ll {font-size: var(--fs-l)!important;} /* h1 */
+.fs-lm, .font-lm {font-size: var(--fs-lm)!important;}
+.fs-l, .font-l {font-size: var(--fs-l)!important;} /* h2 */
+.fs-ml, .font-ml {font-size: var(--fs-ml)!important;} /* h3 */
+.fs-m, .font-m {font-size: var(--fs-m)!important;} /* h4,h5,h6,div,p 14px*/
+.fs-ms, .font-ms {font-size: var(--fs-ms)!important;}
+.fs-s, .font-s {font-size: var(--fs-s)!important;}
+.fs-ss, .font-ss {font-size: var(--fs-ss)!important;}
+.fs-3s, .fs-sss, .font-3s, .font-sss {font-size: var(--fs-3s)!important;}
+.fs-4s, .font-4s {font-size: var(--fs-4s)!important;}
+
+.fs-0_58 {font-size: 0.58rem!important;}
+.fs-0_59 {font-size: 0.59rem!important;}
+.fs-0_6 {font-size: 0.6rem!important;}
+.fs-0_65 {font-size: 0.65rem!important;}
+.fs-0_7 {font-size: 0.7rem!important;}
+.fs-0_75 {font-size: 0.75rem!important;}
+.fs-0_8 {font-size: 0.8rem!important;}
+.fs-0_85 {font-size: 0.85rem!important;}
+.fs-0_9 {font-size: 0.9rem!important;}
+.fs-0_95 {font-size: 0.95rem!important;}
+.fs-1_0 {font-size: 1rem!important;}
+.fs-1_1{font-size: 1.1rem!important;}
+.fs-1_2 {font-size: 1.2rem!important;}
+.fs-1_3 {font-size: 1.3rem!important;}
+.fs-1_4 {font-size: 1.4rem!important;}
+/* フォントウェイト */
+.fw-100 {font-weight: 100!important;}
+.fw-200 {font-weight: 200!important;}
+.fw-300 {font-weight: 300!important;}
+.fw-400 {font-weight: 400!important;}
+.fw-500 {font-weight: 500!important;}
+.fw-600 {font-weight: 600!important;}
+.fw-700 {font-weight: 700!important;}
+.fw-800 {font-weight: 800!important;}
+.fw-900 {font-weight: 900!important;}
+
+/* 行の高さ */
+.lh-0 {line-height: 0!important;}
+.lh-0_1 {line-height: 0.1!important;}
+.lh-0_2 {line-height: 0.2!important;}
+.lh-0_3 {line-height: 0.3!important;}
+.lh-0_4 {line-height: 0.4!important;}
+.lh-0_5 {line-height: 0.5!important;}
+.lh-0_6 {line-height: 0.6!important;}
+.lh-0_7 {line-height: 0.7!important;}
+.lh-0_8 {line-height: 0.8!important;}
+.lh-0_9 {line-height: 0.9!important;}
+.lh-1 {line-height: 1!important;}
+.lh-1_1 {line-height: 1.1!important;}
+.lh-1_2 {line-height: 1.2!important;}
+.lh-1_3 {line-height: 1.3!important;}
+.lh-1_4 {line-height: 1.4!important;}
+.lh-1_5 {line-height: 1.5!important;}
+.lh-1_6 {line-height: 1.6!important;}
+.lh-1_7 {line-height: 1.7!important;}
+.lh-1_8 {line-height: 1.8!important;}
+.lh-1_9 {line-height: 1.9!important;}
+.lh-2 {line-height: 2!important;}
+.lh-2_1 {line-height: 2.1!important;}
+.lh-2_2 {line-height: 2.2!important;}
+.lh-2_3 {line-height: 2.3!important;}
+.lh-2_4 {line-height: 2.4!important;}
+.lh-2_5 {line-height: 2.5!important;}
+.lh-2_6 {line-height: 2.6!important;}
+.lh-2_7 {line-height: 2.7!important;}
+.lh-2_8 {line-height: 2.8!important;}
+.lh-2_9 {line-height: 2.9!important;}
+.lh-3 {line-height: 3!important;}
+
+/* ーーーーーーーーーーーーーーー フォントの太さ */
+.fw-100 {font-weight: 100!important;}
+.fw-200 {font-weight: 200!important;}
+.fw-300 {font-weight: 300!important;}
+.fw-400 {font-weight: 400!important;}
+.fw-n	{font-weight: normal!important;}
+.fw-500 {font-weight: 500!important;}
+.fw-600 {font-weight: 600!important;}
+.fw-700 {font-weight: 700!important;}
+.fw-b	{font-weight: bold!important;}
+.fw-800 {font-weight: 800!important;}
+.fw-900 {font-weight: 900!important;}
+
+/* 文字間隔 */
+.ls-0_1 {letter-spacing: .1em!important;}
+.ls-0_2 {letter-spacing: .2em!important;}
+.ls-0_3 {letter-spacing: .3em!important;}
+.ls-0_4 {letter-spacing: .4em!important;}
+.ls-0_5 {letter-spacing: .5em!important;}
+.ls-0_6 {letter-spacing: .6em!important;}
+.ls-0_7 {letter-spacing: .7em!important;}
+.ls-0_8 {letter-spacing: .8em!important;}
+.ls-0_9 {letter-spacing: .9em!important;}
+.ls-1 {letter-spacing: 1em!important;}
+.ls-1_1 {letter-spacing: 1.1em!important;}
+.ls-1_2 {letter-spacing: 1.2em!important;}
+.ls-1_3 {letter-spacing: 1.3em!important;}
+.ls-1_4 {letter-spacing: 1.4em!important;}
+.ls-1_5 {letter-spacing: 1.5em!important;}
+.ls-1_6 {letter-spacing: 1.6em!important;}
+.ls-1_7 {letter-spacing: 1.7em!important;}
+.ls-1_8 {letter-spacing: 1.8em!important;}
+.ls-1_9 {letter-spacing: 1.9em!important;}
+.ls-2 {letter-spacing: 2em!important;}
+.ls-3 {letter-spacing: 3em!important;}
+.ls-4 {letter-spacing: 4em!important;}
+.ls-5 {letter-spacing: 5em!important;}
+
+/* ーーーーーーーーーーーーーーー 文字色 */
+/* 初期値 */
+.root {color: var(--p-color)!important;}
+.root-400 {
+	color: var(--p-color)!important;
+	font-weight: 400;
+}
+/* 色 */
+.sb {color: steelblue!important;}
+.sb-500 {color: steelblue!important; font-weight: 500!important;}
+.sb-600 {color: steelblue!important; font-weight: 500!important;}
+/* ホバー色 */
+.hover-color {color: #2098d1!important;}
+/* 透明 */
+.trans {color: transparent!important;}
+/* 黒〜白 */
+.c-000 {color: #000!important;}
+.c-111 {color: #111!important;}
+.c-222 {color: #222!important;}
+.c-333 {color: #333!important;}
+.c-444 {color: #444!important;}
+.c-555 {color: #555!important;}
+.c-666 {color: #666!important;}
+.c-777 {color: #777!important;}
+.c-888 {color: #888!important;}
+.c-999 {color: #999!important;}
+.c-aaa {color: #aaa!important;}
+.c-bbb {color: #bbb!important;}
+.c-ccc {color: #ccc!important;}
+.c-ddd {color: #ddd!important;}
+.c-eee {color: #eee!important;}
+.c-fff {color: #fff!important;}
+.black {color: black!important;}
+.white {color: white!important;}
+.beige {color: beige!important;}
+
+/* 特色 */
+.red-b {color: #ff4444!important;} /* 明赤 bright */
+.red-b-600 {color: #ff4444!important; font-weight: 600;} /* 明赤太 bright */
+.steelblue-b, .sb-b {color: #3399ff!important;} /* 鉄青 bright */
+.steelblue-b-600, .sb-b-600 {color: #3399ff!important; font-weight: 600;} /* 鉄青太 bright */
+.green-b, .green-b {color: greenyellow!important;} /* 緑 bright */
+.green-b-600, .green-b-600 {color: greenyellow!important; font-weight: 600;} /* 緑太 bright */
+
+/* colorname 略 */
+.ly {color: lightyellow!important;}
+.crim {color: crimson!important;}
+.or {color: orange!important;}
+.sb {color: steelblue!important;}
+.choco {color: chocolate!important;}
+.mint {color: mintcream!important;}
+
+/* ネオン */
+.neon-g {color: #2a2;}
+ 
+/* 全 colorname */
+.blanchedalmond {color: blanchedalmond!important;}
+.lightyellow {color: lightyellow!important;}
+.cornsilk {color: cornsilk!important;}
+.antiquewhite {color: antiquewhite!important;}
+.papayawhip {color: papayawhip!important;}
+.lemonchiffon {color: lemonchiffon!important;}
+.beige {color: beige!important;}
+.linen {color: linen!important;}
+.oldlace {color: oldlace!important;}
+.lightcyan {color: lightcyan!important;}
+.aliceblue {color: aliceblue!important;}
+.whitesmoke {color: whitesmoke!important;}
+.lavenderblush {color: lavenderblush!important;}
+.floralwhite {color: floralwhite!important;}
+.mintcream {color: mintcream!important;}
+.ghostwhite {color: ghostwhite!important;}
+.honeydew {color: honeydew!important;}
+.seashell {color: seashell!important;}
+.ivory {color: ivory!important;}
+.azure {color: azure!important;}
+.snow {color: snow!important;}
+.white {color: white!important;}
+.gainsboro {color: gainsboro!important;}
+.lightgray {color: lightgray!important;}
+.silver {color: silver!important;}
+.darkgray {color: darkgray!important;}
+.lightslategray {color: lightslategray!important;}
+.slategray {color: slategray!important;}
+.gray {color: gray!important;}
+.dimgray {color: dimgray!important;}
+.darkslategray {color: darkslategray!important;}
+.black {color: black!important;}
+.lawngreen {color: lawngreen!important;}
+.greenyellow {color: greenyellow!important;}
+.chartreuse {color: chartreuse!important;}
+.lime {color: lime!important;}
+.limegreen {color: limegreen!important;}
+.yellowgreen {color: yellowgreen!important;}
+.olive {color: olive!important;}
+.olivedrab {color: olivedrab!important;}
+.darkolivegreen {color: darkolivegreen!important;}
+.forestgreen {color: forestgreen!important;}
+.darkgreen {color: darkgreen!important;}
+.green {color: green!important;}
+.seagreen {color: seagreen!important;}
+.mediumseagreen {color: mediumseagreen!important;}
+.darkseagreen {color: darkseagreen!important;}
+.lightgreen {color: lightgreen!important;}
+.palegreen {color: palegreen!important;}
+.springgreen {color: springgreen!important;}
+.mediumspringgreen {color: mediumspringgreen!important;}
+.teal {color: teal!important;}
+.darkcyan {color: darkcyan!important;}
+.lightseagreen {color: lightseagreen!important;}
+.mediumaquamarine {color: mediumaquamarine!important;}
+.cadetblue {color: cadetblue!important;}
+.steelblue {color: steelblue!important;}
+.aquamarine {color: aquamarine!important;}
+.powderblue {color: powderblue!important;}
+.paleturquoise {color: paleturquoise!important;}
+.lightsteelblue {color: lightsteelblue!important;}
+.lightblue {color: lightblue!important;}
+.lightsteelblue {color: lightsteelblue!important;}
+.skyblue {color: skyblue!important;}
+.lightskyblue {color: lightskyblue!important;}
+.mediumturquoise {color: mediumturquoise!important;}
+.turquoise {color: turquoise!important;}
+.darkturquoise {color: darkturquoise!important;}
+.aqua {color: aqua!important;}
+.red {color: red!important;}
+.crimson {color: crimson!important;}
+.maroon {color: maroon!important;}
+.darkred {color: darkred!important;}
+.brown {color: brown!important;}
+.sienna {color: sienna!important;}
+.saddlebrown {color: saddlebrown!important;}
+.indianred {color: indianred!important;}
+.rosybrown {color: rosybrown!important;}
+.lightcoral {color: lightcoral!important;}
+.salmon {color: salmon!important;}
+.darksalmon {color: darksalmon!important;}
+.coral {color: coral!important;}
+.tomato {color: tomato!important;}
+.sandybrown {color: sandybrown!important;}
+.lightsalmon {color: lightsalmon!important;}
+.peru {color: peru!important;}
+.chocolate {color: chocolate!important;}
+.orangered {color: orangered!important;}
+.orange {color: orange!important;}
+.darkorange {color: darkorange!important;}
+.tan {color: tan!important;}
+.peachpuff {color: peachpuff!important;}
+.bisque {color: bisque!important;}
+.moccasin {color: moccasin!important;}
+.navajowhite {color: navajowhite!important;}
+.wheat {color: wheat!important;}
+.burlywood {color: burlywood!important;}
+.darkgoldenrod {color: darkgoldenrod!important;}
+.goldenrod {color: goldenrod!important;}
+.gold {color: gold!important;}
+.yellow {color: yellow!important;}
+.lightgoldenrodyellow {color: lightgoldenrodyellow!important;}
+.palegoldenrod {color: palegoldenrod!important;}
+.khaki {color: khaki!important;}
+.darkkhaki {color: darkkhaki!important;}
+.cyan {color: cyan!important;}
+.deepskyblue {color: deepskyblue!important;}
+.dodgerblue {color: dodgerblue!important;}
+.cornflowerblue {color: cornflowerblue!important;}
+.royalblue {color: royalblue!important;}
+.blue {color: blue!important;}
+.mediumblue {color: mediumblue!important;}
+.navy {color: navy!important;}
+.darkblue {color: darkblue!important;}
+.midnightblue {color: midnightblue!important;}
+.darkslateblue {color: darkslateblue!important;}
+.slateblue {color: slateblue!important;}
+.mediumslateblue {color: mediumslateblue!important;}
+.mediumpurple {color: mediumpurple!important;}
+.darkorchid {color: darkorchid!important;}
+.darkviolet {color: darkviolet!important;}
+.blueviolet {color: blueviolet!important;}
+.mediumorchid {color: mediumorchid!important;}
+.plum {color: plum!important;}
+.lavender {color: lavender!important;}
+.thistle {color: thistle!important;}
+.orchid {color: orchid!important;}
+.violet {color: violet!important;}
+.indigo {color: indigo!important;}
+.darkmagenta {color: darkmagenta!important;}
+.purple {color: purple!important;}
+.mediumvioletred {color: mediumvioletred!important;}
+.deeppink {color: deeppink!important;}
+.fuchsia {color: fuchsia!important;}
+.magenta {color: magenta!important;}
+.hotpink {color: hotpink!important;}
+.palevioletred {color: palevioletred!important;}
+.lightpink {color: lightpink!important;}
+.pink {color: pink!important;}
+.mistyrose {color: mistyrose!important;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 太字 */
+/* ーーーーーーーーーーーーーーーーーーーー 500 */
+/* 初期値 */
+.root-500 {color: var(--p-color)!important; font-weight: 500;}
+/* ホバー色 */
+.hover-color-500 {color: #2098d1!important; font-weight: 500;}
+/* 透明 */
+.trans-500 {color: transparent!important; font-weight: 500;}
+/* 黒〜白 */
+.c-000-500 {color: #000!important; font-weight: 500;}
+.c-111-500 {color: #111!important; font-weight: 500;}
+.c-222-500 {color: #222!important; font-weight: 500;}
+.c-333-500 {color: #333!important; font-weight: 500;}
+.c-444-500 {color: #444!important; font-weight: 500;}
+.c-555-500 {color: #555!important; font-weight: 500;}
+.c-666-500 {color: #666!important; font-weight: 500;}
+.c-777-500 {color: #777!important; font-weight: 500;}
+.c-888-500 {color: #888!important; font-weight: 500;}
+.c-999-500 {color: #999!important; font-weight: 500;}
+.c-aaa-500 {color: #aaa!important; font-weight: 500;}
+.c-bbb-500 {color: #bbb!important; font-weight: 500;}
+.c-ccc-500 {color: #ccc!important; font-weight: 500;}
+.c-ddd-500 {color: #ddd!important; font-weight: 500;}
+.c-eee-500 {color: #eee!important; font-weight: 500;}
+.c-fff-500 {color: #fff!important; font-weight: 500;}
+.black-500 {color: black!important; font-weight: 500;}
+.white-500 {color: white!important; font-weight: 500;}
+.beige-500 {color: beige!important; font-weight: 500;}
+
+/* 特色 */
+.red-b-500 {color: #ff4444!important; font-weight: 500!important;}
+.steelblue-b-500, .sb-b-500 {color: #3399ff!important; font-weight: 500!important;}
+
+/* colorname 略 */
+.ly-500 {color: lightyellow; font-weight: 500!important;}
+.crim-500 {color: crimson!important; font-weight: 500!important;}
+.or-500 {color: orange!important; font-weight: 500!important;}
+.sb-500 {color: steelblue!important; font-weight: 500!important;}
+.choco-500 {color: chocolate!important; font-weight: 500!important;}
+
+/* ネオン */
+.neon-g-500 {color: #2a2; font-weight: 500!important;}
+
+/* 全 colorname */
+.blanchedalmond-500 {color: blanchedalmond!important; font-weight: 500!important;}
+.lightyellow-500 {color: lightyellow!important; font-weight: 500!important;}
+.cornsilk-500 {color: cornsilk!important; font-weight: 500!important;}
+.antiquewhite-500 {color: antiquewhite!important; font-weight: 500!important;}
+.papayawhip-500 {color: papayawhip!important; font-weight: 500!important;}
+.lemonchiffon-500 {color: lemonchiffon!important; font-weight: 500!important;}
+.beige-500 {color: beige!important; font-weight: 500!important;}
+.linen-500 {color: linen!important; font-weight: 500!important;}
+.oldlace-500 {color: oldlace!important; font-weight: 500!important;}
+.lightcyan-500 {color: lightcyan!important; font-weight: 500!important;}
+.aliceblue-500 {color: aliceblue!important; font-weight: 500!important;}
+.whitesmoke-500 {color: whitesmoke!important; font-weight: 500!important;}
+.lavenderblush-500 {color: lavenderblush!important; font-weight: 500!important;}
+.floralwhite-500 {color: floralwhite!important; font-weight: 500!important;}
+.mintcream-500 {color: mintcream!important; font-weight: 500!important;}
+.ghostwhite-500 {color: ghostwhite!important; font-weight: 500!important;}
+.honeydew-500 {color: honeydew!important; font-weight: 500!important;}
+.seashell-500 {color: seashell!important; font-weight: 500!important;}
+.ivory-500 {color: ivory!important; font-weight: 500!important;}
+.azure-500 {color: azure!important; font-weight: 500!important;}
+.snow-500 {color: snow!important; font-weight: 500!important;}
+.white-500 {color: white!important; font-weight: 500!important;}
+.gainsboro-500 {color: gainsboro!important; font-weight: 500!important;}
+.lightgray-500 {color: lightgray!important; font-weight: 500!important;}
+.silver-500 {color: silver!important; font-weight: 500!important;}
+.darkgray-500 {color: darkgray!important; font-weight: 500!important;}
+.lightslategray-500 {color: lightslategray!important; font-weight: 500!important;}
+.slategray-500 {color: slategray!important; font-weight: 500!important;}
+.gray-500 {color: gray!important; font-weight: 500!important;}
+.dimgray-500 {color: dimgray!important; font-weight: 500!important;}
+.darkslategray-500 {color: darkslategray!important; font-weight: 500!important;}
+.black-500 {color: black!important; font-weight: 500!important;}
+.lawngreen-500 {color: lawngreen!important; font-weight: 500!important;}
+.greenyellow-500 {color: greenyellow!important; font-weight: 500!important;}
+.chartreuse-500 {color: chartreuse!important; font-weight: 500!important;}
+.lime-500 {color: lime!important; font-weight: 500!important;}
+.limegreen-500 {color: limegreen!important; font-weight: 500!important;}
+.yellowgreen-500 {color: yellowgreen!important; font-weight: 500!important;}
+.olive-500 {color: olive!important; font-weight: 500!important;}
+.olivedrab-500 {color: olivedrab!important; font-weight: 500!important;}
+.darkolivegreen-500 {color: darkolivegreen!important; font-weight: 500!important;}
+.forestgreen-500 {color: forestgreen!important; font-weight: 500!important;}
+.darkgreen-500 {color: darkgreen!important; font-weight: 500!important;}
+.green-500 {color: green!important; font-weight: 500!important;}
+.seagreen-500 {color: seagreen!important; font-weight: 500!important;}
+.mediumseagreen-500 {color: mediumseagreen!important; font-weight: 500!important;}
+.darkseagreen-500 {color: darkseagreen!important; font-weight: 500!important;}
+.lightgreen-500 {color: lightgreen!important; font-weight: 500!important;}
+.palegreen-500 {color: palegreen!important; font-weight: 500!important;}
+.springgreen-500 {color: springgreen!important; font-weight: 500!important;}
+.mediumspringgreen-500 {color: mediumspringgreen!important; font-weight: 500!important;}
+.teal-500 {color: teal!important; font-weight: 500!important;}
+.darkcyan-500 {color: darkcyan!important; font-weight: 500!important;}
+.lightseagreen-500 {color: lightseagreen!important; font-weight: 500!important;}
+.mediumaquamarine-500 {color: mediumaquamarine!important; font-weight: 500!important;}
+.cadetblue-500 {color: cadetblue!important; font-weight: 500!important;}
+.steelblue-500 {color: steelblue!important; font-weight: 500!important;}
+.aquamarine-500 {color: aquamarine!important; font-weight: 500!important;}
+.powderblue-500 {color: powderblue!important; font-weight: 500!important;}
+.paleturquoise-500 {color: paleturquoise!important; font-weight: 500!important;}
+.lightsteelblue-500 {color: lightsteelblue!important; font-weight: 500!important;}
+.lightblue-500 {color: lightblue!important; font-weight: 500!important;}
+.lightsteelblue-500 {color: lightsteelblue!important; font-weight: 500!important;}
+.skyblue-500 {color: skyblue!important; font-weight: 500!important;}
+.lightskyblue-500 {color: lightskyblue!important; font-weight: 500!important;}
+.mediumturquoise-500 {color: mediumturquoise!important; font-weight: 500!important;}
+.turquoise-500 {color: turquoise!important; font-weight: 500!important;}
+.darkturquoise-500 {color: darkturquoise!important; font-weight: 500!important;}
+.aqua-500 {color: aqua!important; font-weight: 500!important;}
+.red-500 {color: red!important; font-weight: 500!important;}
+.crimson-500 {color: crimson!important; font-weight: 500!important;}
+.maroon-500 {color: maroon!important; font-weight: 500!important;}
+.darkred-500 {color: darkred!important; font-weight: 500!important;}
+.brown-500 {color: brown!important; font-weight: 500!important;}
+.sienna-500 {color: sienna!important; font-weight: 500!important;}
+.saddlebrown-500 {color: saddlebrown!important; font-weight: 500!important;}
+.indianred-500 {color: indianred!important; font-weight: 500!important;}
+.rosybrown-500 {color: rosybrown!important; font-weight: 500!important;}
+.lightcoral-500 {color: lightcoral!important; font-weight: 500!important;}
+.salmon-500 {color: salmon!important; font-weight: 500!important;}
+.darksalmon-500 {color: darksalmon!important; font-weight: 500!important;}
+.coral-500 {color: coral!important; font-weight: 500!important;}
+.tomato-500 {color: tomato!important; font-weight: 500!important;}
+.sandybrown-500 {color: sandybrown!important; font-weight: 500!important;}
+.lightsalmon-500 {color: lightsalmon!important; font-weight: 500!important;}
+.peru-500 {color: peru!important; font-weight: 500!important;}
+.chocolate-500 {color: chocolate!important; font-weight: 500!important;}
+.orangered-500 {color: orangered!important; font-weight: 500!important;}
+.orange-500 {color: orange!important; font-weight: 500!important;}
+.darkorange-500 {color: darkorange!important; font-weight: 500!important;}
+.tan-500 {color: tan!important; font-weight: 500!important;}
+.peachpuff-500 {color: peachpuff!important; font-weight: 500!important;}
+.bisque-500 {color: bisque!important; font-weight: 500!important;}
+.moccasin-500 {color: moccasin!important; font-weight: 500!important;}
+.navajowhite-500 {color: navajowhite!important; font-weight: 500!important;}
+.wheat-500 {color: wheat!important; font-weight: 500!important;}
+.burlywood-500 {color: burlywood!important; font-weight: 500!important;}
+.darkgoldenrod-500 {color: darkgoldenrod!important; font-weight: 500!important;}
+.goldenrod-500 {color: goldenrod!important; font-weight: 500!important;}
+.gold-500 {color: gold!important; font-weight: 500!important;}
+.yellow-500 {color: yellow!important; font-weight: 500!important;}
+.lightgoldenrodyellow-500 {color: lightgoldenrodyellow!important; font-weight: 500!important;}
+.palegoldenrod-500 {color: palegoldenrod!important; font-weight: 500!important;}
+.khaki-500 {color: khaki!important; font-weight: 500!important;}
+.darkkhaki-500 {color: darkkhaki!important; font-weight: 500!important;}
+.cyan-500 {color: cyan!important; font-weight: 500!important;}
+.deepskyblue-500 {color: deepskyblue!important; font-weight: 500!important;}
+.dodgerblue-500 {color: dodgerblue!important; font-weight: 500!important;}
+.cornflowerblue-500 {color: cornflowerblue!important; font-weight: 500!important;}
+.royalblue-500 {color: royalblue!important; font-weight: 500!important;}
+.blue-500 {color: blue!important; font-weight: 500!important;}
+.mediumblue-500 {color: mediumblue!important; font-weight: 500!important;}
+.navy-500 {color: navy!important; font-weight: 500!important;}
+.darkblue-500 {color: darkblue!important; font-weight: 500!important;}
+.midnightblue-500 {color: midnightblue!important; font-weight: 500!important;}
+.darkslateblue-500 {color: darkslateblue!important; font-weight: 500!important;}
+.slateblue-500 {color: slateblue!important; font-weight: 500!important;}
+.mediumslateblue-500 {color: mediumslateblue!important; font-weight: 500!important;}
+.mediumpurple-500 {color: mediumpurple!important; font-weight: 500!important;}
+.darkorchid-500 {color: darkorchid!important; font-weight: 500!important;}
+.darkviolet-500 {color: darkviolet!important; font-weight: 500!important;}
+.blueviolet-500 {color: blueviolet!important; font-weight: 500!important;}
+.mediumorchid-500 {color: mediumorchid!important; font-weight: 500!important;}
+.plum-500 {color: plum!important; font-weight: 500!important;}
+.lavender-500 {color: lavender!important; font-weight: 500!important;}
+.thistle-500 {color: thistle!important; font-weight: 500!important;}
+.orchid-500 {color: orchid!important; font-weight: 500!important;}
+.violet-500 {color: violet!important; font-weight: 500!important;}
+.indigo-500 {color: indigo!important; font-weight: 500!important;}
+.darkmagenta-500 {color: darkmagenta!important; font-weight: 500!important;}
+.purple-500 {color: purple!important; font-weight: 500!important;}
+.mediumvioletred-500 {color: mediumvioletred!important; font-weight: 500!important;}
+.deeppink-500 {color: deeppink!important; font-weight: 500!important;}
+.fuchsia-500 {color: fuchsia!important; font-weight: 500!important;}
+.magenta-500 {color: magenta!important; font-weight: 500!important;}
+.hotpink-500 {color: hotpink!important; font-weight: 500!important;}
+.palevioletred-500 {color: palevioletred!important; font-weight: 500!important;}
+.lightpink-500 {color: lightpink!important; font-weight: 500!important;}
+.pink-500 {color: pink!important; font-weight: 500!important;}
+.mistyrose-500 {color: mistyrose!important; font-weight: 500!important;}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 600 */
+/* 初期値 */
+.root-600 {color: var(--p-color)!important; font-weight: 600;}
+/* ホバー色 */
+.hover-color-600 {color: #2098d1!important; font-weight: 600;}
+/* 透明 */
+.trans-600 {color: transparent!important; font-weight: 600;}
+/* 黒〜白 */
+.c-000-600 {color: #000!important; font-weight: 600;}
+.c-111-600 {color: #111!important; font-weight: 600;}
+.c-222-600 {color: #222!important; font-weight: 600;}
+.c-333-600 {color: #333!important; font-weight: 600;}
+.c-444-600 {color: #444!important; font-weight: 600;}
+.c-555-600 {color: #555!important; font-weight: 600;}
+.c-666-600 {color: #666!important; font-weight: 600;}
+.c-777-600 {color: #777!important; font-weight: 600;}
+.c-888-600 {color: #888!important; font-weight: 600;}
+.c-999-600 {color: #999!important; font-weight: 600;}
+.c-aaa-600 {color: #aaa!important; font-weight: 600;}
+.c-bbb-600 {color: #bbb!important; font-weight: 600;}
+.c-ccc-600 {color: #ccc!important; font-weight: 600;}
+.c-ddd-600 {color: #ddd!important; font-weight: 600;}
+.c-eee-600 {color: #eee!important; font-weight: 600;}
+.c-fff-600 {color: #fff!important; font-weight: 600;}
+.black-600 {color: black!important; font-weight: 600;}
+.white-600 {color: white!important; font-weight: 600;}
+.beige-600 {color: beige!important; font-weight: 600;}
+
+/* colorname 太 略 */
+.ly-600 {color: lightyellow; font-weight: 600!important;}
+.crim-600 {color: crimson!important; font-weight: 600!important;}
+.or-600 {color: orange!important; font-weight: 600!important;}
+.choco-600 {color: chocolate!important; font-weight: 600!important;}
+
+/* ネオン */
+.neon-g-600 {color: #2a2; font-weight: 600!important;}
+
+/* 全 colorname */
+.blanchedalmond-600 {color: blanchedalmond!important; font-weight: 600!important;}
+.lightyellow-600 {color: lightyellow!important; font-weight: 600!important;}
+.cornsilk-600 {color: cornsilk!important; font-weight: 600!important;}
+.antiquewhite-600 {color: antiquewhite!important; font-weight: 600!important;}
+.papayawhip-600 {color: papayawhip!important; font-weight: 600!important;}
+.lemonchiffon-600 {color: lemonchiffon!important; font-weight: 600!important;}
+.beige-600 {color: beige!important; font-weight: 600!important;}
+.linen-600 {color: linen!important; font-weight: 600!important;}
+.oldlace-600 {color: oldlace!important; font-weight: 600!important;}
+.lightcyan-600 {color: lightcyan!important; font-weight: 600!important;}
+.aliceblue-600 {color: aliceblue!important; font-weight: 600!important;}
+.whitesmoke-600 {color: whitesmoke!important; font-weight: 600!important;}
+.lavenderblush-600 {color: lavenderblush!important; font-weight: 600!important;}
+.floralwhite-600 {color: floralwhite!important; font-weight: 600!important;}
+.mintcream-600 {color: mintcream!important; font-weight: 600!important;}
+.ghostwhite-600 {color: ghostwhite!important; font-weight: 600!important;}
+.honeydew-600 {color: honeydew!important; font-weight: 600!important;}
+.seashell-600 {color: seashell!important; font-weight: 600!important;}
+.ivory-600 {color: ivory!important; font-weight: 600!important;}
+.azure-600 {color: azure!important; font-weight: 600!important;}
+.snow-600 {color: snow!important; font-weight: 600!important;}
+.white-600 {color: white!important; font-weight: 600!important;}
+.gainsboro-600 {color: gainsboro!important; font-weight: 600!important;}
+.lightgray-600 {color: lightgray!important; font-weight: 600!important;}
+.silver-600 {color: silver!important; font-weight: 600!important;}
+.darkgray-600 {color: darkgray!important; font-weight: 600!important;}
+.lightslategray-600 {color: lightslategray!important; font-weight: 600!important;}
+.slategray-600 {color: slategray!important; font-weight: 600!important;}
+.gray-600 {color: gray!important; font-weight: 600!important;}
+.dimgray-600 {color: dimgray!important; font-weight: 600!important;}
+.darkslategray-600 {color: darkslategray!important; font-weight: 600!important;}
+.black-600 {color: black!important; font-weight: 600!important;}
+.lawngreen-600 {color: lawngreen!important; font-weight: 600!important;}
+.greenyellow-600 {color: greenyellow!important; font-weight: 600!important;}
+.chartreuse-600 {color: chartreuse!important; font-weight: 600!important;}
+.lime-600 {color: lime!important; font-weight: 600!important;}
+.limegreen-600 {color: limegreen!important; font-weight: 600!important;}
+.yellowgreen-600 {color: yellowgreen!important; font-weight: 600!important;}
+.olive-600 {color: olive!important; font-weight: 600!important;}
+.olivedrab-600 {color: olivedrab!important; font-weight: 600!important;}
+.darkolivegreen-600 {color: darkolivegreen!important; font-weight: 600!important;}
+.forestgreen-600 {color: forestgreen!important; font-weight: 600!important;}
+.darkgreen-600 {color: darkgreen!important; font-weight: 600!important;}
+.green-600 {color: green!important; font-weight: 600!important;}
+.seagreen-600 {color: seagreen!important; font-weight: 600!important;}
+.mediumseagreen-600 {color: mediumseagreen!important; font-weight: 600!important;}
+.darkseagreen-600 {color: darkseagreen!important; font-weight: 600!important;}
+.lightgreen-600 {color: lightgreen!important; font-weight: 600!important;}
+.palegreen-600 {color: palegreen!important; font-weight: 600!important;}
+.springgreen-600 {color: springgreen!important; font-weight: 600!important;}
+.mediumspringgreen-600 {color: mediumspringgreen!important; font-weight: 600!important;}
+.teal-600 {color: teal!important; font-weight: 600!important;}
+.darkcyan-600 {color: darkcyan!important; font-weight: 600!important;}
+.lightseagreen-600 {color: lightseagreen!important; font-weight: 600!important;}
+.mediumaquamarine-600 {color: mediumaquamarine!important; font-weight: 600!important;}
+.cadetblue-600 {color: cadetblue!important; font-weight: 600!important;}
+.steelblue-600 {color: steelblue!important; font-weight: 600!important;}
+.aquamarine-600 {color: aquamarine!important; font-weight: 600!important;}
+.powderblue-600 {color: powderblue!important; font-weight: 600!important;}
+.paleturquoise-600 {color: paleturquoise!important; font-weight: 600!important;}
+.lightsteelblue-600 {color: lightsteelblue!important; font-weight: 600!important;}
+.lightblue-600 {color: lightblue!important; font-weight: 600!important;}
+.lightsteelblue-600 {color: lightsteelblue!important; font-weight: 600!important;}
+.skyblue-600 {color: skyblue!important; font-weight: 600!important;}
+.lightskyblue-600 {color: lightskyblue!important; font-weight: 600!important;}
+.mediumturquoise-600 {color: mediumturquoise!important; font-weight: 600!important;}
+.turquoise-600 {color: turquoise!important; font-weight: 600!important;}
+.darkturquoise-600 {color: darkturquoise!important; font-weight: 600!important;}
+.aqua-600 {color: aqua!important; font-weight: 600!important;}
+.red-600 {color: red!important; font-weight: 600!important;}
+.crimson-600 {color: crimson!important; font-weight: 600!important;}
+.maroon-600 {color: maroon!important; font-weight: 600!important;}
+.darkred-600 {color: darkred!important; font-weight: 600!important;}
+.brown-600 {color: brown!important; font-weight: 600!important;}
+.sienna-600 {color: sienna!important; font-weight: 600!important;}
+.saddlebrown-600 {color: saddlebrown!important; font-weight: 600!important;}
+.indianred-600 {color: indianred!important; font-weight: 600!important;}
+.rosybrown-600 {color: rosybrown!important; font-weight: 600!important;}
+.lightcoral-600 {color: lightcoral!important; font-weight: 600!important;}
+.salmon-600 {color: salmon!important; font-weight: 600!important;}
+.darksalmon-600 {color: darksalmon!important; font-weight: 600!important;}
+.coral-600 {color: coral!important; font-weight: 600!important;}
+.tomato-600 {color: tomato!important; font-weight: 600!important;}
+.sandybrown-600 {color: sandybrown!important; font-weight: 600!important;}
+.lightsalmon-600 {color: lightsalmon!important; font-weight: 600!important;}
+.peru-600 {color: peru!important; font-weight: 600!important;}
+.chocolate-600 {color: chocolate!important; font-weight: 600!important;}
+.orangered-600 {color: orangered!important; font-weight: 600!important;}
+.orange-600 {color: orange!important; font-weight: 600!important;}
+.darkorange-600 {color: darkorange!important; font-weight: 600!important;}
+.tan-600 {color: tan!important; font-weight: 600!important;}
+.peachpuff-600 {color: peachpuff!important; font-weight: 600!important;}
+.bisque-600 {color: bisque!important; font-weight: 600!important;}
+.moccasin-600 {color: moccasin!important; font-weight: 600!important;}
+.navajowhite-600 {color: navajowhite!important; font-weight: 600!important;}
+.wheat-600 {color: wheat!important; font-weight: 600!important;}
+.burlywood-600 {color: burlywood!important; font-weight: 600!important;}
+.darkgoldenrod-600 {color: darkgoldenrod!important; font-weight: 600!important;}
+.goldenrod-600 {color: goldenrod!important; font-weight: 600!important;}
+.gold-600 {color: gold!important; font-weight: 600!important;}
+.yellow-600 {color: yellow!important; font-weight: 600!important;}
+.lightgoldenrodyellow-600 {color: lightgoldenrodyellow!important; font-weight: 600!important;}
+.palegoldenrod-600 {color: palegoldenrod!important; font-weight: 600!important;}
+.khaki-600 {color: khaki!important; font-weight: 600!important;}
+.darkkhaki-600 {color: darkkhaki!important; font-weight: 600!important;}
+.cyan-600 {color: cyan!important; font-weight: 600!important;}
+.deepskyblue-600 {color: deepskyblue!important; font-weight: 600!important;}
+.dodgerblue-600 {color: dodgerblue!important; font-weight: 600!important;}
+.cornflowerblue-600 {color: cornflowerblue!important; font-weight: 600!important;}
+.royalblue-600 {color: royalblue!important; font-weight: 600!important;}
+.blue-600 {color: blue!important; font-weight: 600!important;}
+.mediumblue-600 {color: mediumblue!important; font-weight: 600!important;}
+.navy-600 {color: navy!important; font-weight: 600!important;}
+.darkblue-600 {color: darkblue!important; font-weight: 600!important;}
+.midnightblue-600 {color: midnightblue!important; font-weight: 600!important;}
+.darkslateblue-600 {color: darkslateblue!important; font-weight: 600!important;}
+.slateblue-600 {color: slateblue!important; font-weight: 600!important;}
+.mediumslateblue-600 {color: mediumslateblue!important; font-weight: 600!important;}
+.mediumpurple-600 {color: mediumpurple!important; font-weight: 600!important;}
+.darkorchid-600 {color: darkorchid!important; font-weight: 600!important;}
+.darkviolet-600 {color: darkviolet!important; font-weight: 600!important;}
+.blueviolet-600 {color: blueviolet!important; font-weight: 600!important;}
+.mediumorchid-600 {color: mediumorchid!important; font-weight: 600!important;}
+.plum-600 {color: plum!important; font-weight: 600!important;}
+.lavender-600 {color: lavender!important; font-weight: 600!important;}
+.thistle-600 {color: thistle!important; font-weight: 600!important;}
+.orchid-600 {color: orchid!important; font-weight: 600!important;}
+.violet-600 {color: violet!important; font-weight: 600!important;}
+.indigo-600 {color: indigo!important; font-weight: 600!important;}
+.darkmagenta-600 {color: darkmagenta!important; font-weight: 600!important;}
+.purple-600 {color: purple!important; font-weight: 600!important;}
+.mediumvioletred-600 {color: mediumvioletred!important; font-weight: 600!important;}
+.deeppink-600 {color: deeppink!important; font-weight: 600!important;}
+.fuchsia-600 {color: fuchsia!important; font-weight: 600!important;}
+.magenta-600 {color: magenta!important; font-weight: 600!important;}
+.hotpink-600 {color: hotpink!important; font-weight: 600!important;}
+.palevioletred-600 {color: palevioletred!important; font-weight: 600!important;}
+.lightpink-600 {color: lightpink!important; font-weight: 600!important;}
+.pink-600 {color: pink!important; font-weight: 600!important;}
+.mistyrose-600 {color: mistyrose!important; font-weight: 600!important;}
+
+/* colorname 略 */
+.crim-600 {color: crimson!important; font-weight: 600!important;}
+.or-600 {color: orange!important; font-weight: 600!important;}
+.sb-600 {color: steelblue!important; font-weight: 600!important;}
+.ly-600 {color: lightyellow!important; font-weight: 600!important;}
+.choco-600 {color: chocolate!important; font-weight: 600!important;}
+.mint-600 {color: mintcream!important; font-weight: 600!important;}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 700 */
+/* 初期値 */
+.root-700 {color: var(--p-color)!important; font-weight: 700;}
+/* ホバー色 */
+.hover-color-700 {color: #2098d1!important; font-weight: 700;}
+/* 透明 */
+.trans-700 {color: transparent!important; font-weight: 700;}
+/* 黒〜白 */
+.c-000-700 {color: #000!important; font-weight: 700;}
+.c-111-700 {color: #111!important; font-weight: 700;}
+.c-222-700 {color: #222!important; font-weight: 700;}
+.c-333-700 {color: #333!important; font-weight: 700;}
+.c-444-700 {color: #444!important; font-weight: 700;}
+.c-555-700 {color: #555!important; font-weight: 700;}
+.c-666-700 {color: #666!important; font-weight: 700;}
+.c-777-700 {color: #777!important; font-weight: 700;}
+.c-888-700 {color: #888!important; font-weight: 700;}
+.c-999-700 {color: #999!important; font-weight: 700;}
+.c-aaa-700 {color: #aaa!important; font-weight: 700;}
+.c-bbb-700 {color: #bbb!important; font-weight: 700;}
+.c-ccc-700 {color: #ccc!important; font-weight: 700;}
+.c-ddd-700 {color: #ddd!important; font-weight: 700;}
+.c-eee-700 {color: #eee!important; font-weight: 700;}
+.c-fff-700 {color: #fff!important; font-weight: 700;}
+.black-700 {color: black!important; font-weight: 700;}
+.white-700 {color: white!important; font-weight: 700;}
+.beige-700 {color: beige!important; font-weight: 700;}
+
+/* colorname 太 略 */
+.ly-700 {color: lightyellow; font-weight: 700!important;}
+.crim-700 {color: crimson!important; font-weight: 700!important;}
+.or-700 {color: orange!important; font-weight: 700!important;}
+.choco-700 {color: chocolate!important; font-weight: 700!important;}
+
+/* ネオン */
+.neon-g-700 {color: #2a2; font-weight: 700!important;}
+
+/* 全 colorname */
+.blanchedalmond-700 {color: blanchedalmond!important; font-weight: 700!important;}
+.lightyellow-700 {color: lightyellow!important; font-weight: 700!important;}
+.cornsilk-700 {color: cornsilk!important; font-weight: 700!important;}
+.antiquewhite-700 {color: antiquewhite!important; font-weight: 700!important;}
+.papayawhip-700 {color: papayawhip!important; font-weight: 700!important;}
+.lemonchiffon-700 {color: lemonchiffon!important; font-weight: 700!important;}
+.beige-700 {color: beige!important; font-weight: 700!important;}
+.linen-700 {color: linen!important; font-weight: 700!important;}
+.oldlace-700 {color: oldlace!important; font-weight: 700!important;}
+.lightcyan-700 {color: lightcyan!important; font-weight: 700!important;}
+.aliceblue-700 {color: aliceblue!important; font-weight: 700!important;}
+.whitesmoke-700 {color: whitesmoke!important; font-weight: 700!important;}
+.lavenderblush-700 {color: lavenderblush!important; font-weight: 700!important;}
+.floralwhite-700 {color: floralwhite!important; font-weight: 700!important;}
+.mintcream-700 {color: mintcream!important; font-weight: 700!important;}
+.ghostwhite-700 {color: ghostwhite!important; font-weight: 700!important;}
+.honeydew-700 {color: honeydew!important; font-weight: 700!important;}
+.seashell-700 {color: seashell!important; font-weight: 700!important;}
+.ivory-700 {color: ivory!important; font-weight: 700!important;}
+.azure-700 {color: azure!important; font-weight: 700!important;}
+.snow-700 {color: snow!important; font-weight: 700!important;}
+.white-700 {color: white!important; font-weight: 700!important;}
+.gainsboro-700 {color: gainsboro!important; font-weight: 700!important;}
+.lightgray-700 {color: lightgray!important; font-weight: 700!important;}
+.silver-700 {color: silver!important; font-weight: 700!important;}
+.darkgray-700 {color: darkgray!important; font-weight: 700!important;}
+.lightslategray-700 {color: lightslategray!important; font-weight: 700!important;}
+.slategray-700 {color: slategray!important; font-weight: 700!important;}
+.gray-700 {color: gray!important; font-weight: 700!important;}
+.dimgray-700 {color: dimgray!important; font-weight: 700!important;}
+.darkslategray-700 {color: darkslategray!important; font-weight: 700!important;}
+.black-700 {color: black!important; font-weight: 700!important;}
+.lawngreen-700 {color: lawngreen!important; font-weight: 700!important;}
+.greenyellow-700 {color: greenyellow!important; font-weight: 700!important;}
+.chartreuse-700 {color: chartreuse!important; font-weight: 700!important;}
+.lime-700 {color: lime!important; font-weight: 700!important;}
+.limegreen-700 {color: limegreen!important; font-weight: 700!important;}
+.yellowgreen-700 {color: yellowgreen!important; font-weight: 700!important;}
+.olive-700 {color: olive!important; font-weight: 700!important;}
+.olivedrab-700 {color: olivedrab!important; font-weight: 700!important;}
+.darkolivegreen-700 {color: darkolivegreen!important; font-weight: 700!important;}
+.forestgreen-700 {color: forestgreen!important; font-weight: 700!important;}
+.darkgreen-700 {color: darkgreen!important; font-weight: 700!important;}
+.green-700 {color: green!important; font-weight: 700!important;}
+.seagreen-700 {color: seagreen!important; font-weight: 700!important;}
+.mediumseagreen-700 {color: mediumseagreen!important; font-weight: 700!important;}
+.darkseagreen-700 {color: darkseagreen!important; font-weight: 700!important;}
+.lightgreen-700 {color: lightgreen!important; font-weight: 700!important;}
+.palegreen-700 {color: palegreen!important; font-weight: 700!important;}
+.springgreen-700 {color: springgreen!important; font-weight: 700!important;}
+.mediumspringgreen-700 {color: mediumspringgreen!important; font-weight: 700!important;}
+.teal-700 {color: teal!important; font-weight: 700!important;}
+.darkcyan-700 {color: darkcyan!important; font-weight: 700!important;}
+.lightseagreen-700 {color: lightseagreen!important; font-weight: 700!important;}
+.mediumaquamarine-700 {color: mediumaquamarine!important; font-weight: 700!important;}
+.cadetblue-700 {color: cadetblue!important; font-weight: 700!important;}
+.steelblue-700 {color: steelblue!important; font-weight: 700!important;}
+.aquamarine-700 {color: aquamarine!important; font-weight: 700!important;}
+.powderblue-700 {color: powderblue!important; font-weight: 700!important;}
+.paleturquoise-700 {color: paleturquoise!important; font-weight: 700!important;}
+.lightsteelblue-700 {color: lightsteelblue!important; font-weight: 700!important;}
+.lightblue-700 {color: lightblue!important; font-weight: 700!important;}
+.lightsteelblue-700 {color: lightsteelblue!important; font-weight: 700!important;}
+.skyblue-700 {color: skyblue!important; font-weight: 700!important;}
+.lightskyblue-700 {color: lightskyblue!important; font-weight: 700!important;}
+.mediumturquoise-700 {color: mediumturquoise!important; font-weight: 700!important;}
+.turquoise-700 {color: turquoise!important; font-weight: 700!important;}
+.darkturquoise-700 {color: darkturquoise!important; font-weight: 700!important;}
+.aqua-700 {color: aqua!important; font-weight: 700!important;}
+.red-700 {color: red!important; font-weight: 700!important;}
+.crimson-700 {color: crimson!important; font-weight: 700!important;}
+.maroon-700 {color: maroon!important; font-weight: 700!important;}
+.darkred-700 {color: darkred!important; font-weight: 700!important;}
+.brown-700 {color: brown!important; font-weight: 700!important;}
+.sienna-700 {color: sienna!important; font-weight: 700!important;}
+.saddlebrown-700 {color: saddlebrown!important; font-weight: 700!important;}
+.indianred-700 {color: indianred!important; font-weight: 700!important;}
+.rosybrown-700 {color: rosybrown!important; font-weight: 700!important;}
+.lightcoral-700 {color: lightcoral!important; font-weight: 700!important;}
+.salmon-700 {color: salmon!important; font-weight: 700!important;}
+.darksalmon-700 {color: darksalmon!important; font-weight: 700!important;}
+.coral-700 {color: coral!important; font-weight: 700!important;}
+.tomato-700 {color: tomato!important; font-weight: 700!important;}
+.sandybrown-700 {color: sandybrown!important; font-weight: 700!important;}
+.lightsalmon-700 {color: lightsalmon!important; font-weight: 700!important;}
+.peru-700 {color: peru!important; font-weight: 700!important;}
+.chocolate-700 {color: chocolate!important; font-weight: 700!important;}
+.orangered-700 {color: orangered!important; font-weight: 700!important;}
+.orange-700 {color: orange!important; font-weight: 700!important;}
+.darkorange-700 {color: darkorange!important; font-weight: 700!important;}
+.tan-700 {color: tan!important; font-weight: 700!important;}
+.peachpuff-700 {color: peachpuff!important; font-weight: 700!important;}
+.bisque-700 {color: bisque!important; font-weight: 700!important;}
+.moccasin-700 {color: moccasin!important; font-weight: 700!important;}
+.navajowhite-700 {color: navajowhite!important; font-weight: 700!important;}
+.wheat-700 {color: wheat!important; font-weight: 700!important;}
+.burlywood-700 {color: burlywood!important; font-weight: 700!important;}
+.darkgoldenrod-700 {color: darkgoldenrod!important; font-weight: 700!important;}
+.goldenrod-700 {color: goldenrod!important; font-weight: 700!important;}
+.gold-700 {color: gold!important; font-weight: 700!important;}
+.yellow-700 {color: yellow!important; font-weight: 700!important;}
+.lightgoldenrodyellow-700 {color: lightgoldenrodyellow!important; font-weight: 700!important;}
+.palegoldenrod-700 {color: palegoldenrod!important; font-weight: 700!important;}
+.khaki-700 {color: khaki!important; font-weight: 700!important;}
+.darkkhaki-700 {color: darkkhaki!important; font-weight: 700!important;}
+.cyan-700 {color: cyan!important; font-weight: 700!important;}
+.deepskyblue-700 {color: deepskyblue!important; font-weight: 700!important;}
+.dodgerblue-700 {color: dodgerblue!important; font-weight: 700!important;}
+.cornflowerblue-700 {color: cornflowerblue!important; font-weight: 700!important;}
+.royalblue-700 {color: royalblue!important; font-weight: 700!important;}
+.blue-700 {color: blue!important; font-weight: 700!important;}
+.mediumblue-700 {color: mediumblue!important; font-weight: 700!important;}
+.navy-700 {color: navy!important; font-weight: 700!important;}
+.darkblue-700 {color: darkblue!important; font-weight: 700!important;}
+.midnightblue-700 {color: midnightblue!important; font-weight: 700!important;}
+.darkslateblue-700 {color: darkslateblue!important; font-weight: 700!important;}
+.slateblue-700 {color: slateblue!important; font-weight: 700!important;}
+.mediumslateblue-700 {color: mediumslateblue!important; font-weight: 700!important;}
+.mediumpurple-700 {color: mediumpurple!important; font-weight: 700!important;}
+.darkorchid-700 {color: darkorchid!important; font-weight: 700!important;}
+.darkviolet-700 {color: darkviolet!important; font-weight: 700!important;}
+.blueviolet-700 {color: blueviolet!important; font-weight: 700!important;}
+.mediumorchid-700 {color: mediumorchid!important; font-weight: 700!important;}
+.plum-700 {color: plum!important; font-weight: 700!important;}
+.lavender-700 {color: lavender!important; font-weight: 700!important;}
+.thistle-700 {color: thistle!important; font-weight: 700!important;}
+.orchid-700 {color: orchid!important; font-weight: 700!important;}
+.violet-700 {color: violet!important; font-weight: 700!important;}
+.indigo-700 {color: indigo!important; font-weight: 700!important;}
+.darkmagenta-700 {color: darkmagenta!important; font-weight: 700!important;}
+.purple-700 {color: purple!important; font-weight: 700!important;}
+.mediumvioletred-700 {color: mediumvioletred!important; font-weight: 700!important;}
+.deeppink-700 {color: deeppink!important; font-weight: 700!important;}
+.fuchsia-700 {color: fuchsia!important; font-weight: 700!important;}
+.magenta-700 {color: magenta!important; font-weight: 700!important;}
+.hotpink-700 {color: hotpink!important; font-weight: 700!important;}
+.palevioletred-700 {color: palevioletred!important; font-weight: 700!important;}
+.lightpink-700 {color: lightpink!important; font-weight: 700!important;}
+.pink-700 {color: pink!important; font-weight: 700!important;}
+.mistyrose-700 {color: mistyrose!important; font-weight: 700!important;}
+
+/* colorname 略 */
+.crim-700 {color: crimson!important; font-weight: 700!important;}
+.or-700 {color: orange!important; font-weight: 700!important;}
+.sb-700 {color: steelblue!important; font-weight: 700!important;}
+.ly-700 {color: lightyellow!important; font-weight: 700!important;}
+.choco-700 {color: chocolate!important; font-weight: 700!important;}
+.mint-700 {color: mintcream!important; font-weight: 700!important;}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 900 */
+/* 初期値 */
+.root-900 {color: var(--p-color)!important; font-weight: 900!important;}
+/* ホバー色 */
+.hover-color-900 {color: #2098d1!important; font-weight: 900!important;}
+/* 透明 */
+.trans-900 {color: transparent!important; font-weight: 900!important;}
+/* 黒〜白 */
+.c-000-900 {color: #000!important; font-weight: 900!important;}
+.c-111-900 {color: #111!important; font-weight: 900!important;}
+.c-222-900 {color: #222!important; font-weight: 900!important;}
+.c-333-900 {color: #333!important; font-weight: 900!important;}
+.c-444-900 {color: #444!important; font-weight: 900!important;}
+.c-555-900 {color: #555!important; font-weight: 900!important;}
+.c-666-900 {color: #666!important; font-weight: 900!important;}
+.c-777-900 {color: #777!important; font-weight: 900!important;}
+.c-888-900 {color: #888!important; font-weight: 900!important;}
+.c-999-900 {color: #999!important; font-weight: 900!important;}
+.c-aaa-900 {color: #aaa!important; font-weight: 900!important;}
+.c-bbb-900 {color: #bbb!important; font-weight: 900!important;}
+.c-ccc-900 {color: #ccc!important; font-weight: 900!important;}
+.c-ddd-900 {color: #ddd!important; font-weight: 900!important;}
+.c-eee-900 {color: #eee!important; font-weight: 900!important;}
+.c-fff-900 {color: #fff!important; font-weight: 900!important;}
+.black-900 {color: black!important; font-weight: 900!important;}
+.white-900 {color: white!important; font-weight: 900!important;}
+.beige-900 {color: beige!important; font-weight: 900!important;}
+/* 特色 */
+.red-b-900 {color: #ff4444!important; font-weight: 900!important;}
+.steelblue-b-900, .sb-b-900 {color: #3399ff!important; font-weight: 900!important;}
+
+/* 特色 */
+.red-b-900 {color: #ff4444!important; font-weight: 900!important;}
+.steelblue-b-900, .sb-b-900 {color: #3399ff!important; font-weight: 900!important;}
+
+/* colorname 略 */
+.ly-900 {color: lightyellow; font-weight: 900!important;}
+.crim-900 {color: crimson!important; font-weight: 900!important;}
+.or-900 {color: orange!important; font-weight: 900!important;}
+.sb-900 {color: steelblue!important; font-weight: 900!important;}
+
+/* ネオン */
+.neon-g-900 {color: #2a2; font-weight: 900!important;}
+
+/* 全 colorname */
+.blanchedalmond-900 {color: blanchedalmond!important; font-weight: 900!important;}
+.lightyellow-900 {color: lightyellow!important; font-weight: 900!important;}
+.cornsilk-900 {color: cornsilk!important; font-weight: 900!important;}
+.antiquewhite-900 {color: antiquewhite!important; font-weight: 900!important;}
+.papayawhip-900 {color: papayawhip!important; font-weight: 900!important;}
+.lemonchiffon-900 {color: lemonchiffon!important; font-weight: 900!important;}
+.beige-900 {color: beige!important; font-weight: 900!important;}
+.linen-900 {color: linen!important; font-weight: 900!important;}
+.oldlace-900 {color: oldlace!important; font-weight: 900!important;}
+.lightcyan-900 {color: lightcyan!important; font-weight: 900!important;}
+.aliceblue-900 {color: aliceblue!important; font-weight: 900!important;}
+.whitesmoke-900 {color: whitesmoke!important; font-weight: 900!important;}
+.lavenderblush-900 {color: lavenderblush!important; font-weight: 900!important;}
+.floralwhite-900 {color: floralwhite!important; font-weight: 900!important;}
+.mintcream-900 {color: mintcream!important; font-weight: 900!important;}
+.ghostwhite-900 {color: ghostwhite!important; font-weight: 900!important;}
+.honeydew-900 {color: honeydew!important; font-weight: 900!important;}
+.seashell-900 {color: seashell!important; font-weight: 900!important;}
+.ivory-900 {color: ivory!important; font-weight: 900!important;}
+.azure-900 {color: azure!important; font-weight: 900!important;}
+.snow-900 {color: snow!important; font-weight: 900!important;}
+.white-900 {color: white!important; font-weight: 900!important;}
+.gainsboro-900 {color: gainsboro!important; font-weight: 900!important;}
+.lightgray-900 {color: lightgray!important; font-weight: 900!important;}
+.silver-900 {color: silver!important; font-weight: 900!important;}
+.darkgray-900 {color: darkgray!important; font-weight: 900!important;}
+.lightslategray-900 {color: lightslategray!important; font-weight: 900!important;}
+.slategray-900 {color: slategray!important; font-weight: 900!important;}
+.gray-900 {color: gray!important; font-weight: 900!important;}
+.dimgray-900 {color: dimgray!important; font-weight: 900!important;}
+.darkslategray-900 {color: darkslategray!important; font-weight: 900!important;}
+.black-900 {color: black!important; font-weight: 900!important;}
+.lawngreen-900 {color: lawngreen!important; font-weight: 900!important;}
+.greenyellow-900 {color: greenyellow!important; font-weight: 900!important;}
+.chartreuse-900 {color: chartreuse!important; font-weight: 900!important;}
+.lime-900 {color: lime!important; font-weight: 900!important;}
+.limegreen-900 {color: limegreen!important; font-weight: 900!important;}
+.yellowgreen-900 {color: yellowgreen!important; font-weight: 900!important;}
+.olive-900 {color: olive!important; font-weight: 900!important;}
+.olivedrab-900 {color: olivedrab!important; font-weight: 900!important;}
+.darkolivegreen-900 {color: darkolivegreen!important; font-weight: 900!important;}
+.forestgreen-900 {color: forestgreen!important; font-weight: 900!important;}
+.darkgreen-900 {color: darkgreen!important; font-weight: 900!important;}
+.green-900 {color: green!important; font-weight: 900!important;}
+.seagreen-900 {color: seagreen!important; font-weight: 900!important;}
+.mediumseagreen-900 {color: mediumseagreen!important; font-weight: 900!important;}
+.darkseagreen-900 {color: darkseagreen!important; font-weight: 900!important;}
+.lightgreen-900 {color: lightgreen!important; font-weight: 900!important;}
+.palegreen-900 {color: palegreen!important; font-weight: 900!important;}
+.springgreen-900 {color: springgreen!important; font-weight: 900!important;}
+.mediumspringgreen-900 {color: mediumspringgreen!important; font-weight: 900!important;}
+.teal-900 {color: teal!important; font-weight: 900!important;}
+.darkcyan-900 {color: darkcyan!important; font-weight: 900!important;}
+.lightseagreen-900 {color: lightseagreen!important; font-weight: 900!important;}
+.mediumaquamarine-900 {color: mediumaquamarine!important; font-weight: 900!important;}
+.cadetblue-900 {color: cadetblue!important; font-weight: 900!important;}
+.steelblue-900 {color: steelblue!important; font-weight: 900!important;}
+.aquamarine-900 {color: aquamarine!important; font-weight: 900!important;}
+.powderblue-900 {color: powderblue!important; font-weight: 900!important;}
+.paleturquoise-900 {color: paleturquoise!important; font-weight: 900!important;}
+.lightsteelblue-900 {color: lightsteelblue!important; font-weight: 900!important;}
+.lightblue-900 {color: lightblue!important; font-weight: 900!important;}
+.lightsteelblue-900 {color: lightsteelblue!important; font-weight: 900!important;}
+.skyblue-900 {color: skyblue!important; font-weight: 900!important;}
+.lightskyblue-900 {color: lightskyblue!important; font-weight: 900!important;}
+.mediumturquoise-900 {color: mediumturquoise!important; font-weight: 900!important;}
+.turquoise-900 {color: turquoise!important; font-weight: 900!important;}
+.darkturquoise-900 {color: darkturquoise!important; font-weight: 900!important;}
+.aqua-900 {color: aqua!important; font-weight: 900!important;}
+.red-900 {color: red!important; font-weight: 900!important;}
+.crimson-900 {color: crimson!important; font-weight: 900!important;}
+.maroon-900 {color: maroon!important; font-weight: 900!important;}
+.darkred-900 {color: darkred!important; font-weight: 900!important;}
+.brown-900 {color: brown!important; font-weight: 900!important;}
+.sienna-900 {color: sienna!important; font-weight: 900!important;}
+.saddlebrown-900 {color: saddlebrown!important; font-weight: 900!important;}
+.indianred-900 {color: indianred!important; font-weight: 900!important;}
+.rosybrown-900 {color: rosybrown!important; font-weight: 900!important;}
+.lightcoral-900 {color: lightcoral!important; font-weight: 900!important;}
+.salmon-900 {color: salmon!important; font-weight: 900!important;}
+.darksalmon-900 {color: darksalmon!important; font-weight: 900!important;}
+.coral-900 {color: coral!important; font-weight: 900!important;}
+.tomato-900 {color: tomato!important; font-weight: 900!important;}
+.sandybrown-900 {color: sandybrown!important; font-weight: 900!important;}
+.lightsalmon-900 {color: lightsalmon!important; font-weight: 900!important;}
+.peru-900 {color: peru!important; font-weight: 900!important;}
+.chocolate-900 {color: chocolate!important; font-weight: 900!important;}
+.orangered-900 {color: orangered!important; font-weight: 900!important;}
+.orange-900 {color: orange!important; font-weight: 900!important;}
+.darkorange-900 {color: darkorange!important; font-weight: 900!important;}
+.tan-900 {color: tan!important; font-weight: 900!important;}
+.peachpuff-900 {color: peachpuff!important; font-weight: 900!important;}
+.bisque-900 {color: bisque!important; font-weight: 900!important;}
+.moccasin-900 {color: moccasin!important; font-weight: 900!important;}
+.navajowhite-900 {color: navajowhite!important; font-weight: 900!important;}
+.wheat-900 {color: wheat!important; font-weight: 900!important;}
+.burlywood-900 {color: burlywood!important; font-weight: 900!important;}
+.darkgoldenrod-900 {color: darkgoldenrod!important; font-weight: 900!important;}
+.goldenrod-900 {color: goldenrod!important; font-weight: 900!important;}
+.gold-900 {color: gold!important; font-weight: 900!important;}
+.yellow-900 {color: yellow!important; font-weight: 900!important;}
+.lightgoldenrodyellow-900 {color: lightgoldenrodyellow!important; font-weight: 900!important;}
+.palegoldenrod-900 {color: palegoldenrod!important; font-weight: 900!important;}
+.khaki-900 {color: khaki!important; font-weight: 900!important;}
+.darkkhaki-900 {color: darkkhaki!important; font-weight: 900!important;}
+.cyan-900 {color: cyan!important; font-weight: 900!important;}
+.deepskyblue-900 {color: deepskyblue!important; font-weight: 900!important;}
+.dodgerblue-900 {color: dodgerblue!important; font-weight: 900!important;}
+.cornflowerblue-900 {color: cornflowerblue!important; font-weight: 900!important;}
+.royalblue-900 {color: royalblue!important; font-weight: 900!important;}
+.blue-900 {color: blue!important; font-weight: 900!important;}
+.mediumblue-900 {color: mediumblue!important; font-weight: 900!important;}
+.navy-900 {color: navy!important; font-weight: 900!important;}
+.darkblue-900 {color: darkblue!important; font-weight: 900!important;}
+.midnightblue-900 {color: midnightblue!important; font-weight: 900!important;}
+.darkslateblue-900 {color: darkslateblue!important; font-weight: 900!important;}
+.slateblue-900 {color: slateblue!important; font-weight: 900!important;}
+.mediumslateblue-900 {color: mediumslateblue!important; font-weight: 900!important;}
+.mediumpurple-900 {color: mediumpurple!important; font-weight: 900!important;}
+.darkorchid-900 {color: darkorchid!important; font-weight: 900!important;}
+.darkviolet-900 {color: darkviolet!important; font-weight: 900!important;}
+.blueviolet-900 {color: blueviolet!important; font-weight: 900!important;}
+.mediumorchid-900 {color: mediumorchid!important; font-weight: 900!important;}
+.plum-900 {color: plum!important; font-weight: 900!important;}
+.lavender-900 {color: lavender!important; font-weight: 900!important;}
+.thistle-900 {color: thistle!important; font-weight: 900!important;}
+.orchid-900 {color: orchid!important; font-weight: 900!important;}
+.violet-900 {color: violet!important; font-weight: 900!important;}
+.indigo-900 {color: indigo!important; font-weight: 900!important;}
+.darkmagenta-900 {color: darkmagenta!important; font-weight: 900!important;}
+.purple-900 {color: purple!important; font-weight: 900!important;}
+.mediumvioletred-900 {color: mediumvioletred!important; font-weight: 900!important;}
+.deeppink-900 {color: deeppink!important; font-weight: 900!important;}
+.fuchsia-900 {color: fuchsia!important; font-weight: 900!important;}
+.magenta-900 {color: magenta!important; font-weight: 900!important;}
+.hotpink-900 {color: hotpink!important; font-weight: 900!important;}
+.palevioletred-900 {color: palevioletred!important; font-weight: 900!important;}
+.lightpink-900 {color: lightpink!important; font-weight: 900!important;}
+.pink-900 {color: pink!important; font-weight: 900!important;}
+.mistyrose-900 {color: mistyrose!important; font-weight: 900!important;}
+
+/* colorname 略 */
+.crim-900 {color: crimson!important; font-weight: 900!important;}
+.or-900 {color: orange!important; font-weight: 900!important;}
+.sb-900 {color: steelblue!important; font-weight: 900!important;}
+.ly-900 {color: lightyellow!important; font-weight: 900!important;}
+.choco-900 {color: chocolate!important; font-weight: 900!important;}
+.mint-600 {color: mintcream!important; font-weight: 900!important;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */ 背景色
+
+/* 文字色初期値 */
+.bg-root {background-color: var(--p-color)!important;}
+/* ホバー色 */
+.bg-hover {background-color: #2098d1!important;}
+.bg-hover-04 {background-color: #AFD6ED!important;}/* #2098d1 opacity: .4 */
+/* 透明 */
+.bg-trans {background-color: transparent!important;}
+/* 黒 */
+.bg-black {background-color: black!important;}
+.bg-000 {background-color: #000!important;}
+.bg-111 {background-color: #111!important;}
+.bg-222 {background-color: #222!important;}
+.bg-333 {background-color: #333!important;}
+.bg-444 {background-color: #444!important;}
+.bg-555 {background-color: #555!important;}
+.bg-666 {background-color: #666!important;}
+.bg-777 {background-color: #777!important;}
+.bg-888 {background-color: #888!important;}
+.bg-999 {background-color: #999!important;}
+.bg-aaa {background-color: #aaa!important;}
+.bg-bbb {background-color: #bbb!important;}
+.bg-ccc {background-color: #ccc!important;}
+.bg-ddd {background-color: #ddd!important;}
+.bg-eee {background-color: #eee!important;}
+.bg-fff {background-color: #fff!important;}
+
+/* 特色 */
+.bg-red-b {background-color: #ff4444!important;}
+.bg-steelblue-b, .bg-sb-b {background-color: #3399ff!important;}
+
+/* bg-colorname */
+.bg-blanchedalmond {background-color: blanchedalmond!important;}
+.bg-lightyellow {background-color: lightyellow!important;}
+.bg-cornsilk {background-color: cornsilk!important;}
+.bg-antiquewhite {background-color: antiquewhite!important;}
+.bg-papayawhip {background-color: papayawhip!important;}
+.bg-lemonchiffon {background-color: lemonchiffon!important;}
+.bg-beige {background-color: beige!important;}
+.bg-linen {background-color: linen!important;}
+.bg-oldlace {background-color: oldlace!important;}
+.bg-lightcyan {background-color: lightcyan!important;}
+.bg-aliceblue {background-color: aliceblue!important;}
+.bg-whitesmoke {background-color: whitesmoke!important;}
+.bg-lavenderblush {background-color: lavenderblush!important;}
+.bg-floralwhite {background-color: floralwhite!important;}
+.bg-mintcream {background-color: mintcream!important;}
+.bg-ghostwhite {background-color: ghostwhite!important;}
+.bg-honeydew {background-color: honeydew!important;}
+.bg-seashell {background-color: seashell!important;}
+.bg-ivory {background-color: ivory!important;}
+.bg-azure {background-color: azure!important;}
+.bg-snow {background-color: snow!important;}
+.bg-white {background-color: white!important;}
+.bg-gainsboro {background-color: gainsboro!important;}
+.bg-lightgray {background-color: lightgray!important;}
+.bg-silver {background-color: silver!important;}
+.bg-darkgray {background-color: darkgray!important;}
+.bg-lightslategray {background-color: lightslategray!important;}
+.bg-slategray {background-color: slategray!important;}
+.bg-gray {background-color: gray!important;}
+.bg-dimgray {background-color: dimgray!important;}
+.bg-darkslategray {background-color: darkslategray!important;}
+.bg-black {background-color: black!important;}
+.bg-lawngreen {background-color: lawngreen!important;}
+.bg-greenyellow {background-color: greenyellow!important;}
+.bg-chartreuse {background-color: chartreuse!important;}
+.bg-lime {background-color: lime!important;}
+.bg-limegreen {background-color: limegreen!important;}
+.bg-yellowgreen {background-color: yellowgreen!important;}
+.bg-olive {background-color: olive!important;}
+.bg-olivedrab {background-color: olivedrab!important;}
+.bg-darkolivegreen {background-color: darkolivegreen!important;}
+.bg-forestgreen {background-color: forestgreen!important;}
+.bg-darkgreen {background-color: darkgreen!important;}
+.bg-green {background-color: green!important;}
+.bg-seagreen {background-color: seagreen!important;}
+.bg-mediumseagreen {background-color: mediumseagreen!important;}
+.bg-darkseagreen {background-color: darkseagreen!important;}
+.bg-lightgreen {background-color: lightgreen!important;}
+.bg-palegreen {background-color: palegreen!important;}
+.bg-springgreen {background-color: springgreen!important;}
+.bg-mediumspringgreen {background-color: mediumspringgreen!important;}
+.bg-teal {background-color: teal!important;}
+.bg-darkcyan {background-color: darkcyan!important;}
+.bg-lightseagreen {background-color: lightseagreen!important;}
+.bg-mediumaquamarine {background-color: mediumaquamarine!important;}
+.bg-cadetblue {background-color: cadetblue!important;}
+.bg-steelblue {background-color: steelblue!important;}
+.bg-aquamarine {background-color: aquamarine!important;}
+.bg-powderblue {background-color: powderblue!important;}
+.bg-paleturquoise {background-color: paleturquoise!important;}
+.bg-lightsteelblue {background-color: lightsteelblue!important;}
+.bg-lightblue {background-color: lightblue!important;}
+.bg-lightsteelblue {background-color: lightsteelblue!important;}
+.bg-skyblue {background-color: skyblue!important;}
+.bg-lightskyblue {background-color: lightskyblue!important;}
+.bg-mediumturquoise {background-color: mediumturquoise!important;}
+.bg-turquoise {background-color: turquoise!important;}
+.bg-darkturquoise {background-color: darkturquoise!important;}
+.bg-aqua {background-color: aqua!important;}
+.bg-red {background-color: red!important;}
+.bg-crimson {background-color: crimson!important;}
+.bg-maroon {background-color: maroon!important;}
+.bg-darkred {background-color: darkred!important;}
+.bg-brown {background-color: brown!important;}
+.bg-sienna {background-color: sienna!important;}
+.bg-saddlebrown {background-color: saddlebrown!important;}
+.bg-indianred {background-color: indianred!important;}
+.bg-rosybrown {background-color: rosybrown!important;}
+.bg-lightcoral {background-color: lightcoral!important;}
+.bg-salmon {background-color: salmon!important;}
+.bg-darksalmon {background-color: darksalmon!important;}
+.bg-coral {background-color: coral!important;}
+.bg-tomato {background-color: tomato!important;}
+.bg-sandybrown {background-color: sandybrown!important;}
+.bg-lightsalmon {background-color: lightsalmon!important;}
+.bg-peru {background-color: peru!important;}
+.bg-chocolate {background-color: chocolate!important;}
+.bg-orangered {background-color: orangered!important;}
+.bg-orange {background-color: orange!important;}
+.bg-darkorange {background-color: darkorange!important;}
+.bg-tan {background-color: tan!important;}
+.bg-peachpuff {background-color: peachpuff!important;}
+.bg-bisque {background-color: bisque!important;}
+.bg-moccasin {background-color: moccasin!important;}
+.bg-navajowhite {background-color: navajowhite!important;}
+.bg-wheat {background-color: wheat!important;}
+.bg-burlywood {background-color: burlywood!important;}
+.bg-darkgoldenrod {background-color: darkgoldenrod!important;}
+.bg-goldenrod {background-color: goldenrod!important;}
+.bg-gold {background-color: gold!important;}
+.bg-yellow {background-color: yellow!important;}
+.bg-lightgoldenrodyellow {background-color: lightgoldenrodyellow!important;}
+.bg-palegoldenrod {background-color: palegoldenrod!important;}
+.bg-khaki {background-color: khaki!important;}
+.bg-darkkhaki {background-color: darkkhaki!important;}
+.bg-cyan {background-color: cyan!important;}
+.bg-deepskyblue {background-color: deepskyblue!important;}
+.bg-dodgerblue {background-color: dodgerblue!important;}
+.bg-cornflowerblue {background-color: cornflowerblue!important;}
+.bg-royalblue {background-color: royalblue!important;}
+.bg-blue {background-color: blue!important;}
+.bg-mediumblue {background-color: mediumblue!important;}
+.bg-navy {background-color: navy!important;}
+.bg-darkblue {background-color: darkblue!important;}
+.bg-midnightblue {background-color: midnightblue!important;}
+.bg-darkslateblue {background-color: darkslateblue!important;}
+.bg-slateblue {background-color: slateblue!important;}
+.bg-mediumslateblue {background-color: mediumslateblue!important;}
+.bg-mediumpurple {background-color: mediumpurple!important;}
+.bg-darkorchid {background-color: darkorchid!important;}
+.bg-darkviolet {background-color: darkviolet!important;}
+.bg-blueviolet {background-color: blueviolet!important;}
+.bg-mediumorchid {background-color: mediumorchid!important;}
+.bg-plum {background-color: plum!important;}
+.bg-lavender {background-color: lavender!important;}
+.bg-thistle {background-color: thistle!important;}
+.bg-orchid {background-color: orchid!important;}
+.bg-violet {background-color: violet!important;}
+.bg-indigo {background-color: indigo!important;}
+.bg-darkmagenta {background-color: darkmagenta!important;}
+.bg-purple {background-color: purple!important;}
+.bg-mediumvioletred {background-color: mediumvioletred!important;}
+.bg-deeppink {background-color: deeppink!important;}
+.bg-fuchsia {background-color: fuchsia!important;}
+.bg-magenta {background-color: magenta!important;}
+.bg-hotpink {background-color: hotpink!important;}
+.bg-palevioletred {background-color: palevioletred!important;}
+.bg-lightpink {background-color: lightpink!important;}
+.bg-pink {background-color: pink!important;}
+.bg-mistyrose {background-color: mistyrose!important;}
+
+/* colorname 略 */
+.bg-crim {background-color: crimson!important;}
+.bg-or {background-color: orange!important;}
+.bg-sb {background-color: steelblue!important;}
+.bg-ly {background-color: lightyellow!important;}
+.bg-choco {background-color: chocolate!important;}
+.bg-mint {background-color: mintcream!important;}
+/* ハイライト灰 */
+span.hl-gray {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, lightgray 72%, rgba(255,255,255,0) 100% );
+}
+/* ハイライト青 */
+span.hl-b {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, #99ffff 72%, rgba(255,255,255,0) 100% );
+}
+/* ハイライト緑 */
+span.hl-g {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, rgba(153, 255, 0, .5) 72%, rgba(255,255,255,0) 100% );
+}
+/* ハイライト黃 */
+span.hl-y {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, rgba(255, 255, 0, .7) 72%, rgba(255,255,255,0) 100% );
+}
+/* ハイライトピンク */
+span.hl-p {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, rgba(255, 51, 153, .3) 72%, rgba(255,255,255,0) 100% );
+}
+.code-box.night span.hl-p {
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, rgba(255, 51, 153, .6) 72%, rgba(255,255,255,0) 100% );
+}
+/* ハイライトオレンジ */
+span.hl-or {
+	display: inline;
+	margin: 0 -.05em; /* 間隔調整 */
+	padding: 0 0.15em; /* 下線拡張 */
+	background-image: linear-gradient(rgba(255,255,255,0) 40%, rgba(255,165,0,.7) 72%, rgba(255,255,255,0) 100% );
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ カラーセット */
+/* CSS辞典 共通部 */
+/* 値の指定方法 3タイトル部 */
+.color-set .head .title {color: white;}
+/* テーブル */
+table.color-set {background-color: ivory;}
+table.color-set thead {color:white;}
+/* ーーー brown-set ーーー */
+.brown-set h1,.brown-set h2,.brown-set h3,.brown-set h4,
+.brown-set h5,.brown-set h6 {
+	color: brown;
+}
+.brown-set .color-set .head .title, /* CSS辞典値の指定方法サブタイトル部 */
+.brown-set .specify-value .head span:nth-child(2n+1),
+.brown-set table.color-set  thead {
+	background-color: brown;
+}
+.brown-set table.color-set td:first-child {
+	background-color: blanchedalmond;
+}
+/* ーーー darkkhaki-set ーーー */
+.darkkhaki-set h1,.darkkhaki-set h2,.darkkhaki-set h3,.darkkhaki-set h4,
+.darkkhaki-set h5,.darkkhaki-set h6 {
+	color: darkkhaki;
+}
+.darkkhaki-set .color-set .head .title,
+.darkkhaki-set .specify-value .head span:nth-child(2n+1),
+.darkkhaki-set table.color-set thead {
+	background-color: darkkhaki;
+}
+.darkkhaki-set table.color-set td:first-child {
+	background-color: beige;
+}
+/* ーーー rosybrown-set ーーー */
+.rosybrown-set h1,.rosybrown-set h2,.rosybrown-set h3,.rosybrown-set h4,
+.rosybrown-set h5,.rosybrown-set h6 {
+	color: rosybrown;
+}
+.rosybrown-set .color-set .head .title,
+.rosybrown-set .specify-value .head span:nth-child(2n+1),
+.rosybrown-set table.color-set thead {
+	background-color: rosybrown;
+}
+.rosybrown-set table.color-set td:first-child {
+	background-color: seashell;
+}
+/* ーーー darkmagenta-set ーーー */
+.darkmagenta-set h1,.darkmagenta-set h2,.darkmagenta-set h3,.darkmagenta-set h4,
+.darkmagenta-set h5,.darkmagenta-set h6 {
+	color: darkmagenta;
+}
+.darkmagenta-set .color-set .head .title,
+.darkmagenta-set .specify-value .head span:nth-child(2n+1),
+.darkmagenta-set table.color-set thead {
+	background-color: darkmagenta;
+}
+.darkmagenta-set table.color-set td:first-child {
+	background-color: thistle;
+}
+/* ーーー purple-set ーーー */
+.purple-set h1,.purple-set h2,.purple-set h3,.purple-set h4,
+.purple-set h5,.purple-set h6 {
+	color: purple;
+}
+.purple-set .color-set .head .title,
+.purple-set .specify-value .head span:nth-child(2n+1),
+.purple-set table.color-set thead {
+	background-color: purple;
+}
+.purple-set table.color-set td:first-child {
+	background-color: thistle;
+}
+/* ーーー darkslategray-set ーーー */
+.darkslategray-set h1,.darkslategray-set h2,.darkslategray-set h3,.darkslategray-set h4,
+.darkslategray-set h5,.darkslategray-set h6 {
+	color: darkslategray;
+}
+.darkslategray-set .color-set .head .title,
+.darkslategray-set .specify-value .head span:nth-child(2n+1),
+.darkslategray-set table.color-set thead {
+	background-color: darkslategray;
+}
+.darkslategray-set table.color-set td:first-child {
+	background-color: lightsteelblue;
+}
+/* ーーー teal-set ーーー */
+.teal-set h1,.teal-set h2,.teal-set h3,.teal-set h4,
+.teal-set h5,.teal-set h6 {
+	color: teal;}
+.teal-set .color-set .head .title,
+.teal-set .specify-value .head span:nth-child(2n+1),
+.teal-set table.color-set thead {
+	background-color: teal;
+}
+.teal-set table.color-set td:first-child {
+	background-color: powderblue;
+}
+/* ーーー seagreen-set ーーー */
+.seagreen-set h1,.seagreen-set h2,.seagreen-set h3,.seagreen-set h4,
+.seagreen-set h5,.seagreen-set h6 {
+	color: seagreen;
+}
+.seagreen-set .color-set .head .title,
+.seagreen-set .specify-value .head span:nth-child(2n+1),
+.seagreen-set table.color-set thead {
+	background-color: seagreen;
+}
+.seagreen-set table.color-set td:first-child {
+	background-color: honeydew;
+}
+/* ーーー olivedrab-set ーーー */
+.olivedrab-set h1,.olivedrab-set h2,.olivedrab-set h3,.olivedrab-set h4,
+.olivedrab-set h5,.olivedrab-set h6 {
+	color: olivedrab;
+}
+.olivedrab-set .color-set .head .title,
+.olivedrab-set .specify-value .head span:nth-child(2n+1),
+.olivedrab-set table.color-set thead {
+	background-color: olivedrab;
+}
+.olivedrab-set table.color-set td:first-child {
+	background-color: beige;
+}
+/* ーーー darkseagreen-set ーーー */
+.darkseagreen-set h1,.darkseagreen-set h2,.darkseagreen-set h3,.darkseagreen-set h4,
+.darkseagreen-set h5,.darkseagreen-set h6 {
+	color: darkseagreen;
+}
+.darkseagreen-set .color-set .head .title,
+.darkseagreen-set .specify-value .head span:nth-child(2n+1),
+.darkseagreen-set table.color-set thead {
+	background-color: darkseagreen;
+}
+.darkseagreen-set table.color-set td:first-child {
+	background-color: mintcream;
+}
+/* ーーー darkgray-set ーーー */
+.darkgray-set h1,.darkgray-set h2,.darkgray-set h3,.darkgray-set h4,
+.darkgray-set h5,.darkgray-set h6 {
+	color: darkgray;
+}
+.darkgray-set .color-set .head .title,
+.darkgray-set .specify-value .head span:nth-child(2n+1),
+.darkgray-set table.color-set thead {
+	background-color: darkgray;
+}
+.darkgray-set table.color-set td:first-child {
+	background-color: whitesmoke;
+}
+
+/* ーーー deepskyblue-set ーーー */
+/* HP辞典HTML */
+.deepskyblue-set h1,.deepskyblue-set h2,.deepskyblue-set h3,.deepskyblue-set h4,
+.deepskyblue-set h5,.deepskyblue-set h6 {
+	color: deepskyblue;
+}
+.deepskyblue-set .color-set .head .title,
+.deepskyblue-set .specify-value .head span:nth-child(2n+1),
+.deepskyblue-set table.color-set thead {
+	background-color: deepskyblue;
+}
+/* フォームサンプル */
+.deepskyblue-set h3 a {
+	color: deepskyblue;
+}
+
+/* ーーー lightcoral-set ーーー */
+/* HP辞典CSS */
+.lightcoral-set h1,.lightcoral-set h2,.lightcoral-set h3,.lightcoral-set h4,
+.lightcoral-set h5,.lightcoral-set h6 {
+	color: lightcoral;
+}
+.lightcoral-set .color-set .head .title,
+.lightcoral-set .specify-value .head span:nth-child(2n+1),
+.lightcoral-set table.color-set thead {
+	background-color: lightcoral;
+}
+.lightcoral-set table.color-set td:first-child {
+	background-color: seashell;
+}
+
+/* ーーー limegreen-set ーーー */
+/* HP辞典JavaScript */
+.limegreen-set h1,.limegreen-set h2,.limegreen-set h3,.limegreen-set h4,
+.limegreen-set h5,.limegreen-set h6 {
+	color: limegreen;
+}
+.limegreen-set .color-set .head .title
+.limegreen-set .specify-value .head span:nth-child(2n+1),
+.limegreen-set table.color-set thead {
+	background-color: limegreen;
+}
+.limegreen-set table.color-set td:first-child {
+	background-color: honeydew;
+}
+
+/* ーーー orange-set ーーー */
+/* JS1冊で */
+.orange-set h1,.orange-set h2,.orange-set h3,.orange-set h4,
+.limegreen-set h5,.orange-set h6 {
+	color: orange;
+}
+.orange-set .color-set .head .title
+.orange-set .specify-value .head span:nth-child(2n+1),
+.orange-set table.color-set thead {
+	background-color: orange;
+}
+.orange-set table.color-set td:first-child {
+	background-color: blanchedalmond;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝ 季節変化　*/
+body.spring {
+	background-color: #F4FCED; /* honeydew 0.7 */
+}
+body.summer {
+	background-color: aliceblue;
+}
+body.winter {
+	background-color: papayawhip;
+}
+.fa.fa-leaf,
+ul.disc.leaf > li:before,
+.ol ul.disc.leaf > li:before,
+.fa.fa-pagelines,
+.fas.fa-cannabis,
+.fas.fa-seedling,
+.ul.disc.can > li:before,
+.ol ul.disc.can > li:before,
+.hierarchy ul li a:before,
+.h1.h1::before,
+.h2.h2::before,
+.h3.h3::before ,
+.h4.h4::before
+.season_color {
+	color: yellowgreen;
+}
+.summer .fa.fa-leaf,
+.summer ul.disc.leaf > li:before,
+.summer ol ul.disc.leaf > li:before,
+.summer .fa.fa-pagelines,
+.summer .fas.fa-cannabis,
+.summer .fas.fa-seedling,
+.summer ul.disc.can > li:before,
+.summer ol ul.disc.can > li:before,
+.summer .hierarchy ul li a:before,
+.summer h1.h1::before,
+.summer h2.h2::before,
+.summer h3.h3::before,
+.summer h4.h4::before,
+.summer .season_color {
+	color: forestgreen;
+}
+.autumn .fa.fa-leaf,
+.autumn ul.disc.leaf > li:before,
+.autumn ol ul.disc.leaf > li:before,
+.autumn .fa.fa-pagelines,
+.autumn .fas.fa-cannabis,
+.autumn .fas.fa-seedling,
+.autumn ul.disc.can > li:before,
+.autumn  ol ul.disc.can > li:before,
+.autumn .hierarchy ul li a:before,
+.autumn h1.h1::before,
+.autumn h2.h2::before,
+.autumn h3.h3::before,
+.autumn h4.h4::before,
+.autumn .season_color {
+	color: gold;
+}
+.winter .fa.fa-leaf,
+.winter ul.disc.leaf > li:before,
+.winter ol ul.disc.leaf > li:before,
+.winter .fa.fa-pagelines,
+.autumn .fas.fa-cannabis,
+.autumn .fas.fa-seedling,
+.winter ul.disc.can > li:before,
+.winter ol ul.disc.can > li:before,
+.winter .hierarchy ul li a:before,
+.winter h1.h1::before,
+.winter h2.h2::before,
+.winter h3.h3::before,
+.winter h4.h4::before,
+.winter .season_color {
+	color: darkorange;
+}

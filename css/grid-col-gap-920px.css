@@ -1,0 +1,2348 @@
+/*
+ * ========================================
+ * Column Range: 2 to 10
+ * Gap Range: 0px to 50px
+ * Project Max Width: 920px
+ *
+ * Sass Source for Generation:
+ *
+ * $project-max-width: 920px;
+ *
+ * @for $col-count from 2 through 10 {
+ * @for $gap-value from 0 through 50 {
+ * $class-name: ".grid-wp-note-col-#{$col-count}-gap-#{$gap-value}px";
+ * $gap-css-value: #{$gap-value}px;
+ *
+ * // Calculate the minimum column width based on max width and gaps
+ * // Available space for content = project_max_width - (total_gap_space)
+ * // Min width per column = available_space / col_count
+ * $total-gap-space: 0px;
+ * @if $col-count > 1 {
+ * $total-gap-space: ($col-count - 1) * $gap-value;
+ * }
+ *
+ * $remaining-content-space: $project-max-width - $total-gap-space;
+ * // Round down to nearest integer for pixel values
+ * $min-col-width: floor($remaining-content-space / $col-count);
+ *
+ * #{$class-name} {
+ * display: grid;
+ * grid-template-columns: repeat(auto-fit, minmax(#{$min-col-width}px, 1fr));
+ * gap: #{$gap-css-value};
+ * }
+ * }
+ * }
+ * ========================================
+ */
+
+/* --- 以下 Sass コンパイラ生成 CSS 記述 --- */
+
+/* --- grid-wp-note-col-2 のバリエーション --- */
+.grid-wp-note-col-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+.grid-wp-note-col-2-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-2-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(459px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-2-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(459px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-2-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(458px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-2-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(458px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-2-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(457px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-2-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(457px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-2-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(456px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-2-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(456px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-2-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-2-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-2-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(454px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-2-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(454px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-2-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(453px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-2-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(453px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-2-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(452px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-2-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(452px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-2-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(451px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-2-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(451px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-2-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-2-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-2-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(449px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-2-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(449px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-2-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(448px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-2-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(448px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-2-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(447px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-2-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(447px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-2-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(446px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-2-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(446px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-2-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-2-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-2-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(444px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-2-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(444px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-2-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(443px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-2-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(443px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-2-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(442px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-2-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(442px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-2-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-2-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-2-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-2-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-2-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(439px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-2-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(439px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-2-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(438px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-2-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(438px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-2-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(437px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-2-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(437px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-2-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(436px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-2-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(436px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-2-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-2-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-3 --- */
+.grid-wp-note-col-3-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-3-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-3-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-3-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-3-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-3-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-3-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-3-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-3-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-3-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-3-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-3-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-3-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-3-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-3-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-3-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(301px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-3-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(301px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-3-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(301px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-3-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-3-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-3-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-3-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-3-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-3-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-3-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-3-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-3-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-3-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-3-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-3-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-3-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-3-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-3-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-3-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-3-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-3-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-3-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-3-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-3-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-3-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-3-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-3-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-3-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-3-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-3-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-3-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-3-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-3-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-3-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-3-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-3-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-4 --- */
+.grid-wp-note-col-4-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-4-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-4-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-4-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-4-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-4-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-4-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-4-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-4-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-4-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-4-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-4-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-4-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-4-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-4-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-4-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-4-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-4-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-4-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-4-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-4-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-4-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-4-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-4-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-4-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-4-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-4-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-4-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-4-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-4-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-4-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-4-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-4-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-4-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-4-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-4-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-4-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-4-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-4-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-4-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-4-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-4-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-4-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-4-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-4-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-4-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-4-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-4-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-4-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-4-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-4-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-5 --- */
+.grid-wp-note-col-5-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-5-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-5-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-5-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-5-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-5-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-5-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-5-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-5-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-5-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-5-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-5-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-5-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-5-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-5-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-5-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-5-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-5-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-5-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-5-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-5-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-5-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-5-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-5-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-5-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-5-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-5-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-5-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-5-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-5-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-5-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-5-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-5-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-5-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-5-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-5-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-5-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-5-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-5-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-5-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-5-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-5-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-5-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-5-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-5-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-5-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-5-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-5-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-5-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-5-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-5-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-6 --- */
+.grid-wp-note-col-6-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-6-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-6-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-6-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-6-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-6-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(149px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-6-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-6-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-6-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(147px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-6-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-6-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-6-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-6-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-6-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-6-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-6-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(141px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-6-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(141px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-6-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-6-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(139px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-6-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-6-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-6-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-6-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-6-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-6-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(133px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-6-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-6-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(131px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-6-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-6-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(129px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-6-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-6-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-6-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-6-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-6-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-6-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(123px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-6-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-6-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-6-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-6-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-6-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-6-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-6-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-6-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-6-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-6-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(111px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-6-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-6-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(109px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-6-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-6-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-6-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-6-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-7 --- */
+.grid-wp-note-col-7-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(131px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-7-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-7-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(129px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-7-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-7-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-7-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(127px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-7-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-7-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-7-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-7-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(123px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-7-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-7-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-7-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-7-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-7-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(119px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-7-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-7-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-7-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-7-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-7-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-7-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-7-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(111px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-7-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-7-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(109px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-7-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-7-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(107px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-7-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-7-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-7-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-7-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-7-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(102px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-7-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-7-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-7-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-7-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(97px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-7-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-7-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-7-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(94px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-7-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(93px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-7-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-7-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-7-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(89px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-7-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-7-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-7-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-7-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-7-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-7-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-7-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-7-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-7-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(79px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-8 --- */
+.grid-wp-note-col-8-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-8-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-8-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-8-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-8-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-8-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-8-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-8-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(111px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-8-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-8-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-8-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(109px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-8-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-8-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(107px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-8-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(107px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-8-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-8-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-8-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-8-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-8-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(102px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-8-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-8-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-8-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-8-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(97px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-8-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-8-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-8-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(93px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-8-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-8-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-8-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-8-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-8-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-8-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-8-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-8-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(83px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-8-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-8-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-8-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-8-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(78px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-8-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-8-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-8-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-8-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(73px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-8-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-8-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-8-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-8-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-8-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-8-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(66px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-8-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-8-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(63px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-8-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-9 --- */
+.grid-wp-note-col-9-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(102px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-9-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-9-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-9-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-9-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-9-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-9-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(97px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-9-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-9-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-9-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(94px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-9-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(93px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-9-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-9-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-9-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-9-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(89px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-9-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-9-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-9-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-9-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-9-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(83px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-9-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-9-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-9-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-9-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(79px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-9-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-9-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-9-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-9-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-9-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(73px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-9-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-9-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-9-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(69px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-9-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-9-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-9-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(66px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-9-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-9-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(63px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-9-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-9-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(61px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-9-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-9-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-9-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(57px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-9-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-9-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-9-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-9-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(53px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-9-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(51px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-9-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-9-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-9-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-9-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46px, 1fr));
+  gap: 50px;
+}
+/* --- grid-wp-note-col-10 --- */
+.grid-wp-note-col-10-gap-0px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 0px;
+}
+.grid-wp-note-col-10-gap-1px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
+  gap: 1px;
+}
+.grid-wp-note-col-10-gap-2px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 2px;
+}
+.grid-wp-note-col-10-gap-3px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(89px, 1fr));
+  gap: 3px;
+}
+.grid-wp-note-col-10-gap-4px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 4px;
+}
+.grid-wp-note-col-10-gap-5px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+  gap: 5px;
+}
+.grid-wp-note-col-10-gap-6px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+  gap: 6px;
+}
+.grid-wp-note-col-10-gap-7px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 7px;
+}
+.grid-wp-note-col-10-gap-8px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 8px;
+}
+.grid-wp-note-col-10-gap-9px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(83px, 1fr));
+  gap: 9px;
+}
+.grid-wp-note-col-10-gap-10px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(83px, 1fr));
+  gap: 10px;
+}
+.grid-wp-note-col-10-gap-11px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  gap: 11px;
+}
+.grid-wp-note-col-10-gap-12px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+  gap: 12px;
+}
+.grid-wp-note-col-10-gap-13px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 13px;
+}
+.grid-wp-note-col-10-gap-14px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(79px, 1fr));
+  gap: 14px;
+}
+.grid-wp-note-col-10-gap-15px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(78px, 1fr));
+  gap: 15px;
+}
+.grid-wp-note-col-10-gap-16px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+  gap: 16px;
+}
+.grid-wp-note-col-10-gap-17px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 17px;
+}
+.grid-wp-note-col-10-gap-18px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 18px;
+}
+.grid-wp-note-col-10-gap-19px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+  gap: 19px;
+}
+.grid-wp-note-col-10-gap-20px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 20px;
+}
+.grid-wp-note-col-10-gap-21px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+  gap: 21px;
+}
+.grid-wp-note-col-10-gap-22px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 22px;
+}
+.grid-wp-note-col-10-gap-23px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(69px, 1fr));
+  gap: 23px;
+}
+.grid-wp-note-col-10-gap-24px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+  gap: 24px;
+}
+.grid-wp-note-col-10-gap-25px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  gap: 25px;
+}
+.grid-wp-note-col-10-gap-26px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(66px, 1fr));
+  gap: 26px;
+}
+.grid-wp-note-col-10-gap-27px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  gap: 27px;
+}
+.grid-wp-note-col-10-gap-28px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+  gap: 28px;
+}
+.grid-wp-note-col-10-gap-29px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(63px, 1fr));
+  gap: 29px;
+}
+.grid-wp-note-col-10-gap-30px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+  gap: 30px;
+}
+.grid-wp-note-col-10-gap-31px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 31px;
+}
+.grid-wp-note-col-10-gap-32px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(59px, 1fr));
+  gap: 32px;
+}
+.grid-wp-note-col-10-gap-33px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+  gap: 33px;
+}
+.grid-wp-note-col-10-gap-34px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(57px, 1fr));
+  gap: 34px;
+}
+.grid-wp-note-col-10-gap-35px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  gap: 35px;
+}
+.grid-wp-note-col-10-gap-36px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+  gap: 36px;
+}
+.grid-wp-note-col-10-gap-37px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+  gap: 37px;
+}
+.grid-wp-note-col-10-gap-38px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(53px, 1fr));
+  gap: 38px;
+}
+.grid-wp-note-col-10-gap-39px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+  gap: 39px;
+}
+.grid-wp-note-col-10-gap-40px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 40px;
+}
+.grid-wp-note-col-10-gap-41px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49px, 1fr));
+  gap: 41px;
+}
+.grid-wp-note-col-10-gap-42px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  gap: 42px;
+}
+.grid-wp-note-col-10-gap-43px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(47px, 1fr));
+  gap: 43px;
+}
+.grid-wp-note-col-10-gap-44px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46px, 1fr));
+  gap: 44px;
+}
+.grid-wp-note-col-10-gap-45px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+  gap: 45px;
+}
+.grid-wp-note-col-10-gap-46px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  gap: 46px;
+}
+.grid-wp-note-col-10-gap-47px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+  gap: 47px;
+}
+.grid-wp-note-col-10-gap-48px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(41px, 1fr));
+  gap: 48px;
+}
+.grid-wp-note-col-10-gap-49px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 49px;
+}
+.grid-wp-note-col-10-gap-50px {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(39px, 1fr));
+  gap: 50px;
+}

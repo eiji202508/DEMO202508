@@ -1,0 +1,403 @@
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー リスト */
+/* フォントサイズ */
+.edit-area li {
+	font-size: var(--fs-ms);
+}
+.edit-area ol.fs-s li,
+.edit-area ul.fs-s li {
+	font-size: var(--fs-s);
+}
+.edit-area ol.fs-ss li,
+.edit-area ul.fs-ss li {
+	font-size: var(--fs-ss);
+}
+.edit-area ol.fs-sss li,
+.edit-area ul.fs-sss li,
+.edit-area ol.fs-3s li,
+.edit-area ul.fs-3s li {
+	font-size: var(--fs-sss);
+}
+.edit-area ol.fs-4s li,
+.edit-area ul.fs-4s li {
+	font-size: var(--fs-4s);
+}
+/* 段差 */
+ol.num > li > ol.num {margin-left: .1em;}
+ul.disc > li > ol.num {margin-left: .45em;}
+ol.num > li > ul.disc {margin-left: -.45em;}
+ul.disc > li > ul.disc {margin-left: .1em;}
+/* li */
+li {display: block;}
+/* li インデント */
+.edit-area ol li {
+	text-indent: -.45em;
+	margin-left: .6em;
+}
+.edit-area ul li {
+	text-indent: -.5em;
+	margin-left: .7em;
+}
+/* li インデントリセット */
+.edit-area ol li .indent-0,
+.edit-area ul li .indent-0 {
+	text-indent: 0;
+}
+/* 初期設定再指定 */
+.edit-area ol.initial-li li,
+.edit-area ul.initial-li li {
+	text-indent: 0;
+	margin-left: 0;
+}
+/*
+.edit-area * > ol:last-child,
+.edit-area * > ul:last-child {
+	margin-bottom: 0;
+}
+*/
+/* ーーーーーーーーーーーーーー リストマーク */
+/* ・ disc */
+ul.disc > li:before {
+	display: inline-block;
+	content: '・';
+	vertical-align: top;
+}
+/* リストマーク指定 */
+ul.disc.leaf > li:before,
+ol ul.disc.leaf > li:before {
+	font-family: 'FontAwesome';
+	content: '\f06c';
+	font-size: .6rem;
+	text-indent: .1rem;
+	display: inline-block;
+	transform: rotate(-5deg);
+	margin-right: .25em;
+	margin-bottom: -.1rem;
+	vertical-align: bottom;
+	color: yellowgreen;
+}
+ul.disc.can > li:before,
+ol ul.disc.can > li:before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f55f';
+	font-size: .6rem;
+	text-indent: .1rem;
+	display: inline-block;
+	transform: rotate(25deg);
+	margin-bottom: -0.1rem;
+	vertical-align: bottom;
+	font-weight: 900;
+	color: yellowgreen;
+}
+/* - hyphen */
+ul.hyphen > li:before {
+	display: inline-block;
+	content: '-';
+	vertical-align: top;
+}
+
+/* 初期設定再指定 */
+ol.initial,
+ul.initial {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	text-indent: 0;
+	margin-left: 0;
+}
+ol.initial {list-style-type: decimal;}
+ul.initial {list-style-type: disc;}
+.edit-area ol.initial li,
+.edit-area ul.initial li {
+	text-indent: 0;
+	margin-left: 0;
+}
+/*
+.edit-area * > ol.initial:last-child,
+.edit-area * > ul.initial:last-child {
+	margin-block-end: 1em;
+}
+*/
+/* ーーーーーーーーーーーーーーーーー 番号.を付与 */
+ol.num > li::before {
+	display: inline-block;
+	content: counter(count) ". ";
+  counter-increment: count;
+	vertical-align: top; 
+}
+ol.num > li::before {
+	margin-right: .5em;
+	width: 1em;
+	text-align: right;
+	width: 1em;
+}
+
+/* 番号.を付与 枝番号あり */
+ol.num.branch > li::before {
+  content: counters(count, "-") ". ";
+}
+/* 番号をリセット */
+ol.num {counter-reset: count;}
+ol.num .reset-1 {counter-reset: count 1;}
+ol.num .reset-2 {counter-reset: count 2;}
+ol.num .reset-3 {counter-reset: count 3;}
+ol.num .reset-4 {counter-reset: count 4;}
+ol.num .reset-5 {counter-reset: count 5;}
+ol.num .reset-6 {counter-reset: count 6;}
+ol.num .reset-7 {counter-reset: count 7;}
+ol.num .reset-8 {counter-reset: count 8;}
+ol.num .reset-9 {counter-reset: count 9;}
+ol.num .reset-10 {counter-reset: count 10;}
+ol.num .reset-11 {counter-reset: count 11;}
+ol.num .reset-12 {counter-reset: count 12;}
+ol.num .reset-13 {counter-reset: count 13;}
+ol.num .reset-14 {counter-reset: count 14;}
+ol.num .reset-15 {counter-reset: count 15;}
+ol.num .reset-16 {counter-reset: count 16;}
+ol.num .reset-17 {counter-reset: count 17;}
+ol.num .reset-18 {counter-reset: count 18;}
+ol.num .reset-19 {counter-reset: count 19;}
+ol.num .reset-20 {counter-reset: count 20;}
+ol.num .reset-21 {counter-reset: count 21;}
+ol.num .reset-22 {counter-reset: count 22;}
+ol.num .reset-23 {counter-reset: count 23;}
+ol.num .reset-24 {counter-reset: count 24;}
+ol.num .reset-25 {counter-reset: count 25;}
+ol.num .reset-26 {counter-reset: count 26;}
+ol.num .reset-27 {counter-reset: count 27;}
+ol.num .reset-28 {counter-reset: count 28;}
+ol.num .reset-29 {counter-reset: count 29;}
+ol.num .reset-30 {counter-reset: count 30;}
+
+/* ーーーーーーーーーーーーーーーーーー content: none */
+ol.content-none li:before,
+ul.content-none li:before {content: none;}
+.content-none:before {content: none !important;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝　説明リスト dl dd dt */
+/* 基本設定 */
+dt, dd {padding: 0 .9em; line-height: 2;}
+/*
+dt {background-color: #eee;}
+dd {background-color: #fff;}
+*/
+/* 横並び */
+/* ーーーーー フォントサイズ */
+dl.dt-fs-lll dt,
+dl.dd-fs-lll dd {font-size: var(--fs-lll)!important;}
+dl.dt-fs-ll dt,
+dl.dd-fs-ll dd {font-size: var(--fs-ll)!important;}
+dl.dt-fs-lm dt,
+dl.dd-fs-lm dd {font-size: var(--fs-lm)!important;}
+dl.dt-fs-l dt,
+dl.dd-fs-l dd {font-size: var(--fs-l)!important;}
+dl.dt-fs-ml dt,
+dl.dd-fs-ml dd {font-size: var(--fs-ml)!important;}
+dl.dt-fs-m dt,
+dl.dd-fs-m dd {font-size: var(--fs-m)!important;}
+dl.dt-fs-ms dt,
+dl.dd-fs-ms dd {font-size: var(--fs-ms)!important;}
+dl.dt-fs-s dt,
+dl.dd-fs-s dd {font-size: var(--fs-s)!important;}
+dl.dt-fs-ss dt,
+dl.dd-fs-ss dd {font-size: var(--fs-ss)!important;}
+dl.dt-fs-sss dt,
+dl.dd-fs-sss dd {font-size: var(--fs-sss)!important;}
+/* col 比率 */
+/* dt */
+dl.dt-w-05 dt {display: inline-block; width: 05%;}
+dl.dt-w-10 dt {display: inline-block; width: 10%;}
+dl.dt-w-15 dt {display: inline-block; width: 15%;}
+dl.dt-w-20 dt {display: inline-block; width: 20%;}
+dl.dt-w-25 dt {display: inline-block; width: 25%;}
+dl.dt-w-30 dt {display: inline-block; width: 30%;}
+dl.dt-w-35 dt {display: inline-block; width: 35%;}
+dl.dt-w-40 dt {display: inline-block; width: 40%;}
+dl.dt-w-45 dt {display: inline-block; width: 45%;}
+dl.dt-w-50 dt {display: inline-block; width: 50%;}
+dl.dt-w-55 dt {display: inline-block; width: 55%;}
+dl.dt-w-60 dt {display: inline-block; width: 60%;}
+dl.dt-w-65 dt {display: inline-block; width: 65%;}
+dl.dt-w-70 dt {display: inline-block; width: 70%;}
+dl.dt-w-75 dt {display: inline-block; width: 75%;}
+dl.dt-w-80 dt {display: inline-block; width: 80%;}
+dl.dt-w-85 dt {display: inline-block; width: 85%;}
+dl.dt-w-90 dt {display: inline-block; width: 90%;}
+dl.dt-w-95 dt {display: inline-block; width: 95%;}
+/* dd */
+dl.dt-w-05 dd {display: inline-block; width: 94%;}
+dl.dt-w-10 dd {display: inline-block; width: 89%;}
+dl.dt-w-15 dd {display: inline-block; width: 84%;}
+dl.dt-w-20 dd {display: inline-block; width: 79%;}
+dl.dt-w-25 dd {display: inline-block; width: 74%;}
+dl.dt-w-30 dd {display: inline-block; width: 69%;}
+dl.dt-w-35 dd {display: inline-block; width: 64%;}
+dl.dt-w-40 dd {display: inline-block; width: 59%;}
+dl.dt-w-45 dd {display: inline-block; width: 54%;}
+dl.dt-w-50 dd {display: inline-block; width: 49%;}
+dl.dt-w-55 dd {display: inline-block; width: 44%;}
+dl.dt-w-60 dd {display: inline-block; width: 39%;}
+dl.dt-w-65 dd {display: inline-block; width: 34%;}
+dl.dt-w-70 dd {display: inline-block; width: 29%;}
+dl.dt-w-75 dd {display: inline-block; width: 24%;}
+dl.dt-w-80 dd {display: inline-block; width: 19%;}
+dl.dt-w-85 dd {display: inline-block; width: 14%;}
+dl.dt-w-90 dd {display: inline-block; width: 09%;}
+dl.dt-w-95 dd {display: inline-block; width: 04%;}
+
+/* ーーーーー ボーダー */
+dl.dt-dd-border dt,
+dl.dt-dd-border dd {
+	border: solid 1px #ddd;
+}
+dl.dt-border dt {border: solid 1px #ddd;}
+dl.dd-border dd {border: solid 1px #ddd;}
+
+/* ボーダーセット */
+dl.border-set dt,
+dl.border-set dd {
+	border: solid 1px #ddd;
+}
+/* dt-m-dd-s */
+dl.border-set.dt-m-dd-s dt {
+	margin-right: -.1em;
+}
+dl.dt-m-dd-s dd {
+	font-size: var(--fs-m);
+}
+dl.dt-m-dd-s dd {
+	font-size: var(--fs-s);
+	line-height: 2.22;
+    padding-top: 0.13em;
+}
+
+/* テーブル M */
+dl.dl-m {
+	line-height: 1.8;
+}
+/* 狭 */
+dl.narrow {
+	font-size: var(--fs-ms);
+	line-height: 1.6;
+}
+/* MS */
+dl.dl-ms dt,
+dl.dl-ms dd {
+	font-size: .78rem;
+	line-height: 1.5;
+}
+/* S */
+dl.dl-s dt,
+dl.dl-s dd {
+	font-size: var(--fs-s);
+	line-height: 1.5;
+}
+/* SS */
+dl.dl-ss dt,
+dl.dl-ss dd {
+	font-size: .72rem;
+	padding: 0 0 .1em;
+	line-height: 1.5;
+}
+/* SSS */
+dl.dl-sss dt,
+dl.dl-sss dd,
+dl.dl-3s dt,
+dl.dl-3s dd {
+	font-size: var(--fs-ss);
+	padding: 0 0 .1em;
+	line-height: 1.5;
+}
+/* 線 */
+dl.border-dt dt {border: solid 1px #eee;}
+dl.border-dd dd {border: solid 1px #eee;}
+dl.border-dt-dd dt,
+dl.border-dt-dd dd {border: solid 1px #eee;}
+
+/* ーーーーーーーーーー フォント */
+/* 太字 500 */
+dl.dt-fw-500 dt,
+dl.dd-fw-500 dd {font-weight: 500;}
+dl.dt-fw-600 dt,
+dl.dd-fw-600 dd {font-weight: 600;}
+/* 太字 600 */
+dl.dt-crim-600 dt {color: crimson; font-weight: 600;}
+dl.dt-sb-600 dt {color: steelblue; font-weight: 600;}
+dl.dt-darkslateblue-600 dt {color: darkslateblue; font-weight: 600;}
+/* 文字色 */
+dl.dt-crim dt {color: crimson;}
+dl.dt-sb dt {color: steelblue;}
+dl.dt-darkslateblue dt {color: darkslateblue;}
+/* ーーーーー 背景色 */
+/* dt */
+dl.dt-bg-ly dt {background-color: lightyellow}
+dl.dt-bg-ivory dt {background-color: ivory}
+/* dd */
+dl.dd-bg-eee dd {background-color: #eee;}
+
+/* ーーーーーーーーーーーーーーー 幅 em */
+/* dt */
+dl.dt-w-1em dt {display: inline-block; width: 1em;}
+dl.dt-w-2em dt {display: inline-block; width: 2em;}
+dl.dt-w-3em dt {display: inline-block; width: 3em;}
+dl.dt-w-4em dt {display: inline-block; width: 4em;}
+dl.dt-w-5em dt {display: inline-block; width: 5em;}
+dl.dt-w-6em dt {display: inline-block; width: 6em;}
+dl.dt-w-7em dt {display: inline-block; width: 7em;}
+dl.dt-w-8em dt {display: inline-block; width: 8em;}
+dl.dt-w-9em dt {display: inline-block; width: 9em;}
+dl.dt-w-10em dt {display: inline-block; width: 10em;}
+dl.dt-w-11em dt {display: inline-block; width: 11em;}
+dl.dt-w-12em dt {display: inline-block; width: 12em;}
+dl.dt-w-13em dt {display: inline-block; width: 13em;}
+dl.dt-w-14em dt {display: inline-block; width: 14em;}
+dl.dt-w-15em dt {display: inline-block; width: 15em;}
+dl.dt-w-16em dt {display: inline-block; width: 16em;}
+dl.dt-w-17em dt {display: inline-block; width: 17em;}
+dl.dt-w-18em dt {display: inline-block; width: 18em;}
+dl.dt-w-19em dt {display: inline-block; width: 19em;}
+dl.dt-w-20em dt {display: inline-block; width: 20em;}
+/* dd */
+dl.dd-w-1em dd {display: inline-block; width: 1em;}
+dl.dd-w-2em dd {display: inline-block; width: 2em;}
+dl.dd-w-3em dd {display: inline-block; width: 3em;}
+dl.dd-w-4em dd {display: inline-block; width: 4em;}
+dl.dd-w-5em dd {display: inline-block; width: 5em;}
+dl.dd-w-6em dd {display: inline-block; width: 6em;}
+dl.dd-w-7em dd {display: inline-block; width: 7em;}
+dl.dd-w-8em dd {display: inline-block; width: 8em;}
+dl.dd-w-9em dd {display: inline-block; width: 9em;}
+dl.dd-w-10em dd {display: inline-block; width: 10em;}
+dl.dd-w-11em dd {display: inline-block; width: 11em;}
+dl.dd-w-12em dd {display: inline-block; width: 12em;}
+dl.dd-w-13em dd {display: inline-block; width: 13em;}
+dl.dd-w-14em dd {display: inline-block; width: 14em;}
+dl.dd-w-15em dd {display: inline-block; width: 15em;}
+dl.dd-w-16em dd {display: inline-block; width: 16em;}
+dl.dd-w-17em dd {display: inline-block; width: 17em;}
+dl.dd-w-18em dd {display: inline-block; width: 18em;}
+dl.dd-w-19em dd {display: inline-block; width: 19em;}
+dl.dd-w-20em dd {display: inline-block; width: 20em;}
+/* ーーーーーーーーーー 横並び幅 */
+/* dt dd % */
+dl.w-5-95 dt, dl.w-95-5 dd {display: inline-block; width: 5%;}
+dl.w-10-90 dt, dl.w-90-10 dd {display: inline-block; width: 10%;}
+dl.w-15-85 dt, dl.w-85-15 dd {display: inline-block; width: 15%;}
+dl.w-20-80 dt, dl.w-80-20 dd {display: inline-block; width: 20%;}
+dl.w-25-75 dt, dl.w-75-25 dd {display: inline-block; width: 25%;}
+dl.w-30-70 dt, dl.w-70-30 dd {display: inline-block; width: 30%;}
+dl.w-35-65 dt, dl.w-65-35 dd {display: inline-block; width: 35%;}
+dl.w-40-60 dt, dl.w-60-40 dd {display: inline-block; width: 40%;}
+dl.w-45-55 dt, dl.w-55-45 dd {display: inline-block; width: 45%;}
+dl.w-50-50 dt, dl.w-50-50 dd {display: inline-block; width: 50%;}
+dl.w-55-45 dt, dl.w-45-55 dd {display: inline-block; width: 55%;}
+dl.w-60-40 dt, dl.w-40-60 dd {display: inline-block; width: 60%;}
+dl.w-65-35 dt, dl.w-35-65 dd {display: inline-block; width: 65%;}
+dl.w-70-30 dt, dl.w-30-70 dd {display: inline-block; width: 70%;}
+dl.w-75-25 dt, dl.w-25-75 dd {display: inline-block; width: 75%;}
+dl.w-80-20 dt, dl.w-20-80 dd {display: inline-block; width: 80%;}
+dl.w-85-15 dt, dl.w-15-85 dd {display: inline-block; width: 85%;}
+dl.w-90-10 dt, dl.w-10-90 dd {display: inline-block; width: 90%;}
+dl.w-95-5 dt, dl.w-5-95 dd {display: inline-block; width: 95%;}

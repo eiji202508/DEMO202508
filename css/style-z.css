@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* レスポンシブ 600px以下 */
+@media (max-width: 600px) {
+	
+}
+/* レスポンシブ 600px以上~767px以下 */
+@media (min-width: 600px) and (max-width: 767px) {
+	
+}
+/* レスポンシブ 768以上~ */
+@media (min-width: 768px) {
+	
+}

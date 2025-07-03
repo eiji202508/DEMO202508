@@ -1,0 +1,944 @@
+@charset "UTF-8";
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 個別ページCSS */
+/* ーーーーーーーーーーーーーーーーーーーーー Webカラーチャート post-7205 */
+.post-7203 table.bn16 th,
+.post-7203 table.bn16 td {
+	font-size: 0.75rem;
+	padding: 0;
+	line-height: 1.5;
+	text-align: center;
+}
+.post-7203 table.bn16 th {border-bottom: solid 1px #bbb;}
+.post-7203 table.bn16 th:nth-child(odd),
+.post-7203 table.bn16 td:nth-child(odd) {background-color: peachpuff;}
+.post-7203 table.bn16 th:nth-child(even),
+.post-7203 table.bn16 td:nth-child(even) {background-color: seashell;}
+
+/* ーーーーーーーーーーーーーーーー色名 colorname による色指定 post-7305, post-78380 */
+.post-7305 .c17 > span,
+.post-61573 .c17 > span {
+	display: inline-block;
+}
+.post-7305 .c17 span span,
+.post-61573 .c17 span span {
+	display: inline-block;
+	margin: 0 0.6rem 0 0.3rem;
+	border: solid 1.1px #ddd;
+	height: 1.1rem;
+	width: 1.7rem;
+	vertical-align: text-top;
+}
+/* ーーーーーーーーーーーーーー  Web セーフカラー 色相環　post-7296 */
+.post-7296 .hexagonB {
+	margin: -10px 35px;
+}
+.post-7296 .hex {
+	margin: -19.5px;
+	text-align: center;
+}
+.post-7296 .hexagonB span	{
+	font-size: 13px;
+	margin-left: -5px;
+	vertical-align: middle;
+}
+.post-7296 .hex_colorchart .hex1 span,
+.post-7296 .hex_colorchart .hex2 span,
+.post-7296 .hex_colorchart .hex3 span
+{
+	margin-left: -2px;
+}
+.post-7296 .hex_colorchart_3 span,
+.post-7296 .hex_colorchart_4 span,
+.post-7296 .hex_colorchart_5 span,
+.post-7296 .hex_colorchart_6 span
+{
+	margin-left: -8px;
+}
+.post-7296 .hex_colorchart .hex16 span,
+.post-7296 .hex_colorchart_2 .hex1 span,
+.post-7296 .hex_colorchart_2 .hex2 span,
+.post-7296 .hex_colorchart_2 .hex3 span,
+.post-7296 .hex_colorchart_2 .hex4 span,
+.post-7296 .hex_colorchart_2 .hex5 span {
+	color: #444;
+}
+.post-7296 .hex_colorchart .hex17 span,
+.post-7296 .hex_colorchart .hex18 span,
+.post-7296 .hex_colorchart .hex19 span,
+.post-7296 .hex_colorchart .hex20 span,
+.post-7296 .hex_colorchart .hex21 span,
+.post-7296 .hex_colorchart_2 .hex11 span,
+.post-7296 .hex_colorchart_2 .hex12 span,
+.post-7296 .hex_colorchart_2 .hex13 span,
+.post-7296 .hex_colorchart_2 .hex14 span,
+.post-7296 .hex_colorchart_2 .hex15 span,
+.post-7296 .hex_colorchart_2 .hex16 span,
+.post-7296 .hex_colorchart_2 .hex17 span,
+.post-7296 .hex_colorchart_3 span,
+.post-7296 .hex_colorchart_4 span,
+.post-7296 .hex_colorchart_5 span,
+.post-7296 .hex_colorchart_6 span {
+	color: white;
+}
+/* ーーーーーーーーーーー  post-11663 ーーーーーーーーーーー */
+.post-11663 table.table-empty td {width: 4.6rem;}
+/* ーーーーーーーーーーー  post-13255 ーーーーーーーーーーー */
+.post-13255 .sample-box.resize {
+	resize: horizontal;
+	overflow: auto;
+}
+
+/* ーーーーーーーーーーー  素材 - <kbd> post-67704, 文字入力 高速化 67397 ーーーーーーーーーーー */
+.character-input-speed-up-kbd-mac,
+.character-input-speed-up-kbd-win,
+.character-input-speed-up-kbd-mac > div,
+.character-input-speed-up-kbd-win > div {
+	display: grid;
+	gap: .2em;
+}
+/* Mac */
+.character-input-speed-up-kbd-mac > .div1 {
+	grid-template-columns: repeat(14, 1fr);
+}
+.character-input-speed-up-kbd-mac > .div2 {
+	grid-template-columns: 3fr repeat(13, 2fr);
+}
+.character-input-speed-up-kbd-mac > .div3 {
+	grid-template-columns: repeat(13, 2fr) 4fr;
+}
+.character-input-speed-up-kbd-mac > .div4 {
+	display: grid; grid-template-columns: 4fr repeat(12, 3fr) 5fr;
+}
+.character-input-speed-up-kbd-mac > .div5 {
+	grid-template-columns: 4fr repeat(11, 2fr) 4fr;
+}
+.character-input-speed-up-kbd-mac > .div6 {
+	grid-template-columns: repeat(2, 3fr) repeat(2, 4fr) 10fr repeat(2, 4fr) repeat(4, 3fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+/* Win */
+.character-input-speed-up-kbd-win > .div1 {
+	grid-template-columns: 4fr repeat(14, 3fr) 4fr;
+}
+.character-input-speed-up-kbd-win > .div2 {
+	grid-template-columns: repeat(13, 5fr) repeat(2, 4fr);
+}
+.character-input-speed-up-kbd-win > .div3 {
+	grid-template-columns: 6fr repeat(12, 4fr) 5fr;
+}
+.character-input-speed-up-kbd-win > .div4 {
+	display: grid; grid-template-columns: 12fr repeat(12, 7fr) 9fr;
+}
+.character-input-speed-up-kbd-win > .div5 {
+	grid-template-columns: 10fr repeat(11, 5fr) 6fr;
+}
+.character-input-speed-up-kbd-win > .div6 {
+	grid-template-columns: 4fr repeat(4, 3fr) 11fr repeat(3, 3fr) repeat(3, 4fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+/* 矢印キー２段部 */
+/* Mac */
+.character-input-speed-up-kbd-mac .div6 .div1 {
+	grid-area: 1 / 1 / 3 / 2;
+}
+.character-input-speed-up-kbd-mac .div6 .div2 {
+	grid-area: 1 / 2 / 3 / 3;
+}
+.character-input-speed-up-kbd-mac .div6 .div3 {
+	grid-area: 1 / 3 / 3 / 4;
+}
+.character-input-speed-up-kbd-mac .div6 .div4 {
+	grid-area: 1 / 4 / 3 / 5;
+}
+.character-input-speed-up-kbd-mac .div6 .div5 {
+	grid-area: 1 / 5 / 3 / 6;
+}
+.character-input-speed-up-kbd-mac .div6 .div6 {
+	grid-area: 1 / 6 / 3 / 7;
+}
+.character-input-speed-up-kbd-mac .div6 .div7 {
+	grid-area: 1 / 7 / 3 / 8;
+}
+.character-input-speed-up-kbd-mac .div6 .div8{
+	grid-area: 1 / 8 / 3 / 9;
+}
+.character-input-speed-up-kbd-mac .div6 .div9 {
+	grid-area: 1 / 9 / 2 / 10;
+}
+.character-input-speed-up-kbd-mac .div6 .div10 {
+	grid-area: 1 / 10 / 2 / 11;
+}
+.character-input-speed-up-kbd-mac .div6 .div11 {
+	grid-area: 1 / 11 / 2 / 12;
+}
+.character-input-speed-up-kbd-mac .div6 .div12 {
+	grid-area: 2 / 9 / 3 / 10;
+}
+.character-input-speed-up-kbd-mac .div6 .div13 {
+	grid-area: 2 / 10 / 3 / 11;
+}
+.character-input-speed-up-kbd-mac .div6 .div14 {
+	grid-area: 2 / 11 / 3 / 12;
+}
+/* ＝＝＝＝＝ Win */
+.character-input-speed-up-kbd-win .div6 .div1 {
+	grid-area: 1 / 1 / 3 / 2;
+}
+.character-input-speed-up-kbd-win .div6 .div2 {
+	grid-area: 1 / 2 / 3 / 3;
+}
+.character-input-speed-up-kbd-win .div6 .div3 {
+	grid-area: 1 / 3 / 3 / 4;
+}
+.character-input-speed-up-kbd-win .div6 .div4 {
+	grid-area: 1 / 4 / 3 / 5;
+}
+.character-input-speed-up-kbd-win .div6 .div5 {
+	grid-area: 1 / 5 / 3 / 6;
+}
+.character-input-speed-up-kbd-win .div6 .div6 {
+	grid-area: 1 / 6 / 3 / 7;
+}
+.character-input-speed-up-kbd-win .div6 .div7 {
+	grid-area: 1 / 7 / 3 / 8;
+}
+.character-input-speed-up-kbd-win .div6 .div8 {
+	grid-area: 1 / 8 / 3 / 9;
+}
+.character-input-speed-up-kbd-win .div6 .div9 {
+	grid-area: 1 / 9 / 3 / 10;
+}
+.character-input-speed-up-kbd-win .div6 .div10 {
+	grid-area: 1 / 10 / 2 / 11;
+}
+.character-input-speed-up-kbd-win .div6 .div11 {
+	grid-area: 1 / 11 / 2 / 12;
+}
+.character-input-speed-up-kbd-win .div6 .div12 {
+	grid-area: 1 / 12 / 2 / 13;
+}
+.character-input-speed-up-kbd-win .div6 .div13 {
+	grid-area: 2 / 10 / 3 / 11;
+}
+.character-input-speed-up-kbd-win .div6 .div14 {
+	grid-area: 2 / 11 / 3 / 12;
+}
+.character-input-speed-up-kbd-win .div6 .div15 {
+	grid-area: 2 / 12 / 3 / 13;
+}
+/* 文字調整 Mac */
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div2 > .div14,
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > .div2 {
+	font-size: var(--fs-3s);
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > :is(.div10, .div12, .div13, .div14) {
+	font-size: var(--fs--l);
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div2 > .div14 {
+	line-height: 2.9;
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div1 > *,
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > .div2 {
+	line-height: 1.5;
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > :is(.div2, .div3, .div4, .div5) > *,
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > :is(.div1, .div3, .div4, .div5, .div6, .div7, .div8) {
+	line-height: 2.4;
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > .div2 {
+	text-align: left;
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > :is(.div10, .div12, .div13, .div14) {
+	margin-left: .2em;
+	line-height: .7;
+}
+/* キー重ね Mac */
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div3 > .div14 {
+	line-height: 2;
+	text-align: right;
+	padding-right: .9em;
+	border-bottom-right-radius: 0;
+}
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div4 > .div14 {
+	line-height: 2;
+	margin-top: -0.355em;
+	padding-top: 0.85em;
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+/* 矢印調整 Mac */
+.character-input-speed-up-kbd-mac.kbd-wiki.kbd-wiki-alt > .div6 > :is(.div9, .div11) {
+	visibility: hidden;
+}
+/* 文字調整 Win */
+.character-input-speed-up-kbd-win > .div1 > :is(.div14, .div15),
+.character-input-speed-up-kbd-win > .div2 > :is(.div1, .div15),
+.character-input-speed-up-kbd-win > .div4 > .div1,
+.character-input-speed-up-kbd-win > .div6 > :is(.div5, .div8, .div10, .div12) {
+	font-size: var(--fs-3s);
+}
+/* 文字調整に伴う lh 変更 Win */
+.character-input-speed-up-kbd-win > .div1 > :is(.div14, .div15) {
+	line-height: 1.75;
+}
+.character-input-speed-up-kbd-win > .div2 > :is(.div1, .div15),
+.character-input-speed-up-kbd-win > .div4 > .div1 {
+	line-height: 1.2;
+}
+.character-input-speed-up-kbd-win > .div6 > :is(.div5, .div8) {
+	line-height: 3.3;
+}
+.character-input-speed-up-kbd-win > .div6 > :is(.div10, .div12) {
+	line-height: 1.5;
+}
+.character-input-speed-up-kbd-win > .div4 > .div1 {
+	text-align: left;
+}
+.character-input-speed-up-kbd-win > .div2 > :is(.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14),
+.character-input-speed-up-kbd-win > .div3 > :is(.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13),
+.character-input-speed-up-kbd-win > .div4 > :is(.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13),
+.character-input-speed-up-kbd-win > .div5 > :is(.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13),
+.character-input-speed-up-kbd-win > .div6 > :is(.div1, .div2, .div3, .div4, .div6, .div7, .div9) {
+	line-height: 2;
+}
+.character-input-speed-up-kbd-win > .div6 > :is(.div11, .div13, .div14, .div15) {
+	line-height: 1.25;
+}
+.character-input-speed-up-kbd-win > .div6 > :is(.div1, .div2, .div3, .div4, .div6, .div7, .div9) {
+	line-height: 2.9;
+}
+/* キー重ね Win */
+.character-input-speed-up-kbd-win > .div4 > .div14 {
+	margin-top: -2.44em;
+	padding-top: 0.5em;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ CSS辞典 */
+/* ーーーーーーーーーーーーーーーーー 値の指定方法 */
+/*
+.specify-value h3,
+.specify-value h4,
+.specify-value .head {display: inline-block;}
+.specify-value .head {font-size: 0.8125rem;}
+
+*/
+.specify-value .title {
+	margin-left: 1rem;
+	padding: 0 0.2rem 0.05rem;
+	border-radius: 0.2rem;
+	font-size: 0.75rem;
+  line-height: 1.9rem;
+	color: white;
+}
+.specify-value .head.title-s .title,
+.specify-value .head.title-ss .title {margin-left: 0.1rem;}
+.specify-value .head.title-ss {
+	font-size: 0.75rem;
+  line-height: 1.9rem;
+}
+.specify-value .head span:not(.title) {margin-left: 0.3rem;}
+.specify-value .head span:nth-child(6) {margin-left: 0.3em;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ ｼﾝ値の指定方法 */
+.specify-value .head {font-size: var(--fs-s);}
+.specify-value .head span:nth-child(2n+1) {
+	margin-right: 0.3em;
+	padding: 0 0.2em .05em;
+	border-radius: 0.2em;
+	color: white;
+}
+.specify-value .head.span-s span:nth-child(2n+1),
+.specify-value .head.span-ss span:nth-child(2n+1) {
+	margin-left: 0.1em;
+}
+.specify-value .head span:nth-child(2n) {margin-right: 1em;}
+.specify-value .head span:last-child {margin-right: 0.3em;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 値の指定方法 */
+
+
+/* ーーーーーーーーーーーーーーーーー 値の指定方法　白箱 */
+.specify-value .box-2c > ul > li > span:first-child {color: steelblue;}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ ｼﾝ値の指定方法　白箱 */
+.specify-value .box,
+.specify-value .box-alt {
+	padding: .5em 1.2em .2em;
+	border: solid 1px white;
+	border-radius: 2px;
+	background-color: #eee;
+
+}
+.specify-value .box,
+.specify-value .box-alt {
+	line-height: 1.9;
+}
+/* .box */
+.specify-value .box > section h3,
+.specify-value .box > section p {
+	display: inline-block;
+	vertical-align: top
+}
+.specify-value .box > section h3 {
+	font-size: var(--fs-s);
+	font-weight: 600;
+	color: steelblue;
+}
+.specify-value .box > section p {
+	padding: .38em 0;
+	text-indent: 0;
+	font-size: var(--fs-sss);
+	line-height: 1.6;
+}
+/* .box-alt */
+.specify-value .box-alt > section {
+	margin-bottom: .5em;
+}
+.specify-value .box-alt > section > section {
+	margin-left: .3em;
+}
+.specify-value .box-alt > section > section h4 {
+	font-size: var(--fs-s);
+	color: steelblue;
+}
+.specify-value .box-alt > section > section p {
+	margin: 0 0 .2em .3em;
+	text-indent: 0;
+	font-size: var(--fs-ss);
+	line-height: 1.6;
+}
+/* box-eee-block */
+.specify-value .box-eee-block {
+	padding: 0.5em 1.7em 0.5em 1.5em;
+	border-radius: 2px;
+	background-color: #eee;
+	line-height: 2.5;
+	width: fit-content;
+}
+.specify-value .box-eee-block p {
+	text-indent: 0;
+}
+.specify-value .box-eee-block p span:first-child {
+	display: block;
+	font-size: var(--fs-m);
+	color: steelblue;
+	font-weight: 600;
+}
+.specify-value .box-eee-block p span:nth-child(2) {
+	display: block;
+	margin-bottom: .8em;
+	font-size: var(--fs-s);
+	line-height: 2;
+}
+.specify-value .box-eee-block p:last-of-type span:nth-child(2) {
+	margin-bottom: 0;
+}
+/* ーーーーーーーーーーーーーーーーー ブラウザごとの指定方法と対応　テーブル */
+.pre-fix.flex table {width: 50%;}
+.pre-fix.flex table:first-child {margin-right: -1px;}
+
+.pre-fix table,
+.pre-fix table th,
+.pre-fix table td {
+	border: solid 1px #eee;
+}
+.pre-fix table th {
+	padding: 0.25em 1em 0.3em;
+	font-size: var(--fs-sss);
+	color: white;
+	text-align: left;
+}
+/* 2カラム */
+.specify-value .table-2c {
+	margin-right: 0.1rem;
+	margin-left: 1rem;
+	width: 97%;
+}
+.specify-value .table-2c table {
+	margin: 0;
+	font-size: 0.8125rem;
+	line-height: 1.3rem;
+	text-align: left;
+	background-color: white;
+	width: 50%;
+}
+.specify-value .table-2c table thead {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+.specify-value .table-2c table th,
+.specify-value .table-2c table td {
+	padding: 0.2rem 0.5rem 0.15rem;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーー post-11286 カーソルの形状 */
+body.post-11286 {font-family: メイリオ;}
+
+.post-11286 h1 {padding-top: 0.5rem;}
+
+.post-11286 .specify-value .title {padding: 0.15rem 0.4rem 0rem;}
+
+/* table.value */
+.post-11286 table.value {border: solid 1.1px #ccc;}
+.post-11286 table.value th,
+.post-11286 table.value td {
+	border: none;
+	padding: 0;
+}
+.post-11286 table.value thead {
+	border: solid 1.1px #ccc;
+	text-align: center;
+	line-height: 1.5rem;
+}
+.post-11286 table.value th {
+	padding: 0.1em 0;
+	background-color: #eee;
+}
+.post-11286 table.value th:first-child {width: 7.6rem;}
+.post-11286 table.value th:nth-child(2) {
+	width: 0;
+	border: solid 1.1px #bbb;
+	color: white;
+	background: #999;
+}
+.post-11286 table.value th:nth-child(3) {padding-left: 1em;}
+.post-11286 table.value th:nth-child(3) {
+	font-size: var(--fs-sss);
+	padding-left: 1.2em;
+	text-align: left;
+}
+/* td */
+.post-11286 table.value td {
+	padding: 0;
+	line-height: 3;
+}
+.post-11286 table.value td:first-child {
+	padding: 0 1em;
+	color: steelblue;
+	font-weight: bold;
+	background: ivory;
+}
+.post-11286 table.value td:nth-child(2) {background: ivory;}
+.post-11286 table.value td .box {
+	display: inline-block;
+	border: solid 1.1px #aaa;
+	background-color: #ddd;
+	width: 4.4rem;
+	height: 1.5rem;
+	vertical-align: middle;
+}
+.post-11286 table.value td .box:hover {background-color: #eee;}
+
+.post-11286 table.value td:nth-child(3) {
+	width: 3.7em;	
+	background: white;
+	padding-left: 1em;
+	text-align: center;
+}
+.post-11286 table.value td img {
+	vertical-align: bottom;
+}
+.post-11286 table.value td:last-child {
+	padding-left: 1em;
+	font-size: var(--fs-ss);
+}
+.post-11286 table.value tr:last-child td:nth-child(2) {
+	padding: 0.5em 1em;
+	font-size: var(--fs-sss);
+	line-height: 1.8;
+	background-color: white;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.post-11286 .sample-box img {cursor: crosshair}
+.post-11286 #cat-hover:hover {cursor: url("../img/css_dic/cat.cur"), url("../img/cat.png"), pointer}
+.post-11286 table.brows th {padding-top: 0.25rem;}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー post-26982 色見本 */
+.post-26982 div.sbg > span {
+	display: inline-block;
+	margin-right: 7px;
+}
+.post-26982 .sbg-box {
+	margin-right: 5px;
+	padding: 0 13px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー post-27197 ianlunn Hover .css1 */
+.post-27197 p {text-indent: 0;}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー post-58387 レイアウト２ */
+.post-58387 .sample-card .home-latest {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(66px, auto);
+	gap: 10px;
+	font-size: .87125rem;
+	line-height: 1.4;
+}
+.post-58387 .sample-card .latest-item {
+	display: grid;
+	border: 1px solid #eee;
+}
+.post-58387 .sample-card .latest-item div {
+	padding: .1rem .3rem;
+	background-color: greenyellow;
+}
+@media (min-width: 768px) {
+	.post-58387 .sample-card .home-latest {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	/* ４カラム変更下間隔調整 */
+	.post-58387 .card-layout .mintcream-box {
+		margin-bottom: 1.4rem;
+	}
+}
+.post-58387 .sample-card .latest-item .b2 {
+	place-self: stretch start;
+}
+.post-58387 .sample-card .latest-item .b3 {
+	place-self: stretch center ;
+}
+.post-58387 .sample-card .latest-item .b4 {
+	place-self: stretch end ;
+}
+.post-58387 .sample-card .latest-item .b5 {
+	place-self: start stretch ;
+}
+.post-58387 .sample-card .latest-item .b6 {
+	place-self: start start ;
+}
+.post-58387 .sample-card .latest-item .b7 {
+	place-self: start center ;
+}
+.post-58387 .sample-card .latest-item .b8 {
+	place-self: start end ;
+}
+.post-58387 .sample-card .latest-item .b9 {
+	place-self: center stretch ;
+}
+.post-58387 .sample-card .latest-item .b10 {
+	place-self: center start ;
+}
+.post-58387 .sample-card .latest-item .b11 {
+	place-self: center center ;
+}
+.post-58387 .sample-card .latest-item .b12 {
+	place-self: center end ;
+}
+.post-58387 .sample-card .latest-item .b13 {
+	place-self: end stretch ;
+}
+.post-58387 .sample-card .latest-item .b14 {
+	place-self: end start ;
+}
+.post-58387 .sample-card .latest-item .b15 {
+	place-self: end center;
+}
+.post-58387 .sample-card .latest-item .b16 {
+	place-self: end end ;
+}
+/* 配色 */
+.post-58387 .sample-card .latest-item .b2,
+.post-58387 .sample-card .latest-item .b5 {
+	background-color: rgba(173, 255, 047, .7);
+}
+.post-58387 .sample-card .latest-item .b3,
+.post-58387 .sample-card .latest-item .b6,
+.post-58387 .sample-card .latest-item .b9 {
+	background-color: rgba(173, 255, 047, .5);
+}
+.post-58387 .sample-card .latest-item .b4,
+.post-58387 .sample-card .latest-item .b7,
+.post-58387 .sample-card .latest-item .b10,
+.post-58387 .sample-card .latest-item .b13 {
+	background-color: rgba(173, 255, 047, .3);
+}
+.post-58387 .sample-card .latest-item .b8,
+.post-58387 .sample-card .latest-item .b11,
+.post-58387 .sample-card .latest-item .b14 {
+	background-color: rgba(173, 255, 047, .1);
+}
+.post-58387 .sample-card .latest-item .b12,
+.post-58387 .sample-card .latest-item .b15 {
+	background-color: rgba(255, 165, 000, .1); /* 橙 */
+}
+.post-58387 .sample-card .latest-item .b16 {
+	background-color: rgba(255, 165, 000, .2);
+}
+
+.post-58387 .sample-card h2 {
+	display: grid;
+	place-items: center;
+	margin: 0 auto 10px;
+	background-color: #ddd;
+	color: #fff;
+	width: 130px;
+	height: 30px;
+	border-radius: 50%;
+}
+/* sample-cross-grid 基本設定２　複数の行・列グリッドをまたぐボックスレイアウト*/
+.post-58718 .sample-cross-grid .img-text-button-1-2 {
+	display: grid;
+	grid-template-columns: 80px 1fr;
+	column-gap: 10px;
+}
+.post-58718 .sample-cross-grid .img-text-button-1-2 .img {
+	grid-row: 1/3;
+}
+/* sample-grid-template 基本設定３　聖杯レイアウト*/
+.post-58718 .sample-grid-template {
+	display: grid;
+	grid-template:
+		"header header header" 80px
+    "left main right" auto
+    "footer footer footer" 50px /
+    300px auto 20%;
+	gap: 4px 5px;
+}
+.post-58718 .sample-grid-template > div {
+	display: grid;
+	place-items: center;
+	background-color: seashell;
+}
+.post-58718 .sample-grid-template .header {
+  grid-area: header;
+}
+.post-58718 .sample-grid-template .left {
+  grid-area: left;
+}
+.post-58718 .sample-grid-template .main {
+  grid-area: main;
+}
+.post-58718 .sample-grid-template .right {
+  grid-area: right;
+}
+.post-58718 .sample-grid-template .footer {
+  grid-area: footer;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー post-58736 リスト */
+.post-58736 .chapter-section {
+	counter-reset: chapter;
+}
+.post-58736 .chapter-section h1:before {
+	content: "第 "counter(chapter)" 章 ";
+	counter-increment: chapter;
+}
+.post-58736 .chapter-section h1 {
+	counter-reset: section;
+	margin-left: 0;
+	padding-left: 0.5rem;
+	font-size: 0.88rem;
+	border: none;
+}
+.post-58736 .chapter-section h2:before {
+	content: counter(chapter)"-"counter(section)" ";
+	counter-increment: section;
+}
+.post-58736 .chapter-section h2 {
+	margin-left: 0.5rem;
+	font-size: 0.81rem;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー post-60255 レイアウト２ */
+.post-60255 .sample-box p {
+	margin-bottom: .1rem;
+	text-indent: 0;
+}
+.post-60255 .sample-box div {
+	margin-bottom: .5rem;
+	border: 1px solid #eee;
+	line-height: 1.4
+}
+.post-60255 .sample-box div:last-child {
+	margin-bottom: 0;
+}
+/* flex1 以外 フレックス */
+.post-60255 .sample-box div:not(.flex1) {
+	display: flex;
+}
+.post-60255 .sample-box .item {
+	display: inline-block;
+	padding: .15rem .45rem;
+	font-size: .8125rem;
+}
+.post-60255 .sample-box div span:nth-child(3n + 1) {
+	background-color: greenyellow;
+	height: 2.55rem;
+	width: 7.7rem;
+}
+.post-60255 .sample-box div span:nth-child(3n + 2) {
+	background-color: rgba(173, 255, 047, .5);
+	height: 3.4rem;
+	width: 9.5rem;
+}
+.post-60255 .sample-box div span:nth-child(3n) {
+	background-color: rgba(173, 255, 047, .2);
+	height: 4.2rem;
+	width: 12rem;
+}
+.post-60255 .sample-box div.h-s span,
+.post-60255 .sample-box div.h-step span {
+	height: 1.4rem;
+}
+.post-60255 .sample-box div.h-step span:nth-child(2) {
+	height: 2.5rem;
+}
+.post-60255 .sample-box div.h-step span:nth-child(3) {
+	height: 3.5rem;
+}
+/* item ボーダー */
+.post-60255 .sample-box div.item-border span {
+	border-right: 1px solid #ffe;
+	border-bottom: 1px solid #ffe;
+}
+.post-60255 .sample-box div.item-border span:nth-child(3n) {
+	border-right: none;
+}
+.post-60255 .sample-box div.item-border span:last-child,
+.post-60255 .sample-box div.item-border span:nth-last-child(2),
+.post-60255 .sample-box div.item-border span:nth-last-child(3) {
+	border-bottom: none;
+}
+/* 個別幅指定 */
+.post-60255 .sample-box div.flex3 span.item8 {flex: 0 0 160px;}
+.post-60255 .sample-box div.flex3 span.item9 {flex: 1 1 auto;}
+.post-60255 .sample-box div.flex4 span.item10 {flex: 0 0 100px;}
+.post-60255 .sample-box div.flex4 span.item11 {flex: 1 1 100px;}
+.post-60255 .sample-box div.flex4 span.item12 {flex: 2 2 200px;}
+/* flex-direction */
+.post-60255 .flex6 {flex-direction: row-reverse;}
+.post-60255 .flex7 {flex-direction: column;}
+.post-60255 .flex8 {flex-direction: column-reverse;}
+/* justify-content */
+.post-60255 .flex10 {justify-content: flex-end;}
+.post-60255 .flex11 {justify-content: center;}
+.post-60255 .flex12 {justify-content: space-between;}
+.post-60255 .flex13 {justify-content: space-around;}
+.post-60255 .flex14 {justify-content: space-evenly;}
+/* align-items */
+.post-60255 .flex16 {align-items: flex-end;}
+.post-60255 .flex17 {align-items: center;}
+.post-60255 .flex18 {align-items: baseline;}
+.post-60255 .flex19 {align-items: stretch;}
+.post-60255 .sample-box div.flex19 span {height: 3.5rem;}
+/* align-self */
+.post-60255 .item58 {align-self: center;}
+.post-60255 .item59 {align-self: flex-end;}
+.post-60255 .sample-box div.flex19 span.item59 {
+	height: 2.55rem;
+}
+.post-60255 .item60 {align-self: auto;}
+
+/* flex-wrap / align-content */
+.post-60255 .sample-box div.wrap {
+	flex-wrap: wrap;
+	height: 5.5rem;
+}
+.post-60255 .sample-box div.flex24, .post-60255 .sample-box div.flex25,
+.post-60255 .sample-box div.flex26, .post-60255 .sample-box div.flex27 {
+	height: 7.5rem;
+}
+.post-60255 .sample-box div.wrap span {
+	height: 1.4rem;
+	width: calc(100% / 3);
+}
+.post-60255 .flex21 {align-content: flex-start;}
+.post-60255 .flex22 {align-content: flex-end;}
+.post-60255 .flex23 {align-content: center;}
+.post-60255 .flex24 {align-content: space-between;}
+.post-60255 .flex25 {align-content: space-around;}
+.post-60255 .flex26 {align-content: space-evenly;}
+.post-60255 .sample-box div.flex27 span {height: auto;}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー order */
+.post-60255 .flex28 .item126, .post-60255 .flex28 .item129,.post-60255 .flex28 .item132 {order: 1;}
+.post-60255 .flex28 .item125, .post-60255 .flex28 .item128,.post-60255 .flex28 .item131 {order: 2;}
+.post-60255 .flex28 .item124, .post-60255 .flex28 .item127,.post-60255 .flex28 .item130 {order: 3;}
+.post-60255 .sample-box div.flex28 {height: auto;}
+/* ボーダー調整 */
+.post-60255 .sample-box div.flex28 span.item130,
+.post-60255 .sample-box div.flex28 span.item131,
+.post-60255 .sample-box div.flex28 span.item132 {
+	border-right: none;
+}
+.post-60255 .sample-box div.flex28 span.item124,
+.post-60255 .sample-box div.flex28 span.item127,
+.post-60255 .sample-box div.flex28 span.item130 {
+	border-bottom: none;
+}
+/* ＝＝＝＝＝＝＝＝＝＝ JavaScript ツボコツ ＝＝＝＝＝＝＝＝＝＝ */
+.textbook-javascript-tubokotu div.ybox {
+	margin-left: .5rem;
+	padding: .6em 3em .6em 1.6em;
+	border: solid 1px #eee;
+	font-size: var(--fs-s);
+	background-color: ivory;
+	line-height: 2.3;
+}
+.textbook-javascript-tubokotu img {
+	vertical-align: sub;
+	width: 1.5em;
+}
+/* ＝＝＝＝＝＝＝＝＝＝ エビス グリッドレイアウト ＝＝＝＝＝＝＝＝＝＝ */
+.textbook-grid-layout-ebisu .edit-area .mint-box {
+	& ul li {
+		text-indent: 0;
+		margin-left: 0;
+		font-size: inherit;
+	}
+}
+/* ＝＝＝＝＝＝＝＝＝＝ ChatGPT ＝＝＝＝＝＝＝＝＝＝ */
+/*---------- question ---------- */
+/* SVG アイコン */
+.chatgpt-question::before {
+	content: "";
+	display: inline-block;
+	width: 1.1em;
+	height: 1.1em;
+	background-image: url("/wp_note_wp/wp-content/themes/mytheme/file/img/svg/chatgpt-question.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.chatgpt-question {
+	margin: -0.7rem 0 2.4rem 7rem;
+	padding: 1rem 1.2rem;
+	background-color: #eee;
+	border-radius: 7px;
+}
+
+.chatgpt-question > * {
+	padding-left: 1.7rem;
+}
+
+.chatgpt-question > *:first-child {
+	margin-top: -2rem;
+}
+
+/*---------- answer ---------- */
+/* SVG アイコン */
+.chatgpt-answer::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-image: url("/wp_note_wp/wp-content/themes/mytheme/file/img/svg/chatgpt-answer.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.chatgpt-answer {
+	margin: -0.7rem 0 2.7rem 0;
+	padding: 1rem 1.2rem;
+	background-color: rgba(255,184,51,0.1);
+	border-radius: 7px;
+}
+
+.chatgpt-answer > * {
+	padding-left: 1.7rem;
+}
+
+.chatgpt-answer > *:first-child {
+	margin-top: -2rem;
+}
