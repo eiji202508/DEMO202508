@@ -32,9 +32,7 @@
       </h1>
       
       <div id="header-today"></div>
-    </div><!-- /h1-today-container -->
-
-    <nav class="nav nav-container">
+    </div><nav class="nav nav-container">
       <ul id="menu1" class="disc"><a>動く UI レシピ</a>
           <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
           <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
@@ -48,60 +46,85 @@
           <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
       </ul>
     </nav>
-  </div><!-- /header-container -->
-</header>
+  </div></header>
 
 <main class="w-container">
   <section class="content">
-    <h2 class="h2">filter ジェネレーター</h2>
+    <h1 class="h1">filter ジェネレーター</h1>
   
 <div class="mint-box mb-0_5">
   <div class="samp-box">
   
-    <img id="filterImage" src="../../images/project-part-1/get_ready_512.jpg" alt="" />
+    <div class="relative">
+      <img id="filterImage" src="../../images/project-part-1/get_ready_512.jpg" alt="" />
+      <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.3); color: white; padding: 50px; font-size: 4em; text-align: center;">DEMO</span>
+    </div>
     
     <div class="input-box">
       <div>
         <div>
-          <span>グレースケール　<grayscale class="fs-ms fw-600">grayscale(<span id="txt1">0</span>%)</span></span><span>初期値：0%</span>
+          <label>グレースケール</label>：<span>grayscale(<span id="txt1">0</span>%)</span>　<span>初期値：0%</span>
           <input type="range" id="slider1" min="0" max="100" value="0" />
         </div>
         <div>
-          <span>セピア調　<sepia class="fs-ms fw-600">sepia(<span id="txt2">0</span>%)</span></span><span></span>初期値：0%</span>
+          <label>コントラスト</label>：<span>contrast(<span id="txt8">100</span>%)</span>　<span>初期値：100%</span>
+          <input type="range" id="slider8" min="0" max="200" value="100" />
+        </div>
+        <div>
+          <label>セピア調</label>：<span>sepia(<span id="txt2">0</span>%)</span>　<span>初期値：0%</span>
           <input type="range" id="slider2" min="0" max="100" value="0" />
         </div>
         <div>
-          <span>彩度　<saturate class="fs-ms fw-600">saturate(<span id="txt3">100</span>%)</span></span><span></span>初期値：100%</span>
-          <input type="range" id="slider3" min="0" max="100" value="100" />
+          <label>ぼかし</label>：<span>blur(<span id="txt9">0</span>px)</span>　<span>初期値：0px</span>
+          <input type="range" id="slider9" min="0" max="200" value="0" step="0.1" />
         </div>
         <div>
-          <span>色調　<hue-rotate class="fs-ms fw-600">hue-rotate(<span id="txt4">0</span>deg)</span></span><span></span>初期値：0deg</span>
-          <input type="range" id="slider4" min="0" max="360" value="0" />
+          <label>彩度</label>：<span>saturate(<span id="txt3">100</span>%)</span>　<span>初期値：100%</span>
+          <input type="range" id="slider3" min="0" max="200" value="100" />
+        </div>
+
+        <div style="grid-row: span 4; padding: 0.5em 1em; background: #f3f3f3;">
+          <span>ドロップシャドウ：<br>　<span>drop-shadow(<span id="txt10">0</span>px <span id="txt11">0</span>px <span id="txt12">0</span>px <span id="txt13">#000000</span>)</span></span><br>
+          <label>X軸オフセット</label><input type="range" id="slider10" min="-100" max="100" value="0" />
+          <label>Y軸オフセット</label><input type="range" id="slider11" min="-100" max="100" value="0" />
+          <label>ぼかし半径</label><input type="range" id="slider12" min="0" max="100" value="0" />
+          <label class="mt-0_5">色</label>　<input type="color" id="colorPicker1" value="#000000" />
+        </div>
+
+        <div>
+          <label>色相</label>：<span>hue-rotate(<span id="txt4">0</span>deg)</span>　<span>初期値：0deg</span>
+          <input type="range" id="slider4" min="-360" max="360" value="0" />
         </div>
         <div>
-          <span>階調の反転　<invert class="fs-ms fw-600">invert(<span id="txt5">0</span>%)</span></span><span>初期値：0%</span>
+          <label>階調の反転</label>：<span>invert(<span id="txt5">0</span>%)</span>　<span>初期値：0%</span>
           <input type="range" id="slider5" min="0" max="100" value="0" />
         </div>
         <div>
-          <span>透明度　<opacity class="fs-ms fw-600">opacity(<span id="txt6">100</span>%)</span></span><span></span>初期値：100%</span>
+          <label>透明度</label>：<span>opacity(<span id="txt6">100</span>%)</span>　<span>初期値：100%</span>
           <input type="range" id="slider6" min="0" max="100" value="100" />
         </div>
         <div>
-          <span>明度　<brightness class="fs-ms fw-600">brightness(<span id="txt7">100</span>%)</span></span><span>初期値：100%</span>
-          <input type="range" id="slider7" min="0" max="100" value="100" />
-        </div>
-        <div>
-          <span>コントラスト　<contrast class="fs-ms fw-600">contrast(<span id="txt8">100</span>%)</span></span><span>初期値：100%</span>
-          <input type="range" id="slider8" min="0" max="100" value="100" />
-        </div>
-        <div>
-          <span>ぼかし　<span class="fs-ms fw-600">blur(<span id="txt9">0</span>px)</span></span><span>初期値：0px</span>
-          <input type="range" id="slider9" min="0" max="200" value="0" />
+          <label>明度</label>：<span>brightness(<span id="txt7">100</span>%)</span>　<span>初期値：100%</span>
+          <input type="range" id="slider7" min="0" max="200" value="100" />
         </div>
 
         <div class="image-file-input">
           <input type="file" id="imageFile" accept="image/*" />
         </div>
+      </div>
+      <div class="preset-buttons">
+        <span>プリセット：</span>
+        <input type="button" id="preset1" value="クラシックモノクロ">
+        <input type="button" id="preset2" value="オールドフィルム">
+        <input type="button" id="preset3" value="シャープコントラスト">
+        <input type="button" id="preset4" value="ソフトグロー">
+        <input type="button" id="preset5" value="クールブルー">
+        <input type="button" id="preset6" value="ドラマティックアンバー">
+        <input type="button" id="preset7" value="ビビッドポップ">
+        <input type="button" id="preset8" value="ミステリアスダーク">
+        <input type="button" id="preset9" value="ドリーミーフェード">
+        <input type="button" id="preset10" value="クロスプロセス">
+        <input type="button" id="resetButtonPreset" value="初期値">
       </div>
 
       <div class="filter-output">
@@ -110,12 +133,7 @@
         <input type="button" value="Copy" id="copy-button"></input>
         <input type="reset" value="Reset" id="reset-button"></input>
       </div>
-    </div><!-- /input-box -->
-    
-  </div><!-- /samp-box -->
-</div><!-- /mint-box -->
-
-  </section>
+    </div></div></div></section>
 
 <style>
 img {
@@ -126,80 +144,71 @@ img {
   padding: .5em .8em;
   background-color: #eee;
 }
-#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7, #txt8, #txt9, #txt10, #txt11, #txt12, #txt13 {
+#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7, #txt8, #txt9, #txt10, #txt11, #txt12 {
   display: inline-block;
-  width: 1.66em;
   text-align: right;
 }
-.input-box > div > div > span {
-  display: inline-block;
-  margin-left: 0.7em;
-}
-.input-box > div:first-child,
-.input-box > div:nth-child(3) {
+.input-box > div:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.3em;
 }
-.input-box > div:nth-child(2) {
-  padding-left: .3em;
-}
 .input-box > div > div,
-.input-box > div > span {
+.preset-buttons span {
   font-size: var(--fs-s);
 }
+.input-box label {
+  display: inline-block;
+  margin-left: 0.7em;
+}
+.input-box label + span,
+.input-box > div > div:nth-child(6) > span > span {
+  font-size: var(--fs-ms);
+  font-weight: 600;
+}
 
-.input-box > div:first-child > div > span:nth-child(2),
-.input-box > div:nth-child(2) > span:nth-child(2) {
-  font-size: var(--fs-3s);
-  margin-left: .7rem;
-}
-.input-box > div:nth-child(3) > div > span {
-  font-size: var(--fs-ss);
-}
-.input-box > div:nth-child(3) > div:nth-child(4) > span {
-  margin: 1.2em 1em 0 0;
-}
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   background-color: #ddd;
   height: 2px;
   width: 100%;
+}
 
-  &:focus,
-  &:active {
-    outline: none;
-  }
+/* 修正点: SCSSネスト記法を標準CSSに修正 */
+input[type="range"]:focus,
+input[type="range"]:active {
+  outline: none;
+}
 
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    cursor: pointer;
-    border: none;
-    width: 12px;
-    height: 8px;
-    background-color: #aaa;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    box-shadow: 0.7px 0.7px 0 #111;
-  }
-  &::-moz-range-thumb {
-    box-shadow: 0.7px 0.7px 0 #111;
-  }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: none;
+  width: 12px;
+  height: 8px;
+  background-color: #aaa;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  box-shadow: 0.7px 0.7px 0 #111;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0.7px 0.7px 0 #111;
 }
 /* ファイル選択部 */
 .image-file-input {
   text-align: right;
   margin-top: 1rem;
-
-  input[type="file"] {
-    font-size: var(--fs-ss);
-  }
-  input[type="file"]::-webkit-file-upload-button {
-    margin-top: 0;
-    color: #444;
-    background: #fff;
-  }
+}
+/* 修正点: SCSSネスト記法を標準CSSに修正 */
+.image-file-input input[type="file"] {
+  font-size: var(--fs-ss);
+}
+.image-file-input input[type="file"]::-webkit-file-upload-button {
+  margin-top: 0;
+  color: #444;
+  background: #fff;
 }
 /* フィルター出力表示部 */
 .filter-output {
@@ -209,150 +218,36 @@ input[type="range"] {
   #filterOutputText {
     background: #fff;
     font-size: var(--fs-ms);
+    line-height: 2.22;
     padding: 0 0.7em;
   }
-  input[type="button"],
-  input[type="reset"] {
-    cursor: pointer;
-    border: solid 1px #aaa;
-    border-radius: 2px;
-    font-size: var(--fs-s);
-    padding: 0 0.5em;
-    margin-top: 0;
-    color: #444;
-    background: #fff;
-  }
+}
+input[type="button"],
+input[type="reset"],
+button {
+  padding: 0 0.3em;
+  color: #666;
+  background-color: #fff;
+  cursor: pointer;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  font-size: var(--fs-sss);
+  height: 1.85em;
+  white-space: nowrap;
+  padding: 0 0.3em;
+}
+.filter-output input[type="button"],
+.filter-output input[type="reset"] {
+  height: auto;
+}
+button:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  color: #fff;
+  background-color: #aaa;
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // --- 1. DOM要素の取得 ---
-  const filterImage = document.getElementById('filterImage');
-  const imageFile = document.getElementById('imageFile');
-  const filterOutputText = document.getElementById('filterOutputText');
-  const copyButton = document.getElementById('copy-button');
-  const resetButton = document.getElementById('reset-button'); // ★追加: リセットボタン要素の取得★
-
-  const sliders = [];
-  const txts = [];
-
-  for (let i = 1; i <= 9; i++) {
-    const slider = document.getElementById(`slider${i}`);
-    const txt = document.getElementById(`txt${i}`);
-    if (slider && txt) {
-      sliders.push(slider);
-      txts.push(txt);
-    } else {
-      console.warn(`要素 (slider${i} or txt${i}) が見つかりませんでした。`);
-    }
-  }
-
-  const filterDefinitions = [
-    { name: 'grayscale', unit: '%', defaultValue: 0 },
-    { name: 'sepia', unit: '%', defaultValue: 0 },
-    { name: 'saturate', unit: '%', defaultValue: 100 },
-    { name: 'hue-rotate', unit: 'deg', defaultValue: 0 },
-    { name: 'invert', unit: '%', defaultValue: 0 },
-    { name: 'opacity', unit: '%', defaultValue: 100 },
-    { name: 'brightness', unit: '%', defaultValue: 100 },
-    { name: 'contrast', unit: '%', defaultValue: 100 },
-    { name: 'blur', unit: 'px', defaultValue: 0 }
-  ];
-
-  // --- 2. フィルター適用ロジック ---
-  function applyFilters() {
-    let filterString = '';
-    sliders.forEach((slider, index) => {
-      const definition = filterDefinitions[index];
-      const value = parseInt(slider.value); 
-
-      if (value !== definition.defaultValue) {
-        filterString += `${definition.name}(${value}${definition.unit}) `;
-      }
-      txts[index].textContent = value;
-    });
-
-    const finalFilterValue = filterString.trim();
-    
-    if (filterImage) {
-      filterImage.style.filter = finalFilterValue === '' ? 'none' : finalFilterValue;
-    } else {
-      console.error("エラー: filterImage要素が見つかりません。");
-    }
-    
-    filterOutputText.textContent = `filter: ${finalFilterValue === '' ? 'none' : finalFilterValue};`;
-  }
-
-  // --- 3. スライダーのリセットロジック ---
-  function resetSliders() {
-    document.getElementById('slider1').value = 0; // grayscale
-    document.getElementById('slider2').value = 0; // sepia
-    document.getElementById('slider3').value = 100; // saturate
-    document.getElementById('slider4').value = 0; // hue-rotate
-    document.getElementById('slider5').value = 0; // invert
-    document.getElementById('slider6').value = 100; // opacity
-    document.getElementById('slider7').value = 100; // brightness
-    document.getElementById('slider8').value = 100; // contrast
-    document.getElementById('slider9').value = 0; // blur
-    
-    applyFilters(); 
-  }
-
-  // --- 4. ファイル選択ロジック ---
-  imageFile.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-
-    if (file) {
-      const reader = new FileReader();
-
-      reader.onload = function(e) {
-        if (filterImage) {
-          filterImage.src = e.target.result;
-        } else {
-          console.error("エラー: filterImage要素が見つかりません。");
-        }
-        resetSliders(); // 新しい画像が読み込まれたらスライダーとフィルターをリセット
-      };
-
-      reader.readAsDataURL(file);
-    }
-  });
-
-  // --- 5. イベントリスナーの設定 ---
-  sliders.forEach(slider => {
-    slider.addEventListener('input', applyFilters);
-  });
-
-  // --- 6. コピーボタン機能 ---
-  copyButton.addEventListener('click', function() {
-    const textToCopy = filterOutputText.textContent;
-
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        const originalValue = copyButton.value;
-        copyButton.value = 'Copied!';
-        setTimeout(() => {
-          copyButton.value = originalValue;
-        }, 1500); 
-      })
-      .catch(err => {
-        console.error('テキストのコピーに失敗しました:', err);
-        alert('コピーに失敗しました。お使いのブラウザでは自動コピーがサポートされていないか、セキュリティ上の制限があります。');
-      });
-  });
-
-  // --- 7. リセットボタン機能 --- ★ここから追加★
-  resetButton.addEventListener('click', function() {
-    resetSliders(); // スライダーをリセットする関数を呼び出す
-  });
-  // --- リセットボタン機能の追加ここまで ---
-
-  // --- 8. 初期設定 ---
-  filterImage.src = '../../images/project-part-1/get_ready_512.jpg';
-  applyFilters(); 
-});
-</script>
 
 </main>
 
@@ -374,13 +269,308 @@ document.addEventListener('DOMContentLoaded', function() {
       <span class="en">Big Cat Studio</span>
       <span class="ja">おおねこ工房</span>
     </a>
-  </div><!-- /footer-container -->
-</footer>
+  </div></footer>
 
+<script src="../../js/jquery-3.5.1.min.js"></script>
 <script src="../../js/gettoday.js"></script>
-<script src="../../js/getyear.js"></script>
+<script src="../../js/getyear.js"></script> 
 <script src="../../js/season.js"></script>
 <script src="../../js/slide-toggle.js"></script>
 <script src="../../js/btn-code.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // --- 1. DOM要素の取得 ---
+  const filterImage = document.getElementById('filterImage');
+  const imageFile = document.getElementById('imageFile');
+  const filterOutputText = document.getElementById('filterOutputText');
+  const copyButton = document.getElementById('copy-button');
+  const resetButton = document.getElementById('reset-button');
+
+  // 各スライダーとテキスト要素を個別に取得
+  const slider1 = document.getElementById('slider1'); // grayscale
+  const txt1 = document.getElementById('txt1');
+  const slider2 = document.getElementById('slider2'); // sepia
+  const txt2 = document.getElementById('txt2');
+  const slider3 = document.getElementById('slider3'); // saturate
+  const txt3 = document.getElementById('txt3');
+  const slider4 = document.getElementById('slider4'); // hue-rotate
+  const txt4 = document.getElementById('txt4');
+  const slider5 = document.getElementById('slider5'); // invert
+  const txt5 = document.getElementById('txt5');
+  const slider6 = document.getElementById('slider6'); // opacity
+  const txt6 = document.getElementById('txt6');
+  const slider7 = document.getElementById('slider7'); // brightness
+  const txt7 = document.getElementById('txt7');
+  const slider8 = document.getElementById('slider8'); // contrast
+  const txt8 = document.getElementById('txt8');
+  const slider9 = document.getElementById('slider9'); // blur
+  const txt9 = document.getElementById('txt9');
+
+  // drop-shadow 用のスライダーとテキスト、カラーピッカーの取得
+  const slider10 = document.getElementById('slider10'); // drop-shadow x-offset
+  const txt10 = document.getElementById('txt10');
+  const slider11 = document.getElementById('slider11'); // drop-shadow y-offset
+  const txt11 = document.getElementById('txt11');
+  const slider12 = document.getElementById('slider12'); // drop-shadow blur-radius
+  const txt12 = document.getElementById('txt12');
+  const colorPicker1 = document.getElementById('colorPicker1'); // drop-shadow color
+  const txt13 = document.getElementById('txt13'); // drop-shadow color text
+
+  // プリセットボタンの取得 (10個)
+  const preset1Button = document.getElementById('preset1'); // クラシックモノクロ
+  const preset2Button = document.getElementById('preset2'); // オールドフィルム
+  const preset3Button = document.getElementById('preset3'); // シャープコントラスト
+  const preset4Button = document.getElementById('preset4'); // ソフトグロー
+  const preset5Button = document.getElementById('preset5'); // クールブルー
+  const preset6Button = document.getElementById('preset6'); // ドラマティックアンバー
+  const preset7Button = document.getElementById('preset7'); // ビビッドポップ
+  const preset8Button = document.getElementById('preset8'); // ミステリアスダーク
+  const preset9Button = document.getElementById('preset9'); // ドリーミーフェード
+  const preset10Button = document.getElementById('preset10'); // クロスプロセス
+  const resetButtonPreset = document.getElementById('resetButtonPreset'); // 初期値に戻すボタン
+
+
+  // filterDefinitions をオブジェクト（マップ）として定義し、名前で参照できるようにする
+  const filterDefinitions = {
+    'grayscale': { unit: '%', defaultValue: 0, slider: slider1, txt: txt1 },
+    'sepia': { unit: '%', defaultValue: 0, slider: slider2, txt: txt2 },
+    'saturate': { unit: '%', defaultValue: 100, slider: slider3, txt: txt3 },
+    'hue-rotate': { unit: 'deg', defaultValue: 0, slider: slider4, txt: txt4 },
+    'invert': { unit: '%', defaultValue: 0, slider: slider5, txt: txt5 },
+    'opacity': { unit: '%', defaultValue: 100, slider: slider6, txt: txt6 },
+    'brightness': { unit: '%', defaultValue: 100, slider: slider7, txt: txt7 },
+    'contrast': { unit: '%', defaultValue: 100, slider: slider8, txt: txt8 },
+    'blur': { unit: 'px', defaultValue: 0, slider: slider9, txt: txt9 }
+  };
+
+  // イベントリスナー登録用のスライダー配列（全スライダーをまとめる）
+  const allSlidersForEvents = Object.values(filterDefinitions)
+                                    .map(def => def.slider)
+                                    .filter(s => s !== null); 
+  
+  if (slider10) allSlidersForEvents.push(slider10);
+  if (slider11) allSlidersForEvents.push(slider11);
+  if (slider12) allSlidersForEvents.push(slider12);
+  if (colorPicker1) allSlidersForEvents.push(colorPicker1);
+
+  // --- RGBA/RGB/HEX 形式の文字列を #rrggbb 形式に変換する関数 ---
+  function rgbaToHex(colorStr) {
+    if (!colorStr) return '#000000'; 
+    if (colorStr.startsWith('#')) return colorStr; 
+
+    const parts = colorStr.match(/\d+(\.\d+)?/g);
+
+    if (!parts || parts.length < 3) {
+      console.warn("rgbaToHex: 無効なカラー形式が検出されました。デフォルトの黒を返します。", colorStr);
+      return '#000000';
+    }
+
+    const r = parseInt(parts[0]);
+    const g = parseInt(parts[1]);
+    const b = parseInt(parts[2]);
+
+    const toHex = (c) => {
+      const hex = c.toString(16);
+      return hex.length === 1 ? '0' + hex : hex;
+    };
+
+    return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+  }
+
+  // --- 2. フィルター適用ロジック ---
+  function applyFilters() {
+    let filterString = '';
+    
+    for (const name in filterDefinitions) {
+      const definition = filterDefinitions[name];
+      if (definition.slider && definition.txt) {
+        const value = parseFloat(definition.slider.value); 
+
+        // スライダーの値がそのフィルターの初期値と異なる場合のみフィルター文字列に追加
+        // 小数点以下の比較は浮動小数点誤差を避けるため、Math.abs を使う
+        if (Math.abs(value - definition.defaultValue) > 0.001) { // わずかな差も検知
+          filterString += `${name}(${value}${definition.unit}) `;
+        }
+        definition.txt.textContent = value; 
+      }
+    }
+
+    // drop-shadow の処理
+    const ds_x = parseFloat(slider10 ? slider10.value : "0");
+    const ds_y = parseFloat(slider11 ? slider11.value : "0");
+    const ds_blur = parseFloat(slider12 ? slider12.value : "0");
+    const ds_color_from_picker = colorPicker1 ? colorPicker1.value : "#000000";
+
+    if (txt10) txt10.textContent = ds_x;
+    if (txt11) txt11.textContent = ds_y;
+    if (txt12) txt12.textContent = ds_blur;
+    if (txt13) txt13.textContent = ds_color_from_picker; 
+
+    let ds_final_color_for_css = ds_color_from_picker;
+    if (filterImage && filterImage.dataset.dropShadowColorPreset) {
+      ds_final_color_for_css = filterImage.dataset.dropShadowColorPreset;
+    }
+
+    const isDropShadowDefault = (
+        ds_x === 0 && 
+        ds_y === 0 && 
+        ds_blur === 0 && 
+        (ds_final_color_for_css.toLowerCase() === "#000000" || 
+         ds_final_color_for_css === "rgba(0,0,0,1)" || 
+         ds_final_color_for_css === "rgb(0,0,0)")
+    );
+
+    if (!isDropShadowDefault) {
+      filterString += `drop-shadow(${ds_x}px ${ds_y}px ${ds_blur}px ${ds_final_color_for_css}) `;
+    }
+    
+    const finalFilterValue = filterString.trim();
+    
+    // --- デバッグ用 console.log ---
+    console.log("applyFilters が実行されました。");
+    console.log("生成された filterString (適用前):", filterString);
+    console.log("最終的なフィルターCSS値 (finalFilterValue):", finalFilterValue);
+    // --- ここまで console.log ---
+
+    if (filterImage) {
+      filterImage.style.filter = finalFilterValue === '' ? 'none' : finalFilterValue;
+    } else {
+      console.error("エラー: filterImage要素が見つかりません。");
+    }
+    
+    filterOutputText.textContent = `filter: ${finalFilterValue === '' ? 'none' : finalFilterValue};`;
+  }
+
+  // --- 3. スライダーのリセットロジック ---
+  function resetSliders() {
+    for (const name in filterDefinitions) {
+      const definition = filterDefinitions[name];
+      if (definition.slider) {
+        definition.slider.value = definition.defaultValue;
+      }
+    }
+    
+    if (slider10) slider10.value = 0;
+    if (slider11) slider11.value = 0;
+    if (slider12) slider12.value = 0;
+    if (colorPicker1) colorPicker1.value = '#000000'; 
+
+    if (filterImage) {
+      delete filterImage.dataset.dropShadowColorPreset;
+    }
+    
+    applyFilters(); 
+  }
+
+// --- 4. プリセット適用関数 ---
+  function applyPreset(presetValues) {
+    resetSliders(); 
+
+    for (const name in filterDefinitions) {
+      const definition = filterDefinitions[name];
+      if (definition.slider && typeof presetValues[name] !== 'undefined') {
+        // スライダーのステップを考慮して値を設定
+        const sliderStep = parseFloat(definition.slider.step || '1'); // stepが未定義なら1とみなす
+        let valueToSet = presetValues[name];
+        
+        // 小数点の丸め込み対策: スライダーのステップに合わせて値を丸める
+        // 例: step="0.1"なら小数点以下1桁に丸める
+        if (sliderStep !== 0) { // stepが0でない場合（0は無制限を意味することも）
+            valueToSet = Math.round(valueToSet / sliderStep) * sliderStep;
+        }
+        
+        definition.slider.value = valueToSet;
+      }
+    }
+
+    if (typeof presetValues['drop-shadow'] !== 'undefined') {
+      const dsMatch = presetValues['drop-shadow'].match(/(-?\d+\.?\d*)px\s(-?\d+\.?\d*)px\s(\d+\.?\d*)px\s(.*?)$/);
+      if (dsMatch) {
+        if (slider10) slider10.value = parseFloat(dsMatch[1]);
+        if (slider11) slider11.value = parseFloat(dsMatch[2]);
+        if (slider12) slider12.value = parseFloat(dsMatch[3]);
+        
+        const dsColorValue = dsMatch[4]; 
+        if (colorPicker1) {
+          colorPicker1.value = rgbaToHex(dsColorValue);
+        }
+        if (filterImage) {
+            filterImage.dataset.dropShadowColorPreset = dsColorValue;
+        }
+      }
+    }
+    
+    applyFilters(); 
+  }
+
+  // --- 5. ファイル選択ロジック ---
+  imageFile.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        if (filterImage) {
+          filterImage.src = e.target.result;
+        } else {
+          console.error("エラー: filterImage要素が見つかりません。");
+        }
+        resetSliders(); 
+      };
+
+      reader.readAsDataURL(file);
+    }
+  });
+
+  // --- 6. イベントリスナーの設定 ---
+  allSlidersForEvents.forEach(element => { 
+    element.addEventListener('input', applyFilters);
+  });
+
+  // --- 7. コピーボタン機能 ---
+  copyButton.addEventListener('click', function() {
+    const textToCopy = filterOutputText.textContent;
+
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        const originalValue = copyButton.value;
+        copyButton.value = 'Copied!';
+        setTimeout(() => {
+          copyButton.value = originalValue;
+        }, 1500); 
+      })
+      .catch(err => {
+        console.error('テキストのコピーに失敗しました:', err);
+        alert('コピーに失敗しました。お使いのブラウザでは自動コピーがサポートされていないか、セキュリティ上の制限があります。');
+      });
+  });
+
+  // --- 8. リセットボタン機能 ---
+  resetButton.addEventListener('click', resetSliders);
+
+  // プリセットボタンのイベントリスナー
+  if (preset1Button) preset1Button.addEventListener('click', () => applyPreset({ 'grayscale': 100 })); 
+  if (preset2Button) preset2Button.addEventListener('click', () => applyPreset({ 'sepia': 70, 'saturate': 120, 'brightness': 90 }));
+  if (preset3Button) preset3Button.addEventListener('click', () => applyPreset({ 'contrast': 150, 'brightness': 110, 'saturate': 130 }));
+  if (preset4Button) preset4Button.addEventListener('click', () => applyPreset({ 'blur': 3, 'drop-shadow': '0px 0px 20px rgba(255,255,255,0.7)' }));
+  if (preset5Button) preset5Button.addEventListener('click', () => applyPreset({ 'hue-rotate': 220, 'saturate': 180, 'brightness': 95 }));
+
+  if (preset6Button) preset6Button.addEventListener('click', () => applyPreset({ 'sepia': 50, 'hue-rotate': -20, 'contrast': 140 }));
+  if (preset7Button) preset7Button.addEventListener('click', () => applyPreset({ 'brightness': 130, 'saturate': 200 }));
+  if (preset8Button) preset8Button.addEventListener('click', () => applyPreset({ 'brightness': 60, 'contrast': 120, 'saturate': 80 }));
+  if (preset9Button) preset9Button.addEventListener('click', () => applyPreset({ 'saturate': 70, 'contrast': 90, 'blur': 0.5, 'brightness': 105 }));
+  if (preset10Button) preset10Button.addEventListener('click', () => applyPreset({ 'contrast': 130, 'saturate': 150, 'hue-rotate': 15, 'sepia': 10 }));
+
+  if (resetButtonPreset) resetButtonPreset.addEventListener('click', resetSliders);
+
+  // --- 9. 初期設定 ---
+  if (filterImage) {
+    filterImage.src = '../../images/project-part-1/get_ready_512.jpg';
+  }
+  applyFilters(); 
+});
+</script>
 </body>
 </html>
